@@ -6,37 +6,180 @@
   <title>Delapre Dental Care</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      background-color: #002349;
+      background-color: #002349; /* ← PAGE BACKGROUND COLOUR */
       font-family: sans-serif;
       min-height: 100vh;
-      /* Mobile: push content below the widget */
-      padding: 520px 24px 40px 24px;
+
+      /*
+      =====================================================================
+      MOBILE PADDING (screens narrower than 960px, including all phones)
+      =====================================================================
+      The widget is fixed in the TOP-LEFT corner by ElevenLabs.
+      On mobile, the widget takes up the full width and roughly 500px height.
+      We use padding to push the content DOWN so it starts below the widget.
+
+      padding: TOP  RIGHT  BOTTOM  LEFT
+
+        TOP    → How far below the top of the page the content starts.
+                 Increase this if content overlaps the widget on mobile.
+                 Decrease this if there is too much empty space above content.
+                 Current: 520px
+
+        RIGHT  → Gap between the content and the RIGHT edge of the screen.
+                 Current: 24px (comfortable breathing room on small screens)
+
+        BOTTOM → Gap between the last line of content and the bottom of the page.
+                 Increase if content feels too close to the bottom.
+                 Current: 60px
+
+        LEFT   → Gap between the content and the LEFT edge of the screen.
+                 Current: 24px (matches right side for symmetry)
+      =====================================================================
+      */
+      padding: 520px 24px 60px 24px;
     }
+
+    /*
+    =====================================================================
+    DESKTOP PADDING (screens 960px wide or wider)
+    =====================================================================
+    On desktop, the widget sits in the TOP-LEFT corner and stays there —
+    it does not scroll away. The content sits to the RIGHT of the widget.
+    We use padding-left to push the content rightward, clear of the widget.
+
+    padding: TOP  RIGHT  BOTTOM  LEFT
+
+      TOP    → How far from the top of the viewport the content starts.
+               Increase this to add more breathing room at the top when
+               the page first loads or when scrolling back to the top.
+               Current: 40px
+
+      RIGHT  → Gap between the content and the RIGHT edge of the browser.
+               Current: 40px
+
+      BOTTOM → Gap between the last content item and the page bottom.
+               Current: 60px
+
+      LEFT   → THIS IS THE KEY VALUE ON DESKTOP.
+               This must be wide enough that content never overlaps the widget.
+               The ElevenLabs widget in Full variant is approximately 380px wide.
+               Add extra breathing room between widget and content here.
+               Increase if content still overlaps the widget on desktop.
+               Decrease if there is too much empty space to the left of content.
+               Current: 420px
+    =====================================================================
+    */
     @media (min-width: 960px) {
       body {
-        /* Desktop: push content to the right of the widget */
-        padding: 40px 40px 40px 520px;
-        margin-top: 60px
+        padding: 96px 40px 60px 520px;
       }
     }
-    .page { max-width: 560px; }
-    h1 { color: #ffffff; margin-bottom: 8px; font-size: 32px; }
-    .subtitle { color: #b0c4de; margin-bottom: 40px; font-size: 16px; }
-    .section { margin-bottom: 32px; }
-    .section-title {
-      color: #b0c4de;
-      font-weight: bold;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
+
+    /*
+    =====================================================================
+    CONTENT COLUMN WIDTH
+    =====================================================================
+    Controls how wide the text column is on desktop.
+    max-width stops the text from stretching too wide on very large monitors.
+    Increase for more text per line. Decrease to keep it narrow and readable.
+    Current: 560px
+    =====================================================================
+    */
+    .page {
+      max-width: 560px;
     }
-    .section-content { color: #ffffff; line-height: 1.6; font-size: 15px; }
-    .section-content p { margin: 4px 0; }
-    a { color: #b0c4de; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .note { color: #b0c4de; font-size: 13px; font-style: italic; margin-top: 8px; }
+
+    /*
+    =====================================================================
+    PRACTICE NAME (H1)
+    =====================================================================
+    */
+    h1 {
+      color: #ffffff; /* ← Practice name colour */
+      margin-bottom: 8px; /* ← Gap between practice name and subtitle below it */
+      font-size: 32px; /* ← Practice name size */
+    }
+
+    /*
+    =====================================================================
+    SUBTITLE ("Dental Practice — Northampton")
+    =====================================================================
+    */
+    .subtitle {
+      color: #b0c4de; /* ← Subtitle colour (lighter blue) */
+      margin-bottom: 40px; /* ← Gap between subtitle and the first section below */
+      font-size: 16px; /* ← Subtitle text size */
+    }
+
+    /*
+    =====================================================================
+    EACH SECTION BLOCK (Address, Phone, Hours, etc.)
+    =====================================================================
+    */
+    .section {
+      margin-bottom: 32px; /* ← Vertical gap BETWEEN sections.
+                               Increase for more breathing room between blocks.
+                               Decrease to pack them closer together. */
+    }
+
+    /*
+    =====================================================================
+    SECTION HEADINGS ("ADDRESS", "PHONE", "OFFICE HOURS", etc.)
+    =====================================================================
+    */
+    .section-title {
+      color: #b0c4de; /* ← Section heading colour */
+      font-weight: bold;
+      font-size: 13px; /* ← Section heading size */
+      text-transform: uppercase; /* ← Makes headings ALL CAPS */
+      letter-spacing: 1px; /* ← Spacing between letters in headings */
+      margin-bottom: 8px; /* ← Gap between heading and the content below it */
+    }
+
+    /*
+    =====================================================================
+    SECTION CONTENT (the actual text under each heading)
+    =====================================================================
+    */
+    .section-content {
+      color: #ffffff; /* ← Content text colour */
+      line-height: 1.6; /* ← Line spacing within content.
+                            1.6 = 160% of font size between lines.
+                            Increase for more airy text, decrease to pack lines. */
+      font-size: 15px; /* ← Content text size */
+    }
+
+    .section-content p {
+      margin: 4px 0; /* ← Vertical gap between individual lines within a section */
+    }
+
+    /*
+    =====================================================================
+    PHONE NUMBER LINK COLOUR
+    =====================================================================
+    */
+    a {
+      color: #b0c4de; /* ← Link colour (matches subtitle and headings) */
+      text-decoration: none; /* ← Removes underline from links by default */
+    }
+    a:hover {
+      text-decoration: underline; /* ← Adds underline when hovering over a link */
+    }
+
+    /*
+    =====================================================================
+    ITALIC NOTE TEXT (e.g. "Please call to make an appointment.")
+    =====================================================================
+    */
+    .note {
+      color: #b0c4de; /* ← Note text colour */
+      font-size: 13px; /* ← Note text size (slightly smaller than body) */
+      font-style: italic;
+      margin-top: 8px; /* ← Gap above the note line */
+    }
+
   </style>
 </head>
 <body>
@@ -88,12 +231,21 @@
 
   </div>
 
+  <!-- =====================================================================
+  ELEVENLABS WIDGET
+  The widget position on the page (top-left, bottom-right, etc.) is controlled
+  in the ElevenLabs dashboard under Widget → Placement.
+  The avatar image and agent ID are set here as HTML attributes.
+  Do not move this script block — it must stay at the bottom of the page.
+  ===================================================================== -->
   <elevenlabs-convai
     agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
     avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
   ></elevenlabs-convai>
 
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed@beta" async type="text/javascript"></script>
+
+  <!-- Avatar swap script — do not modify -->
   <script>
     var AVATARS = {
       sabina:   "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
