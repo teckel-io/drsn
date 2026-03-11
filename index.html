@@ -5,42 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delapre Dental Care</title>
   <style>
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
       background-color: #002349;
       font-family: sans-serif;
       padding: 24px 16px;
     }
-    .page-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
     .widget-container {
-      flex: 0 0 320px;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      width: 100%;
+      margin-bottom: 32px;
     }
     .content {
-      flex: 1 1 300px;
-      min-width: 280px;
-      max-width: 500px;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    h1 {
-      color: #ffffff;
-      margin-bottom: 8px;
-      font-size: 28px;
+    @media (min-width: 960px) {
+      body {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 48px;
+        padding: 48px 40px;
+        min-height: 100vh;
+      }
+      .widget-container {
+        flex: 0 0 auto;
+        width: auto;
+        margin-bottom: 0;
+      }
+      .content {
+        flex: 1 1 auto;
+        max-width: 480px;
+        margin: 0;
+      }
     }
-    .subtitle {
-      color: #b0c4de;
-      margin-bottom: 32px;
-      font-size: 16px;
-    }
+    h1 { color: #ffffff; margin-bottom: 8px; font-size: 28px; }
+    .subtitle { color: #b0c4de; margin-bottom: 32px; font-size: 16px; }
     .section { margin-bottom: 28px; }
     .section-title {
       color: #b0c4de;
@@ -50,83 +54,57 @@
       letter-spacing: 1px;
       margin-bottom: 8px;
     }
-    .section-content {
-      color: #ffffff;
-      line-height: 1.6;
-      font-size: 14px;
-    }
+    .section-content { color: #ffffff; line-height: 1.6; font-size: 14px; }
     .section-content p { margin: 4px 0; }
     a { color: #b0c4de; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .note {
-      color: #b0c4de;
-      font-size: 13px;
-      font-style: italic;
-      margin-top: 12px;
-    }
+    .note { color: #b0c4de; font-size: 13px; font-style: italic; margin-top: 12px; }
   </style>
 </head>
 <body>
 
-  <div class="page-wrapper">
+  <div class="widget-container">
+    <elevenlabs-convai
+      agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
+      avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+    ></elevenlabs-convai>
+  </div>
 
-    <div class="widget-container">
-      <elevenlabs-convai
-        agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
-        avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
-      ></elevenlabs-convai>
-    </div>
-
-    <div class="content">
-      <h1>Delapre Dental Care</h1>
-      <p class="subtitle">Dental Practice — Northampton</p>
-
-      <div class="section">
-        <div class="section-title">Address</div>
-        <div class="section-content">
-          <p>5 Billing Road</p>
-          <p>Northampton</p>
-          <p>NN1 5AN</p>
-          <p>UK</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">Phone</div>
-        <div class="section-content">
-          <p><a href="tel:01604636836">01604 636836</a></p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">Office Hours</div>
-        <div class="section-content">
-          <p>Monday–Friday: 8:15am to 5pm</p>
-          <p>Lunch: 12:30pm to 1:30pm (closed)</p>
-          <p>Closed on holidays</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">Appointments</div>
-        <div class="section-content">
-          <p>All patients are seen by appointment only.</p>
-          <p class="note">Please call to make an appointment.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">Patients</div>
-        <div class="section-content">
-          <p>We accept both NHS and private patients.</p>
-        </div>
+  <div class="content">
+    <h1>Delapre Dental Care</h1>
+    <p class="subtitle">Dental Practice — Northampton</p>
+    <div class="section">
+      <div class="section-title">Address</div>
+      <div class="section-content">
+        <p>5 Billing Road</p><p>Northampton</p><p>NN1 5AN</p><p>UK</p>
       </div>
     </div>
-
+    <div class="section">
+      <div class="section-title">Phone</div>
+      <div class="section-content"><p><a href="tel:01604636836">01604 636836</a></p></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Office Hours</div>
+      <div class="section-content">
+        <p>Monday–Friday: 8:15am to 5pm</p>
+        <p>Lunch: 12:30pm to 1:30pm (closed)</p>
+        <p>Closed on holidays</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">Appointments</div>
+      <div class="section-content">
+        <p>All patients are seen by appointment only.</p>
+        <p class="note">Please call to make an appointment.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">Patients</div>
+      <div class="section-content"><p>We accept both NHS and private patients.</p></div>
+    </div>
   </div>
 
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed@beta" async type="text/javascript"></script>
-
   <script>
     var AVATARS = {
       sabina:   "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
