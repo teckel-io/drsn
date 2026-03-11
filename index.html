@@ -2,24 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr Sabina Nasir — Dental Practice</title>
   <style>
     body {
-      background-color: #002349;
-      color: white;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f9f9f9;
+      font-family: sans-serif;
     }
-    h1, p {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
+    h1 {
+      color: #333;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #666;
+      margin-bottom: 32px;
     }
   </style>
 </head>
 <body>
-  <h1>Dr Sabina Nasir — Dental Practice</h1>
-  <p>415-342-0527</p>
-  <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
-  <elevenlabs-convai agent-id="default"></elevenlabs-convai>
+
+  <h1>Dr Sabina Nasir</h1>
+  <p>Dental Practice — London</p>
+
+  <elevenlabs-convai
+    agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
+    avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+  ></elevenlabs-convai>
+
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed@beta" async type="text/javascript"></script>
+
+  <script>
+    var AVATARS = {
+      sabina:   "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
+      benedict: "https://teckel.io/wp-content/uploads/2026/03/Benedict-Gemini_Generated_Image.png"
+    };
+    document.addEventListener("DOMContentLoaded", function () {
+      var widget = document.querySelector("elevenlabs-convai");
+      if (widget) {
+        widget.addEventListener("elevenlabs-convai:call", function (event) {
+          event.detail.config.clientTools = {
+            update_avatar: function (params) {
+              var url = AVATARS[params.avatar_name];
+              if (url) {
+                widget.setAttribute("avatar-image-url", url);
+              }
+              return "Avatar updated";
+            }
+          };
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
