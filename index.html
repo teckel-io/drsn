@@ -5,26 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delapre Dental Care</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      min-height: 100vh;
+      background-color: #002349;
+      font-family: sans-serif;
+      padding: 24px 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      background-color: #002349;
-      font-family: sans-serif;
-      padding: 40px;
+    }
+    .widget-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
     }
     .content {
       width: 100%;
       max-width: 600px;
-      margin-bottom: 40px;
     }
     h1 {
       color: #ffffff;
       margin-bottom: 8px;
-      font-size: 32px;
+      font-size: 28px;
     }
     .subtitle {
       color: #b0c4de;
@@ -47,49 +51,42 @@
       line-height: 1.6;
       font-size: 14px;
     }
-    .section-content p {
-      margin: 4px 0;
-    }
-    a {
-      color: #b0c4de;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    .section-content p { margin: 4px 0; }
+    a { color: #b0c4de; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .note {
       color: #b0c4de;
       font-size: 13px;
       font-style: italic;
       margin-top: 12px;
     }
-    .widget-container {
-      width: 100%;
-      max-width: 600px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       body {
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 40px;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 60px 40px;
+        gap: 60px;
+      }
+      .widget-container {
+        flex: 0 0 auto;
+        margin-bottom: 0;
       }
       .content {
         flex: 1;
-        max-width: 50%;
-        margin-bottom: 0;
-      }
-      .widget-container {
-        flex: 1;
-        max-width: none;
+        max-width: 500px;
       }
     }
   </style>
 </head>
 <body>
+
+  <div class="widget-container">
+    <elevenlabs-convai
+      agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
+      avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+    ></elevenlabs-convai>
+  </div>
 
   <div class="content">
     <h1>Delapre Dental Care</h1>
@@ -137,13 +134,6 @@
     </div>
   </div>
 
-  <div class="widget-container">
-    <elevenlabs-convai
-      agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
-      avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
-    ></elevenlabs-convai>
-  </div>
-
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed@beta" async type="text/javascript"></script>
 
   <script>
@@ -158,9 +148,7 @@
           event.detail.config.clientTools = {
             update_avatar: function (params) {
               var url = AVATARS[params.avatar_name];
-              if (url) {
-                widget.setAttribute("avatar-image-url", url);
-              }
+              if (url) { widget.setAttribute("avatar-image-url", url); }
               return "Avatar updated";
             }
           };
