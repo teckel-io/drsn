@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +10,15 @@
       margin: 0;
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       background-color: #002349;
       font-family: sans-serif;
+      padding: 40px;
+    }
+    .content {
+      flex: 1;
+      max-width: 50%;
     }
     h1 {
       color: #333;
@@ -23,17 +28,27 @@
       color: #666;
       margin-bottom: 32px;
     }
+    .widget-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Dr Sabina Nasir</h1>
-  <p>Dental Practice — London</p>
+  <div class="content">
+    <h1>Dr Sabina Nasir</h1>
+    <p>Dental Practice — London</p>
+  </div>
 
-  <elevenlabs-convai
-    agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
-    avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
-  ></elevenlabs-convai>
+  <div class="widget-container">
+    <elevenlabs-convai
+      agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
+      avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+    ></elevenlabs-convai>
+  </div>
 
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed@beta" async type="text/javascript"></script>
 
@@ -62,3 +77,4 @@
 
 </body>
 </html>
+```
