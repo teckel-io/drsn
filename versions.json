@@ -48,6 +48,20 @@
       "pre_edit_pages": {
         "index": "166977104d2e690ae861394fbffd035faf83e628"
       }
+    },
+    {
+      "version": 4,
+      "timestamp": "2026-03-12T11:12:24.283Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 3 (\"change the website background color to green\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 3,
+      "pages": {
+        "index": "166977104d2e690ae861394fbffd035faf83e628"
+      },
+      "pre_edit_pages": {
+        "index": "f9073edf89814c760921c1984c0f06b6a363ee76"
+      }
     }
   ]
 }
