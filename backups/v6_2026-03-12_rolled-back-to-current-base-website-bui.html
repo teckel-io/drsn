@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+  =====================================================================
+  SEO: PRIMARY META TAGS
+  These are the most important tags for Google search ranking.
+  title       → The blue clickable headline in Google search results.
+                Keep under 60 characters. Include practice name and location.
+  description → The grey summary text shown under the title in Google results.
+                Keep under 160 characters.
+  robots      → Tells search engines to index this page and follow its links.
+  canonical   → Tells Google which URL is the official version of this page.
+                UPDATE THIS to the final custom domain once DNS is pointed.
+  =====================================================================
+  -->
+  <title>Delapre Dental Care — NHS &amp; Private Dentist in Northampton | Dr Sabina Nasir</title>
+  <meta name="description" content="Delapre Dental Care offers NHS and private dental services in Northampton. Dr Sabina Nasir provides gentle, professional dental care at 5 Billing Road. Call 01604 636836 to book.">
+  <meta name="keywords" content="dentist Northampton, NHS dentist Northampton, private dentist Northampton, Delapre Dental Care, Dr Sabina Nasir, dental practice Northampton, Billing Road dentist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://teckel-io.github.io/drsn/">
+
+  <!--
+  =====================================================================
+  SEO: OPEN GRAPH TAGS
+  Controls how this page looks when shared on Facebook, LinkedIn,
+  WhatsApp etc. — the image, title, and description in link previews.
+  og:image → Replace with a professional practice photo once available.
+  =====================================================================
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Delapre Dental Care — NHS &amp; Private Dentist in Northampton">
+  <meta property="og:description" content="Dr Sabina Nasir offers gentle, professional NHS and private dental care in Northampton. Book an appointment by calling 01604 636836.">
+  <meta property="og:url" content="https://teckel-io.github.io/drsn/">
+  <meta property="og:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Delapre Dental Care">
+
+  <!--
+  =====================================================================
+  SEO: TWITTER / X CARD TAGS
+  Controls how this page appears when shared on Twitter/X.
+  =====================================================================
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Delapre Dental Care — NHS &amp; Private Dentist in Northampton">
+  <meta name="twitter:description" content="Dr Sabina Nasir offers gentle, professional NHS and private dental care in Northampton. Call 01604 636836 to book.">
+  <meta name="twitter:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
+
+  <!--
+  =====================================================================
+  GEO / AEO: JSON-LD STRUCTURED DATA
+  This is the most important block for AEO and GEO.
+
+  It tells AI assistants (ChatGPT, Perplexity, Google AI Overviews,
+  Apple Intelligence) exactly what this business is, where it is,
+  what it offers, and how to contact it — in machine-readable format.
+
+  When someone asks an AI "find me a dentist in Northampton" or
+  "is Delapre Dental Care accepting NHS patients?", this data is what
+  the AI reads to answer accurately and cite this practice.
+
+  Schema type: Dentist — the most specific schema for a dental practice.
+
+  DO NOT MODIFY @context or @type values.
+  Update content values when practice details change.
+  =====================================================================
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Delapre Dental Care",
+    "description": "Delapre Dental Care is a dental practice in Northampton offering NHS and private dental services. Led by Dr Sabina Nasir, the practice provides gentle, professional care for all patients.",
+    "url": "https://teckel-io.github.io/drsn/",
+    "telephone": "+441604636836",
+    "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
+    "priceRange": "NHS & Private",
+    "currenciesAccepted": "GBP",
+    "paymentAccepted": "NHS, Private",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Billing Road",
+      "addressLocality": "Northampton",
+      "postalCode": "NN1 5AN",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "52.2405",
+      "longitude": "-0.8876"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:15",
+        "closes": "17:00"
+      }
+    ],
+    "employee": {
+      "@type": "Person",
+      "name": "Dr Sabina Nasir",
+      "jobTitle": "Principal Dentist",
+      "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+    },
+    "hasMap": "https://maps.google.com/?q=5+Billing+Road,+Northampton,+NN1+5AN",
+    "areaServed": {
+      "@type": "City",
+      "name": "Northampton"
+    },
+    "medicalSpecialty": "Dentistry",
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "NHS Dental Treatment" },
+      { "@type": "MedicalProcedure", "name": "Private Dental Treatment" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Sarah J." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "name": "A Calm and Gentle Experience",
+        "reviewBody": "I've always been a nervous patient, but Dr. Nasir completely changed my perspective on dental visits. She is incredibly patient, explains every step of the process, and has a very gentle touch."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "David R." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "name": "Exceptional Care and Results",
+        "reviewBody": "I recently visited Dr. Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Michael L." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "name": "The Best Dentist in Northampton",
+        "reviewBody": "Dr. Nasir and her team at Delapre Dental Care provide world-class service. Dr. Nasir is knowledgeable, professional, and took the time to answer all my questions."
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #002349; /* ← PAGE BACKGROUND COLOUR */
+      font-family: sans-serif;
+      min-height: 100vh;
+
+      /*
+      =====================================================================
+      MOBILE PADDING (screens narrower than 900px, including all phones)
+      padding: TOP  RIGHT  BOTTOM  LEFT
+        TOP    → Pushes content below the widget. Increase if overlap.
+        RIGHT  → Gap from right screen edge. Current: 24px
+        BOTTOM → Gap below last content item. Current: 60px
+        LEFT   → Gap from left screen edge. Current: 32px
+      =====================================================================
+      */
+      padding: 200px 24px 60px 32px;
+    }
+
+    /*
+    =====================================================================
+    DESKTOP PADDING (screens 900px wide or wider)
+    padding: TOP  RIGHT  BOTTOM  LEFT
+      TOP    → Breathing room at top of page. Current: 60px
+      RIGHT  → Gap from right browser edge. Current: 40px
+      BOTTOM → Gap below last content item. Current: 60px
+      LEFT   → KEY VALUE: pushes content clear of the widget. Current: 480px
+               Increase if content overlaps widget. Decrease if too much space.
+    =====================================================================
+    */
+    @media (min-width: 900px) {
+      body {
+        padding: 60px 40px 60px 480px;
+      }
+    }
+
+    /*
+    =====================================================================
+    CONTENT COLUMN WIDTH
+    max-width stops text stretching too wide on large monitors. Current: 560px
+    =====================================================================
+    */
+    .page { max-width: 560px; }
+
+    h1 {
+      color: #ffffff; /* ← Practice name colour */
+      margin-bottom: 8px; /* ← Gap between practice name and subtitle */
+      font-size: 32px; /* ← Practice name size */
+    }
+    .subtitle {
+      color: #b0c4de; /* ← Subtitle colour */
+      margin-bottom: 8px; /* ← Gap between subtitle and dentist name */
+      font-size: 16px;
+    }
+    .dentist-name {
+      color: #b0c4de;
+      margin-bottom: 40px; /* ← Gap between dentist name and first section */
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .section { margin-bottom: 32px; } /* ← Gap between sections */
+    .section-title {
+      color: #b0c4de;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px; /* ← Gap between heading and its content */
+    }
+    .section-content { color: #ffffff; line-height: 1.6; font-size: 15px; }
+    .section-content p { margin: 4px 0; }
+    a { color: #b0c4de; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .note { color: #b0c4de; font-size: 13px; font-style: italic; margin-top: 8px; }
+    .testimonial {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .testimonial-title { color: #b0c4de; font-size: 13px; font-weight: bold; margin-bottom: 8px; }
+    .testimonial-quote { color: #ffffff; font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 12px; }
+    .testimonial-attribution { color: #b0c4de; font-size: 13px; font-weight: bold; }
+    .footer { color: #b0c4de; font-size: 12px; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(176, 196, 222, 0.2); text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <h1>Delapre Dental Care</h1>
+    <p class="subtitle">Dental Practice — Northampton</p>
+    <p class="dentist-name">Dr Sabina Nasir</p>
+
+    <div class="section">
+      <div class="section-title">Address</div>
+      <div class="section-content">
+        <p>5 Billing Road</p>
+        <p>Northampton</p>
+        <p>NN1 5AN</p>
+        <p>UK</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Phone</div>
+      <div class="section-content">
+        <p><a href="tel:01604636836">01604 636836</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Office Hours</div>
+      <div class="section-content">
+        <p>Monday–Friday: 8:15am to 5pm</p>
+        <p>Lunch: 12:30pm to 1:30pm (closed)</p>
+        <p>Closed on holidays</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Appointments</div>
+      <div class="section-content">
+        <p>All patients are seen by appointment only.</p>
+        <p class="note">Please call to make an appointment.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Patients</div>
+      <div class="section-content">
+        <p>We accept both NHS and private patients.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Patient Testimonials</div>
+      <div class="section-content">
+        <div class="testimonial">
+          <div class="testimonial-title">A Calm and Gentle Experience</div>
+          <div class="testimonial-quote">"I've always been a nervous patient, but Dr Nasir completely changed my perspective on dental visits. She is incredibly patient, explains every step of the process, and has a very gentle touch. The clinic on Billing Road is professional and welcoming. I couldn't recommend her more highly for anyone looking for quality NHS or private care."</div>
+          <div class="testimonial-attribution">— Sarah J.</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-title">Exceptional Care and Results</div>
+          <div class="testimonial-quote">"I recently visited Dr Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none, and she truly cares about her patients' comfort. It's great to have such a high-calibre dentist right here in Northampton."</div>
+          <div class="testimonial-attribution">— David R.</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-title">The Best Dentist in Northampton</div>
+          <div class="testimonial-quote">"Dr Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan."</div>
+          <div class="testimonial-attribution">— Michael L.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2026 Delapre Dental Care | All Rights Reserved
+    </div>
+
+  </div>
+
+  <!-- =====================================================================
+  ELEVENLABS WIDGET
+  Widget placement controlled in ElevenLabs dashboard → Widget → Placement.
+  Do not move this block.
+  ===================================================================== -->
+  <elevenlabs-convai
+    agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
+    avatar-image-url="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+  ></elevenlabs-convai>
+
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+  <!-- Avatar swap script — do not modify -->
+  <script>
+    var AVATARS = {
+      sabina:   "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
+      benedict: "https://teckel.io/wp-content/uploads/2026/03/Benedict-Gemini_Generated_Image.png"
+    };
+    document.addEventListener("DOMContentLoaded", function () {
+      var widget = document.querySelector("elevenlabs-convai");
+      if (widget) {
+        widget.addEventListener("elevenlabs-convai:call", function (event) {
+          event.detail.config.clientTools = {
+            update_avatar: function (params) {
+              var url = AVATARS[params.avatar_name];
+              if (url) { widget.setAttribute("avatar-image-url", url); }
+              return "Avatar updated";
+            }
+          };
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
