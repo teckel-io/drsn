@@ -1,0 +1,22 @@
+{
+  "config": {
+    "max_versions": 50,
+    "repo": "teckel-io/drsn",
+    "pages": [
+      "index"
+    ]
+  },
+  "versions": [
+    {
+      "version": 1,
+      "timestamp": "2026-03-12T10:29:00.818Z",
+      "tag": null,
+      "change_description": "please change the  website background color to purple",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "eb84a62563256e8b36774ef6466f6fca35488e80"
+      }
+    }
+  ]
+}
