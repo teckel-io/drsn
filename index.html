@@ -3,7 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delapre Dental Care</title>
+
+  <!--
+  =====================================================================
+  SEO: PRIMARY META TAGS
+  These are the most important tags for Google search ranking.
+  title       → The blue clickable headline in Google search results.
+                Keep under 60 characters. Include practice name and location.
+  description → The grey summary text shown under the title in Google results.
+                Keep under 160 characters.
+  robots      → Tells search engines to index this page and follow its links.
+  canonical   → Tells Google which URL is the official version of this page.
+                UPDATE THIS to the final custom domain once DNS is pointed.
+  =====================================================================
+  -->
+  <title>Delapre Dental Care — NHS &amp; Private Dentist in Northampton | Dr Sabina Nasir</title>
+  <meta name="description" content="Delapre Dental Care offers NHS and private dental services in Northampton. Dr Sabina Nasir provides gentle, professional dental care at 5 Billing Road. Call 01604 636836 to book.">
+  <meta name="keywords" content="dentist Northampton, NHS dentist Northampton, private dentist Northampton, Delapre Dental Care, Dr Sabina Nasir, dental practice Northampton, Billing Road dentist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://teckel-io.github.io/drsn/">
+
+  <!--
+  =====================================================================
+  SEO: OPEN GRAPH TAGS
+  Controls how this page looks when shared on Facebook, LinkedIn,
+  WhatsApp etc. — the image, title, and description in link previews.
+  og:image → Replace with a professional practice photo once available.
+  =====================================================================
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Delapre Dental Care — NHS &amp; Private Dentist in Northampton">
+  <meta property="og:description" content="Dr Sabina Nasir offers gentle, professional NHS and private dental care in Northampton. Book an appointment by calling 01604 636836.">
+  <meta property="og:url" content="https://teckel-io.github.io/drsn/">
+  <meta property="og:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Delapre Dental Care">
+
+  <!--
+  =====================================================================
+  SEO: TWITTER / X CARD TAGS
+  Controls how this page appears when shared on Twitter/X.
+  =====================================================================
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Delapre Dental Care — NHS &amp; Private Dentist in Northampton">
+  <meta name="twitter:description" content="Dr Sabina Nasir offers gentle, professional NHS and private dental care in Northampton. Call 01604 636836 to book.">
+  <meta name="twitter:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
+
+  <!--
+  =====================================================================
+  GEO / AEO: JSON-LD STRUCTURED DATA
+  This is the most important block for AEO and GEO.
+
+  It tells AI assistants (ChatGPT, Perplexity, Google AI Overviews,
+  Apple Intelligence) exactly what this business is, where it is,
+  what it offers, and how to contact it — in machine-readable format.
+
+  When someone asks an AI "find me a dentist in Northampton" or
+  "is Delapre Dental Care accepting NHS patients?", this data is what
+  the AI reads to answer accurately and cite this practice.
+
+  Schema type: Dentist — the most specific schema for a dental practice.
+
+  DO NOT MODIFY @context or @type values.
+  Update content values when practice details change.
+  =====================================================================
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Delapre Dental Care",
+    "description": "Delapre Dental Care is a dental practice in Northampton offering NHS and private dental services. Led by Dr Sabina Nasir, the practice provides gentle, professional care for all patients.",
+    "url": "https://teckel-io.github.io/drsn/",
+    "telephone": "+441604636836",
+    "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
+    "priceRange": "NHS & Private",
+    "currenciesAccepted": "GBP",
+    "paymentAccepted": "NHS, Private",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Billing Road",
+      "addressLocality": "Northampton",
+      "postalCode": "NN1 5AN",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "52.2405",
+      "longitude": "-0.8876"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:15",
+        "closes": "17:00"
+      }
+    ],
+    "employee": {
+      "@type": "Person",
+      "name": "Dr Sabina Nasir",
+      "jobTitle": "Principal Dentist",
+      "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+    },
+    "hasMap": "https://maps.google.com/?q=5+Billing+Road,+Northampton,+NN1+5AN",
+    "areaServed": {
+      "@type": "City",
+      "name": "Northampton"
+    },
+    "medicalSpecialty": "Dentistry",
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "NHS Dental Treatment" },
+      { "@type": "MedicalProcedure", "name": "Private Dental Treatment" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Sarah J." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "name": "A Calm and Gentle Experience",
+        "reviewBody": "I've always been a nervous patient, but Dr. Nasir completely changed my perspective on dental visits. She is incredibly patient, explains every step of the process, and has a very gentle touch."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "David R." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "name": "Exceptional Care and Results",
+        "reviewBody": "I recently visited Dr. Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Michael L." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "name": "The Best Dentist in Northampton",
+        "reviewBody": "Dr. Nasir and her team at Delapre Dental Care provide world-class service. Dr. Nasir is knowledgeable, professional, and took the time to answer all my questions."
+      }
+    ]
+  }
+  </script>
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -14,28 +158,12 @@
 
       /*
       =====================================================================
-      MOBILE PADDING (screens narrower than 960px, including all phones)
-      =====================================================================
-      The widget is fixed in the TOP-LEFT corner by ElevenLabs.
-      On mobile, the widget takes up the full width and roughly 500px height.
-      We use padding to push the content DOWN so it starts below the widget.
-
+      MOBILE PADDING (screens narrower than 900px, including all phones)
       padding: TOP  RIGHT  BOTTOM  LEFT
-
-        TOP    → How far below the top of the page the content starts.
-                 Increase this if content overlaps the widget on mobile.
-                 Decrease this if there is too much empty space above content.
-                 Current: 520px
-
-        RIGHT  → Gap between the content and the RIGHT edge of the screen.
-                 Current: 24px (comfortable breathing room on small screens)
-
-        BOTTOM → Gap between the last line of content and the bottom of the page.
-                 Increase if content feels too close to the bottom.
-                 Current: 60px
-
-        LEFT   → Gap between the content and the LEFT edge of the screen.
-                 Current: 24px (matches right side for symmetry)
+        TOP    → Pushes content below the widget. Increase if overlap.
+        RIGHT  → Gap from right screen edge. Current: 24px
+        BOTTOM → Gap below last content item. Current: 60px
+        LEFT   → Gap from left screen edge. Current: 32px
       =====================================================================
       */
       padding: 200px 24px 60px 32px;
@@ -43,32 +171,13 @@
 
     /*
     =====================================================================
-    DESKTOP PADDING (screens 960px wide or wider)
-    =====================================================================
-    On desktop, the widget sits in the TOP-LEFT corner and stays there —
-    it does not scroll away. The content sits to the RIGHT of the widget.
-    We use padding-left to push the content rightward, clear of the widget.
-
+    DESKTOP PADDING (screens 900px wide or wider)
     padding: TOP  RIGHT  BOTTOM  LEFT
-
-      TOP    → How far from the top of the viewport the content starts.
-               Increase this to add more breathing room at the top when
-               the page first loads or when scrolling back to the top.
-               Current: 40px
-
-      RIGHT  → Gap between the content and the RIGHT edge of the browser.
-               Current: 40px
-
-      BOTTOM → Gap between the last content item and the page bottom.
-               Current: 60px
-
-      LEFT   → THIS IS THE KEY VALUE ON DESKTOP.
-               This must be wide enough that content never overlaps the widget.
-               The ElevenLabs widget in Full variant is approximately 380px wide.
-               Add extra breathing room between widget and content here.
-               Increase if content still overlaps the widget on desktop.
-               Decrease if there is too much empty space to the left of content.
-               Current: 420px
+      TOP    → Breathing room at top of page. Current: 60px
+      RIGHT  → Gap from right browser edge. Current: 40px
+      BOTTOM → Gap below last content item. Current: 60px
+      LEFT   → KEY VALUE: pushes content clear of the widget. Current: 480px
+               Increase if content overlaps widget. Decrease if too much space.
     =====================================================================
     */
     @media (min-width: 900px) {
@@ -80,151 +189,50 @@
     /*
     =====================================================================
     CONTENT COLUMN WIDTH
-    =====================================================================
-    Controls how wide the text column is on desktop.
-    max-width stops the text from stretching too wide on very large monitors.
-    Increase for more text per line. Decrease to keep it narrow and readable.
-    Current: 560px
+    max-width stops text stretching too wide on large monitors. Current: 560px
     =====================================================================
     */
-    .page {
-      max-width: 560px;
-    }
+    .page { max-width: 560px; }
 
-    /*
-    =====================================================================
-    PRACTICE NAME (H1)
-    =====================================================================
-    */
     h1 {
       color: #ffffff; /* ← Practice name colour */
-      margin-bottom: 8px; /* ← Gap between practice name and subtitle below it */
+      margin-bottom: 8px; /* ← Gap between practice name and subtitle */
       font-size: 32px; /* ← Practice name size */
     }
-
-    /*
-    =====================================================================
-    DENTIST NAME
-    =====================================================================
-    */
-    .dentist-name {
-      color: #b0c4de; /* ← Dentist name colour (matches subtitle and headings) */
-      margin-bottom: 40px; /* ← Gap between dentist name and the first section below */
-      font-size: 16px; /* ← Dentist name text size */
-      font-weight: 500; /* ← Slightly bolder for emphasis */
-    }
-
-    /*
-    =====================================================================
-    SUBTITLE ("Dental Practice — Northampton")
-    =====================================================================
-    */
     .subtitle {
-      color: #b0c4de; /* ← Subtitle colour (lighter blue) */
-      margin-bottom: 8px; /* ← Gap between subtitle and the first section below */
-      font-size: 16px; /* ← Subtitle text size */
+      color: #b0c4de; /* ← Subtitle colour */
+      margin-bottom: 8px; /* ← Gap between subtitle and dentist name */
+      font-size: 16px;
     }
-
-    /*
-    =====================================================================
-    EACH SECTION BLOCK (Address, Phone, Hours, etc.)
-    =====================================================================
-    */
-    .section {
-      margin-bottom: 32px; /* ← Vertical gap BETWEEN sections.
-                               Increase for more breathing room between blocks.
-                               Decrease to pack them closer together. */
+    .dentist-name {
+      color: #b0c4de;
+      margin-bottom: 40px; /* ← Gap between dentist name and first section */
+      font-size: 16px;
+      font-weight: 500;
     }
-
-    /*
-    =====================================================================
-    SECTION HEADINGS ("ADDRESS", "PHONE", "OFFICE HOURS", etc.)
-    =====================================================================
-    */
+    .section { margin-bottom: 32px; } /* ← Gap between sections */
     .section-title {
-      color: #b0c4de; /* ← Section heading colour */
+      color: #b0c4de;
       font-weight: bold;
-      font-size: 13px; /* ← Section heading size */
-      text-transform: uppercase; /* ← Makes headings ALL CAPS */
-      letter-spacing: 1px; /* ← Spacing between letters in headings */
-      margin-bottom: 8px; /* ← Gap between heading and the content below it */
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px; /* ← Gap between heading and its content */
     }
-
-    /*
-    =====================================================================
-    SECTION CONTENT (the actual text under each heading)
-    =====================================================================
-    */
-    .section-content {
-      color: #ffffff; /* ← Content text colour */
-      line-height: 1.6; /* ← Line spacing within content.
-                            1.6 = 160% of font size between lines.
-                            Increase for more airy text, decrease to pack lines. */
-      font-size: 15px; /* ← Content text size */
-    }
-
-    .section-content p {
-      margin: 4px 0; /* ← Vertical gap between individual lines within a section */
-    }
-
-    /*
-    =====================================================================
-    PHONE NUMBER LINK COLOUR
-    =====================================================================
-    */
-    a {
-      color: #b0c4de; /* ← Link colour (matches subtitle and headings) */
-      text-decoration: none; /* ← Removes underline from links by default */
-    }
-    a:hover {
-      text-decoration: underline; /* ← Adds underline when hovering over a link */
-    }
-
-    /*
-    =====================================================================
-    ITALIC NOTE TEXT (e.g. "Please call to make an appointment.")
-    =====================================================================
-    */
-    .note {
-      color: #b0c4de; /* ← Note text colour */
-      font-size: 13px; /* ← Note text size (slightly smaller than body) */
-      font-style: italic;
-      margin-top: 8px; /* ← Gap above the note line */
-    }
-
-    /*
-    =====================================================================
-    TESTIMONIALS
-    =====================================================================
-    */
+    .section-content { color: #ffffff; line-height: 1.6; font-size: 15px; }
+    .section-content p { margin: 4px 0; }
+    a { color: #b0c4de; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .note { color: #b0c4de; font-size: 13px; font-style: italic; margin-top: 8px; }
     .testimonial {
       background-color: rgba(176, 196, 222, 0.05);
       border-left: 3px solid #b0c4de;
       padding: 16px;
       margin-bottom: 20px;
     }
-
-    .testimonial-quote {
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 12px;
-    }
-
-    .testimonial-title {
-      color: #b0c4de;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .testimonial-attribution {
-      color: #b0c4de;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
+    .testimonial-title { color: #b0c4de; font-size: 13px; font-weight: bold; margin-bottom: 8px; }
+    .testimonial-quote { color: #ffffff; font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 12px; }
+    .testimonial-attribution { color: #b0c4de; font-size: 13px; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -283,16 +291,14 @@
           <div class="testimonial-quote">"I've always been a nervous patient, but Dr. Nasir completely changed my perspective on dental visits. She is incredibly patient, explains every step of the process, and has a very gentle touch. The clinic on Billing Road is professional and welcoming. I couldn't recommend her more highly for anyone looking for quality NHS or private care."</div>
           <div class="testimonial-attribution">— Sarah J.</div>
         </div>
-
         <div class="testimonial">
           <div class="testimonial-title">Exceptional Care and Results</div>
-          <div class="testimonial-quote">"I recently visited Dr. Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none, and she truly cares about her patients' comfort. It's great to have such a high-calibre dentist right here in Northampton. The office staff is also wonderful and always makes scheduling easy."</div>
+          <div class="testimonial-quote">"I recently visited Dr. Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none, and she truly cares about her patients' comfort. It's great to have such a high-calibre dentist right here in Northampton."</div>
           <div class="testimonial-attribution">— David R.</div>
         </div>
-
         <div class="testimonial">
           <div class="testimonial-title">The Best Dentist in Northampton</div>
-          <div class="testimonial-quote">"Dr. Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr. Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan. If you're looking for a dentist who combines expertise with a kind bedside manner, she is the one!"</div>
+          <div class="testimonial-quote">"Dr. Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr. Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan."</div>
           <div class="testimonial-attribution">— Michael L.</div>
         </div>
       </div>
@@ -302,10 +308,8 @@
 
   <!-- =====================================================================
   ELEVENLABS WIDGET
-  The widget position on the page (top-left, bottom-right, etc.) is controlled
-  in the ElevenLabs dashboard under Widget → Placement.
-  The avatar image and agent ID are set here as HTML attributes.
-  Do not move this script block — it must stay at the bottom of the page.
+  Widget placement controlled in ElevenLabs dashboard → Widget → Placement.
+  Do not move this block.
   ===================================================================== -->
   <elevenlabs-convai
     agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
