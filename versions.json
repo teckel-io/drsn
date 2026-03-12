@@ -34,6 +34,20 @@
       "pre_edit_pages": {
         "index": "eca36ef1c48b3f92a56f243e50c377ba91f78ad1"
       }
+    },
+    {
+      "version": 3,
+      "timestamp": "2026-03-12T20:37:15.693Z",
+      "tag": null,
+      "change_description": "Rolled back to \"boring brown\" (v1)",
+      "is_rollback": true,
+      "rolled_back_to_version": 1,
+      "pages": {
+        "index": "eca36ef1c48b3f92a56f243e50c377ba91f78ad1"
+      },
+      "pre_edit_pages": {
+        "index": "166977104d2e690ae861394fbffd035faf83e628"
+      }
     }
   ]
 }
