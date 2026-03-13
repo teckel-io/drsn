@@ -216,6 +216,20 @@
       "pre_edit_pages": {
         "index": "a945e5ecc48367cd621acba7f00230d582b8518a"
       }
+    },
+    {
+      "version": 16,
+      "timestamp": "2026-03-13T04:43:22.403Z",
+      "tag": null,
+      "change_description": "Inside the existing max-width 900px media query, add a rule setting the body padding-top to 190px. This ensures the page title appears below the collapsed ElevenLabs voice widget on mobile screens. Do not change the base body rule, do not touch the desktop min-width 900px media query, and do not change any other padding values — only add body padding-top: 190px inside the existing max-width 900px block.  Verbosely comment.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "93cdb855a4c527864b80b257e914e4746efb4cea"
+      },
+      "pre_edit_pages": {
+        "index": "4f4838093ca8a725df9e01019704e18341f6959a"
+      }
     }
   ]
 }
