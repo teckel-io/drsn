@@ -188,6 +188,51 @@
 
     /*
     =====================================================================
+    NAVIGATION BAR
+    Fixed positioning at the top of the page with professional styling.
+    =====================================================================
+    */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #001a35;
+      border-bottom: 1px solid rgba(176, 196, 222, 0.2);
+      padding: 16px 32px;
+      z-index: 1000;
+      display: flex;
+      justify-content: flex-start;
+      gap: 32px;
+    }
+
+    .navbar a {
+      color: #b0c4de;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .navbar {
+        gap: 20px;
+        padding: 14px 24px;
+      }
+
+      .navbar a {
+        font-size: 13px;
+      }
+    }
+
+    /*
+    =====================================================================
     CONTENT COLUMN WIDTH
     max-width stops text stretching too wide on large monitors. Current: 560px
     =====================================================================
@@ -237,11 +282,20 @@
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#cv">CV</a>
+    <a href="#terms">Terms &amp; Conditions</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+
   <div class="page">
 
-    <h1>Delapre Dental Care</h1>
-    <p class="subtitle">Dental Practice — Northampton</p>
-    <p class="dentist-name">Dr Sabina Nasir</p>
+    <div id="home">
+      <h1>Delapre Dental Care</h1>
+      <p class="subtitle">Dental Practice — Northampton</p>
+      <p class="dentist-name">Dr Sabina Nasir</p>
+    </div>
 
     <div class="section">
       <div class="section-title">Address</div>
@@ -302,6 +356,27 @@
           <div class="testimonial-quote">"Dr Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan."</div>
           <div class="testimonial-attribution">— Michael L.</div>
         </div>
+      </div>
+    </div>
+
+    <div id="cv" class="section">
+      <div class="section-title">CV</div>
+      <div class="section-content">
+        <p>CV content goes here.</p>
+      </div>
+    </div>
+
+    <div id="terms" class="section">
+      <div class="section-title">Terms &amp; Conditions</div>
+      <div class="section-content">
+        <p>Terms &amp; Conditions content goes here.</p>
+      </div>
+    </div>
+
+    <div id="privacy" class="section">
+      <div class="section-title">Privacy Policy</div>
+      <div class="section-content">
+        <p>Privacy Policy content goes here.</p>
       </div>
     </div>
 
