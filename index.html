@@ -233,6 +233,21 @@
 
     /*
     =====================================================================
+    ELEVENLABS WIDGET POSITIONING FIX
+    FIX #1: Prevent ElevenLabs voice widget from overlapping the navbar.
+    The fixed navbar is 55px tall (16px top padding + 23px content height).
+    Adding top-margin: 55px to elevenlabs-convai pushes the widget down
+    so it sits cleanly below the navbar without overlapping navigation links.
+    If the widget still overlaps, increase this value in 5px increments.
+    If there's too much gap, decrease this value.
+    =====================================================================
+    */
+    elevenlabs-convai {
+      margin-top: 55px !important;
+    }
+
+    /*
+    =====================================================================
     CONTENT COLUMN WIDTH
     max-width stops text stretching too wide on large monitors. Current: 560px
     =====================================================================
@@ -279,6 +294,50 @@
     .testimonial-quote { color: #ffffff; font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 12px; }
     .testimonial-attribution { color: #b0c4de; font-size: 13px; font-weight: bold; }
     .footer { color: #b0c4de; font-size: 12px; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(176, 196, 222, 0.2); text-align: center; }
+
+    /*
+    =====================================================================
+    SCROLL ANCHOR FIX FOR NAVBAR — DESKTOP (screens 700px and wider)
+    FIX #2: Prevent page sections from scrolling behind the fixed navbar
+    when clicking navigation links.
+    
+    scroll-margin-top: 65px tells the browser to stop scrolling 65px above
+    each section (#home, #cv, #terms, #privacy), ensuring the section title
+    appears visibly below the fixed navbar (which is ~55px tall).
+    
+    This applies to all four anchor sections on desktop and tablet screens.
+    If section titles still disappear behind navbar, increase to 75px or 85px.
+    If there's excessive gap above sections, decrease to 55px or 60px.
+    
+    Note: This rule is overridden on mobile (max-width: 700px) by the media
+    query below, which increases the value to 110px due to navbar wrapping.
+    =====================================================================
+    */
+    #home, #cv, #terms, #privacy {
+      scroll-margin-top: 65px;
+    }
+
+    /*
+    =====================================================================
+    SCROLL ANCHOR FIX FOR NAVBAR — MOBILE (screens narrower than 700px)
+    FIX #3: On mobile screens (phones), navbar links wrap onto two lines,
+    making the navbar approximately 110px tall instead of 55px.
+    
+    This media query overrides the scroll-margin-top value above, increasing
+    it from 65px to 110px specifically for mobile devices where the navbar
+    is taller due to text wrapping.
+    
+    If section titles still hide behind navbar on mobile, increase to 120px.
+    If there's too much gap, decrease to 100px.
+    
+    Breakpoint: max-width 700px covers most phones and small tablets.
+    =====================================================================
+    */
+    @media (max-width: 700px) {
+      #home, #cv, #terms, #privacy {
+        scroll-margin-top: 110px;
+      }
+    }
   </style>
 </head>
 <body>
