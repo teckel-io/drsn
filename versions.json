@@ -202,6 +202,20 @@
       "pre_edit_pages": {
         "index": "b6b1911dce3a7b4a78970a03b4208e4f2ccf76fe"
       }
+    },
+    {
+      "version": 15,
+      "timestamp": "2026-03-13T04:30:12.026Z",
+      "tag": null,
+      "change_description": "Change the scroll-margin-top media query breakpoint from max-width 700px to max-width 900px, so the increased 110px scroll-margin-top applies across all mobile and tablet widths where the navbar is in its compact form. Do not change the 110px value itself.  Please verbosely comment all changes for easy troubleshooting and possible necessary manual fine tuning at a later date.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "4f4838093ca8a725df9e01019704e18341f6959a"
+      },
+      "pre_edit_pages": {
+        "index": "a945e5ecc48367cd621acba7f00230d582b8518a"
+      }
     }
   ]
 }
