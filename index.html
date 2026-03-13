@@ -355,6 +355,57 @@
       #home, #cv, #terms, #privacy {
         scroll-margin-top: 110px;
       }
+
+      /*
+      =====================================================================
+      MOBILE & TABLET BODY PADDING TOP FIX — FIX #4
+      
+      PURPOSE:
+      On mobile and tablet screens (max-width: 900px), the ElevenLabs voice
+      widget is positioned on the left side of the viewport and expands
+      vertically. When collapsed, the widget occupies approximately 190px
+      of vertical space at the top of the screen. This padding ensures that
+      the page content (particularly the "Delapre Dental Care" heading and
+      subtitle) does not display behind or underneath this widget.
+      
+      WHY 190px?
+      - Fixed navbar height: ~55px (16px top padding + text content)
+      - Collapsed ElevenLabs widget height: ~135px (approximately)
+      - Total space needed: 55px + 135px = 190px
+      - This ensures the main heading appears cleanly below both the navbar
+        and the widget on initial page load
+      
+      INTERACTION WITH BASE RULE:
+      The base body rule (line ~76) sets padding-top: 70px for mobile screens.
+      This media query OVERRIDES that value specifically for mobile/tablet devices,
+      changing it to 190px. The right (24px), bottom (60px), and left (32px)
+      padding values remain unchanged and are not affected by this override.
+      
+      WHAT THIS FIXES:
+      1. Page heading no longer hidden behind the collapsed widget
+      2. Content layout respects both the navbar and widget positioning
+      3. Initial scroll position shows meaningful content, not blank space
+      4. User experience improved on first page visit on mobile devices
+      
+      TESTING INSTRUCTIONS:
+      1. Open website on iPhone 12 or similar smartphone (390px width)
+      2. Verify that "Delapre Dental Care" heading is fully visible below widget
+      3. Verify no content is cut off or overlapped by the widget
+      4. If heading still hides behind widget, increase 190px to 200px or 210px
+      5. If there is excessive white space, decrease 190px to 180px or 170px
+      
+      TECHNICAL NOTES:
+      - Using padding-top (not margin-top) to expand the body's internal spacing
+      - The !important flag is NOT used here because this is a direct media query
+        override of the base rule, which naturally takes precedence
+      - This change ONLY affects screens narrower than 900px
+      - Desktop screens (900px+) use the base padding-top: 60px, unaffected
+      
+      =====================================================================
+      */
+      body {
+        padding-top: 190px;
+      }
     }
   </style>
 </head>
