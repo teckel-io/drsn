@@ -118,6 +118,20 @@
       "pre_edit_pages": {
         "index": "8b8b2c0afdf18f802916e58c1af0639699e47f1f"
       }
+    },
+    {
+      "version": 9,
+      "timestamp": "2026-03-13T02:59:15.460Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 8 (\"Rolled back to the state before version 7 (\"show verssions\")\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 8,
+      "pages": {
+        "index": "8b8b2c0afdf18f802916e58c1af0639699e47f1f"
+      },
+      "pre_edit_pages": {
+        "index": "ee89cc64f03e87c51fedac744dfd00a9e12a7261"
+      }
     }
   ]
 }
