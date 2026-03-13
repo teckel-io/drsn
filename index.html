@@ -298,20 +298,21 @@
 
     /*
     =====================================================================
-    SCROLL ANCHOR FIX FOR NAVBAR — DESKTOP (screens 700px and wider)
+    SCROLL ANCHOR FIX FOR NAVBAR — DESKTOP (screens 900px and wider)
     FIX #2: Prevent page sections from scrolling behind the fixed navbar
     when clicking navigation links.
     
     scroll-margin-top: 65px tells the browser to stop scrolling 65px above
     each section (#home, #cv, #terms, #privacy), ensuring the section title
-    appears visibly below the fixed navbar (which is ~55px tall).
+    appears visibly below the fixed navbar (which is ~55px tall on large screens).
     
-    This applies to all four anchor sections on desktop and tablet screens.
+    This applies to all four anchor sections on desktop screens only.
     If section titles still disappear behind navbar, increase to 75px or 85px.
     If there's excessive gap above sections, decrease to 55px or 60px.
     
-    Note: This rule is overridden on mobile (max-width: 700px) by the media
-    query below, which increases the value to 110px due to navbar wrapping.
+    Note: This rule is overridden for mobile and tablet screens (max-width: 900px)
+    by the media query below, which increases the value to 110px due to navbar
+    wrapping and compact form factor on smaller devices.
     =====================================================================
     */
     #home, #cv, #terms, #privacy {
@@ -320,21 +321,37 @@
 
     /*
     =====================================================================
-    SCROLL ANCHOR FIX FOR NAVBAR — MOBILE (screens narrower than 700px)
-    FIX #3: On mobile screens (phones), navbar links wrap onto two lines,
-    making the navbar approximately 110px tall instead of 55px.
+    SCROLL ANCHOR FIX FOR NAVBAR — MOBILE & TABLET (screens narrower than 900px)
+    FIX #3: BREAKPOINT CHANGED FROM 700px TO 900px
+    
+    RATIONALE FOR CHANGE:
+    The navbar enters "compact form" (with wrapped links and smaller font size)
+    at 900px, not 700px. This is the same breakpoint where body padding changes
+    and the main content layout shifts. By aligning this scroll-margin-top breakpoint
+    to 900px, we ensure consistent navbar behaviour across all responsive states.
+    
+    On mobile and tablet screens (max-width: 900px), the navbar links wrap onto
+    multiple lines, making the navbar approximately 110px tall instead of 55px.
     
     This media query overrides the scroll-margin-top value above, increasing
-    it from 65px to 110px specifically for mobile devices where the navbar
-    is taller due to text wrapping.
+    it from 65px to 110px specifically for mobile and tablet devices where the
+    navbar is taller due to text wrapping.
     
-    If section titles still hide behind navbar on mobile, increase to 120px.
-    If there's too much gap, decrease to 100px.
+    BREAKPOINT HISTORY:
+    - OLD: max-width: 700px — was too narrow and didn't capture all tablets
+    - NEW: max-width: 900px — matches navbar collapse point and body padding change
     
-    Breakpoint: max-width 700px covers most phones and small tablets.
+    TESTING GUIDANCE FOR MANUAL FINE-TUNING:
+    1. Test on iPhone 12 (390px) — should show 110px scroll margin
+    2. Test on iPad (768px) — should show 110px scroll margin
+    3. Test on iPad Pro (1024px) — should show 65px scroll margin (desktop rules)
+    4. If section titles still hide behind navbar on any device, increase 110px
+       to 120px or 130px (in 5px increments)
+    5. If there is excessive white space above sections, decrease 110px to 100px
+       or 90px (in 5px increments)
     =====================================================================
     */
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
       #home, #cv, #terms, #privacy {
         scroll-margin-top: 110px;
       }
