@@ -104,6 +104,20 @@
       "pre_edit_pages": {
         "index": "166977104d2e690ae861394fbffd035faf83e628"
       }
+    },
+    {
+      "version": 8,
+      "timestamp": "2026-03-13T01:04:11.714Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 7 (\"show verssions\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 7,
+      "pages": {
+        "index": "166977104d2e690ae861394fbffd035faf83e628"
+      },
+      "pre_edit_pages": {
+        "index": "8b8b2c0afdf18f802916e58c1af0639699e47f1f"
+      }
     }
   ]
 }
