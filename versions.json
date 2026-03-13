@@ -160,6 +160,20 @@
       "pre_edit_pages": {
         "index": "166977104d2e690ae861394fbffd035faf83e628"
       }
+    },
+    {
+      "version": 12,
+      "timestamp": "2026-03-13T04:11:26.235Z",
+      "tag": null,
+      "change_description": "Please make three CSS fixes to the navigation bar:\n1. The ElevenLabs voice widget is overlapping the navbar. Add a CSS rule so the elevenlabs-convai element has a top margin of 55px to push it below the navbar.\n2. When clicking a nav link the destination section scrolls under the navbar and the top of the content is hidden. Fix this by adding scroll-margin-top: 65px to the #home, #cv, #terms, and #privacy sections. This tells the browser to stop scrolling 65px above each section so it lands visibly below the navbar.\n3. On mobile screens the navbar links wrap onto two lines making it taller. Add a media query for max-width 700px that increases scroll-margin-top to 110px on all four sections.\nDo not change any colours, fonts, layout, or content — only these three CSS additions.\n\nPlease verbosely comment all changes for easy troubleshooting and possible necessary manual fine tuning at a later date.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "550632bc107896fb2c4f7117222e1e30980299c4"
+      },
+      "pre_edit_pages": {
+        "index": "c5cfaa15316349396a467398f9cfe304c49ae5c6"
+      }
     }
   ]
 }
