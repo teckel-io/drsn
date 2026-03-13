@@ -146,6 +146,20 @@
       "pre_edit_pages": {
         "index": "8b8b2c0afdf18f802916e58c1af0639699e47f1f"
       }
+    },
+    {
+      "version": 11,
+      "timestamp": "2026-03-13T03:57:39.404Z",
+      "tag": null,
+      "change_description": "In a professional looking manner consistent with the professional look, feel and style of the website, add a navigation bar at the top of the page with four links: Home, CV, Terms & Conditions, and Privacy Policy. Each link should anchor-scroll to its section on the page. Style it consistently with the rest of the site.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "c5cfaa15316349396a467398f9cfe304c49ae5c6"
+      },
+      "pre_edit_pages": {
+        "index": "166977104d2e690ae861394fbffd035faf83e628"
+      }
     }
   ]
 }
