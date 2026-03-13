@@ -132,6 +132,20 @@
       "pre_edit_pages": {
         "index": "ee89cc64f03e87c51fedac744dfd00a9e12a7261"
       }
+    },
+    {
+      "version": 10,
+      "timestamp": "2026-03-13T03:21:52.578Z",
+      "tag": null,
+      "change_description": "Rolled back to \"Current Base Website Build\" (v2)",
+      "is_rollback": true,
+      "rolled_back_to_version": 2,
+      "pages": {
+        "index": "166977104d2e690ae861394fbffd035faf83e628"
+      },
+      "pre_edit_pages": {
+        "index": "8b8b2c0afdf18f802916e58c1af0639699e47f1f"
+      }
     }
   ]
 }
