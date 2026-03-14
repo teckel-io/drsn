@@ -455,6 +455,67 @@
       font-weight: bold;
     }
 
+    .team-member {
+      background-color: rgba(176, 196, 222, 0.05); /* ← Subtle tinted card bg */
+      border-left: 3px solid #b0c4de;              /* ← Steel blue accent bar */
+      padding: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .team-member-image {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .team-member-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .team-member-info {
+      flex: 1;
+    }
+
+    .team-member-name {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .team-member-title {
+      color: #b0c4de;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .team-member-bio {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .team-member {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .team-member-image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
     .footer {
       color: #b0c4de;
       font-size: 12px;
@@ -494,7 +555,7 @@
       decrease to 60px or 55px.
     =====================================================================
     */
-    #home, #cv, #terms, #privacy {
+    #home, #cv, #team, #terms, #privacy {
       scroll-margin-top: 65px;
     }
 
@@ -545,7 +606,7 @@
     =====================================================================
     */
     @media (max-width: 900px) {
-      #home, #cv, #terms, #privacy {
+      #home, #cv, #team, #terms, #privacy {
         scroll-margin-top: 235px;
       }
 
@@ -674,6 +735,7 @@
   <nav class="navbar">
     <a href="#home">Home</a>
     <a href="#cv">CV</a>
+    <a href="#team">Our Team</a>
     <a href="#terms">Terms &amp; Conditions</a>
     <a href="#privacy">Privacy Policy</a>
   </nav>
@@ -766,6 +828,23 @@
         <p>MSc Fixed and Removable Prosthodontics (King's College London)</p>
         <p>Postgraduate Certificate in Implant Dentistry</p>
         <p><strong>GDC Registration Number:</strong> 169400</p>
+      </div>
+    </div>
+
+    <!-- ── OUR TEAM ANCHOR ────────────────────────────────────────────── -->
+    <div id="team" class="section">
+      <div class="section-title">Our Team</div>
+      <div class="section-content">
+        <div class="team-member">
+          <div class="team-member-image">
+            <img src="https://teckel-io.github.io/drsn/assets/benedict.png" alt="Benedict Williams, COO">
+          </div>
+          <div class="team-member-info">
+            <div class="team-member-name">Benedict Williams</div>
+            <div class="team-member-title">Chief Operating Officer</div>
+            <div class="team-member-bio">Benedict brings extensive operational expertise and strategic leadership to Delapre Dental Care, ensuring the practice operates to the highest standards of professional excellence and patient care.</div>
+          </div>
+        </div>
       </div>
     </div>
 
