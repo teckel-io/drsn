@@ -882,6 +882,87 @@
     .legal-list li {
       margin-bottom: 5px;
     }
+
+    /*
+    =====================================================================
+    REVISIONS SECTION — Change log for website updates
+    Displays a timestamped history of all updates made to this website,
+    allowing users and practice staff to see what has changed and when.
+    The section is positioned after the Privacy Policy section in the page
+    flow, within the main .page container and using consistent styling.
+
+    WHAT THIS DOES: Provides background styling (tinted box), text sizing,
+    and spacing that matches the legal sections above, creating visual
+    consistency across all informational sections on the site.
+    WHY THESE VALUES: Section content colour (#ffffff) and title colour
+    (#b0c4de) match the rest of the page. Font sizes (13px for titles, 15px
+    for content) are consistent with existing legal and section styling.
+    Gap values (8px, 20px, 32px) maintain rhythm with other sections.
+    TUNING: Adjust font-size up/down by 1–2px if text feels cramped or too
+    loose. Adjust margin-bottom values in 4px increments if spacing between
+    entries feels wrong. Change background-color rgba values (first number
+    range 0–255) to increase or decrease tint opacity.
+    =====================================================================
+    */
+    .revisions-section {
+      margin-bottom: 32px;
+    }
+
+    .revisions-section .section-title {
+      color: #b0c4de;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .revisions-container {
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .revision-entry {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .revision-date {
+      color: #b0c4de;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .revision-title {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .revision-description {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .revision-description p {
+      margin-bottom: 4px;
+    }
+
+    .revision-description ul {
+      list-style-position: inside;
+      margin-left: 12px;
+      margin-bottom: 4px;
+    }
+
+    .revision-description li {
+      margin-bottom: 2px;
+    }
   </style>
 </head>
 <body>
@@ -1170,6 +1251,50 @@
 
         <p class="legal-section">10. CHANGES TO THIS PRIVACY POLICY</p>
         <p>10.1 We review this Privacy Policy regularly. Any material changes will be notified to patients and updated on this website. The date at the top of this document reflects the most recent revision.</p>
+      </div>
+    </div>
+
+    <!-- ── REVISIONS ANCHOR ──────────────────────────────────────────── -->
+    <!--
+    WHAT THIS SECTION DOES: Displays a timestamped changelog of all updates
+    and improvements made to this website. Each entry includes the date the
+    change was published, a title describing what was changed, and a brief
+    description of the change. This allows visitors and practice staff to see
+    at a glance what has been updated recently.
+
+    HOW TO EDIT THIS MANUALLY (non-technical):
+    1. Find the <div class="revisions-section"> block below.
+    2. Locate the <div class="revision-entry"> block for the most recent date.
+    3. Below that block, add a new block following this exact structure:
+       <div class="revision-entry">
+         <div class="revision-date">DATE (e.g. "1 April 2026")</div>
+         <div class="revision-title">WHAT CHANGED (e.g. "Added new testimonial")</div>
+         <div class="revision-description">
+           <p>Brief explanation of the change in plain language.</p>
+           <ul>
+             <li>Optional bullet point 1</li>
+             <li>Optional bullet point 2</li>
+           </ul>
+         </div>
+       </div>
+    4. Save the file. The new revision will appear on the website immediately.
+
+    IMPORTANT NOTES:
+    — Newer revisions should appear first (at the top of the list).
+    — Dates should be in British format: "1 January 2026" (not "Jan 1, 2026").
+    — Keep descriptions brief (1–2 sentences) and easy to understand.
+    — Use bullet points only if listing multiple related changes in one entry.
+    -->
+    <div class="revisions-section">
+      <div class="section-title">Revisions</div>
+      <div class="revisions-container">
+        <div class="revision-entry">
+          <div class="revision-date">1 April 2026</div>
+          <div class="revision-title">Added Revisions section</div>
+          <div class="revision-description">
+            <p>Created a new "Revisions" section at the bottom of the website to track all updates and changes to the site. This allows patients and practice staff to see what has been changed and when.</p>
+          </div>
+        </div>
       </div>
     </div>
 
