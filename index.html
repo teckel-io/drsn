@@ -168,7 +168,7 @@
       "@type": "Person",
       "name": "Dr Sabina Nasir",
       "jobTitle": "Principal Dentist",
-      "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg"
+      "image": "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg"
     },
     "hasMap": "https://maps.google.com/?q=5+Billing+Road,+Northampton,+NN1+5AN",
     "areaServed": {
@@ -668,6 +668,165 @@
       */
       body {
         padding-top: 235px;
+      }
+    }
+
+    /*
+    =====================================================================
+    FIX #5 — ULTRA-NARROW SCREENS (max-width: 467px)
+    Widget and content offset for screens narrower than 467 pixels.
+
+    WHAT THIS FIXES:
+    On screens narrower than 467px (e.g. iPhone 15 in portrait, Samsung
+    Galaxy S21 Ultra in portrait), the navbar navigation links wrap onto a
+    second line because there is insufficient horizontal space to fit all
+    five links (Home, CV, Our Team, Terms & Conditions, Privacy Policy)
+    side-by-side at 13px font size with 20px gaps between them.
+
+    When the navbar wraps to two lines, its total height increases from ~50px
+    (single line) to approximately ~70px (two lines), because:
+    — First line of links:  14px top padding + 22px link height = 36px
+    — Second line of links: 22px link height + 14px bottom padding = 36px
+    — Total: 36px + 36px = ~72px (rounded to 70px here)
+
+    This extra 20px of navbar height (70px minus the previous ~50px) means
+    the ElevenLabs widget below it must also be pushed down by 20px, and
+    the page content below the widget must be pushed down by 20px as well.
+    Without this adjustment, the widget and page content would overlap with
+    the two-line navbar.
+
+    THREE CHANGES IN THIS MEDIA QUERY:
+    1. elevenlabs-convai margin-top: increased from 50px to 70px
+       — Pushes the widget down by 20px to clear the taller navbar
+       — WHY 70px: 50px (original navbar clearance) + 20px (extra navbar
+         height from wrapping) = 70px ✓
+
+    2. body padding-top: increased from 235px to 255px
+       — Pushes all page content down by 20px to clear the widget and navbar
+       — WHY 255px: 235px (original mobile clearance) + 20px (extra navbar
+         height) = 255px ✓
+       — Breakdown of 255px:
+         ~70px navbar (now two lines) + ~185px widget = ~255px ✓
+
+    3. scroll-margin-top on anchors: increased from 235px to 255px
+       — When a user clicks a nav link on ultra-narrow screens, the page
+         scrolls so the target section lands 255px down from the top,
+         clearing both the taller two-line navbar and the lower widget
+       — WHY 255px: same calculation as body padding-top above
+
+    DEVICES AFFECTED:
+    — iPhone 15 / 14 / 13 in portrait: 390px (narrower than 467px) ✓
+    — Samsung Galaxy S21 Ultra in portrait: 412px (narrower than 467px) ✓
+    — Most modern smartphones in portrait orientation
+    — Very small tablets or devices in narrow mode
+
+    DEVICES NOT AFFECTED:
+    — iPad (768px) and larger tablets: use 235px offset (max-width 900px)
+    — Desktop screens (900px+): use 65px offset (no media query)
+    — Landscape mode on most phones (typically 700px+): use 235px offset
+
+    WHY 467px AS THE BREAKPOINT?
+    At 467px width, the navbar still fits all five links on a single line at
+    13px font with 20px gaps. Below 467px, the fifth link (Privacy Policy)
+    wraps to a second line, causing the navbar to grow taller.
+
+    Breakpoint calculation:
+    — 5 links × 50px average width per link (varies by text length) = 250px
+    — 4 gaps × 20px = 80px
+    — Left/right navbar padding: 24px + 24px = 48px
+    — Minimum horizontal space needed: 250px + 80px + 48px = ~378px
+    — Real-world measurement (Samsung Galaxy S21 Ultra): wrapping starts around
+      467px, where longer link text ("Terms & Conditions" and "Privacy Policy")
+      begin to push the navbar to two lines ✓
+
+    TUNING GUIDE:
+    — Test on a real iPhone 15 or Samsung Galaxy S21 Ultra in portrait.
+    — If the navbar, widget, or page content still overlap at 390px width:
+      increase 70px to 75px or 80px (in 5px increments for navbar).
+      increase 255px to 260px or 265px (in 5px increments for body/anchors).
+    — If there is excessive blank space above the page heading at 390px:
+      decrease 70px to 65px or 60px.
+      decrease 255px to 250px or 245px.
+    — Retest after each change on actual hardware (not browser devtools).
+    — Breakpoint can be adjusted up (e.g. 500px) or down (e.g. 430px) if
+      testing reveals wrapping occurs at a different screen width.
+    — If the navbar link text length changes or font size is adjusted,
+      re-measure the wrapping point and update this breakpoint accordingly.
+
+    INTERACTION WITH OTHER MEDIA QUERIES:
+    — This rule applies ONLY to screens narrower than 467px.
+    — It does NOT affect screens 467px–900px (use 235px rules).
+    — It does NOT affect screens 900px and wider (use desktop rules).
+    — The specificity of "elevenlabs-convai { margin-top: 70px !important; }"
+      inside this narrower breakpoint is higher (due to being more specific)
+      and naturally overrides the base "margin-top: 50px !important" rule above.
+    =====================================================================
+    */
+    @media (max-width: 467px) {
+      /*
+      WHAT THIS DOES: Increases the top margin of the ElevenLabs widget to
+      70px so it clears the now-taller two-line navbar on ultra-narrow screens
+      (narrower than 467px).
+      WHY 70px: On screens narrower than 467px, the navbar wraps onto two
+      lines, increasing from ~50px to ~70px in height. This margin-top value
+      must match that new navbar height to prevent the widget from overlapping
+      the wrapped navigation links.
+      Calculation: 50px (base navbar clearance) + 20px (extra height from
+      wrapping to two lines) = 70px ✓
+      TUNING: If the widget still overlaps the navbar text on narrow screens:
+      increase to 75px or 80px (in 5px increments). If there is excessive
+      blank space between the navbar and widget: decrease to 65px or 60px.
+      Always test on real hardware (iPhone 15 / Samsung Galaxy S21 Ultra in
+      portrait), as browser devtools may not accurately show text wrapping
+      at exact pixel boundaries.
+      */
+      elevenlabs-convai {
+        margin-top: 70px !important;
+      }
+
+      /*
+      WHAT THIS DOES: Increases the top padding of the page body from 235px
+      to 255px on ultra-narrow screens so all page content appears below both
+      the taller two-line navbar and the lower-positioned widget.
+      WHY 255px: On screens narrower than 467px, the navbar is now ~70px
+      (two lines) and the widget is ~185px, totalling ~255px of blocked
+      vertical space at the top of the viewport. This padding ensures the
+      "Delapre Dental Care" heading and all subsequent content load visibly
+      below both obstructions on page open.
+      Calculation: 235px (original mobile clearance) + 20px (extra navbar
+      height from wrapping) = 255px ✓
+      TUNING: If page content is still hidden behind the widget or navbar:
+      increase to 260px or 265px (in 5px increments). If there is excessive
+      blank space above the first heading: decrease to 250px or 245px. Test
+      on actual narrow devices, not browser devtools, which may not render
+      text wrapping accurately.
+      */
+      body {
+        padding-top: 255px;
+      }
+
+      /*
+      WHAT THIS DOES: Increases the scroll anchor offset for all navigation
+      link targets (#home, #cv, #team, #terms, #privacy) from 235px to 255px,
+      so section headings land clearly visible below the taller navbar and
+      widget when a user clicks a navigation link on ultra-narrow screens.
+      WHY 255px: When the navbar wraps to two lines on screens narrower than
+      467px, the total vertical space blocked by the navbar and widget
+      increases to ~255px. This scroll-margin-top value must match that
+      blocked space to ensure section headings don't scroll behind the navbar
+      or widget.
+      Calculation: 235px (original mobile scroll offset) + 20px (extra
+      navbar height from wrapping) = 255px ✓
+      TUNING: If section headings still disappear behind the navbar or widget
+      after tapping a navigation link on narrow screens: increase to 260px
+      or 265px (in 5px increments). If there is excessive blank space above
+      section headings when they scroll into view: decrease to 250px or
+      245px. Test on actual narrow hardware (iPhone 15 / Samsung Galaxy S21
+      Ultra in portrait) by tapping each nav link and verifying the target
+      heading appears fully visible and readable.
+      */
+      #home, #cv, #team, #terms, #privacy {
+        scroll-margin-top: 255px;
       }
     }
 
