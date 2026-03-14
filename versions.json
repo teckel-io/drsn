@@ -300,6 +300,20 @@
       "pre_edit_pages": {
         "index": "1e934ca27b99bd6a93cd612777287bed1a268dc3"
       }
+    },
+    {
+      "version": 22,
+      "timestamp": "2026-03-14T03:30:19.918Z",
+      "tag": null,
+      "change_description": "remove the \"revisions\" section from the bottom of the website",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "d0f5b995b5a96e40033965a9706f50468f29ef49"
+      },
+      "pre_edit_pages": {
+        "index": "162ef6aa8b112573271bbbef62327b8801bf1f2b"
+      }
     }
   ]
 }
