@@ -882,6 +882,98 @@
     .legal-list li {
       margin-bottom: 5px;
     }
+
+    /*
+    =====================================================================
+    PDF DOCUMENT SECTION CONTAINER
+    Holds the embedded PDF viewer and download link. Uses consistent section
+    styling to match the rest of the page content (Legal sections, Terms,
+    Privacy, etc.). The container maintains the established visual hierarchy
+    and spacing patterns.
+
+    WHAT THIS DOES: Provides consistent spacing and structural styling for
+    the embedded PDF document section, matching the site's design language.
+    WHY USED: Maintains visual consistency with other major page sections
+    (Terms & Conditions, Privacy Policy). The 32px bottom margin ensures
+    appropriate vertical spacing between this section and any content below
+    (e.g. footer).
+    TUNING: Increase margin-bottom in 8px increments if more space is needed
+    below the PDF section. Decrease if spacing feels excessive. max-width
+    constraint keeps the section proportional to other page content.
+    =====================================================================
+    */
+    .pdf-section {
+      margin-bottom: 32px;
+    }
+
+    /*
+    =====================================================================
+    PDF IFRAME CONTAINER
+    Wraps the embedded PDF viewer. The iframe is set to responsive width
+    (100% of its container) and fixed height (600px), allowing the document
+    to scale on mobile and desktop whilst maintaining a consistent reading
+    viewport height. The border adds subtle visual definition between the
+    PDF frame and the page background.
+
+    WHAT THIS DOES: Embeds the PDF document inline so users can read it
+    directly on the page without leaving to open a separate file. The
+    responsive width allows viewing on mobile, tablet, and desktop screens.
+    WHY 100% WIDTH AND 600px HEIGHT: 100% width ensures the PDF viewer
+    scales with the page content width, adapting to different screen sizes
+    (mobile: 390–467px, tablet: 768px, desktop: 560px). 600px height
+    provides a comfortable vertical scroll area without dominating the page
+    on mobile. This is a standard compromise height for embedded documents.
+    TUNING: Increase height in 50px increments (to 650px, 700px, etc.) if
+    users report difficulty reading the PDF without excessive scrolling.
+    Decrease height (to 550px, 500px, etc.) if mobile pages feel too long.
+    Test on real devices: iPhone 15 (390px viewport width) and iPad (768px
+    width) to verify readability across screen sizes. Border colour (#b0c4de
+    at 20% opacity) matches other design accents on the page; adjust if
+    aesthetic change is desired.
+    =====================================================================
+    */
+    .pdf-viewer {
+      width: 100%;
+      height: 600px;
+      border: 1px solid rgba(176, 196, 222, 0.2);
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+
+    /*
+    =====================================================================
+    PDF DOWNLOAD LINK CONTAINER
+    Holds the download call-to-action button / link. Styled as a prominent
+    anchor element with custom typography and spacing. Uses the site's
+    steel blue colour (#b0c4de) to match other interactive elements.
+
+    WHAT THIS DOES: Provides a clear, easily-tappable link for users to
+    download the PDF document. Positioned immediately below the embedded
+    viewer for logical user flow: view the document inline, then optionally
+    download it if they want a local copy.
+    WHY THIS STYLING: Font size 14px matches body text for readability.
+    font-weight: 500 makes it slightly bolder than regular text, drawing
+    attention without being aggressive. margin-top: 4px creates a small gap
+    between the iframe and the link. The colour inherits from the global
+    <a> rule (steel blue #b0c4de) and underlines on hover (global a:hover
+    rule), matching other links on the page. display: inline-block allows
+    the link to be treated as a compact block element on its own line,
+    rather than flowing inline with surrounding text.
+    TUNING: If the link is hard to spot, increase font-weight to 600 or
+    font-size to 15px. Add padding: 8px 12px and background-color:
+    rgba(176, 196, 222, 0.08) for a more button-like appearance. Add
+    border-radius: 4px to complete the button style. Test tap target size
+    on mobile: ensure at least 44px height for comfortable mobile tapping
+    (current link will be approximately 20px tall; consider button styling
+    if mobile tap-ability is a concern).
+    =====================================================================
+    */
+    .pdf-download-link {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 4px;
+    }
   </style>
 </head>
 <body>
@@ -1170,6 +1262,62 @@
 
         <p class="legal-section">10. CHANGES TO THIS PRIVACY POLICY</p>
         <p>10.1 We review this Privacy Policy regularly. Any material changes will be notified to patients and updated on this website. The date at the top of this document reflects the most recent revision.</p>
+      </div>
+    </div>
+
+    <!-- ── DENTAL HEALTH RECORDS PDF DOCUMENT ─────────────────────────── -->
+    <!--
+    WHAT THIS SECTION DOES: Displays an embedded PDF document (Dental Health
+    Records 2024) inline on the page where users can view it directly, plus
+    provides a download link so they can save a copy to their own device.
+
+    WHY THIS IS HERE: After the Privacy Policy, this professional document
+    provides accessible reference material to practice patients. Embedding it
+    inline keeps users on the site while reading; the download link offers
+    convenience for offline reference.
+
+    HOW TO EDIT (for non-technical users):
+    1. To change the PDF file: Update the src="..." URL in the <iframe> tag
+       to point to a different PDF file (e.g. https://example.com/new-file.pdf).
+       Also update the href="..." URL in the download link below to match.
+    2. To change the section heading: Replace "Dental Health Records 2024"
+       with any other text you prefer.
+    3. To adjust the PDF viewer height: Change height="600" to a different
+       pixel value (e.g. 700 for taller, 500 for shorter).
+    4. To remove this section entirely: Delete the entire <!-- ... --> comment
+       block containing this section and both the <div class="pdf-section">
+       and <div class="pdf-viewer"> elements inside it.
+    -->
+    <div class="pdf-section">
+      <div class="section">
+        <div class="section-title">Dental Health Records 2024</div>
+        <div class="section-content">
+          <!--
+          EMBEDDED PDF VIEWER using <iframe> element. Displays the PDF
+          document inline on the page at 100% width and 600px height,
+          allowing users to read it directly without opening a separate
+          file. The src attribute points to the exact PDF URL provided:
+          https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf
+          -->
+          <iframe
+            class="pdf-viewer"
+            src="https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf"
+            title="Dental Health Records 2024 PDF Document"
+          ></iframe>
+
+          <!--
+          DOWNLOAD LINK for the PDF document. Styled as a prominent text
+          link with blue colour and underline on hover (matching other links
+          on the page). The href attribute points to the exact same PDF URL
+          as the iframe above, so clicking this link triggers a download.
+          Users can save the file to their computer if they prefer an offline
+          copy. The download attribute (with no value) tells the browser to
+          download the file rather than opening it in a new tab.
+          -->
+          <a href="https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf" download class="pdf-download-link">
+            Download PDF
+          </a>
+        </div>
       </div>
     </div>
 
