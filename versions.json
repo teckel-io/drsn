@@ -244,6 +244,20 @@
       "pre_edit_pages": {
         "index": "d9dcf24b9b5ac980c4763b48e256fa88fd47ebc5"
       }
+    },
+    {
+      "version": 18,
+      "timestamp": "2026-03-14T00:43:15.043Z",
+      "tag": null,
+      "change_description": "In a manner that is seamlessly  and professionally integrated into the site in accordance with the  professional look, feeling and style of  the site, Add this image of Benedict Williams, COO to a new section called \"Our Team\" : https://teckel-io.github.io/drsn/assets/benedict.png (be sure to include the new section in the navigation bar)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "40eb463e3e7fb4a9998ad5ffb5dfae2f4061ac4e"
+      },
+      "pre_edit_pages": {
+        "index": "9df00553223b36f9664a89d360c0c69dd0377293"
+      }
     }
   ]
 }
