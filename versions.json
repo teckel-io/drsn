@@ -314,6 +314,20 @@
       "pre_edit_pages": {
         "index": "162ef6aa8b112573271bbbef62327b8801bf1f2b"
       }
+    },
+    {
+      "version": 23,
+      "timestamp": "2026-03-14T04:10:47.014Z",
+      "tag": null,
+      "change_description": "A PDF document has been uploaded to the site assets folder. File URL: https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf. User instruction: In a professional manner seamlessly integrate, in accordance with the look and feel of the site, this PDF file below the Privacy Policy. Embed the  file into the site so it is easily seen, and also provide a download link.. Please update the website based on the instruction. Embed the PDF inline using an <iframe> tag (width 100%, height 600px) so visitors can read it on the page. Also add a clearly labelled download link below the iframe. Use the exact URL provided for both.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "4ba8d3a3761acf17ef20687aecf3aa48a70aed2b"
+      },
+      "pre_edit_pages": {
+        "index": "d0f5b995b5a96e40033965a9706f50468f29ef49"
+      }
     }
   ]
 }
