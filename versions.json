@@ -342,6 +342,20 @@
       "pre_edit_pages": {
         "index": "4ba8d3a3761acf17ef20687aecf3aa48a70aed2b"
       }
+    },
+    {
+      "version": 25,
+      "timestamp": "2026-03-14T04:42:50.597Z",
+      "tag": null,
+      "change_description": "PDF document uploaded: dhr-2024-final.pdf — In a professional manner seamlessly integrate, in accordance with the look and feel of the site, this PDF file below the Privacy Policy. Embed the  file into the site so it is easily seen, and also provide a download link.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "c240a185c3f2fb914dc6f2b000639f5f720b017c"
+      },
+      "pre_edit_pages": {
+        "index": "d0f5b995b5a96e40033965a9706f50468f29ef49"
+      }
     }
   ]
 }
