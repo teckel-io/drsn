@@ -36,7 +36,7 @@
                 via bot prompt after the DNS switch.
   =====================================================================
   -->
-  <title>Delapre Dental Care – NHS &amp; Private Dentist, Northampton</title>
+  <title>Welcome to Delapre Dental Care</title>
   <meta name="description" content="NHS and private dentist in Northampton. Dr Sabina Nasir at 5 Billing Road provides gentle, professional dental care. Call 01604 636836 to book.">
   <meta name="keywords" content="dentist Northampton, NHS dentist Northampton, private dentist Northampton, Delapre Dental Care, Dr Sabina Nasir, dental practice Northampton, Billing Road dentist">
   <meta name="robots" content="index, follow">
@@ -643,7 +643,7 @@
     2. body padding-top: increased from 235px to 255px
        — Pushes all page content down by 20px to clear the widget and navbar
        — WHY 255px: 235px (original mobile clearance) + 20px (extra navbar
-         height) = 255px ✓
+         height from wrapping) = 255px ✓
        — Breakdown of 255px:
          ~70px navbar (now two lines) + ~185px widget = ~255px ✓
 
@@ -767,25 +767,21 @@
 </head>
 <body>
 
-  <!-- =====================================================================
-  NAVIGATION BAR
-  Navigation link mapping to the home section. Fixed to the top of the
-  viewport on all screen sizes.
-  ===================================================================== -->
+  <!-- Navigation bar fixed to the top of the viewport. Single link to home section. -->
   <nav class="navbar">
     <a href="#home">Home</a>
   </nav>
 
   <div class="page">
 
-    <!-- ── HOME ANCHOR ────────────────────────────────────────────────── -->
+    <!-- Home anchor section with main page heading and practice details -->
     <div id="home">
-      <h1>Delapre Dental Care</h1>
+      <h1>Welcome to Delapre Dental Care</h1>
       <p class="subtitle">Dental Practice — Northampton</p>
       <p class="dentist-name">Dr Sabina Nasir</p>
     </div>
 
-    <!-- ── ADDRESS ────────────────────────────────────────────────────– -->
+    <!-- Address section displaying the practice physical location -->
     <div class="section">
       <div class="section-title">Address</div>
       <div class="section-content">
@@ -796,7 +792,7 @@
       </div>
     </div>
 
-    <!-- ── PHONE ──────────────────────────────────────────────────────── -->
+    <!-- Phone contact section with telephone link for one-tap calling -->
     <div class="section">
       <div class="section-title">Phone</div>
       <div class="section-content">
@@ -805,11 +801,7 @@
       </div>
     </div>
 
-    <!-- ── EMAIL ──────────────────────────────────────────────────────– -->
-    <!-- Email contact section positioned directly below the phone number.
-         Styled consistently with other contact information sections using
-         the same section-title and section-content classes. The mailto: link
-         allows users to send emails directly from the page. -->
+    <!-- Email contact section with mailto link for one-tap email composition -->
     <div class="section">
       <div class="section-title">Email</div>
       <div class="section-content">
@@ -818,7 +810,7 @@
       </div>
     </div>
 
-    <!-- ── OFFICE HOURS ───────────────────────────────────────────────– -->
+    <!-- Office hours section showing when the practice is open -->
     <div class="section">
       <div class="section-title">Office Hours</div>
       <div class="section-content">
@@ -828,7 +820,7 @@
       </div>
     </div>
 
-    <!-- ── APPOINTMENTS ───────────────────────────────────────────────– -->
+    <!-- Appointments section with booking instructions -->
     <div class="section">
       <div class="section-title">Appointments</div>
       <div class="section-content">
@@ -837,7 +829,7 @@
       </div>
     </div>
 
-    <!-- ── PATIENTS ───────────────────────────────────────────────────– -->
+    <!-- Patient acceptance section stating NHS and private availability -->
     <div class="section">
       <div class="section-title">Patients</div>
       <div class="section-content">
@@ -845,7 +837,7 @@
       </div>
     </div>
 
-    <!-- ── PATIENT TESTIMONIALS ───────────────────────────────────────– -->
+    <!-- Patient testimonials section showcasing real feedback from patients -->
     <div class="section">
       <div class="section-title">Patient Testimonials</div>
       <div class="section-content">
@@ -867,30 +859,16 @@
       </div>
     </div>
 
-    <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
+    <!-- Footer section with copyright notice and practice ownership statement -->
     <div class="footer">
       © 2026 Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
 
-  <!-- =====================================================================
-  ELEVENLABS VOICE WIDGET
-  Renders the Sabina voice agent widget. Placement (fixed left, bottom left,
-  etc.) is controlled entirely in the ElevenLabs dashboard under
-  Widget → Placement — not via CSS in this file.
-
-  agent-id         → Sabina agent ID. Do not change unless migrating agents.
-                     Current: agent_4701kjh47cjafxvv0m4xv8e9jgfd
-  avatar-image-url → Default avatar on page load (Dr Nasir portrait). The
-                     JavaScript block below can swap this at runtime when the
-                     conversation transfers between agents.
-
-  IMPORTANT: Do not move this element or apply CSS positioning to it in
-  this file. The widget manages its own fixed overlay positioning internally.
-  The only CSS applied externally is margin-top: 50px via the FIX #1 rule
-  above, which nudges the widget clear of the navbar.
-  ===================================================================== -->
+  <!-- ElevenLabs voice widget element. Renders Sabina voice agent interface.
+       Positioning (left, bottom-left, etc.) configured in ElevenLabs dashboard,
+       not in this file. CSS margin-top added via FIX #1 rule to clear navbar. -->
   <elevenlabs-convai
     agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
     avatar-image-url="https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg"
@@ -899,28 +877,7 @@
   <!-- ElevenLabs embed script — async attribute prevents blocking page render -->
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 
-  <!-- =====================================================================
-  AVATAR SWAP SCRIPT
-  Enables runtime swapping of the widget's avatar image via the ElevenLabs
-  Client Tool "update_avatar". When an agent triggers update_avatar during
-  a call, this script updates the widget's avatar-image-url attribute to
-  the matching URL from the AVATARS object, giving each agent its own face.
-
-  AVATARS object — key must match the avatar_name parameter sent by the agent:
-  — "sabina"   → Dr Nasir portrait (default, set in the widget tag above)
-  — "benedict" → Benedict avatar (shown when call transfers to Benedict)
-
-  TO ADD A NEW AVATAR:
-  1. Add a new key/URL pair to the AVATARS object below.
-  2. Add a matching "update_avatar" call instruction in the relevant agent's
-     ElevenLabs system prompt.
-
-  DO NOT restructure the event listener pattern. The clientTools object must
-  be registered inside the "elevenlabs-convai:call" event handler because the
-  ElevenLabs widget only accepts client tool registration at call-initiation
-  time. Registering outside this event (e.g. directly on DOMContentLoaded)
-  does not work reliably across widget versions.
-  ===================================================================== -->
+  <!-- Avatar swap script enabling runtime agent image updates via update_avatar tool -->
   <script>
     // Initialize avatar mapping for agent-specific portrait images
     var AVATARS = {
