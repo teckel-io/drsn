@@ -1135,6 +1135,52 @@
       border: 1px solid rgba(176, 196, 222, 0.15);
       border-radius: 2px;
     }
+
+    /*
+    =====================================================================
+    SERVICES PRICING NOTE
+    Displays a small supplementary note at the top of the services section
+    to inform visitors when the pricing information was last updated. This
+    helps ensure customers have current information and know when to check
+    back for changes.
+
+    WHAT THIS DOES: Shows a timestamped note ("Prices correct as of March
+    2026") above the service offerings, providing transparency about pricing
+    currency and recency.
+
+    WHY color: #b0c4de: Uses steel blue to match other supplementary text
+    on the page (.note, .section-title). This creates visual consistency and
+    indicates that this is supporting information rather than primary content.
+
+    WHY font-size: 13px: Smaller than body text (.section-content at 15px)
+    to indicate it is supplementary rather than primary content. Matches
+    the sizing of other italic notes on the page.
+
+    WHY font-style: italic: Signals to the user that this is a clarification
+    or aside, not a main section heading or critical information.
+
+    WHY margin-top: 8px: Provides a small gap between this note and the
+    content above it, ensuring the note does not feel cramped or overlaid
+    on top of other information.
+
+    WHY margin-bottom: 16px: Creates breathing room between this note and
+    the service section content below, grouping the note with the services
+    it clarifies while maintaining visual separation.
+
+    TUNING: Adjust margin-top or margin-bottom in 2px or 4px increments if
+    the spacing feels off relative to surrounding content. Increase or
+    decrease font-size in 1px increments if the note is too prominent or
+    too subtle. Change colour to #f0d060 (gold) if greater emphasis is needed
+    on the pricing update date.
+    =====================================================================
+    */
+    .pricing-note {
+      color: #b0c4de;
+      font-size: 13px;
+      font-style: italic;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
   </style>
 </head>
 <body>
@@ -1219,6 +1265,21 @@
       <div class="section-title">Patients</div>
       <div class="section-content">
         <p>We accept both NHS and private patients.</p>
+      </div>
+    </div>
+
+    <!-- ── SERVICES ───────────────────────────────────────────────────– -->
+    <!-- This section displays available dental services. A pricing note at the
+         top informs visitors that the service information and any associated
+         pricing details were last updated in March 2026, ensuring customers
+         have current information and know when to check back for updates. -->
+    <div class="section">
+      <div class="section-title">Services</div>
+      <p class="pricing-note">Prices correct as of March 2026</p>
+      <div class="section-content">
+        <!-- Services content will be added here by Dr Nasir or practice admin
+             when service descriptions and pricing are finalised. This is a
+             placeholder container ready to receive service listings. -->
       </div>
     </div>
 
@@ -1554,18 +1615,34 @@
   does not work reliably across widget versions.
   ===================================================================== -->
   <script>
+    // Define avatar URLs for each agent. The key must match the avatar_name
+    // parameter sent by the agent during a call transfer.
     var AVATARS = {
       sabina:   "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg",
       benedict: "https://teckel-io.github.io/drsn/assets/benedict.png"
     };
+    // Wait for the page DOM to fully load before accessing the widget element.
     document.addEventListener("DOMContentLoaded", function () {
+      // Get a reference to the ElevenLabs widget custom element.
       var widget = document.querySelector("elevenlabs-convai");
       if (widget) {
+        // Listen for the "elevenlabs-convai:call" event, which fires when a
+        // user initiates a conversation with the voice agent.
         widget.addEventListener("elevenlabs-convai:call", function (event) {
+          // Register the update_avatar client tool, which allows the agent's
+          // system prompt to request an avatar change at runtime.
           event.detail.config.clientTools = {
+            // The update_avatar function receives a params object with
+            // avatar_name and updates the widget's avatar-image-url attribute.
             update_avatar: function (params) {
+              // Look up the avatar URL for the requested avatar_name.
               var url = AVATARS[params.avatar_name];
-              if (url) { widget.setAttribute("avatar-image-url", url); }
+              if (url) {
+                // Update the widget's avatar-image-url attribute to display
+                // the new avatar image.
+                widget.setAttribute("avatar-image-url", url);
+              }
+              // Return a confirmation message to the agent (optional).
               return "Avatar updated";
             }
           };
