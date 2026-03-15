@@ -456,67 +456,6 @@
       font-weight: bold;
     }
 
-    .team-member {
-      background-color: rgba(176, 196, 222, 0.05); /* ← Subtle tinted card bg */
-      border-left: 3px solid #b0c4de;              /* ← Steel blue accent bar */
-      padding: 20px;
-      margin-bottom: 24px;
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-    }
-
-    .team-member-image {
-      flex-shrink: 0;
-      width: 120px;
-      height: 120px;
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    .team-member-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .team-member-info {
-      flex: 1;
-    }
-
-    .team-member-name {
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    .team-member-title {
-      color: #b0c4de;
-      font-size: 13px;
-      font-weight: 500;
-      margin-bottom: 8px;
-    }
-
-    .team-member-bio {
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 900px) {
-      .team-member {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .team-member-image {
-        width: 100px;
-        height: 100px;
-      }
-    }
-
     .footer {
       color: #b0c4de;
       font-size: 12px;
@@ -530,11 +469,11 @@
     =====================================================================
     FIX #2 — SCROLL ANCHOR OFFSET — DESKTOP (screens 900px and wider)
     Prevents page sections from disappearing behind the fixed navbar when
-    a user clicks one of the four navigation links (Home, CV, Terms, Privacy).
+    a user clicks one of the navigation links.
 
-    Without this rule, clicking "CV" scrolls the #cv element to the very
-    top of the viewport — directly underneath the fixed navbar — making the
-    section heading invisible until the user manually scrolls down slightly.
+    Without this rule, clicking a nav link scrolls the target element to the
+    very top of the viewport — directly underneath the fixed navbar — making
+    the section heading invisible until the user manually scrolls down slightly.
 
     scroll-margin-top: 65px instructs the browser to stop scrolling 65px
     SHORT of each anchor element, so the section heading lands visibly
@@ -546,7 +485,7 @@
     — Extra visual buffer: 10px
     — Total: ~65px ✓
 
-    This rule applies to all four anchor sections on desktop only.
+    This rule applies to all anchor sections on desktop only.
     The mobile media query below overrides this value with 235px.
 
     TUNING GUIDE (desktop):
@@ -556,7 +495,7 @@
       decrease to 60px or 55px.
     =====================================================================
     */
-    #home, #cv, #team, #terms, #privacy {
+    #home {
       scroll-margin-top: 65px;
     }
 
@@ -607,7 +546,7 @@
     =====================================================================
     */
     @media (max-width: 900px) {
-      #home, #cv, #team, #terms, #privacy {
+      #home {
         scroll-margin-top: 235px;
       }
 
@@ -628,8 +567,8 @@
       On mobile and tablet screens, the fixed navbar and the collapsed
       ElevenLabs widget both occupy the top portion of the viewport and
       physically block access to content behind them. 235px of top padding
-      ensures the page heading ("Delapre Dental Care") and all subsequent
-      content loads visibly below both obstructions on initial page open.
+      ensures the page heading and all subsequent content loads visibly below
+      both obstructions on initial page open.
 
       Breakdown (measured on Samsung Galaxy S21 Ultra):
       — Collapsed navbar height:          ~50px
@@ -660,7 +599,7 @@
 
       TUNING GUIDE:
       — Test on a real mobile device (hardware, not just browser devtools).
-      — Verify "Delapre Dental Care" heading is fully visible below the widget.
+      — Verify main heading is fully visible below the widget.
       — If the heading is still partially obscured by the widget: increase
         235px to 245px or 255px (in 5px increments) and retest.
       — If there is excessive blank space above the heading: decrease 235px
@@ -681,8 +620,7 @@
     On screens narrower than 467px (e.g. iPhone 15 in portrait, Samsung
     Galaxy S21 Ultra in portrait), the navbar navigation links wrap onto a
     second line because there is insufficient horizontal space to fit all
-    five links (Home, CV, Our Team, Terms & Conditions, Privacy Policy)
-    side-by-side at 13px font size with 20px gaps between them.
+    links side-by-side at 13px font size with 20px gaps between them.
 
     When the navbar wraps to two lines, its total height increases from ~50px
     (single line) to approximately ~70px (two lines), because:
@@ -727,18 +665,16 @@
     — Landscape mode on most phones (typically 700px+): use 235px offset
 
     WHY 467px AS THE BREAKPOINT?
-    At 467px width, the navbar still fits all five links on a single line at
-    13px font with 20px gaps. Below 467px, the fifth link (Privacy Policy)
-    wraps to a second line, causing the navbar to grow taller.
+    At 467px width, the navbar still fits all links on a single line at
+    13px font with 20px gaps. Below 467px, the links wrap to a second line,
+    causing the navbar to grow taller.
 
     Breakpoint calculation:
-    — 5 links × 50px average width per link (varies by text length) = 250px
-    — 4 gaps × 20px = 80px
+    — Estimated link text widths × number of links = base width needed
+    — Gaps between links × number of gaps = gap width
     — Left/right navbar padding: 24px + 24px = 48px
-    — Minimum horizontal space needed: 250px + 80px + 48px = ~378px
-    — Real-world measurement (Samsung Galaxy S21 Ultra): wrapping starts around
-      467px, where longer link text ("Terms & Conditions" and "Privacy Policy")
-      begin to push the navbar to two lines ✓
+    — Minimum horizontal space needed for single line: ~378px
+    — Real-world measurement: wrapping starts around 467px ✓
 
     TUNING GUIDE:
     — Test on a real iPhone 15 or Samsung Galaxy S21 Ultra in portrait.
@@ -751,16 +687,15 @@
     — Retest after each change on actual hardware (not browser devtools).
     — Breakpoint can be adjusted up (e.g. 500px) or down (e.g. 430px) if
       testing reveals wrapping occurs at a different screen width.
-    — If the navbar link text length changes or font size is adjusted,
-      re-measure the wrapping point and update this breakpoint accordingly.
+    — If link text length changes or font size is adjusted, re-measure the
+      wrapping point and update this breakpoint accordingly.
 
     INTERACTION WITH OTHER MEDIA QUERIES:
     — This rule applies ONLY to screens narrower than 467px.
     — It does NOT affect screens 467px–900px (use 235px rules).
     — It does NOT affect screens 900px and wider (use desktop rules).
-    — The specificity of "elevenlabs-convai { margin-top: 70px !important; }"
-      inside this narrower breakpoint is higher (due to being more specific)
-      and naturally overrides the base "margin-top: 50px !important" rule above.
+    — The specificity of this rule inside the narrower breakpoint naturally
+      overrides the base rules above.
     =====================================================================
     */
     @media (max-width: 467px) {
@@ -792,8 +727,8 @@
       WHY 255px: On screens narrower than 467px, the navbar is now ~70px
       (two lines) and the widget is ~185px, totalling ~255px of blocked
       vertical space at the top of the viewport. This padding ensures the
-      "Delapre Dental Care" heading and all subsequent content load visibly
-      below both obstructions on page open.
+      main heading and all subsequent content load visibly below both
+      obstructions on page open.
       Calculation: 235px (original mobile clearance) + 20px (extra navbar
       height from wrapping) = 255px ✓
       TUNING: If page content is still hidden behind the widget or navbar:
@@ -807,333 +742,26 @@
       }
 
       /*
-      WHAT THIS DOES: Increases the scroll anchor offset for all navigation
-      link targets (#home, #cv, #team, #terms, #privacy) from 235px to 255px,
-      so section headings land clearly visible below the taller navbar and
-      widget when a user clicks a navigation link on ultra-narrow screens.
+      WHAT THIS DOES: Increases the scroll anchor offset for the home anchor
+      from 235px to 255px, so the heading lands clearly visible below the
+      taller navbar and widget when needed on ultra-narrow screens.
       WHY 255px: When the navbar wraps to two lines on screens narrower than
       467px, the total vertical space blocked by the navbar and widget
       increases to ~255px. This scroll-margin-top value must match that
-      blocked space to ensure section headings don't scroll behind the navbar
+      blocked space to ensure headings don't scroll behind the navbar
       or widget.
       Calculation: 235px (original mobile scroll offset) + 20px (extra
       navbar height from wrapping) = 255px ✓
-      TUNING: If section headings still disappear behind the navbar or widget
+      TUNING: If headings still disappear behind the navbar or widget
       after tapping a navigation link on narrow screens: increase to 260px
       or 265px (in 5px increments). If there is excessive blank space above
-      section headings when they scroll into view: decrease to 250px or
-      245px. Test on actual narrow hardware (iPhone 15 / Samsung Galaxy S21
-      Ultra in portrait) by tapping each nav link and verifying the target
+      headings when they scroll into view: decrease to 250px or 245px. Test
+      on actual narrow hardware by tapping nav links and verifying the target
       heading appears fully visible and readable.
       */
-      #home, #cv, #team, #terms, #privacy {
+      #home {
         scroll-margin-top: 255px;
       }
-    }
-
-    /* =====================================================================
-    LEGAL SECTIONS — Terms & Conditions and Privacy Policy
-    Consistent typography for dense legal text. Slightly smaller line-height
-    than body content sections to keep long documents compact without
-    sacrificing readability.
-    ===================================================================== */
-    .legal-notice {
-      background-color: rgba(255, 200, 0, 0.08);
-      border-left: 3px solid #e6b800;
-      padding: 12px 16px;
-      margin-bottom: 20px;
-      color: #f0d060;
-      font-size: 13px;
-      line-height: 1.5;
-    }
-    .legal-heading {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 15px;
-      margin-bottom: 4px;
-    }
-    .legal-meta {
-      color: #b0c4de;
-      font-size: 13px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .legal-section {
-      color: #b0c4de;
-      font-weight: bold;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-top: 20px;
-      margin-bottom: 6px;
-    }
-    #terms .section-content p,
-    #privacy .section-content p {
-      font-size: 14px;
-      line-height: 1.65;
-      margin-bottom: 6px;
-    }
-    .legal-list {
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 1.65;
-      padding-left: 20px;
-      margin-bottom: 8px;
-    }
-    .legal-list li {
-      margin-bottom: 5px;
-    }
-
-    /*
-    =====================================================================
-    PDF VIEWER CONTAINER
-    Wraps the embedded PDF iframe and download link in a subtle card-like
-    container that matches the existing visual design. The background tint
-    and border are consistent with other content cards on the page
-    (testimonials, team member bios). The border-top accent provides visual
-    consistency with the section design language.
-
-    WHAT THIS DOES: Creates a cohesive presentation for the PDF embed and
-    download controls so they appear as an intentional part of the page
-    design rather than floating elements.
-
-    WHY THESE COLOURS: The background tint uses the same rgba(176, 196, 222,
-    0.05) value as .testimonial and .team-member cards. The border-left
-    uses the same steel-blue colour (#b0c4de) as other accent bars on the
-    page. This maintains visual consistency across all card-like sections.
-
-    TUNING: Adjust padding in 4px increments if content feels cramped.
-    Adjust border opacity (0.05 to 0.1) if the background tint is too
-    subtle or too prominent.
-    =====================================================================
-    */
-    .pdf-viewer-container {
-      background-color: rgba(176, 196, 222, 0.05);
-      border-left: 3px solid #b0c4de;
-      padding: 20px;
-      margin-bottom: 24px;
-    }
-
-    /*
-    =====================================================================
-    PDF IFRAME EMBEDDING
-    Renders the PDF document inline on the page so visitors can read it
-    without leaving the site. Full width ensures the document scales
-    responsively across all screen sizes. 600px height provides sufficient
-    vertical space to display multiple pages of a typical dental practice
-    document without excessive scrolling.
-
-    WHAT THIS DOES: Embeds the PDF file from the provided URL so it displays
-    as an interactive reader within the page content.
-
-    WHY 100% width: Responsive design — the iframe automatically scales to
-    match the .pdf-viewer-container width, which is constrained by the
-    .page max-width rule (560px on desktop, full width minus padding on
-    mobile).
-
-    WHY 600px height: Balances readability and page length. 600px is tall
-    enough to display a readable portion of the document (typically 2–3
-    pages) without requiring excessive scrolling. Users can scroll within
-    the iframe to access additional content.
-
-    TUNING: Increase height to 700px or 800px if the document is very long
-    or dense with small text. Decrease to 500px if space is constrained.
-    Always test on actual devices to verify the reading experience.
-    =====================================================================
-    */
-    .pdf-iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid rgba(176, 196, 222, 0.15);
-      border-radius: 2px;
-      margin-bottom: 16px;
-    }
-
-    /*
-    =====================================================================
-    PDF DOWNLOAD LINK STYLING
-    Provides a clear, accessible download button that matches the site's
-    visual language. The button-like appearance (padding, background tint,
-    border) makes the download action obvious and encourages user interaction.
-
-    WHAT THIS DOES: Styles a link that allows visitors to download the PDF
-    file directly to their device. This provides an alternative to reading
-    inline and allows users to save, print, or share the document.
-
-    WHY inline-block display: Allows the link to have padding and a border
-    (block-like properties) while remaining within the text flow (inline-like
-    behaviour). The max-width constraint ensures the link text does not wrap
-    awkwardly on narrow screens.
-
-    WHY #b0c4de text colour: Matches other interactive elements on the page.
-    The hover state darkens or underlines the text for visual feedback.
-
-    WHY border and padding: Creates a subtle button-like container that
-    visually separates the download control from the surrounding text.
-
-    TUNING: Adjust padding in 2px increments if the button feels too spacious
-    or too cramped. Increase max-width to 100% if the text needs more space
-    on narrow screens. Adjust background opacity (0.05 to 0.1) to make the
-    button more or less prominent.
-    =====================================================================
-    */
-    .pdf-download-link {
-      display: inline-block;
-      background-color: rgba(176, 196, 222, 0.08);
-      border: 1px solid rgba(176, 196, 222, 0.2);
-      padding: 10px 14px;
-      border-radius: 2px;
-      color: #b0c4de;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      max-width: 100%;
-    }
-
-    /*
-    =====================================================================
-    PDF DOWNLOAD LINK HOVER STATE
-    Provides visual feedback when the user hovers over the download link.
-    The background brightens and the text colour changes to white to indicate
-    the link is interactive and ready to be clicked.
-
-    WHAT THIS DOES: Enhances the user experience by showing a clear hover
-    effect that confirms the element is clickable.
-
-    WHY background-color: rgba(176, 196, 222, 0.15): Increases the opacity
-    from 0.08 (resting) to 0.15 (hover), brightening the button background
-    without changing the colour itself.
-
-    WHY color: #ffffff: Changes the text from steel blue (#b0c4de) to white
-    for maximum contrast and clarity when hovering.
-
-    WHY transition: 0.3s ease: Ensures the colour change animates smoothly
-    over 300ms rather than snapping instantly, creating a polished feel.
-
-    TUNING: Adjust the background opacity (0.15) to make the hover effect
-    more or less prominent. Increase to 0.2 or 0.25 for a more dramatic
-    effect. The colour transition time (0.3s) can be shortened to 0.15s or
-    lengthened to 0.5s depending on preference.
-    =====================================================================
-    */
-    .pdf-download-link:hover {
-      background-color: rgba(176, 196, 222, 0.15);
-      color: #ffffff;
-      border-color: rgba(176, 196, 222, 0.3);
-    }
-
-    /*
-    =====================================================================
-    YOUTUBE VIDEO CONTAINER
-    Wraps the embedded YouTube video iframe in a card-like container that
-    matches the site's existing visual design language. The background tint
-    and border-left accent are consistent with PDF viewer, testimonial, and
-    team member cards throughout the page.
-
-    WHAT THIS DOES: Creates a professional, cohesive presentation for the
-    YouTube video embed so it appears as an intentional part of the page
-    design rather than a floating or jarring element.
-
-    WHY THESE COLOURS: Uses the same rgba(176, 196, 222, 0.05) background
-    tint and #b0c4de border-left as other card sections on the page. This
-    ensures visual consistency and makes the video container feel like part
-    of the unified design system.
-
-    WHAT margin-bottom DOES: Provides breathing room between this video
-    section and whatever content follows below it (typically the footer).
-
-    TUNING: Adjust padding in 4px increments if content feels too cramped or
-    too loose. Adjust margin-bottom in 4px increments if the spacing between
-    this section and the next feels off. Modify border opacity (0.05 to 0.1)
-    if the background tint is too subtle or too prominent.
-    =====================================================================
-    */
-    .youtube-container {
-      background-color: rgba(176, 196, 222, 0.05);
-      border-left: 3px solid #b0c4de;
-      padding: 20px;
-      margin-bottom: 24px;
-    }
-
-    /*
-    =====================================================================
-    YOUTUBE ANNOUNCEMENT TEXT
-    Provides context and visual hierarchy for the video by displaying a
-    professional announcement message above the embedded video.
-
-    WHAT THIS DOES: Displays text that announces Dr Nasir's attendance at
-    the event featured in the video. White text on the dark navy background
-    maintains readability and consistency with the rest of the page.
-
-    WHY color: #ffffff: White text provides maximum contrast and legibility
-    against the dark background. The white matches the colour of other body
-    text on the page (see .section-content).
-
-    WHY font-size: 15px: Matches the standard body text size used throughout
-    the page (.section-content), ensuring visual consistency and readability.
-
-    WHY line-height: 1.6: Provides comfortable vertical spacing for multi-line
-    text, making the announcement easy to scan and read.
-
-    WHY margin-bottom: 16px: Creates a clear visual gap between the
-    announcement text and the video embed below, grouping them together while
-    maintaining clear separation.
-
-    TUNING: Increase margin-bottom to 20px or 24px if the gap between text
-    and video feels too tight. Decrease to 12px if the spacing feels excessive.
-    =====================================================================
-    */
-    .youtube-announcement {
-      color: #ffffff;
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-
-    /*
-    =====================================================================
-    YOUTUBE IFRAME EMBEDDING
-    Embeds the YouTube video at full responsive width. The aspect ratio of
-    16:9 is maintained across all screen sizes using the padding-bottom trick
-    with a wrapper div (see HTML structure below).
-
-    WHAT THIS DOES: Displays the YouTube video inline on the page so visitors
-    can watch it without navigating away from the site.
-
-    WHY 100% width: Responsive design — the iframe automatically scales to
-    match the container width (560px max on desktop, full width minus padding
-    on mobile).
-
-    WHY height: 100%: When used with the aspect-ratio wrapper, this ensures
-    the video maintains proper 16:9 proportions on all screen sizes without
-    distortion.
-
-    WHY border: Provides subtle visual definition between the video and the
-    background. The colour and opacity match the PDF iframe border for
-    consistency.
-
-    TUNING: Adjust border colour/opacity if the video frame blends too much
-    with the background. Modify the aspect-ratio-wrapper padding-bottom
-    percentage if videos appear stretched or squashed (16:9 = 56.25%).
-    =====================================================================
-    */
-    .youtube-iframe-wrapper {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .youtube-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 1px solid rgba(176, 196, 222, 0.15);
-      border-radius: 2px;
     }
   </style>
 </head>
@@ -1141,15 +769,11 @@
 
   <!-- =====================================================================
   NAVIGATION BAR
-  Four anchor links mapping to the four id= sections in the page body:
-  #home, #cv, #terms, #privacy. Fixed to the top of the viewport.
+  Navigation link mapping to the home section. Fixed to the top of the
+  viewport on all screen sizes.
   ===================================================================== -->
   <nav class="navbar">
     <a href="#home">Home</a>
-    <a href="#cv">CV</a>
-    <a href="#team">Our Team</a>
-    <a href="#terms">Terms &amp; Conditions</a>
-    <a href="#privacy">Privacy Policy</a>
   </nav>
 
   <div class="page">
@@ -1185,8 +809,7 @@
     <!-- Email contact section positioned directly below the phone number.
          Styled consistently with other contact information sections using
          the same section-title and section-content classes. The mailto: link
-         allows users to send emails directly from the page. The email address
-         has been updated to office@delepredental.com. -->
+         allows users to send emails directly from the page. -->
     <div class="section">
       <div class="section-title">Email</div>
       <div class="section-content">
@@ -1240,261 +863,6 @@
           <div class="testimonial-title">The Best Dentist in Northampton</div>
           <div class="testimonial-quote">"Dr Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan."</div>
           <div class="testimonial-attribution">— Michael L.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── CV / QUALIFICATIONS ANCHOR ────────────────────────────────– -->
-    <div id="cv" class="section">
-      <div class="section-title">Qualifications &amp; Professional Registration</div>
-      <div class="section-content">
-        <p>BDS</p>
-        <p>Diploma in Clinical Dentistry (Eastman Dental Institute, London)</p>
-        <p>MFDS RCS London</p>
-        <p>MSc Fixed and Removable Prosthodontics (King's College London)</p>
-        <p>Postgraduate Certificate in Implant Dentistry</p>
-        <p><strong>GDC Registration Number:</strong> 169400</p>
-      </div>
-    </div>
-
-    <!-- ── OUR TEAM ANCHOR ────────────────────────────────────────────– -->
-    <div id="team" class="section">
-      <div class="section-title">Our Team</div>
-      <div class="section-content">
-        <div class="team-member">
-          <div class="team-member-image">
-            <img src="https://teckel-io.github.io/drsn/assets/benedict.png" alt="Benedict Williams, COO">
-          </div>
-          <div class="team-member-info">
-            <div class="team-member-name">Benedict Williams</div>
-            <div class="team-member-title">Chief Operating Officer</div>
-            <div class="team-member-bio">Benedict brings extensive operational expertise and strategic leadership to Delapre Dental Care, ensuring the practice operates to the highest standards of professional excellence and patient care.</div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="team-member-image">
-            <img src="https://teckel-io.github.io/drsn/assets/dr-nassir-webmaster.jpg" alt="Patricia Peterson, Dental Hygienist">
-          </div>
-          <div class="team-member-info">
-            <div class="team-member-name">Patricia Peterson</div>
-            <div class="team-member-title">Dental Hygienist</div>
-            <div class="team-member-bio">Patricia is a skilled and compassionate dental hygienist dedicated to supporting optimal oral health for all our patients. With extensive experience in preventive care and patient education, Patricia works closely with Dr Nasir to ensure every patient receives exceptional hygiene support.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── TERMS & CONDITIONS ANCHOR ─────────────────────────────────– -->
-    <div id="terms" class="section">
-      <div class="section-title">Terms &amp; Conditions</div>
-      <div class="section-content">
-<div class="legal-notice">⚠️ <strong>Placeholder document.</strong> This Terms &amp; Conditions statement is a working draft prepared for review purposes only. It has not been reviewed or approved by a qualified solicitor and must not be treated as a final legal document. It will be replaced with copy provided by Dr Nasir's own legal adviser before final publication.</div>
-
-        <p class="legal-heading">TERMS &amp; CONDITIONS</p>
-        <p class="legal-meta">Delapre Dental Care · 5 Billing Road, Northampton, NN1 5AN<br>Principal Dentist: Dr Sabina Nasir BDS MFDS RCS MSc · GDC No. 169400<br>Last updated: March 2026</p>
-
-        <p class="legal-section">1. ABOUT THIS PRACTICE</p>
-        <p>1.1 Delapre Dental Care ("the Practice") is operated by Dr Sabina Nasir, a dentist registered with the General Dental Council (GDC) under registration number 169400.</p>
-        <p>1.2 The Practice provides both NHS dental treatment and private dental treatment from its premises at 5 Billing Road, Northampton, NN1 5AN.</p>
-        <p>1.3 The Practice is regulated by the Care Quality Commission (CQC) and operates in accordance with the GDC's Standards for the Dental Team.</p>
-
-        <p class="legal-section">2. NHS TREATMENT</p>
-        <p>2.1 NHS treatment is provided in accordance with the National Health Service (Dental Charges) Regulations 2005, as amended, and the NHS Standard Contract for Dental Services.</p>
-        <p>2.2 NHS dental charges are set by the Department of Health and Social Care. Patients will be advised of the applicable charge band (Band 1, 2, or 3) before treatment commences. Charges are subject to change in accordance with government policy.</p>
-        <p>2.3 Certain patients are entitled to free NHS dental treatment, including children under 18, pregnant women, and those who have given birth in the preceding 12 months, and patients receiving qualifying benefits. It is the patient's responsibility to confirm their exemption status and to sign the relevant declaration (FP17DC). Making a false declaration is a criminal offence.</p>
-        <p>2.4 NHS treatment covers only clinically necessary care as assessed by the treating dentist. The Practice does not guarantee the provision of any specific NHS treatment; clinical decisions rest with the treating dentist in accordance with their professional obligations.</p>
-
-        <p class="legal-section">3. PRIVATE TREATMENT</p>
-        <p>3.1 Private treatment is offered at fees agreed in writing prior to commencement. A written treatment plan and cost estimate will be provided before any chargeable private treatment begins.</p>
-        <p>3.2 Payment terms for private treatment will be confirmed at the time of consultation. The Practice reserves the right to require a deposit for laboratory work or specialist appointments.</p>
-        <p>3.3 Estimates given for private treatment are provided in good faith. Final costs may vary if clinical circumstances change during treatment; any such variation will be discussed with the patient before proceeding.</p>
-
-        <p class="legal-section">4. APPOINTMENTS</p>
-        <p>4.1 Appointments may be made by telephone during normal practice hours. Patients are asked to arrive on time. The Practice reserves the right to reschedule appointments where a patient arrives more than ten minutes late, where to do otherwise would cause unreasonable delay to other patients.</p>
-        <p>4.2 Patients who need to cancel or rearrange an appointment are asked to give at least 24 hours' notice. Repeated failure to attend or to give adequate notice may result in the patient being discharged from the Practice's NHS or private list, in accordance with NHS contractual obligations and GDC guidance on patient management.</p>
-        <p>4.3 A cancellation or failed-appointment charge may be applied for private appointments where insufficient notice is given. The applicable charge will be stated in the patient's private treatment agreement.</p>
-
-        <p class="legal-section">5. CLINICAL DECISIONS AND PROFESSIONAL STANDARDS</p>
-        <p>5.1 All clinical decisions are made by qualified dental professionals registered with the GDC, in accordance with their professional duty of care and the GDC's Standards for the Dental Team.</p>
-        <p>5.2 Treatment recommendations are based on clinical examination and the individual patient's oral health needs. No guarantee of any specific clinical outcome can be given; dentistry, like all healthcare, involves inherent clinical risks which will be discussed with patients as part of the informed consent process.</p>
-        <p>5.3 Patients have the right to accept or decline any recommended treatment. Declining recommended treatment may affect oral health outcomes; the Practice will advise patients of relevant risks where a recommendation is declined.</p>
-
-        <p class="legal-section">6. ARTIFICIAL INTELLIGENCE AND DIGITAL INFORMATION</p>
-        <p>6.1 The Practice's website and associated digital assistant (voice agent) may incorporate artificial intelligence (AI) and large language model (LLM) technology to provide general information about the Practice and dental health.</p>
-        <p>6.2 AI and LLM systems are known to produce outputs that may be inaccurate, incomplete, or out of date — a phenomenon commonly referred to as "hallucination." Any information provided by AI systems on this website or via the voice assistant must be treated as general information only and must not be relied upon as clinical advice, diagnosis, or treatment recommendation.</p>
-        <p>6.3 Nothing communicated via this website, the voice assistant, or any other digital channel constitutes a clinical consultation, a diagnosis, or a recommendation to undertake or to refrain from any course of treatment. Patients must seek advice directly from a qualified dental professional for any clinical concern.</p>
-        <p>6.4 In the event of any discrepancy between information provided digitally and information provided by a clinical professional at the Practice, the advice of the clinical professional shall prevail.</p>
-
-        <p class="legal-section">7. COMPLAINTS</p>
-        <p>7.1 The Practice takes complaints seriously. Any patient who is dissatisfied with their care or treatment is encouraged to raise their concern in the first instance with the Practice directly, either in person, by telephone, or in writing to 5 Billing Road, Northampton, NN1 5AN.</p>
-        <p>7.2 The Practice operates a complaints procedure in line with NHS and CQC requirements. Patients will receive a written acknowledgement within three working days and a substantive response within 10 working days of the complaint being received.</p>
-        <p>7.3 If a complaint cannot be resolved to the patient's satisfaction, patients may refer the matter to:</p>
-        <ul class="legal-list">
-          <li>The Dental Complaints Service (private treatment): 08456 120 540</li>
-          <li>NHS England (NHS treatment): 0300 311 2233</li>
-          <li>The General Dental Council (fitness to practise concerns): 020 7167 6000</li>
-          <li>The Parliamentary and Health Service Ombudsman (NHS complaints not resolved locally)</li>
-        </ul>
-
-        <p class="legal-section">8. LIMITATION OF LIABILITY</p>
-        <p>8.1 Nothing in these Terms &amp; Conditions limits or excludes liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, or for any other liability that cannot lawfully be excluded or limited.</p>
-        <p>8.2 To the fullest extent permitted by law, the Practice's liability for any claim arising from the use of this website or its digital services (excluding clinical liability) shall be limited to the value of fees paid by the patient in connection with the matter giving rise to the claim.</p>
-
-        <p class="legal-section">9. GOVERNING LAW</p>
-        <p>9.1 These Terms &amp; Conditions are governed by the law of England and Wales. Any dispute arising under these Terms &amp; Conditions shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
-
-        <p class="legal-section">10. CHANGES TO THESE TERMS</p>
-        <p>10.1 The Practice reserves the right to amend these Terms &amp; Conditions at any time. The current version will always be displayed on this website. Continued use of the Practice's services following any amendment constitutes acceptance of the revised Terms &amp; Conditions.</p>
-      </div>
-    </div>
-
-    <!-- ── PRIVACY POLICY ANCHOR ─────────────────────────────────────– -->
-    <div id="privacy" class="section">
-      <div class="section-title">Privacy Policy</div>
-      <div class="section-content">
-<div class="legal-notice">⚠️ <strong>Placeholder document.</strong> This Privacy Policy is a working draft prepared for review purposes only. It has not been reviewed or approved by a qualified solicitor and must not be treated as a final legal document. It will be replaced with copy provided by Dr Nasir's own legal adviser before final publication.</div>
-
-        <p class="legal-heading">PRIVACY POLICY &amp; GDPR STATEMENT</p>
-        <p class="legal-meta">Delapre Dental Care · 5 Billing Road, Northampton, NN1 5AN<br>Data Controller: Dr Sabina Nasir · GDC No. 169400<br>Last updated: March 2026</p>
-
-        <p class="legal-section">1. WHO WE ARE AND HOW TO CONTACT US</p>
-        <p>1.1 Delapre Dental Care, operated by Dr Sabina Nasir, is the data controller responsible for the personal information we hold about you.</p>
-        <p>1.2 If you have any questions about how we use your personal information, or wish to exercise any of your rights (see Section 9), please contact us at: Delapre Dental Care, 5 Billing Road, Northampton, NN1 5AN. Telephone: 01604 636836.</p>
-        <p>1.3 Where required by law, we may be obliged to appoint a Data Protection Officer (DPO). Details of any DPO appointed will be added to this policy and displayed at the Practice premises.</p>
-
-        <p class="legal-section">2. WHAT PERSONAL INFORMATION WE COLLECT</p>
-        <p>2.1 We collect and process the following categories of personal information:</p>
-        <ul class="legal-list">
-          <li><strong>Identity and contact information</strong> — full name, date of birth, address, telephone number, email address, and NHS number (where applicable).</li>
-          <li><strong>Special category health data</strong> — details of your dental and general medical history, medications, allergies, clinical examination findings, treatment records, radiographs (X-rays), and clinical photographs.</li>
-          <li><strong>Financial information</strong> — NHS charge band exemption declarations, payment records, and private treatment financial agreements.</li>
-          <li><strong>Communication records</strong> — correspondence between you and the Practice, including appointment confirmations, recall notices, and complaint correspondence.</li>
-          <li><strong>Website and digital interaction data</strong> — technical data collected when you visit our website (see Section 7).</li>
-        </ul>
-        <p>2.2 We do not collect or process special category data beyond what is necessary for the provision of dental care and the fulfilment of our legal and regulatory obligations.</p>
-
-        <p class="legal-section">3. HOW WE COLLECT YOUR INFORMATION</p>
-        <p>3.1 We collect personal information directly from you when you register as a patient, complete medical history forms, attend appointments, contact the Practice by telephone, email, or via our website, or interact with our digital voice assistant.</p>
-        <p>3.2 We may also receive information from NHS England, your GP, referring clinicians, dental laboratories, or other healthcare providers involved in your care, where this is necessary for your treatment.</p>
-
-        <p class="legal-section">4. WHY WE USE YOUR INFORMATION AND OUR LAWFUL BASIS</p>
-        <p>4.1 We process your personal information for the following purposes and on the following legal bases under UK GDPR:</p>
-        <ul class="legal-list">
-          <li><strong>Providing dental treatment and care</strong> — Article 6(1)(c) Legal obligation; Article 9(2)(h) Healthcare provision.</li>
-          <li><strong>Managing appointments and recalls</strong> — Article 6(1)(b) Contract performance; Article 6(1)(f) Legitimate interests.</li>
-          <li><strong>NHS reporting and contractual obligations</strong> — Article 6(1)(c) Legal obligation.</li>
-          <li><strong>Processing payments and financial records</strong> — Article 6(1)(b) Contract performance; Article 6(1)(c) Legal obligation.</li>
-          <li><strong>Handling complaints and clinical incidents</strong> — Article 6(1)(c) Legal obligation; Article 9(2)(h) Healthcare provision.</li>
-          <li><strong>Regulatory compliance (GDC, CQC)</strong> — Article 6(1)(c) Legal obligation.</li>
-          <li><strong>Improving our services</strong> — Article 6(1)(f) Legitimate interests.</li>
-        </ul>
-
-        <p class="legal-section">5. WHO WE SHARE YOUR INFORMATION WITH</p>
-        <p>5.1 We share your personal information only where necessary and only with:</p>
-        <ul class="legal-list">
-          <li>NHS England and NHS Business Services Authority — to fulfil our NHS contract and for payment purposes.</li>
-          <li>Dental laboratories and specialist referral providers — where your treatment requires laboratory work or specialist input.</li>
-          <li>Your GP or other treating healthcare professionals — where clinically relevant and in your interests.</li>
-          <li>Regulatory bodies — the GDC, CQC, or NHS England where we are legally required to disclose information.</li>
-          <li>Our software and IT service providers — practice management systems, secure cloud storage, and communication platforms, all bound by appropriate data processing agreements.</li>
-          <li>Our insurers and legal advisers — where necessary in connection with a complaint, claim, or legal matter.</li>
-        </ul>
-        <p>5.2 We do not sell your personal information to any third party. We do not share your information for marketing purposes without your explicit consent.</p>
-        <p>5.3 Where we use digital tools — including this website and the AI-powered voice assistant — these tools may be provided by third-party technology suppliers. Any such suppliers are required to process your data in accordance with UK GDPR and are bound by written data processing agreements.</p>
-
-        <p class="legal-section">6. HOW LONG WE KEEP YOUR INFORMATION</p>
-        <p>6.1 We retain patient records in accordance with NHS and professional guidance. Current retention periods are:</p>
-        <ul class="legal-list">
-          <li>Adult patient records: a minimum of 10 years from the date of last treatment, or until the patient's 25th birthday, whichever is longer.</li>
-          <li>Child patient records: until the patient's 25th birthday, or 26th birthday if the young person was 17 at the conclusion of treatment.</li>
-          <li>NHS claim records: 10 years.</li>
-          <li>Financial records: 7 years for accounting purposes.</li>
-        </ul>
-        <p>6.2 These retention periods reflect our legal obligations under the Limitation Act 1980, NHS guidance, and GDC professional standards. Records will be securely destroyed at the end of the applicable retention period.</p>
-
-        <p class="legal-section">7. THIS WEBSITE AND DIGITAL SERVICES</p>
-        <p>7.1 When you visit this website, standard technical information may be collected automatically, including your IP address, browser type, and pages visited. This information is used solely for the purpose of maintaining the security and performance of the website and is not used to identify you personally.</p>
-        <p>7.2 This website uses a digital AI voice assistant. Any information you share during an interaction with the voice assistant (such as your name or a question about your appointment) may be processed by the AI system. Please do not share sensitive clinical or financial details via the voice assistant.</p>
-        <p>7.3 <strong>Important:</strong> The AI voice assistant is provided for general information purposes only. AI and large language model (LLM) technology can produce information that is inaccurate or out of date — a phenomenon known as "hallucination." Nothing communicated via the voice assistant constitutes a clinical consultation, diagnosis, or treatment recommendation. For any clinical concern, please contact the Practice directly and speak with a qualified dental professional.</p>
-        <p>7.4 We do not use cookies beyond those strictly necessary for the operation of this website. We do not use tracking, profiling, or advertising cookies.</p>
-
-        <p class="legal-section">8. TRANSFERRING YOUR DATA OUTSIDE THE UK</p>
-        <p>8.1 We do not routinely transfer your personal data outside the United Kingdom. Where any third-party service provider processes data outside the UK, we ensure that appropriate safeguards are in place in accordance with UK GDPR Article 46, and we will inform you of any such transfer upon request.</p>
-
-        <p class="legal-section">9. YOUR RIGHTS</p>
-        <p>9.1 Under UK GDPR, you have the following rights in relation to your personal data:</p>
-        <ul class="legal-list">
-          <li><strong>Right of access</strong> — to request a copy of the personal data we hold about you (Subject Access Request). We will respond within one calendar month.</li>
-          <li><strong>Right to rectification</strong> — to request correction of inaccurate or incomplete data.</li>
-          <li><strong>Right to erasure</strong> — to request deletion of your data in certain circumstances. Please note that this right is limited where we are required to retain data by law (e.g. clinical records during the mandatory retention period).</li>
-          <li><strong>Right to restrict processing</strong> — to request that we limit the way we use your data in certain circumstances.</li>
-          <li><strong>Right to data portability</strong> — to receive your data in a structured, machine-readable format in certain circumstances.</li>
-          <li><strong>Right to object</strong> — to object to processing based on legitimate interests.</li>
-          <li><strong>Right not to be subject to automated decision-making</strong> — we do not make decisions about your care solely by automated means.</li>
-        </ul>
-        <p>9.2 To exercise any of these rights, please contact us in writing at the address in Section 1. We will not charge a fee for a Subject Access Request unless it is manifestly unfounded or excessive.</p>
-        <p>9.3 If you are dissatisfied with how we have handled your personal data, you have the right to lodge a complaint with the Information Commissioner's Office (ICO): Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF. Telephone: 0303 123 1113. Website: ico.org.uk.</p>
-
-        <p class="legal-section">10. CHANGES TO THIS PRIVACY POLICY</p>
-        <p>10.1 We review this Privacy Policy regularly. Any material changes will be notified to patients and updated on this website. The date at the top of this document reflects the most recent revision.</p>
-      </div>
-    </div>
-
-    <!-- ── PDF VIEWER — DHR 2024 DOCUMENT ─────────────────────────────– -->
-    <!-- This section embeds the Dental Health Report 2024 PDF file inline so
-         visitors can read and review the document directly on the page. A
-         download link is also provided for users who wish to save the PDF to
-         their device. The styling matches the existing site design language,
-         with a subtle card background and steel-blue accent bar. -->
-    <div class="section">
-      <div class="section-title">Dental Health Report 2024</div>
-      <div class="pdf-viewer-container">
-        <!-- Embedded PDF iframe — displays the PDF document inline at 100% width
-             and 600px height, allowing visitors to scroll through multiple pages
-             without leaving the page. The iframe includes a subtle border for
-             visual definition. -->
-        <iframe
-          src="https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf"
-          class="pdf-iframe"
-          title="Dental Health Report 2024">
-        </iframe>
-        <!-- Download link for the PDF file — allows visitors to save the
-             document to their device for offline access or printing. The link
-             is styled as a subtle button matching the site design. -->
-        <a href="https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf" class="pdf-download-link" download>
-          Download PDF
-        </a>
-      </div>
-    </div>
-
-    <!-- ── YOUTUBE VIDEO SECTION ────────────────────────────────────────– -->
-    <!-- This section embeds a YouTube video in a professional card container
-         that matches the site design language. An announcement above the video
-         informs visitors that Dr Nasir will be attending the featured event.
-         The video uses a responsive aspect-ratio wrapper to maintain proper
-         16:9 proportions across all screen sizes. -->
-    <div class="section">
-      <div class="section-title">Event</div>
-      <div class="youtube-container">
-        <!-- Announcement text informing visitors that Dr Nasir will be attending
-             the event featured in the embedded YouTube video below. -->
-        <div class="youtube-announcement">
-          Dr Sabina Nasir will be attending this event. Watch the video to learn more.
-        </div>
-        <!-- YouTube iframe wrapper — maintains 16:9 aspect ratio responsively
-             across all screen sizes using the padding-bottom trick. The iframe
-             itself is positioned absolutely inside this wrapper. -->
-        <div class="youtube-iframe-wrapper">
-          <!-- Embedded YouTube video iframe — displays the video inline at full
-               responsive width and proper aspect ratio. The allow attribute
-               enables fullscreen playback capability. -->
-          <iframe
-            class="youtube-iframe"
-            src="https://www.youtube.com/embed/QZGKyDTufTU"
-            title="Event featuring Dr Sabina Nasir"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
         </div>
       </div>
     </div>
@@ -1554,18 +922,26 @@
   does not work reliably across widget versions.
   ===================================================================== -->
   <script>
+    // Initialize avatar mapping for agent-specific portrait images
     var AVATARS = {
       sabina:   "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg",
       benedict: "https://teckel-io.github.io/drsn/assets/benedict.png"
     };
+    
+    // Register avatar swap tool when the widget call event fires
     document.addEventListener("DOMContentLoaded", function () {
       var widget = document.querySelector("elevenlabs-convai");
       if (widget) {
+        // Listen for call initiation event from ElevenLabs widget
         widget.addEventListener("elevenlabs-convai:call", function (event) {
+          // Register client tools including the update_avatar function
           event.detail.config.clientTools = {
             update_avatar: function (params) {
+              // Look up the avatar URL from the AVATARS map based on agent name
               var url = AVATARS[params.avatar_name];
+              // Update the widget's displayed avatar image if a matching URL exists
               if (url) { widget.setAttribute("avatar-image-url", url); }
+              // Return confirmation message to agent
               return "Avatar updated";
             }
           };
