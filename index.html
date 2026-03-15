@@ -140,6 +140,7 @@
     "description": "Delapre Dental Care is a dental practice in Northampton offering NHS and private dental services. Led by Dr Sabina Nasir, the practice provides gentle, professional care for all patients.",
     "url": "https://teckel-io.github.io/drsn/",
     "telephone": "+441604636836",
+    "email": "office@delapredental.com",
     "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
     "priceRange": "NHS & Private",
     "currenciesAccepted": "GBP",
@@ -354,7 +355,7 @@
       that looks too large: decrease in 5px increments.
 
     WHY !important IS REQUIRED HERE:
-    The ElevenLabs widget is a custom HTML element (<elevenlabs-convai>)
+    The ElevenLabs widget is a custom HTML element (elevenlabs-convai)
     whose internal Shadow DOM or inline styles apply positioning with high
     CSS specificity. Without !important, this external stylesheet rule loses
     the specificity battle and has no visible effect on the widget position.
@@ -1180,6 +1181,19 @@
       </div>
     </div>
 
+    <!-- ── EMAIL ──────────────────────────────────────────────────────– -->
+    <!-- Email contact section positioned directly below the phone number.
+         Styled consistently with other contact information sections using
+         the same section-title and section-content classes. The mailto: link
+         allows users to send emails directly from the page. -->
+    <div class="section">
+      <div class="section-title">Email</div>
+      <div class="section-content">
+        <!-- mailto: URI enables one-tap email composition on all devices -->
+        <p><a href="mailto:office@delapredental.com">office@delapredental.com</a></p>
+      </div>
+    </div>
+
     <!-- ── OFFICE HOURS ───────────────────────────────────────────────── -->
     <div class="section">
       <div class="section-title">Office Hours</div>
@@ -1242,7 +1256,7 @@
       </div>
     </div>
 
-    <!-- ── OUR TEAM ANCHOR ────────────────────────────────────────────── -->
+    <!-- ── OUR TEAM ANCHOR ────────────────────────────────────────────– -->
     <div id="team" class="section">
       <div class="section-title">Our Team</div>
       <div class="section-content">
@@ -1452,7 +1466,7 @@
       </div>
     </div>
 
-    <!-- ── YOUTUBE VIDEO SECTION ────────────────────────────────────────── -->
+    <!-- ── YOUTUBE VIDEO SECTION ────────────────────────────────────────– -->
     <!-- This section embeds a YouTube video in a professional card container
          that matches the site design language. An announcement above the video
          informs visitors that Dr Nasir will be attending the featured event.
