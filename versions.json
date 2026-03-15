@@ -524,6 +524,20 @@
       "pre_edit_pages": {
         "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
       }
+    },
+    {
+      "version": 38,
+      "timestamp": "2026-03-15T07:02:43.019Z",
+      "tag": null,
+      "change_description": "change the  contact email from office@delapredental.com to sabina@delepredental.com on the home page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "7d1cb81b28c798cb8c479ec741e1c4468ffd5110"
+      },
+      "pre_edit_pages": {
+        "index": "73ea65815eee6b0778980e2008d8094d56141570"
+      }
     }
   ]
 }
