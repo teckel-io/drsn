@@ -552,6 +552,20 @@
       "pre_edit_pages": {
         "index": "7d1cb81b28c798cb8c479ec741e1c4468ffd5110"
       }
+    },
+    {
+      "version": 40,
+      "timestamp": "2026-03-15T07:28:00.492Z",
+      "tag": null,
+      "change_description": "change the  contact email from office@delapredental.com to dentist@delepredental.com on the home page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "8ef2cfbfa1609143d8fa0b7ffffdcc96a8825c86"
+      },
+      "pre_edit_pages": {
+        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
+      }
     }
   ]
 }
