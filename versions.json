@@ -3,24 +3,11 @@
     "max_versions": 50,
     "repo": "teckel-io/drsn",
     "pages": [
-      "index"
+      "index",
+      "services"
     ]
   },
   "versions": [
-    {
-      "version": 2,
-      "timestamp": "2026-03-12T12:39:46.079Z",
-      "tag": "Current Base Website Build",
-      "change_description": "change the background color of the  website to the following hex code color:  002349",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "166977104d2e690ae861394fbffd035faf83e628"
-      },
-      "pre_edit_pages": {
-        "index": "eca36ef1c48b3f92a56f243e50c377ba91f78ad1"
-      }
-    },
     {
       "version": 3,
       "timestamp": "2026-03-12T20:37:15.693Z",
@@ -705,6 +692,20 @@
       },
       "pre_edit_pages": {
         "index": "6d6bd30c5cc47cac9a3eb0e431f0b106f62fee89"
+      }
+    },
+    {
+      "version": 52,
+      "timestamp": "2026-03-15T23:33:56.121Z",
+      "tag": null,
+      "change_description": "Add a note at the top of the services page saying \"Prices correct as of March 2026\"",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "e3e7bb97c3ee486f05cddeb63c9a73f66f944df3"
+      },
+      "pre_edit_pages": {
+        "services": "49b816314e775c1d2db6c4a5501cd951464e8839"
       }
     }
   ]
