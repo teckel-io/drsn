@@ -370,6 +370,20 @@
       "pre_edit_pages": {
         "index": "c240a185c3f2fb914dc6f2b000639f5f720b017c"
       }
+    },
+    {
+      "version": 27,
+      "timestamp": "2026-03-15T01:17:31.597Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 26 (\"im wantign to upload a new posdcast. how do i do that?\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 26,
+      "pages": {
+        "index": "c240a185c3f2fb914dc6f2b000639f5f720b017c"
+      },
+      "pre_edit_pages": {
+        "index": "76abe4490b351bd75294199c0110cb4010c897d5"
+      }
     }
   ]
 }
