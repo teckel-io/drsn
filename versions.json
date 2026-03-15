@@ -412,6 +412,20 @@
       "pre_edit_pages": {
         "index": "88b2c4f96a0b751d4f64769411ff6cb073754616"
       }
+    },
+    {
+      "version": 30,
+      "timestamp": "2026-03-15T05:49:43.586Z",
+      "tag": null,
+      "change_description": "please embed this youtube video on the homepage below the PDF viewer with an announcement that Dr. Nasir will be attending the event.  Here is the link:  https://youtu.be/QZGKyDTufTU   Be sure to integrate the video into the site in a professional manner in accordance with the look, feel, style and overall professionalism of the site.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
+      },
+      "pre_edit_pages": {
+        "index": "c240a185c3f2fb914dc6f2b000639f5f720b017c"
+      }
     }
   ]
 }
