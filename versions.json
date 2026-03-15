@@ -8,20 +8,6 @@
   },
   "versions": [
     {
-      "version": 1,
-      "timestamp": "2026-03-12T12:34:20.408Z",
-      "tag": "boring brown",
-      "change_description": "please change the  background color of the website to brown",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "eca36ef1c48b3f92a56f243e50c377ba91f78ad1"
-      },
-      "pre_edit_pages": {
-        "index": "e58a127e3da3699ed2526040c1870e79e2aa5bac"
-      }
-    },
-    {
       "version": 2,
       "timestamp": "2026-03-12T12:39:46.079Z",
       "tag": "Current Base Website Build",
@@ -705,6 +691,20 @@
       },
       "pre_edit_pages": {
         "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
+      }
+    },
+    {
+      "version": 51,
+      "timestamp": "2026-03-15T23:29:16.437Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 50 (\"Change the opening hours on Monday to 9am–6pm\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 50,
+      "pages": {
+        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
+      },
+      "pre_edit_pages": {
+        "index": "6d6bd30c5cc47cac9a3eb0e431f0b106f62fee89"
       }
     }
   ]
