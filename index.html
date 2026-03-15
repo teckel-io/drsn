@@ -215,7 +215,20 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background-color: #002349; /* ← PAGE BACKGROUND COLOUR (dark navy) */
+      /*
+      WHAT THIS DOES: Sets the full page background to a professional dark
+      green colour that conveys trust, health, and natural wellness — ideal
+      for a dental practice.
+      WHY #1a3a2a: This dark green hex code is rich but not black, providing
+      excellent contrast for white and light blue text while maintaining a
+      sophisticated, calming appearance. It sits between pure navy (#001a35,
+      the old colour) and bright greens, striking a balance that feels
+      professional and medical without being cold or sterile.
+      TUNING: Adjust towards #0f3a2a (darker) if the page feels too bright,
+      or towards #2a4a3a (lighter) if it feels too dark. Test contrast
+      ratios against text colours (#ffffff, #b0c4de) to ensure accessibility.
+      */
+      background-color: #1a3a2a;
       font-family: sans-serif;
       min-height: 100vh;
 
@@ -274,9 +287,9 @@
     =====================================================================
     NAVIGATION BAR
     Fixed to the top of the viewport on all screen sizes. Uses a slightly
-    darker shade of the page navy (#001a35 vs page #002349) with a subtle
-    steel-blue bottom border (rgba of #b0c4de at 20% opacity) to separate
-    it visually from the page background.
+    darker shade of the page dark green (#0d2818 vs page #1a3a2a) with a
+    subtle steel-blue bottom border (rgba of #b0c4de at 20% opacity) to
+    separate it visually from the page background.
 
     z-index: 1000 ensures the navbar always sits above all page content
     including the ElevenLabs widget and any absolutely-positioned elements.
@@ -292,7 +305,7 @@
       top: 0;
       left: 0;
       right: 0;
-      background-color: #001a35;   /* ← Slightly darker than page background */
+      background-color: #0d2818;   /* ← Slightly darker than page background */
       border-bottom: 1px solid rgba(176, 196, 222, 0.2); /* ← Subtle divider */
       padding: 16px 32px;
       z-index: 1000;
@@ -354,7 +367,7 @@
       that looks too large: decrease in 5px increments.
 
     WHY !important IS REQUIRED HERE:
-    The ElevenLabs widget is a custom HTML element (<elevenlabs-convai>)
+    The ElevenLabs widget is a custom HTML element (elevenlabs-convai)
     whose internal Shadow DOM or inline styles apply positioning with high
     CSS specificity. Without !important, this external stylesheet rule loses
     the specificity battle and has no visible effect on the widget position.
