@@ -622,6 +622,20 @@
       "pre_edit_pages": {
         "index": "7503107c12abbe86ce2a2e8c825845b26a0d60cd"
       }
+    },
+    {
+      "version": 45,
+      "timestamp": "2026-03-15T22:47:53.168Z",
+      "tag": null,
+      "change_description": "Update the page title to say \"Welcome to Delapre Dental Care\" on the home page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "14d0dcc0e6d83d49e9d0d433015e6708b19a3222"
+      },
+      "pre_edit_pages": {
+        "index": "2feed2f84e8c71bb5189c70d16d6beb700da2484"
+      }
     }
   ]
 }
