@@ -402,7 +402,7 @@
     {
       "version": 29,
       "timestamp": "2026-03-15T05:19:52.339Z",
-      "tag": null,
+      "tag": "latest single page website",
       "change_description": "Rolled back to the state before version 28 (\"please change the color of the phone number to green\")",
       "is_rollback": true,
       "rolled_back_to_version": 28,
