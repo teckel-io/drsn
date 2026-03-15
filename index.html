@@ -1021,6 +1021,119 @@
       color: #ffffff;
       border-color: rgba(176, 196, 222, 0.3);
     }
+
+    /*
+    =====================================================================
+    YOUTUBE VIDEO CONTAINER
+    Wraps the embedded YouTube video iframe in a card-like container that
+    matches the site's existing visual design language. The background tint
+    and border-left accent are consistent with PDF viewer, testimonial, and
+    team member cards throughout the page.
+
+    WHAT THIS DOES: Creates a professional, cohesive presentation for the
+    YouTube video embed so it appears as an intentional part of the page
+    design rather than a floating or jarring element.
+
+    WHY THESE COLOURS: Uses the same rgba(176, 196, 222, 0.05) background
+    tint and #b0c4de border-left as other card sections on the page. This
+    ensures visual consistency and makes the video container feel like part
+    of the unified design system.
+
+    WHAT margin-bottom DOES: Provides breathing room between this video
+    section and whatever content follows below it (typically the footer).
+
+    TUNING: Adjust padding in 4px increments if content feels too cramped or
+    too loose. Adjust margin-bottom in 4px increments if the spacing between
+    this section and the next feels off. Modify border opacity (0.05 to 0.1)
+    if the background tint is too subtle or too prominent.
+    =====================================================================
+    */
+    .youtube-container {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    /*
+    =====================================================================
+    YOUTUBE ANNOUNCEMENT TEXT
+    Provides context and visual hierarchy for the video by displaying a
+    professional announcement message above the embedded video.
+
+    WHAT THIS DOES: Displays text that announces Dr Nasir's attendance at
+    the event featured in the video. White text on the dark navy background
+    maintains readability and consistency with the rest of the page.
+
+    WHY color: #ffffff: White text provides maximum contrast and legibility
+    against the dark background. The white matches the colour of other body
+    text on the page (see .section-content).
+
+    WHY font-size: 15px: Matches the standard body text size used throughout
+    the page (.section-content), ensuring visual consistency and readability.
+
+    WHY line-height: 1.6: Provides comfortable vertical spacing for multi-line
+    text, making the announcement easy to scan and read.
+
+    WHY margin-bottom: 16px: Creates a clear visual gap between the
+    announcement text and the video embed below, grouping them together while
+    maintaining clear separation.
+
+    TUNING: Increase margin-bottom to 20px or 24px if the gap between text
+    and video feels too tight. Decrease to 12px if the spacing feels excessive.
+    =====================================================================
+    */
+    .youtube-announcement {
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    /*
+    =====================================================================
+    YOUTUBE IFRAME EMBEDDING
+    Embeds the YouTube video at full responsive width. The aspect ratio of
+    16:9 is maintained across all screen sizes using the padding-bottom trick
+    with a wrapper div (see HTML structure below).
+
+    WHAT THIS DOES: Displays the YouTube video inline on the page so visitors
+    can watch it without navigating away from the site.
+
+    WHY 100% width: Responsive design — the iframe automatically scales to
+    match the container width (560px max on desktop, full width minus padding
+    on mobile).
+
+    WHY height: 100%: When used with the aspect-ratio wrapper, this ensures
+    the video maintains proper 16:9 proportions on all screen sizes without
+    distortion.
+
+    WHY border: Provides subtle visual definition between the video and the
+    background. The colour and opacity match the PDF iframe border for
+    consistency.
+
+    TUNING: Adjust border colour/opacity if the video frame blends too much
+    with the background. Modify the aspect-ratio-wrapper padding-bottom
+    percentage if videos appear stretched or squashed (16:9 = 56.25%).
+    =====================================================================
+    */
+    .youtube-iframe-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .youtube-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(176, 196, 222, 0.15);
+      border-radius: 2px;
+    }
   </style>
 </head>
 <body>
@@ -1336,6 +1449,38 @@
         <a href="https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf" class="pdf-download-link" download>
           Download PDF
         </a>
+      </div>
+    </div>
+
+    <!-- ── YOUTUBE VIDEO SECTION ────────────────────────────────────────── -->
+    <!-- This section embeds a YouTube video in a professional card container
+         that matches the site design language. An announcement above the video
+         informs visitors that Dr Nasir will be attending the featured event.
+         The video uses a responsive aspect-ratio wrapper to maintain proper
+         16:9 proportions across all screen sizes. -->
+    <div class="section">
+      <div class="section-title">Event</div>
+      <div class="youtube-container">
+        <!-- Announcement text informing visitors that Dr Nasir will be attending
+             the event featured in the embedded YouTube video below. -->
+        <div class="youtube-announcement">
+          Dr Sabina Nasir will be attending this event. Watch the video to learn more.
+        </div>
+        <!-- YouTube iframe wrapper — maintains 16:9 aspect ratio responsively
+             across all screen sizes using the padding-bottom trick. The iframe
+             itself is positioned absolutely inside this wrapper. -->
+        <div class="youtube-iframe-wrapper">
+          <!-- Embedded YouTube video iframe — displays the video inline at full
+               responsive width and proper aspect ratio. The allow attribute
+               enables fullscreen playback capability. -->
+          <iframe
+            class="youtube-iframe"
+            src="https://www.youtube.com/embed/QZGKyDTufTU"
+            title="Event featuring Dr Sabina Nasir"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </div>
 
