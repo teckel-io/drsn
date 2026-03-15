@@ -468,6 +468,20 @@
       "pre_edit_pages": {
         "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
       }
+    },
+    {
+      "version": 34,
+      "timestamp": "2026-03-15T06:29:19.916Z",
+      "tag": null,
+      "change_description": "Rolled back to version 32 — Rolled back to the state before version 31 (\"change the footer copyright year to 2027\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 32,
+      "pages": {
+        "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
+      },
+      "pre_edit_pages": {
+        "index": "0166ade94f3d9a97f614fdfb24846c4ef3d25886"
+      }
     }
   ]
 }
