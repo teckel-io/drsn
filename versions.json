@@ -692,6 +692,20 @@
       "pre_edit_pages": {
         "index": "2feed2f84e8c71bb5189c70d16d6beb700da2484"
       }
+    },
+    {
+      "version": 50,
+      "timestamp": "2026-03-15T23:25:07.281Z",
+      "tag": null,
+      "change_description": "Change the opening hours on Monday to 9am–6pm",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "6d6bd30c5cc47cac9a3eb0e431f0b106f62fee89"
+      },
+      "pre_edit_pages": {
+        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
+      }
     }
   ]
 }
