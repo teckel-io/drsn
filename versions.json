@@ -510,6 +510,20 @@
       "pre_edit_pages": {
         "index": "c9db99056e9b4f870c56933f1be368cda00924a2"
       }
+    },
+    {
+      "version": 37,
+      "timestamp": "2026-03-15T06:42:44.280Z",
+      "tag": null,
+      "change_description": "Uh, please add this email address office@delapre dental.com to the homepage and place it right below the phone number and do it in a way of course that looks, uh, professional and integrated smoothly, uh, with the look and feel of the website. Thank you.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "73ea65815eee6b0778980e2008d8094d56141570"
+      },
+      "pre_edit_pages": {
+        "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
+      }
     }
   ]
 }
