@@ -496,6 +496,20 @@
       "pre_edit_pages": {
         "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
       }
+    },
+    {
+      "version": 36,
+      "timestamp": "2026-03-15T06:36:06.364Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 35 (\"dark green and make it the background of the full page\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 35,
+      "pages": {
+        "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
+      },
+      "pre_edit_pages": {
+        "index": "c9db99056e9b4f870c56933f1be368cda00924a2"
+      }
     }
   ]
 }
