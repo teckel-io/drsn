@@ -5,7 +5,16 @@
     "pages": [
       "index",
       "services"
-    ]
+    ],
+    "backup_schedule": {
+      "enabled": true,
+      "frequency": "weekly",
+      "day_of_week": 1,
+      "day_of_month": 1,
+      "notif_chat_ids": [
+        397674161
+      ]
+    }
   },
   "versions": [
     {
