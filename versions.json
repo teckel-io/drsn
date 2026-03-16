@@ -9,20 +9,6 @@
   },
   "versions": [
     {
-      "version": 20,
-      "timestamp": "2026-03-14T02:50:37.999Z",
-      "tag": null,
-      "change_description": "The navigation bar now wraps onto two lines on narrow mobile screens (narrower than 467px wide). This makes the bar taller, and the voice widget and all page content need to move down by 20 pixels on those narrow screens only — desktop screens should not be affected. Please add a new CSS media query for screens with max-width 467px that does three things: (1) increases the margin-top on the elevenlabs-convai element from 50px to 70px, (2) increases the body padding-top from 235px to 255px, and (3) increases the scroll-margin-top on the #home, #cv, #team, #terms, and #privacy anchors from 235px to 255px. Add full explanatory comments to every value as per the existing comment style in the file.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "1e934ca27b99bd6a93cd612777287bed1a268dc3"
-      },
-      "pre_edit_pages": {
-        "index": "b61121c52dea780b177085cbd5aec5168341355c"
-      }
-    },
-    {
       "version": 21,
       "timestamp": "2026-03-14T03:02:48.936Z",
       "tag": null,
@@ -706,6 +692,20 @@
       },
       "pre_edit_pages": {
         "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
+      }
+    },
+    {
+      "version": 70,
+      "timestamp": "2026-03-16T02:47:00.198Z",
+      "tag": null,
+      "change_description": "Please add a note to the services page in the pricing area that states uh prices are subject subject to change at any time. Thanks.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "75f63d2aefed7d295f9eab2458ed82a235463c6c"
+      },
+      "pre_edit_pages": {
+        "services": "e21be234a5b347eac24c9a4aacbae6a436810fa6"
       }
     }
   ]
