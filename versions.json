@@ -697,7 +697,7 @@
     {
       "version": 72,
       "timestamp": "2026-03-16T03:02:10.042Z",
-      "tag": null,
+      "tag": "latest services page",
       "change_description": "Rolled back to \"latest services page\" (v71)",
       "is_rollback": true,
       "rolled_back_to_version": 71,
