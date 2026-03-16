@@ -7,7 +7,7 @@
       "services"
     ],
     "backup_schedule": {
-      "enabled": true,
+      "enabled": false,
       "frequency": "weekly",
       "day_of_week": 1,
       "day_of_month": 1,
