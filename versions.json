@@ -9,20 +9,6 @@
   },
   "versions": [
     {
-      "version": 19,
-      "timestamp": "2026-03-14T02:25:11.837Z",
-      "tag": null,
-      "change_description": "In a manner that is seamlessly  and professionally integrated into the site in accordance with the  professional look, feeling and style of  the site, Add this image of Patricia Peterson, Dental Hygienist to the section called \"Our Team\" : https://teckel-io.github.io/drsn/assets/dr-nassir-webmaster.jpg (including brief role description) just below Benedict Williams, COO.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "b61121c52dea780b177085cbd5aec5168341355c"
-      },
-      "pre_edit_pages": {
-        "index": "5b87a6f6326c38372f2d6e291e2954ff4199a3fa"
-      }
-    },
-    {
       "version": 20,
       "timestamp": "2026-03-14T02:50:37.999Z",
       "tag": null,
@@ -706,6 +692,20 @@
       },
       "pre_edit_pages": {
         "services": "58ba9ab679249d7733a622319521453c02a67210"
+      }
+    },
+    {
+      "version": 69,
+      "timestamp": "2026-03-16T02:39:30.241Z",
+      "tag": null,
+      "change_description": "on the  services page, change \"Prices correct as of March 2026\" to \"Prices updated as of March 2026\"",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "e21be234a5b347eac24c9a4aacbae6a436810fa6"
+      },
+      "pre_edit_pages": {
+        "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
       }
     }
   ]
