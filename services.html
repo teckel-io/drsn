@@ -7,64 +7,34 @@
   <!--
   =====================================================================
   SEO: PRIMARY META TAGS
-  These are the most important tags for Google search ranking.
 
   title       → The blue clickable headline in Google search results.
                 KEEP UNDER 60 CHARACTERS — Google truncates anything longer.
-                Current: "Delapre Dental Care – NHS & Private Dentist, Northampton"
-                Character count: 57 ✓  (safely within the 60-char limit)
-                NOTE: The previous title included "| Dr Sabina Nasir" as a
-                suffix which pushed the total to 77 characters — the suffix
-                was silently cut off in all Google search results. Dr Nasir's
-                name appears in the meta description and JSON-LD instead,
-                which is the correct place for it.
+                Current: "Delapre Dental Care – Treatments & Prices, Northampton"
+                Character count: 56 ✓
 
   description → The grey summary text shown under the title in Google results.
                 KEEP UNDER 155 CHARACTERS — Google truncates longer values.
-                Current character count: ~133 ✓
 
-  robots      → "index, follow" tells search engines to index this page and
-                follow all outgoing links from it. This is the correct default
-                for a public business website.
-
-  canonical   → Declares the "official" URL for this page. Prevents duplicate-
-                content penalties if the page is ever accessible via multiple URLs.
-                Currently pointing to the GitHub Pages dev URL.
+  canonical   → Declares the "official" URL for this page.
                 UPDATE THIS once DNS is pointed to delapredental.com.
-                The bot "set domain to delapredental.com" command automatically
-                updates og:url but NOT this canonical tag — update it separately
-                via bot prompt after the DNS switch.
   =====================================================================
   -->
-  <title>Delapre Dental Care – NHS &amp; Private Dentist, Northampton</title>
-  <meta name="description" content="NHS and private dentist in Northampton. Dr Sabina Nasir at 5 Billing Road provides gentle, professional dental care. Call 01604 636836 to book.">
-  <meta name="keywords" content="dentist Northampton, NHS dentist Northampton, private dentist Northampton, Delapre Dental Care, Dr Sabina Nasir, dental practice Northampton, Billing Road dentist">
+  <title>Delapre Dental Care – Treatments &amp; Prices, Northampton</title>
+  <meta name="description" content="NHS and private dental treatments in Northampton. View prices for check-ups, fillings, extractions, whitening, and more at Delapre Dental Care.">
+  <meta name="keywords" content="dentist Northampton, dental treatments Northampton, NHS dental prices, private dentist Northampton, teeth whitening Northampton, Delapre Dental Care">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://teckel-io.github.io/drsn/">
+  <link rel="canonical" href="https://teckel-io.github.io/drsn/services.html">
 
   <!--
   =====================================================================
   SEO: OPEN GRAPH TAGS
-  Controls how this page looks when shared on Facebook, LinkedIn,
-  WhatsApp, iMessage, and any other platform that reads Open Graph tags —
-  specifically the image, title, and description in link preview cards.
-
-  og:title       → Can be slightly longer than the <title> tag as it is
-                   not subject to the 60-char search-result truncation.
-  og:description → Aim for under 200 characters.
-  og:url         → Must match the canonical URL above. Update both together
-                   when the domain is pointed.
-  og:image       → Currently Dr Nasir's portrait photo. A wider landscape
-                   image of the practice exterior or treatment room would
-                   perform better as a social share card — update when
-                   available.
-  og:locale      → en_GB signals UK English to social platforms. ✓
   =====================================================================
   -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Delapre Dental Care — NHS &amp; Private Dentist in Northampton">
-  <meta property="og:description" content="Dr Sabina Nasir offers gentle, professional NHS and private dental care in Northampton. Book an appointment by calling 01604 636836.">
-  <meta property="og:url" content="https://teckel-io.github.io/drsn/">
+  <meta property="og:title" content="Delapre Dental Care — Treatments &amp; Prices, Northampton">
+  <meta property="og:description" content="View our full range of NHS and private dental treatments and prices. Dr Sabina Nasir at 5 Billing Road, Northampton. Call 01604 636836 to book.">
+  <meta property="og:url" content="https://teckel-io.github.io/drsn/services.html">
   <meta property="og:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Delapre Dental Care">
@@ -72,64 +42,18 @@
   <!--
   =====================================================================
   SEO: TWITTER / X CARD TAGS
-  Controls how this page appears when shared on Twitter / X.
-  "summary_large_image" displays a wide banner image above the text —
-  the most prominent card format available on the platform.
-  NOTE: Twitter uses name= attributes rather than property= (which
-  Facebook / OG uses). Both are present and correct here. ✓
   =====================================================================
   -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Delapre Dental Care — NHS &amp; Private Dentist in Northampton">
-  <meta name="twitter:description" content="Dr Sabina Nasir offers gentle, professional NHS and private dental care in Northampton. Call 01604 636836 to book.">
+  <meta name="twitter:title" content="Delapre Dental Care — Treatments &amp; Prices, Northampton">
+  <meta name="twitter:description" content="NHS and private dental treatments in Northampton. View prices for check-ups, fillings, whitening and more. Call 01604 636836.">
   <meta name="twitter:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
 
   <!--
   =====================================================================
   GEO / AEO: JSON-LD STRUCTURED DATA
-  This block is the most important element for AEO (Answer Engine
-  Optimisation) and GEO (Generative Engine Optimisation).
-
-  It tells AI assistants — ChatGPT, Perplexity, Google AI Overviews,
-  Apple Intelligence, Siri — exactly what this business is, where it
-  is, what it offers, and how to contact it, in structured machine-
-  readable format that AI models can parse without interpretation.
-
-  When someone asks an AI "find me a dentist in Northampton" or
-  "is Delapre Dental Care accepting NHS patients?", this JSON-LD
-  block is what the AI reads to answer accurately and cite this practice.
-
-  ── SCHEMA TYPE ──────────────────────────────────────────────────────
-  @type: "Dentist" — the most specific schema.org type for a dental
-  practice. It inherits from MedicalOrganization → LocalBusiness, giving
-  it the full range of medical and business properties. ✓
-  DO NOT change @context or @type.
-
-  ── FIELDS TO UPDATE WHEN PRACTICE DETAILS CHANGE ────────────────────
-  "url"            → Update to https://delapredental.com/ once DNS is
-                     pointed. The bot "set domain" command does NOT
-                     update this field — update manually via bot prompt.
-  "telephone"      → International format: +44 prefix, no leading zero. ✓
-  "aggregateRating"→ Increase reviewCount as real patient reviews are added.
-  "review"         → Add real patient reviews here over time; remove
-                     placeholder reviews once sufficient real ones exist.
-
-  ── HIGH-VALUE ADDITIONS FOR THE FUTURE ─────────────────────────────
-  "sameAs": [
-    "https://...(Google Business Profile URL)...",
-    "https://...(NHS Choices directory URL)...",
-    "https://...(Yell.com or other directory URL)..."
-  ]
-  This is the single highest-value GEO addition available. AI assistants
-  use sameAs links to cross-reference and validate business identity
-  across multiple trusted sources. Add this array once Google Business
-  Profile and NHS directory listings are live.
-
-  "isAcceptingNewPatients": true
-  Directly answers one of the most common AI assistant queries about
-  dental practices. Add once confirmed with Dr Nasir.
-
-  DO NOT modify @context or @type values.
+  Services page variant — includes hasOfferCatalog listing the main
+  treatment categories to maximise AEO visibility for treatment queries.
   =====================================================================
   -->
   <script type="application/ld+json">
@@ -138,7 +62,7 @@
     "@type": "Dentist",
     "name": "Delapre Dental Care",
     "description": "Delapre Dental Care is a dental practice in Northampton offering NHS and private dental services. Led by Dr Sabina Nasir, the practice provides gentle, professional care for all patients.",
-    "url": "https://teckel-io.github.io/drsn/",
+    "url": "https://teckel-io.github.io/drsn/services.html",
     "telephone": "+441604636836",
     "email": "office@delepredental.com",
     "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
@@ -152,63 +76,18 @@
       "postalCode": "NN1 5AN",
       "addressCountry": "GB"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "52.2405",
-      "longitude": "-0.8876"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:15",
-        "closes": "17:00"
-      }
-    ],
-    "employee": {
-      "@type": "Person",
-      "name": "Dr Sabina Nasir",
-      "jobTitle": "Principal Dentist",
-      "image": "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg"
-    },
-    "hasMap": "https://maps.google.com/?q=5+Billing+Road,+Northampton,+NN1+5AN",
-    "areaServed": {
-      "@type": "City",
-      "name": "Northampton"
-    },
-    "medicalSpecialty": "Dentistry",
-    "availableService": [
-      { "@type": "MedicalProcedure", "name": "NHS Dental Treatment" },
-      { "@type": "MedicalProcedure", "name": "Private Dental Treatment" }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "3"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Sarah J." },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-        "name": "A Calm and Gentle Experience",
-        "reviewBody": "I've always been a nervous patient, but Dr. Nasir completely changed my perspective on dental visits. She is incredibly patient, explains every step of the process, and has a very gentle touch."
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "David R." },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-        "name": "Exceptional Care and Results",
-        "reviewBody": "I recently visited Dr. Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none."
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Michael L." },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-        "name": "The Best Dentist in Northampton",
-        "reviewBody": "Dr. Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan."
-      }
-    ]
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dental Treatments",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "NHS Dental Examination" } },
+        { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "NHS Fillings" } },
+        { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "NHS Extractions" } },
+        { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Teeth Whitening" } },
+        { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Dental Implants" } },
+        { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Composite Bonding" } }
+      ]
+    }
   }
   </script>
 
@@ -223,22 +102,9 @@
       /*
       =====================================================================
       BASE BODY PADDING — applies to ALL screen sizes as the starting rule.
-      The mobile media query further below (max-width: 900px) also sets
-      padding-top: 235px — matching this value exactly. That is intentional
-      redundancy: both rules agree on 235px so that if the media query
-      override is ever removed in future, the base value is already correct.
-
       padding shorthand order: TOP  RIGHT  BOTTOM  LEFT
         TOP    = 235px → Clears both the fixed navbar AND the collapsed
-                         ElevenLabs widget. Both sit above the content on
-                         mobile and together block ~235px of vertical space
-                         at the top of the viewport.
-                         Breakdown measured on Samsung Galaxy S21 Ultra:
-                           Collapsed navbar height:  ~50px
-                           Collapsed widget height:  ~185px
-                           Total blocked space:      ~235px ✓
-                         Increase if content still overlaps the widget.
-                         Decrease if there is excessive blank space at top.
+                         ElevenLabs widget on mobile.
         RIGHT  = 24px  → Gap between content and right screen edge on mobile.
         BOTTOM = 60px  → Breathing room below the last content item.
         LEFT   = 32px  → Gap between content and left screen edge on mobile.
@@ -250,19 +116,12 @@
     /*
     =====================================================================
     DESKTOP PADDING (screens 900px wide or wider)
-    Overrides all four sides of the base body padding above.
-
     padding shorthand order: TOP  RIGHT  BOTTOM  LEFT
-      TOP    = 60px  → On desktop the widget sits to the LEFT of the content
-                       (not above it), so only navbar clearance is needed:
-                       ~50px navbar + 10px buffer = 60px. ✓
+      TOP    = 60px  → On desktop the widget sits to the LEFT of the content,
+                       so only navbar clearance is needed.
       RIGHT  = 40px  → Gap between text content and the right browser edge.
       BOTTOM = 60px  → Breathing room below the last content item.
-      LEFT   = 480px → KEY VALUE: pushes the text content column clear of
-                       the ElevenLabs widget, which is fixed to the left
-                       side of the viewport on desktop. Increase if content
-                       overlaps the widget. Decrease if there is too much
-                       empty space to the left of the text.
+      LEFT   = 480px → Pushes the text content column clear of the widget.
     =====================================================================
     */
     @media (min-width: 900px) {
@@ -274,18 +133,9 @@
     /*
     =====================================================================
     NAVIGATION BAR
-    Fixed to the top of the viewport on all screen sizes. Uses a slightly
-    darker shade of the page navy (#001a35 vs page #002349) with a subtle
-    steel-blue bottom border (rgba of #b0c4de at 20% opacity) to separate
-    it visually from the page background.
-
-    z-index: 1000 ensures the navbar always sits above all page content
-    including the ElevenLabs widget and any absolutely-positioned elements.
-
-    flex-wrap: wrap allows the nav links to reflow onto a second line on
-    narrow screens rather than overflowing off-screen or being truncated.
-    This wrapping behaviour is what causes the navbar to appear taller on
-    very narrow devices — the scroll anchor offsets below account for this.
+    Fixed to the top of the viewport on all screen sizes.
+    z-index: 1000 ensures the navbar always sits above all page content.
+    flex-wrap: wrap allows nav links to reflow on narrow screens.
     =====================================================================
     */
     .navbar {
@@ -317,15 +167,18 @@
       text-decoration: none;
     }
 
+    /* ← Active page indicator: current page link shows white */
+    .navbar a.active {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
     /*
     Compact navbar for mobile and tablet screens (narrower than 900px).
-    Reduces horizontal gap between links and reduces font size slightly.
-    At 390px width (iPhone 15) all four links fit on a single line at 13px.
-    At very narrow widths the links wrap — this is expected and intentional.
     */
     @media (max-width: 900px) {
       .navbar {
-        gap: 20px;            /* ← Tighter horizontal gap between links */
+        gap: 20px;
         padding: 14px 24px;
       }
 
@@ -337,28 +190,7 @@
     /*
     =====================================================================
     FIX #1 — ELEVENLABS WIDGET TOP MARGIN
-    Prevents the ElevenLabs voice widget from overlapping the fixed
-    navigation bar at the top of the page.
-
-    The ElevenLabs widget uses its own fixed overlay positioning (configured
-    in the ElevenLabs dashboard, not in this file). By default it anchors
-    to the very top of the viewport, which places it directly behind or
-    over the navbar.
-
-    margin-top: 50px pushes the widget's top edge 50px down from the
-    viewport top, so it clears the navbar cleanly without overlapping the
-    navigation links. This value was fine-tuned on Samsung Galaxy S21 Ultra.
-
-    TUNING GUIDE:
-    — If the widget still overlaps the navbar: increase in 5px increments.
-    — If there is a visible gap between the navbar bottom and the widget top
-      that looks too large: decrease in 5px increments.
-
-    WHY !important IS REQUIRED HERE:
-    The ElevenLabs widget is a custom HTML element (elevenlabs-convai)
-    whose internal Shadow DOM or inline styles apply positioning with high
-    CSS specificity. Without !important, this external stylesheet rule loses
-    the specificity battle and has no visible effect on the widget position.
+    Prevents the ElevenLabs voice widget from overlapping the fixed navbar.
     =====================================================================
     */
     elevenlabs-convai {
@@ -368,31 +200,26 @@
     /*
     =====================================================================
     CONTENT COLUMN WIDTH
-    Constrains the main text column to a comfortable reading width on large
-    monitors. Without this, text lines stretch across the full remaining
-    width of the browser window (after the 480px left padding), becoming
-    uncomfortably long on wide desktop screens.
-    Current: 560px — approximately 70–80 characters per line at 15px body
-    text, which is within the widely accepted optimal range for readability.
+    Constrains the main text column to a comfortable reading width.
     =====================================================================
     */
     .page { max-width: 560px; }
 
     h1 {
-      color: #ffffff;          /* ← Practice name text colour (white) */
-      margin-bottom: 8px;      /* ← Gap between h1 and the subtitle line */
-      font-size: 32px;         /* ← Practice name display size */
+      color: #ffffff;          /* ← Page title text colour (white) */
+      margin-bottom: 8px;
+      font-size: 32px;
     }
 
     .subtitle {
-      color: #b0c4de;          /* ← "Dental Practice — Northampton" colour */
-      margin-bottom: 8px;      /* ← Gap between subtitle and dentist name */
+      color: #b0c4de;          /* ← Subtitle colour (steel blue) */
+      margin-bottom: 8px;
       font-size: 16px;
     }
 
     .dentist-name {
       color: #b0c4de;
-      margin-bottom: 40px;     /* ← Gap between dentist name and first section */
+      margin-bottom: 40px;
       font-size: 16px;
       font-weight: 500;
     }
@@ -407,7 +234,7 @@
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      margin-bottom: 8px;      /* ← Gap between section heading and its content */
+      margin-bottom: 8px;
     }
 
     .section-content {
@@ -422,99 +249,103 @@
     a:hover { text-decoration: underline; }
 
     .note {
-      color: #b0c4de;          /* ← Italic supplementary note colour */
+      color: #b0c4de;
       font-size: 13px;
       font-style: italic;
       margin-top: 8px;
     }
 
-    .testimonial {
-      background-color: rgba(176, 196, 222, 0.05); /* ← Very subtle tinted card bg */
-      border-left: 3px solid #b0c4de;              /* ← Steel blue accent bar */
-      padding: 16px;
-      margin-bottom: 20px;     /* ← Gap between testimonial cards */
-    }
-
-    .testimonial-title {
-      color: #b0c4de;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .testimonial-quote {
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 12px;
-    }
-
-    .testimonial-attribution {
-      color: #b0c4de;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .team-member {
-      background-color: rgba(176, 196, 222, 0.05); /* ← Subtle tinted card bg */
-      border-left: 3px solid #b0c4de;              /* ← Steel blue accent bar */
-      padding: 20px;
-      margin-bottom: 24px;
+    /*
+    =====================================================================
+    TREATMENT ROW — individual treatment line within a section.
+    Name and price displayed on the same row with space-between alignment.
+    =====================================================================
+    */
+    .treatment-row {
       display: flex;
-      gap: 20px;
-      align-items: flex-start;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(176, 196, 222, 0.1); /* ← Subtle divider */
+      gap: 12px;
     }
 
-    .team-member-image {
-      flex-shrink: 0;
-      width: 120px;
-      height: 120px;
-      border-radius: 4px;
-      overflow: hidden;
+    .treatment-row:last-child {
+      border-bottom: none;
     }
 
-    .team-member-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .team-member-info {
+    .treatment-name {
+      color: #ffffff;
+      font-size: 15px;
       flex: 1;
     }
 
-    .team-member-name {
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 4px;
+    .treatment-price {
+      color: #b0c4de;          /* ← Price in steel blue */
+      font-size: 15px;
+      font-weight: 500;
+      white-space: nowrap;     /* ← Prevents price wrapping mid-number */
+      flex-shrink: 0;
     }
 
-    .team-member-title {
+    /*
+    =====================================================================
+    BAND CARD — NHS banding card container.
+    Uses the same tinted card style as testimonials on the home page for
+    visual consistency across the site.
+    =====================================================================
+    */
+    .band-card {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .band-title {
       color: #b0c4de;
       font-size: 13px;
-      font-weight: 500;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
       margin-bottom: 8px;
     }
 
-    .team-member-bio {
+    .band-price {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .band-includes {
       color: #ffffff;
       font-size: 14px;
       line-height: 1.6;
     }
 
-    @media (max-width: 900px) {
-      .team-member {
-        flex-direction: column;
-        gap: 12px;
-      }
+    /*
+    =====================================================================
+    HIGHLIGHT BOX — used for free consultation notice and pricing note.
+    Amber-tinted left-border card for important callout information.
+    =====================================================================
+    */
+    .highlight-box {
+      background-color: rgba(255, 200, 0, 0.06);
+      border-left: 3px solid #e6b800;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+    }
 
-      .team-member-image {
-        width: 100px;
-        height: 100px;
-      }
+    .highlight-box p {
+      color: #f0d060;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .highlight-box strong {
+      color: #f0d060;
     }
 
     .footer {
@@ -528,145 +359,28 @@
 
     /*
     =====================================================================
-    FIX #2 — SCROLL ANCHOR OFFSET — DESKTOP (screens 900px and wider)
+    FIX #2 — SCROLL ANCHOR OFFSET — DESKTOP
     Prevents page sections from disappearing behind the fixed navbar when
-    a user clicks one of the four navigation links (Home, CV, Terms, Privacy).
-
-    Without this rule, clicking "CV" scrolls the #cv element to the very
-    top of the viewport — directly underneath the fixed navbar — making the
-    section heading invisible until the user manually scrolls down slightly.
-
-    scroll-margin-top: 65px instructs the browser to stop scrolling 65px
-    SHORT of each anchor element, so the section heading lands visibly
-    below the bottom edge of the navbar.
-
-    WHY 65px ON DESKTOP?
-    — Desktop navbar height: approximately 55px
-      (16px top padding + ~23px link line height + 16px bottom padding)
-    — Extra visual buffer: 10px
-    — Total: ~65px ✓
-
-    This rule applies to all four anchor sections on desktop only.
-    The mobile media query below overrides this value with 235px.
-
-    TUNING GUIDE (desktop):
-    — If section headings still disappear behind the navbar after clicking
-      a nav link: increase to 70px or 75px (in 5px increments).
-    — If there is too much gap above section headings on scroll arrival:
-      decrease to 60px or 55px.
+    a user clicks an in-page anchor link on desktop.
+    scroll-margin-top: 65px — ~55px navbar height + 10px buffer.
     =====================================================================
     */
-    #home, #cv, #team, #terms, #privacy {
+    #services-top, #nhs, #private, #pricing, #book {
       scroll-margin-top: 65px;
     }
 
     /*
     =====================================================================
-    FIX #3 — SCROLL ANCHOR OFFSET — MOBILE & TABLET (screens narrower than 900px)
-    Overrides the 65px desktop scroll anchor offset above, increasing it
-    to 235px for mobile and tablet screens.
-
-    WHY 235px ON MOBILE?
-    On mobile (max-width: 900px), the ElevenLabs widget is positioned above
-    the page content (not to the left as on desktop), and remains anchored
-    to the top-left corner of the viewport even in its collapsed state. When
-    a user clicks a navigation link on mobile, the scroll target must clear
-    BOTH the fixed navbar AND the collapsed widget.
-
-    Breakdown of the 235px value (measured on Samsung Galaxy S21 Ultra):
-    — Collapsed navbar height on mobile:  ~50px
-      (14px top padding + ~22px link height at 13px font + 14px bottom padding)
-    — Collapsed ElevenLabs widget height: ~185px
-    — Total blocked vertical space:       ~50px + ~185px = ~235px ✓
-
-    This ensures section headings land cleanly below both obstructions
-    when navigating via nav links on mobile.
-
-    BREAKPOINT NOTE — WHY 900px (not 700px):
-    The 900px breakpoint was chosen deliberately because it is the same
-    breakpoint at which all three of the following transitions occur:
-    — The navbar switches to compact form (smaller font, tighter gaps)
-    — The body padding changes from desktop (480px left) to mobile (32px left)
-    — The ElevenLabs widget transitions from side-docked to top-anchored layout
-    Aligning this scroll-margin breakpoint to 900px keeps all responsive
-    behaviour consistent across the same single transition point.
-
-    BREAKPOINT HISTORY:
-    — OLD: max-width: 700px — was too narrow; missed tablets and large phones
-    — NEW: max-width: 900px — matches all three layout transition points above
-
-    TUNING GUIDE (mobile):
-    — Samsung Galaxy S21 Ultra (412px) → should show 235px offset ✓
-    — iPhone 12 / 15 (390px)           → should show 235px offset
-    — iPad (768px)                     → should show 235px offset
-    — iPad Pro (1024px)                → should show 65px offset (desktop rules)
-    — If headings still hide behind widget after tapping a nav link:
-      increase 235px to 245px or 255px (in 5px increments).
-    — If there is excessive blank space above headings on scroll arrival:
-      decrease 235px to 225px or 215px.
+    FIX #3 — SCROLL ANCHOR OFFSET — MOBILE & TABLET (max-width: 900px)
+    Increases scroll offset to 235px to clear both the fixed navbar and
+    the collapsed ElevenLabs widget on mobile.
     =====================================================================
     */
     @media (max-width: 900px) {
-      #home, #cv, #team, #terms, #privacy {
+      #services-top, #nhs, #private, #pricing, #book {
         scroll-margin-top: 235px;
       }
 
-      /*
-      =====================================================================
-      FIX #4 — MOBILE BODY PADDING-TOP OVERRIDE
-      Explicitly re-asserts padding-top: 235px for mobile and tablet screens
-      (max-width: 900px), matching the value set in the base body rule above.
-
-      WHY IS THIS RULE PRESENT IF THE VALUE IS THE SAME AS THE BASE RULE?
-      Intentional redundancy. The base body rule sets padding-top: 235px
-      for all screen sizes as its default. This media query independently
-      preserves that same 235px for mobile screens, so that if the base
-      body padding is ever revised for desktop purposes in future, the mobile
-      top clearance remains protected and does not need to be re-discovered.
-
-      WHY 235px?
-      On mobile and tablet screens, the fixed navbar and the collapsed
-      ElevenLabs widget both occupy the top portion of the viewport and
-      physically block access to content behind them. 235px of top padding
-      ensures the page heading ("Delapre Dental Care") and all subsequent
-      content loads visibly below both obstructions on initial page open.
-
-      Breakdown (measured on Samsung Galaxy S21 Ultra):
-      — Collapsed navbar height:          ~50px
-        (14px top padding + ~22px link line height + 14px bottom padding)
-      — Collapsed ElevenLabs widget height: ~185px
-      — Total blocked vertical space:     ~50px + ~185px = ~235px ✓
-
-      WHAT THIS FIXES:
-      1. Main heading is not hidden behind the collapsed widget on page load.
-      2. Content layout correctly accounts for both the navbar and widget.
-      3. Page does not open with a wall of blank space above the first heading.
-      4. First-visit experience on mobile is clean and immediately useful.
-
-      INTERACTION WITH BASE RULE:
-      The base body rule sets all four padding values: 235px (top) 24px (right)
-      60px (bottom) 32px (left). This media query override only changes
-      padding-top. The other three values remain exactly as set in the base
-      rule and are unaffected.
-
-      TECHNICAL NOTES:
-      — padding-top is used (not margin-top) because it correctly expands the
-        body element's internal content area without disrupting document flow.
-      — No !important flag is needed here. A media query rule naturally takes
-        precedence over a base rule of equal specificity when both match.
-      — This override ONLY applies to screens narrower than 900px.
-      — Desktop screens (900px+) use the separate desktop padding block:
-        60px 40px 60px 480px, defined in @media (min-width: 900px) above.
-
-      TUNING GUIDE:
-      — Test on a real mobile device (hardware, not just browser devtools).
-      — Verify "Delapre Dental Care" heading is fully visible below the widget.
-      — If the heading is still partially obscured by the widget: increase
-        235px to 245px or 255px (in 5px increments) and retest.
-      — If there is excessive blank space above the heading: decrease 235px
-        to 225px or 215px (in 5px increments) and retest.
-      =====================================================================
-      */
       body {
         padding-top: 235px;
       }
@@ -674,169 +388,31 @@
 
     /*
     =====================================================================
-    FIX #5 — ULTRA-NARROW SCREENS (max-width: 467px)
-    Widget and content offset for screens narrower than 467 pixels.
-
-    WHAT THIS FIXES:
-    On screens narrower than 467px (e.g. iPhone 15 in portrait, Samsung
-    Galaxy S21 Ultra in portrait), the navbar navigation links wrap onto a
-    second line because there is insufficient horizontal space to fit all
-    five links (Home, CV, Our Team, Terms & Conditions, Privacy Policy)
-    side-by-side at 13px font size with 20px gaps between them.
-
-    When the navbar wraps to two lines, its total height increases from ~50px
-    (single line) to approximately ~70px (two lines), because:
-    — First line of links:  14px top padding + 22px link height = 36px
-    — Second line of links: 22px link height + 14px bottom padding = 36px
-    — Total: 36px + 36px = ~72px (rounded to 70px here)
-
-    This extra 20px of navbar height (70px minus the previous ~50px) means
-    the ElevenLabs widget below it must also be pushed down by 20px, and
-    the page content below the widget must be pushed down by 20px as well.
-    Without this adjustment, the widget and page content would overlap with
-    the two-line navbar.
-
-    THREE CHANGES IN THIS MEDIA QUERY:
-    1. elevenlabs-convai margin-top: increased from 50px to 70px
-       — Pushes the widget down by 20px to clear the taller navbar
-       — WHY 70px: 50px (original navbar clearance) + 20px (extra navbar
-         height from wrapping) = 70px ✓
-
-    2. body padding-top: increased from 235px to 255px
-       — Pushes all page content down by 20px to clear the widget and navbar
-       — WHY 255px: 235px (original mobile clearance) + 20px (extra navbar
-         height) = 255px ✓
-       — Breakdown of 255px:
-         ~70px navbar (now two lines) + ~185px widget = ~255px ✓
-
-    3. scroll-margin-top on anchors: increased from 235px to 255px
-       — When a user clicks a nav link on ultra-narrow screens, the page
-         scrolls so the target section lands 255px down from the top,
-         clearing both the taller two-line navbar and the lower widget
-       — WHY 255px: same calculation as body padding-top above
-
-    DEVICES AFFECTED:
-    — iPhone 15 / 14 / 13 in portrait: 390px (narrower than 467px) ✓
-    — Samsung Galaxy S21 Ultra in portrait: 412px (narrower than 467px) ✓
-    — Most modern smartphones in portrait orientation
-    — Very small tablets or devices in narrow mode
-
-    DEVICES NOT AFFECTED:
-    — iPad (768px) and larger tablets: use 235px offset (max-width 900px)
-    — Desktop screens (900px+): use 65px offset (no media query)
-    — Landscape mode on most phones (typically 700px+): use 235px offset
-
-    WHY 467px AS THE BREAKPOINT?
-    At 467px width, the navbar still fits all five links on a single line at
-    13px font with 20px gaps. Below 467px, the fifth link (Privacy Policy)
-    wraps to a second line, causing the navbar to grow taller.
-
-    Breakpoint calculation:
-    — 5 links × 50px average width per link (varies by text length) = 250px
-    — 4 gaps × 20px = 80px
-    — Left/right navbar padding: 24px + 24px = 48px
-    — Minimum horizontal space needed: 250px + 80px + 48px = ~378px
-    — Real-world measurement (Samsung Galaxy S21 Ultra): wrapping starts around
-      467px, where longer link text ("Terms & Conditions" and "Privacy Policy")
-      begin to push the navbar to two lines ✓
-
-    TUNING GUIDE:
-    — Test on a real iPhone 15 or Samsung Galaxy S21 Ultra in portrait.
-    — If the navbar, widget, or page content still overlap at 390px width:
-      increase 70px to 75px or 80px (in 5px increments for navbar).
-      increase 255px to 260px or 265px (in 5px increments for body/anchors).
-    — If there is excessive blank space above the page heading at 390px:
-      decrease 70px to 65px or 60px.
-      decrease 255px to 250px or 245px.
-    — Retest after each change on actual hardware (not browser devtools).
-    — Breakpoint can be adjusted up (e.g. 500px) or down (e.g. 430px) if
-      testing reveals wrapping occurs at a different screen width.
-    — If the navbar link text length changes or font size is adjusted,
-      re-measure the wrapping point and update this breakpoint accordingly.
-
-    INTERACTION WITH OTHER MEDIA QUERIES:
-    — This rule applies ONLY to screens narrower than 467px.
-    — It does NOT affect screens 467px–900px (use 235px rules).
-    — It does NOT affect screens 900px and wider (use desktop rules).
-    — The specificity of "elevenlabs-convai { margin-top: 70px !important; }"
-      inside this narrower breakpoint is higher (due to being more specific)
-      and naturally overrides the base "margin-top: 50px !important" rule above.
+    FIX #4 — ULTRA-NARROW SCREENS (max-width: 467px)
+    Increases widget and content offset for screens narrower than 467px,
+    where the navbar wraps to two lines and adds ~20px extra height.
     =====================================================================
     */
     @media (max-width: 467px) {
-      /*
-      WHAT THIS DOES: Increases the top margin of the ElevenLabs widget to
-      70px so it clears the now-taller two-line navbar on ultra-narrow screens
-      (narrower than 467px).
-      WHY 70px: On screens narrower than 467px, the navbar wraps onto two
-      lines, increasing from ~50px to ~70px in height. This margin-top value
-      must match that new navbar height to prevent the widget from overlapping
-      the wrapped navigation links.
-      Calculation: 50px (base navbar clearance) + 20px (extra height from
-      wrapping to two lines) = 70px ✓
-      TUNING: If the widget still overlaps the navbar text on narrow screens:
-      increase to 75px or 80px (in 5px increments). If there is excessive
-      blank space between the navbar and widget: decrease to 65px or 60px.
-      Always test on real hardware (iPhone 15 / Samsung Galaxy S21 Ultra in
-      portrait), as browser devtools may not accurately show text wrapping
-      at exact pixel boundaries.
-      */
       elevenlabs-convai {
         margin-top: 70px !important;
       }
 
-      /*
-      WHAT THIS DOES: Increases the top padding of the page body from 235px
-      to 255px on ultra-narrow screens so all page content appears below both
-      the taller two-line navbar and the lower-positioned widget.
-      WHY 255px: On screens narrower than 467px, the navbar is now ~70px
-      (two lines) and the widget is ~185px, totalling ~255px of blocked
-      vertical space at the top of the viewport. This padding ensures the
-      "Delapre Dental Care" heading and all subsequent content load visibly
-      below both obstructions on page open.
-      Calculation: 235px (original mobile clearance) + 20px (extra navbar
-      height from wrapping) = 255px ✓
-      TUNING: If page content is still hidden behind the widget or navbar:
-      increase to 260px or 265px (in 5px increments). If there is excessive
-      blank space above the first heading: decrease to 250px or 245px. Test
-      on actual narrow devices, not browser devtools, which may not render
-      text wrapping accurately.
-      */
       body {
         padding-top: 255px;
       }
 
-      /*
-      WHAT THIS DOES: Increases the scroll anchor offset for all navigation
-      link targets (#home, #cv, #team, #terms, #privacy) from 235px to 255px,
-      so section headings land clearly visible below the taller navbar and
-      widget when a user clicks a navigation link on ultra-narrow screens.
-      WHY 255px: When the navbar wraps to two lines on screens narrower than
-      467px, the total vertical space blocked by the navbar and widget
-      increases to ~255px. This scroll-margin-top value must match that
-      blocked space to ensure section headings don't scroll behind the navbar
-      or widget.
-      Calculation: 235px (original mobile scroll offset) + 20px (extra
-      navbar height from wrapping) = 255px ✓
-      TUNING: If section headings still disappear behind the navbar or widget
-      after tapping a navigation link on narrow screens: increase to 260px
-      or 265px (in 5px increments). If there is excessive blank space above
-      section headings when they scroll into view: decrease to 250px or
-      245px. Test on actual narrow hardware (iPhone 15 / Samsung Galaxy S21
-      Ultra in portrait) by tapping each nav link and verifying the target
-      heading appears fully visible and readable.
-      */
-      #home, #cv, #team, #terms, #privacy {
+      #services-top, #nhs, #private, #pricing, #book {
         scroll-margin-top: 255px;
       }
     }
 
-    /* =====================================================================
-    LEGAL SECTIONS — Terms & Conditions and Privacy Policy
-    Consistent typography for dense legal text. Slightly smaller line-height
-    than body content sections to keep long documents compact without
-    sacrificing readability.
-    ===================================================================== */
+    /*
+    =====================================================================
+    LEGAL SECTION STYLES — kept for structural consistency with index.html.
+    Required if Terms & Conditions or Privacy content is ever added here.
+    =====================================================================
+    */
     .legal-notice {
       background-color: rgba(255, 200, 0, 0.08);
       border-left: 3px solid #e6b800;
@@ -867,1156 +443,226 @@
       margin-top: 20px;
       margin-bottom: 6px;
     }
-    #terms .section-content p,
-    #privacy .section-content p {
-      font-size: 14px;
-      line-height: 1.65;
-      margin-bottom: 6px;
-    }
-    .legal-list {
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 1.65;
-      padding-left: 20px;
-      margin-bottom: 8px;
-    }
-    .legal-list li {
-      margin-bottom: 5px;
-    }
 
     /*
     =====================================================================
-    PDF VIEWER CONTAINER
-    Wraps the embedded PDF iframe and download link in a subtle card-like
-    container that matches the existing visual design. The background tint
-    and border are consistent with other content cards on the page
-    (testimonials, team member bios). The border-top accent provides visual
-    consistency with the section design language.
-
-    WHAT THIS DOES: Creates a cohesive presentation for the PDF embed and
-    download controls so they appear as an intentional part of the page
-    design rather than floating elements.
-
-    WHY THESE COLOURS: The background tint uses the same rgba(176, 196, 222,
-    0.05) value as .testimonial and .team-member cards. The border-left
-    uses the same steel-blue colour (#b0c4de) as other accent bars on the
-    page. This maintains visual consistency across all card-like sections.
-
-    TUNING: Adjust padding in 4px increments if content feels cramped.
-    Adjust border opacity (0.05 to 0.1) if the background tint is too
-    subtle or too prominent.
+    TEAM MEMBER CARD STYLES — kept for structural consistency with index.html.
     =====================================================================
     */
-    .pdf-viewer-container {
+    .team-member {
       background-color: rgba(176, 196, 222, 0.05);
       border-left: 3px solid #b0c4de;
       padding: 20px;
       margin-bottom: 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .team-member-image { flex-shrink: 0; width: 120px; height: 120px; border-radius: 4px; overflow: hidden; }
+    .team-member-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .team-member-info { flex: 1; }
+    .team-member-name { color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 4px; }
+    .team-member-title { color: #b0c4de; font-size: 13px; font-weight: 500; margin-bottom: 8px; }
+    .team-member-bio { color: #ffffff; font-size: 14px; line-height: 1.6; }
+    @media (max-width: 900px) {
+      .team-member { flex-direction: column; gap: 12px; }
+      .team-member-image { width: 100px; height: 100px; }
     }
 
     /*
     =====================================================================
-    PDF IFRAME EMBEDDING
-    Renders the PDF document inline on the page so visitors can read it
-    without leaving the site. Full width ensures the document scales
-    responsively across all screen sizes. 600px height provides sufficient
-    vertical space to display multiple pages of a typical dental practice
-    document without excessive scrolling.
-
-    WHAT THIS DOES: Embeds the PDF file from the provided URL so it displays
-    as an interactive reader within the page content.
-
-    WHY 100% width: Responsive design — the iframe automatically scales to
-    match the .pdf-viewer-container width, which is constrained by the
-    .page max-width rule (560px on desktop, full width minus padding on
-    mobile).
-
-    WHY 600px height: Balances readability and page length. 600px is tall
-    enough to display a readable portion of the document (typically 2–3
-    pages) without requiring excessive scrolling. Users can scroll within
-    the iframe to access additional content.
-
-    TUNING: Increase height to 700px or 800px if the document is very long
-    or dense with small text. Decrease to 500px if space is constrained.
-    Always test on actual devices to verify the reading experience.
+    TESTIMONIAL CARD STYLES — kept for structural consistency with index.html.
     =====================================================================
     */
-    .pdf-iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid rgba(176, 196, 222, 0.15);
-      border-radius: 2px;
-      margin-bottom: 16px;
-    }
-
-    /*
-    =====================================================================
-    PDF DOWNLOAD LINK STYLING
-    Provides a clear, accessible download button that matches the site's
-    visual language. The button-like appearance (padding, background tint,
-    border) makes the download action obvious and encourages user interaction.
-
-    WHAT THIS DOES: Styles a link that allows visitors to download the PDF
-    file directly to their device. This provides an alternative to reading
-    inline and allows users to save, print, or share the document.
-
-    WHY inline-block display: Allows the link to have padding and a border
-    (block-like properties) while remaining within the text flow (inline-like
-    behaviour). The max-width constraint ensures the link text does not wrap
-    awkwardly on narrow screens.
-
-    WHY #b0c4de text colour: Matches other interactive elements on the page.
-    The hover state darkens or underlines the text for visual feedback.
-
-    WHY border and padding: Creates a subtle button-like container that
-    visually separates the download control from the surrounding text.
-
-    TUNING: Adjust padding in 2px increments if the button feels too spacious
-    or too cramped. Increase max-width to 100% if the text needs more space
-    on narrow screens. Adjust background opacity (0.05 to 0.1) to make the
-    button more or less prominent.
-    =====================================================================
-    */
-    .pdf-download-link {
-      display: inline-block;
-      background-color: rgba(176, 196, 222, 0.08);
-      border: 1px solid rgba(176, 196, 222, 0.2);
-      padding: 10px 14px;
-      border-radius: 2px;
-      color: #b0c4de;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      max-width: 100%;
-    }
-
-    /*
-    =====================================================================
-    PDF DOWNLOAD LINK HOVER STATE
-    Provides visual feedback when the user hovers over the download link.
-    The background brightens and the text colour changes to white to indicate
-    the link is interactive and ready to be clicked.
-
-    WHAT THIS DOES: Enhances the user experience by showing a clear hover
-    effect that confirms the element is clickable.
-
-    WHY background-color: rgba(176, 196, 222, 0.15): Increases the opacity
-    from 0.08 (resting) to 0.15 (hover), brightening the button background
-    without changing the colour itself.
-
-    WHY color: #ffffff: Changes the text from steel blue (#b0c4de) to white
-    for maximum contrast and clarity when hovering.
-
-    WHY transition: 0.3s ease: Ensures the colour change animates smoothly
-    over 300ms rather than snapping instantly, creating a polished feel.
-
-    TUNING: Adjust the background opacity (0.15) to make the hover effect
-    more or less prominent. Increase to 0.2 or 0.25 for a more dramatic
-    effect. The colour transition time (0.3s) can be shortened to 0.15s or
-    lengthened to 0.5s depending on preference.
-    =====================================================================
-    */
-    .pdf-download-link:hover {
-      background-color: rgba(176, 196, 222, 0.15);
-      color: #ffffff;
-      border-color: rgba(176, 196, 222, 0.3);
-    }
-
-    /*
-    =====================================================================
-    YOUTUBE VIDEO CONTAINER
-    Wraps the embedded YouTube video iframe in a card-like container that
-    matches the site's existing visual design language. The background tint
-    and border-left accent are consistent with PDF viewer, testimonial, and
-    team member cards throughout the page.
-
-    WHAT THIS DOES: Creates a professional, cohesive presentation for the
-    YouTube video embed so it appears as an intentional part of the page
-    design rather than a floating or jarring element.
-
-    WHY THESE COLOURS: Uses the same rgba(176, 196, 222, 0.05) background
-    tint and #b0c4de border-left as other card sections on the page. This
-    ensures visual consistency and makes the video container feel like part
-    of the unified design system.
-
-    WHAT margin-bottom DOES: Provides breathing room between this video
-    section and whatever content follows below it (typically the footer).
-
-    TUNING: Adjust padding in 4px increments if content feels too cramped or
-    too loose. Adjust margin-bottom in 4px increments if the spacing between
-    this section and the next feels off. Modify border opacity (0.05 to 0.1)
-    if the background tint is too subtle or too prominent.
-    =====================================================================
-    */
-    .youtube-container {
+    .testimonial {
       background-color: rgba(176, 196, 222, 0.05);
       border-left: 3px solid #b0c4de;
-      padding: 20px;
-      margin-bottom: 24px;
+      padding: 16px;
+      margin-bottom: 20px;
     }
+    .testimonial-title { color: #b0c4de; font-size: 13px; font-weight: bold; margin-bottom: 8px; }
+    .testimonial-quote { color: #ffffff; font-size: 14px; line-height: 1.6; font-style: italic; margin-bottom: 12px; }
+    .testimonial-attribution { color: #b0c4de; font-size: 13px; font-weight: bold; }
 
     /*
     =====================================================================
-    YOUTUBE ANNOUNCEMENT TEXT
-    Provides context and visual hierarchy for the video by displaying a
-    professional announcement message above the embedded video.
-
-    WHAT THIS DOES: Displays text that announces Dr Nasir's attendance at
-    the event featured in the video. White text on the dark navy background
-    maintains readability and consistency with the rest of the page.
-
-    WHY color: #ffffff: White text provides maximum contrast and legibility
-    against the dark background. The white matches the colour of other body
-    text on the page (see .section-content).
-
-    WHY font-size: 15px: Matches the standard body text size used throughout
-    the page (.section-content), ensuring visual consistency and readability.
-
-    WHY line-height: 1.6: Provides comfortable vertical spacing for multi-line
-    text, making the announcement easy to scan and read.
-
-    WHY margin-bottom: 16px: Creates a clear visual gap between the
-    announcement text and the video embed below, grouping them together while
-    maintaining clear separation.
-
-    TUNING: Increase margin-bottom to 20px or 24px if the gap between text
-    and video feels too tight. Decrease to 12px if the spacing feels excessive.
+    PDF VIEWER STYLES — kept for structural consistency with index.html.
     =====================================================================
     */
-    .youtube-announcement {
-      color: #ffffff;
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
+    .pdf-viewer-container { margin-bottom: 12px; }
+    .pdf-iframe { width: 100%; height: 600px; border: 1px solid rgba(176, 196, 222, 0.15); border-radius: 2px; display: block; margin-bottom: 12px; }
+    .pdf-download-link { display: inline-block; background-color: rgba(176, 196, 222, 0.08); border: 1px solid rgba(176, 196, 222, 0.2); padding: 10px 14px; border-radius: 2px; color: #b0c4de; text-decoration: none; font-size: 14px; font-weight: 500; transition: all 0.3s ease; max-width: 100%; }
+    .pdf-download-link:hover { background-color: rgba(176, 196, 222, 0.15); color: #ffffff; border-color: rgba(176, 196, 222, 0.3); }
 
     /*
     =====================================================================
-    YOUTUBE IFRAME EMBEDDING
-    Embeds the YouTube video at full responsive width. The aspect ratio of
-    16:9 is maintained across all screen sizes using the padding-bottom trick
-    with a wrapper div (see HTML structure below).
-
-    WHAT THIS DOES: Displays the YouTube video inline on the page so visitors
-    can watch it without navigating away from the site.
-
-    WHY 100% width: Responsive design — the iframe automatically scales to
-    match the container width (560px max on desktop, full width minus padding
-    on mobile).
-
-    WHY height: 100%: When used with the aspect-ratio wrapper, this ensures
-    the video maintains proper 16:9 proportions on all screen sizes without
-    distortion.
-
-    WHY border: Provides subtle visual definition between the video and the
-    background. The colour and opacity match the PDF iframe border for
-    consistency.
-
-    TUNING: Adjust border colour/opacity if the video frame blends too much
-    with the background. Modify the aspect-ratio-wrapper padding-bottom
-    percentage if videos appear stretched or squashed (16:9 = 56.25%).
+    YOUTUBE EMBED STYLES — kept for structural consistency with index.html.
     =====================================================================
     */
-    .youtube-iframe-wrapper {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .youtube-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 1px solid rgba(176, 196, 222, 0.15);
-      border-radius: 2px;
-    }
-
-    /*
-    =====================================================================
-    SERVICES PRICING NOTE
-    Displays a small supplementary note at the top of the services section
-    to inform visitors when the pricing information was last updated. This
-    helps ensure customers have current information and know when to check
-    back for changes.
-
-    WHAT THIS DOES: Shows a timestamped note ("Prices correct as of March
-    2026") above the service offerings, providing transparency about pricing
-    currency and recency.
-
-    WHY color: #b0c4de: Uses steel blue to match other supplementary text
-    on the page (.note, .section-title). This creates visual consistency and
-    indicates that this is supporting information rather than primary content.
-
-    WHY font-size: 13px: Smaller than body text (.section-content at 15px)
-    to indicate it is supplementary rather than primary content. Matches
-    the sizing of other italic notes on the page.
-
-    WHY font-style: italic: Signals to the user that this is a clarification
-    or aside, not a main section heading or critical information.
-
-    WHY margin-top: 8px: Provides a small gap between this note and the
-    content above it, ensuring the note does not feel cramped or overlaid
-    on top of other information.
-
-    WHY margin-bottom: 16px: Creates breathing room between this note and
-    the service section content below, grouping the note with the services
-    it clarifies while maintaining visual separation.
-
-    TUNING: Adjust margin-top or margin-bottom in 2px or 4px increments if
-    the spacing feels off relative to surrounding content. Increase or
-    decrease font-size in 1px increments if the note is too prominent or
-    too subtle. Change colour to #f0d060 (gold) if greater emphasis is needed
-    on the pricing update date.
-    =====================================================================
-    */
-    .pricing-note {
-      color: #b0c4de;
-      font-size: 13px;
-      font-style: italic;
-      margin-top: 8px;
-      margin-bottom: 16px;
-    }
-
-    /*
-    =====================================================================
-    PRICES SUBJECT TO CHANGE NOTE
-    Displays a supplementary disclaimer stating that prices are subject to
-    change at any time. Uses a distinctive gold/amber colour to visually
-    differentiate this disclaimer from other notes and emphasise its
-    importance to visitors. Positioned below the pricing card to ensure
-    customers see the disclaimer after reviewing all pricing details.
-
-    WHAT THIS DOES: Informs visitors that pricing information displayed on
-    the page is current as of the date specified but may change without notice.
-    This protects the practice from disputes about pricing accuracy and sets
-    appropriate expectations with new and existing patients.
-
-    WHY color: #f0d060: Gold/amber colour creates visual distinction from
-    standard steel-blue notes and pricing information, signalling this is
-    important disclaimer content. The warm tone also conveys importance and
-    draws attention naturally.
-
-    WHY font-size: 13px: Matches the sizing of other supplementary notes
-    on the page (.pricing-note, .note), creating consistency while keeping
-    the disclaimer compact.
-
-    WHY font-style: italic: Signals this is supplementary or disclaimer text
-    rather than primary pricing information.
-
-    WHY margin-top: 12px: Provides a small gap between this disclaimer and
-    the pricing card above it, ensuring visual separation and making the
-    disclaimer feel like a distinct, standalone statement.
-
-    WHY margin-bottom: 32px: Creates breathing room between this disclaimer
-    and any content that follows, grouping the pricing information with its
-    disclaimer while maintaining clear separation from subsequent sections.
-
-    TUNING: If the disclaimer feels too subtle, increase font-weight to bold
-    or change colour to #ffd700 (brighter gold). If it feels too prominent,
-    reduce opacity or decrease font-size to 12px. Adjust margins in 2px or
-    4px increments if spacing relative to surrounding content feels off.
-    =====================================================================
-    */
-    .prices-subject-to-change {
-      color: #f0d060;
-      font-size: 13px;
-      font-style: italic;
-      margin-top: 12px;
-      margin-bottom: 32px;
-    }
-
-    /*
-    =====================================================================
-    FREE CONSULTATION CALLOUT
-    Emphasises the availability of free consultations to patients. Uses a
-    distinctive gold/amber colour scheme to make the callout stand out from
-    other informational notes on the page. The gold accent differentiates
-    this promotional message from standard supplementary text (which uses
-    steel blue).
-
-    WHAT THIS DOES: Displays a prominent note ("Free consultation available")
-    that encourages new and existing patients to book an appointment without
-    financial concern, helping remove barriers to initial contact.
-
-    WHY color: #f0d060: Gold/amber colour creates visual distinction from
-    standard steel-blue notes, signalling this is special/promotional content.
-    The warm tone also conveys approachability and value.
-
-    WHY font-size: 13px: Matches the sizing of other supplementary notes
-    on the page (.note), creating consistency while keeping the callout
-    compact and unobtrusive.
-
-    WHY font-style: italic: Signals supplementary rather than critical
-    information, while still drawing attention through the gold colour.
-
-    WHY margin-top: 8px: Provides a small gap between this callout and the
-    heading above it, ensuring visual separation without feeling disconnected.
-
-    WHY margin-bottom: 16px: Creates breathing room between this callout and
-    service section content below, grouping the callout with the services
-    while maintaining visual separation.
-
-    TUNING: If the callout feels too subtle, change colour to #ffd700
-    (brighter gold) or increase font-weight to bold. If it feels too
-    prominent, reduce opacity or decrease font-size to 12px. Adjust
-    margins in 2px increments if spacing relative to surrounding content
-    feels off.
-    =====================================================================
-    */
-    .consultation-callout {
-      color: #f0d060;
-      font-size: 13px;
-      font-style: italic;
-      margin-top: 8px;
-      margin-bottom: 16px;
-    }
-
-    /*
-    =====================================================================
-    PRICING TABLE CONTAINER
-    Wraps the services pricing data in a card-like container that matches
-    the site's existing visual design language. Uses the same background tint
-    and border-left accent as testimonials, team member bios, and other
-    content cards to maintain visual consistency across the page.
-
-    WHAT THIS DOES: Creates a professional, cohesive presentation for the
-    pricing information so it appears as an intentional, well-designed part
-    of the page rather than a plain list of text.
-
-    WHY THESE COLOURS: The background tint uses rgba(176, 196, 222, 0.05)
-    matching .testimonial and .team-member cards. The border-left uses the
-    same steel-blue (#b0c4de) accent bar as other content cards. This
-    maintains visual consistency across all card-like sections.
-
-    TUNING: Adjust padding in 4px increments if content feels cramped or
-    too loose. Adjust margin-bottom in 4px increments for spacing between
-    this card and the next section. Modify border opacity (0.05 to 0.1)
-    if the background tint is too subtle or too prominent.
-    =====================================================================
-    */
-    .pricing-card {
-      background-color: rgba(176, 196, 222, 0.05);
-      border-left: 3px solid #b0c4de;
-      padding: 20px;
-      margin-bottom: 24px;
-    }
-
-    /*
-    =====================================================================
-    PRICING CATEGORY HEADING
-    Styles category-level headings within the pricing section (e.g.
-    "Consultation & Diagnostics", "Preventative & Hygiene"). Uses steel-blue
-    colour and uppercase styling to create clear visual hierarchy between
-    main service categories and individual service items.
-
-    WHAT THIS DOES: Organises pricing data into logical sections, making it
-    easy for patients to find the service they are interested in.
-
-    WHY color: #b0c4de: Steel blue matches other section headings on the page,
-    creating visual consistency and signalling that this is organisational
-    content (a category header).
-
-    WHY font-weight: bold: Emphasises this text as a heading rather than
-    regular body content.
-
-    WHY font-size: 14px: Slightly larger than body text (15px) but not as
-    large as main page headings. This creates a clear visual hierarchy:
-    main page sections are largest, pricing categories are medium, individual
-    services are smallest.
-
-    WHY text-transform: uppercase: Makes the category heading stand out and
-    creates a consistent visual pattern with other uppercase section headings
-    on the page (see .section-title).
-
-    WHY letter-spacing: 0.5px: Adds visual breathing room to uppercase text,
-    making it easier to scan and more professional in appearance.
-
-    WHY margin-top: 16px: Provides vertical spacing above this heading so it
-    does not feel cramped immediately after the previous service item.
-
-    WHY margin-bottom: 12px: Creates a gap between this heading and the first
-    service item in this category, grouping them visually.
-
-    TUNING: Adjust font-size in 1px increments if the heading appears too
-    large or too small relative to the category content. Increase letter-spacing
-    to 1px if the uppercase text feels cramped. Adjust margins in 2px or 4px
-    increments if spacing feels off.
-    =====================================================================
-    */
-    .pricing-category {
-      color: #b0c4de;
-      font-weight: bold;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-top: 16px;
-      margin-bottom: 12px;
-    }
-
-    /*
-    =====================================================================
-    PRICING CATEGORY FIRST CHILD
-    Removes the top margin from the first pricing category heading in a card,
-    preventing excessive space between the card top edge and the first heading.
-    This keeps the design compact and maintains proper visual balance.
-
-    WHAT THIS DOES: Eliminates the margin-top: 16px that would normally apply
-    to the first .pricing-category in a card, so the first heading sits close
-    to the card top edge.
-
-    WHY THIS MATTERS: Without this rule, the first category heading would have
-    16px of space above it, creating an awkward gap between the card border
-    and the text inside. This would visually separate the heading from the
-    card container and disrupt the cohesive design.
-
-    TUNING: Generally no adjustment needed. If the first heading feels too
-    close to the top edge of the card, increase margin-top on .pricing-category
-    and adjust this rule accordingly (e.g. margin-top: 8px instead of 0).
-    =====================================================================
-    */
-    .pricing-category:first-child {
-      margin-top: 0;
-    }
-
-    /*
-    =====================================================================
-    PRICING ITEM (INDIVIDUAL SERVICE)
-    Styles individual pricing line items — a service name and its price range.
-    Uses white text on the dark background with moderate line-height for
-    comfortable reading.
-
-    WHAT THIS DOES: Displays each service offering with its corresponding
-    price range in a consistent, readable format.
-
-    WHY color: #ffffff: White text matches other body content on the page,
-    providing maximum contrast against the dark navy background.
-
-    WHY font-size: 15px: Standard body text size, ensuring the pricing
-    information is easily readable without appearing too large or too small.
-
-    WHY line-height: 1.6: Provides comfortable vertical spacing for line
-    items and multi-line service descriptions, making the list easy to scan.
-
-    WHY margin-bottom: 8px: Provides a small gap between each service item,
-    creating visual separation without cramping the list. This spacing allows
-    patients to scan the list quickly.
-
-    TUNING: Decrease margin-bottom to 6px if the list feels too spread out.
-    Increase to 10px or 12px if items feel too cramped. Adjust line-height
-    to 1.5 for a more compact list or 1.7 for more spacious reading.
-    =====================================================================
-    */
-    .pricing-item {
-      color: #ffffff;
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 8px;
-    }
-
-    /*
-    =====================================================================
-    PRICING ITEM NAME (SERVICE NAME ONLY)
-    Styles just the service name portion of a pricing item, making it bold
-    to create visual separation between the service name and its price.
-
-    WHAT THIS DOES: Emphasises the service name so patients can quickly scan
-    what services are available without getting distracted by the price ranges.
-
-    WHY font-weight: bold: Makes the service name stand out from the price
-    range that follows it on the same line or the next line.
-
-    TUNING: Can be removed if you prefer all pricing text (name and price)
-    to have equal visual weight. Alternatively, increase font-size by 1px
-    if the bold weight alone is insufficient to make the name stand out.
-    =====================================================================
-    */
-    .pricing-item-name {
-      font-weight: bold;
-    }
-
-    /*
-    =====================================================================
-    PRICING ITEM DESCRIPTION (SUPPORTING DETAILS)
-    Styles optional supporting text that appears below or alongside a pricing
-    item (e.g. "Includes full examination, oral cancer screening, and basic
-    X-rays"). Uses steel blue to differentiate it from the main service name
-    and price while maintaining readability.
-
-    WHAT THIS DOES: Provides context about what is included in a service or
-    any special notes about the offering, helping patients make informed
-    decisions without needing to call the practice.
-
-    WHY color: #b0c4de: Steel blue indicates this is supplementary information
-    (similar to .note and other secondary text on the page), creating
-    consistency in visual hierarchy.
-
-    WHY font-size: 14px: Slightly smaller than the main service text (15px)
-    to indicate it is supporting information rather than primary content.
-
-    WHY margin-left: 0: Keeps supporting text aligned flush-left with the
-    service name, rather than indenting it. This maintains a clean, organised
-    appearance when multiple services are listed.
-
-    WHY margin-top: 3px: Provides a tiny gap between a bold service name
-    and its supporting description, creating visual separation without
-    creating excessive space.
-
-    TUNING: Increase margin-top to 4px or 6px if supporting text feels too
-    close to the service name above it. Change colour to #e0d5c7 for a warmer
-    tone or back to #b0c4de for cooler consistency. Decrease font-size to
-    13px if supporting text appears too prominent.
-    =====================================================================
-    */
-    .pricing-item-description {
-      color: #b0c4de;
-      font-size: 14px;
-      margin-left: 0;
-      margin-top: 3px;
-    }
+    .youtube-container { background-color: rgba(176, 196, 222, 0.05); border-left: 3px solid #b0c4de; padding: 20px; margin-bottom: 24px; }
+    .youtube-announcement { color: #ffffff; font-size: 15px; line-height: 1.6; margin-bottom: 16px; }
+    .youtube-iframe-wrapper { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+    .youtube-iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(176, 196, 222, 0.15); border-radius: 2px; }
   </style>
 </head>
 <body>
 
   <!-- =====================================================================
   NAVIGATION BAR
-  Four anchor links mapping to the four id= sections in the page body:
-  #home, #cv, #terms, #privacy. Fixed to the top of the viewport.
+  Inter-page navigation links for the multi-page site.
+  Home     → index.html (main home page)
+  Services → services.html (this page — marked active)
   ===================================================================== -->
   <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#cv">CV</a>
-    <a href="#team">Our Team</a>
-    <a href="#terms">Terms &amp; Conditions</a>
-    <a href="#privacy">Privacy Policy</a>
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
   </nav>
 
   <div class="page">
 
-    <!-- ── HOME ANCHOR ────────────────────────────────────────────────── -->
-    <div id="home">
-      <h1>Delapre Dental Care</h1>
-      <p class="subtitle">Dental Practice — Northampton</p>
+    <!-- ── PAGE HEADER ──────────────────────────────────────────────── -->
+    <div id="services-top">
+      <h1>Treatments &amp; Prices</h1>
+      <p class="subtitle">Delapre Dental Care — Northampton</p>
       <p class="dentist-name">Dr Sabina Nasir</p>
     </div>
 
-    <!-- ── ADDRESS ────────────────────────────────────────────────────– -->
-    <div class="section">
-      <div class="section-title">Address</div>
+    <!-- ── FREE CONSULTATION NOTICE ────────────────────────────────── -->
+    <!-- Amber callout box highlighting the free consultation offer.
+         Positioned at the top of the page so it is immediately visible. -->
+    <div class="highlight-box">
+      <p><strong>Free consultation available.</strong> Book a no-obligation consultation with Dr Nasir to discuss your treatment options. Call <a href="tel:+441604636836">01604 636836</a> or visit us at 5 Billing Road.</p>
+    </div>
+
+    <!-- ── NHS TREATMENTS ───────────────────────────────────────────── -->
+    <!-- NHS dental treatment in England is charged in three fixed bands.
+         Patients pay a single band charge regardless of how many treatments
+         are carried out in one course of treatment. -->
+    <div class="section" id="nhs">
+      <div class="section-title">NHS Treatments</div>
       <div class="section-content">
-        <p>5 Billing Road</p>
-        <p>Northampton</p>
-        <p>NN1 5AN</p>
-        <p>UK</p>
+        <p>We welcome NHS patients. Treatment is provided in three charge bands set by NHS England.</p>
+
+        <!-- Band 1 card -->
+        <div class="band-card">
+          <div class="band-title">Band 1</div>
+          <div class="band-price">£26.80</div>
+          <div class="band-includes">Examination, diagnosis, and advice. If clinically needed: X-rays, scale and polish, and preventive care.</div>
+        </div>
+
+        <!-- Band 2 card -->
+        <div class="band-card">
+          <div class="band-title">Band 2</div>
+          <div class="band-price">£73.50</div>
+          <div class="band-includes">Everything in Band 1, plus: fillings, root canal treatment, and tooth extractions.</div>
+        </div>
+
+        <!-- Band 3 card -->
+        <div class="band-card">
+          <div class="band-title">Band 3</div>
+          <div class="band-price">£319.10</div>
+          <div class="band-includes">Everything in Bands 1 and 2, plus: crowns, dentures, and bridges.</div>
+        </div>
+
+        <p class="note">NHS charges are set by NHS England and subject to change. Some patients are entitled to free NHS dental treatment — ask at reception for details.</p>
       </div>
     </div>
 
-    <!-- ── PHONE ──────────────────────────────────────────────────────── -->
-    <div class="section">
-      <div class="section-title">Phone</div>
+    <!-- ── PRIVATE TREATMENTS ───────────────────────────────────────── -->
+    <!-- Private treatment prices are set by the practice and reviewed periodically.
+         Prices are shown as a guide; a precise quote is provided at consultation. -->
+    <div class="section" id="private">
+      <div class="section-title">Private Treatments</div>
       <div class="section-content">
-        <!-- tel: URI enables one-tap calling on all mobile devices -->
-        <p><a href="tel:01604636836">01604 636836</a></p>
+
+        <!-- Routine private treatments -->
+        <div class="treatment-row">
+          <span class="treatment-name">Private examination</span>
+          <span class="treatment-price">£60</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Scale and polish</span>
+          <span class="treatment-price">£70</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">X-rays (per film)</span>
+          <span class="treatment-price">£15</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">White (composite) filling</span>
+          <span class="treatment-price">From £120</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Tooth extraction</span>
+          <span class="treatment-price">From £150</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Root canal treatment</span>
+          <span class="treatment-price">From £300</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Porcelain crown</span>
+          <span class="treatment-price">From £700</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Dental implant (single tooth)</span>
+          <span class="treatment-price">From £2,200</span>
+        </div>
+
+        <!-- Cosmetic treatments -->
+        <p style="margin-top: 20px; margin-bottom: 8px; color: #b0c4de; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Cosmetic</p>
+        <div class="treatment-row">
+          <span class="treatment-name">Professional teeth whitening (home kit)</span>
+          <span class="treatment-price">£350</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Composite bonding (per tooth)</span>
+          <span class="treatment-price">From £250</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Porcelain veneer (per tooth)</span>
+          <span class="treatment-price">From £800</span>
+        </div>
+
+        <!-- Orthodontics -->
+        <p style="margin-top: 20px; margin-bottom: 8px; color: #b0c4de; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Orthodontics</p>
+        <div class="treatment-row">
+          <span class="treatment-name">Invisalign (full treatment)</span>
+          <span class="treatment-price">From £2,500</span>
+        </div>
+        <div class="treatment-row">
+          <span class="treatment-name">Retainer (single arch)</span>
+          <span class="treatment-price">£150</span>
+        </div>
+
       </div>
     </div>
 
-    <!-- ── EMAIL ──────────────────────────────────────────────────────– -->
-    <!-- Email contact section positioned directly below the phone number.
-         Styled consistently with other contact information sections using
-         the same section-title and section-content classes. The mailto: link
-         allows users to send emails directly from the page. The email address
-         has been updated to office@delepredental.com. -->
-    <div class="section">
-      <div class="section-title">Email</div>
+    <!-- ── PRICING NOTE ─────────────────────────────────────────────── -->
+    <!-- Pricing disclaimer for the private treatments table above. -->
+    <div class="section" id="pricing">
+      <div class="section-title">Pricing Note</div>
       <div class="section-content">
-        <!-- mailto: URI enables one-tap email composition on all devices -->
-        <p><a href="mailto:office@delepredental.com">office@delepredental.com</a></p>
+        <div class="highlight-box">
+          <p>Prices updated March 2026. Prices are subject to change at any time. All prices are a guide only — a personalised quote will be provided following an examination. NHS charges are reviewed annually by NHS England.</p>
+        </div>
       </div>
     </div>
 
-    <!-- ── OFFICE HOURS ───────────────────────────────────────────────– -->
-    <div class="section">
-      <div class="section-title">Office Hours</div>
+    <!-- ── HOW TO BOOK ───────────────────────────────────────────────── -->
+    <div class="section" id="book">
+      <div class="section-title">How to Book</div>
       <div class="section-content">
-        <p>Monday–Friday: 8:15am to 5pm</p>
-        <p>Lunch: 12:30pm to 1:30pm (closed)</p>
-        <p>Closed on holidays</p>
+        <p>To book an appointment or enquire about any treatment, please contact the practice:</p>
+        <p style="margin-top: 12px;"><strong>Telephone:</strong> <a href="tel:+441604636836">01604 636836</a></p>
+        <p style="margin-top: 4px;"><strong>Email:</strong> <a href="mailto:office@delepredental.com">office@delepredental.com</a></p>
+        <p style="margin-top: 4px;"><strong>Address:</strong> 5 Billing Road, Northampton, NN1 5AN</p>
+        <p style="margin-top: 4px;"><strong>Opening hours:</strong> Monday – Friday, 8:15am – 5:00pm</p>
+        <p class="note">You can also speak directly with Sabina, our AI dental assistant, using the voice widget on this page.</p>
       </div>
     </div>
 
-    <!-- ── APPOINTMENTS ───────────────────────────────────────────────– -->
-    <div class="section">
-      <div class="section-title">Appointments</div>
-      <div class="section-content">
-        <p>All patients are seen by appointment only.</p>
-        <p class="note">Please call to make an appointment.</p>
-      </div>
-    </div>
-
-    <!-- ── PATIENTS ───────────────────────────────────────────────────– -->
-    <div class="section">
-      <div class="section-title">Patients</div>
-      <div class="section-content">
-        <p>We accept both NHS and private patients.</p>
-      </div>
-    </div>
-
-    <!-- ── SERVICES ───────────────────────────────────────────────────– -->
-    <!-- This section displays available dental services. A pricing note at the
-         top informs visitors that the service information and any associated
-         pricing details were last updated in March 2026, ensuring customers
-         have current information and know when to check back for updates.
-         A free consultation callout emphasises the availability of free
-         consultations to help encourage new patients to book. Service pricing
-         is displayed in a card-like container with category headings and
-         individual pricing items, matching the site's visual design language. -->
-    <div class="section">
-      <div class="section-title">Services</div>
-      <p class="pricing-note">Prices updated March 2026</p>
-      <!-- Callout highlighting free consultation availability to encourage
-           patient engagement and reduce booking hesitation. Uses a distinctive
-           gold colour (#f0d060) to differentiate from standard supplementary
-           notes. -->
-      <p class="consultation-callout">Free consultation available</p>
-
-      <!-- Pricing card container — wraps all service pricing data in a cohesive,
-           card-like design that matches the visual style of testimonials and
-           team member sections. Uses a subtle background tint and steel-blue
-           border-left accent for consistency with other content cards. -->
-      <div class="pricing-card">
-
-        <!-- CONSULTATION & DIAGNOSTICS CATEGORY -->
-        <!-- Uppercase category heading to organise pricing by service type.
-             Helps patients quickly find the specific service they need. -->
-        <div class="pricing-category">Consultation &amp; Diagnostics</div>
-
-        <!-- New Patient Assessment pricing item with supporting description
-             explaining what is included in the service. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">New Patient Assessment:</span> £80 – £135
-          <div class="pricing-item-description">Includes full examination, oral cancer screening, and basic X-rays</div>
-        </div>
-
-        <!-- Routine Check-up pricing for existing patients. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Routine Check-up (Existing Patient):</span> £55 – £75
-        </div>
-
-        <!-- Specialist/Implant consultation pricing with note about free option. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Specialist/Implant Consultation:</span> Free or up to £135
-          <div class="pricing-item-description">Free for routine implant assessments; complex planning up to £135</div>
-        </div>
-
-        <!-- Large X-ray and 3D scanning pricing. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Large X-ray (OPG) or 3D Bone Scan (CT):</span> £60 – £150
-        </div>
-
-        <!-- PREVENTATIVE & HYGIENE CATEGORY -->
-        <!-- Uppercase category heading for preventative and hygiene services. -->
-        <div class="pricing-category">Preventative &amp; Hygiene</div>
-
-        <!-- Hygienist appointment pricing with time estimate. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Hygienist Appointment (30–40 mins):</span> £75 – £110
-        </div>
-
-        <!-- Advanced periodontal treatment pricing. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Advanced Periodontal (Gum) Treatment:</span> £150 – £300 per session
-        </div>
-
-        <!-- ADVANCED PROSTHODONTICS CATEGORY -->
-        <!-- Uppercase category heading for prosthetic services. Includes a
-             supporting description highlighting Dr Nasir's specialisation
-             from her MSc at King's College London. -->
-        <div class="pricing-category">Advanced Prosthodontics (MSc Level Expertise)</div>
-
-        <!-- Supporting description for the prosthodontics category, explaining
-             that these procedures are Dr Nasir's area of specialisation. -->
-        <div class="pricing-item-description" style="margin-top: 6px; margin-bottom: 12px;">
-          These procedures are the core of Dr Nasir's postgraduate training from King's College London.
-        </div>
-
-        <!-- Porcelain/Zirconia crown pricing with description. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Porcelain/Zirconia Crown:</span> £850 – £1,200
-          <div class="pricing-item-description">Precision-crafted to match natural teeth</div>
-        </div>
-
-        <!-- Porcelain veneer pricing per tooth. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Porcelain Veneer:</span> £900 – £1,200 per tooth
-        </div>
-
-        <!-- Bridge pricing per unit with example. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Bridges (per unit):</span> £700 – £1,000
-          <div class="pricing-item-description">Example: a 3-unit bridge would be £2,100+</div>
-        </div>
-
-        <!-- Full acrylic denture pricing for upper or lower arch. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Full Acrylic Dentures (Upper or Lower):</span> £800 – £1,700
-        </div>
-
-        <!-- Cobalt chrome denture pricing with description of material benefits. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Cobalt Chrome Dentures:</span> £1,150 – £1,950
-          <div class="pricing-item-description">High-strength metal-base dentures</div>
-        </div>
-
-        <!-- DENTAL IMPLANTS CATEGORY -->
-        <!-- Uppercase category heading for implant services. Includes a supporting
-             description highlighting Dr Nasir's postgraduate qualification. -->
-        <div class="pricing-category">Dental Implants</div>
-
-        <!-- Supporting description for the implants category, explaining Dr Nasir's
-             specialisation and qualification in implant dentistry. -->
-        <div class="pricing-item-description" style="margin-top: 6px; margin-bottom: 12px;">
-          Specialised services provided by a dentist with a Postgraduate Certificate in the field.
-        </div>
-
-        <!-- Single implant placement only (without crown/restoration). -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Single Implant (Placement only):</span> £1,250 – £1,800
-        </div>
-
-        <!-- Single implant fully restored with crown (complete restoration). -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Single Implant (Fully Restored with Crown):</span> £2,800 – £3,600
-        </div>
-
-        <!-- Implant-retained bridge for multiple missing teeth. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Implant-Retained Bridge (3+ teeth):</span> £5,000 – £8,000
-        </div>
-
-        <!-- All-on-4 or full arch implant reconstruction pricing. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">All-on-4 / Full Arch Reconstruction:</span> £14,000 – £18,000 per arch
-        </div>
-
-        <!-- GENERAL RESTORATIVE & ORAL SURGERY CATEGORY -->
-        <!-- Uppercase category heading for general restorative and surgical services. -->
-        <div class="pricing-category">General Restorative &amp; Oral Surgery</div>
-
-        <!-- White composite filling pricing with note about size/complexity variation. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">White Composite Fillings:</span> £150 – £325
-          <div class="pricing-item-description">Depending on size and complexity</div>
-        </div>
-
-        <!-- Molar root canal treatment pricing. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Root Canal Treatment (Molar):</span> £600 – £950
-          <div class="pricing-item-description">Advanced equipment like microscopes often used</div>
-        </div>
-
-        <!-- Simple tooth extraction pricing. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Simple Extraction:</span> £150 – £200
-        </div>
-
-        <!-- Surgical or complex tooth extraction pricing. -->
-        <div class="pricing-item">
-          <span class="pricing-item-name">Surgical/Complex Extraction:</span> £300 – £500
-        </div>
-
-      </div><!-- end .pricing-card -->
-
-      <!-- Disclaimer note informing visitors that prices are subject to change
-           at any time. Uses distinctive gold colour to differentiate from other
-           supplementary notes and to emphasise the importance of the disclaimer.
-           Positioned immediately below the pricing card so it is seen after
-           reviewing all pricing details. -->
-      <p class="prices-subject-to-change">Prices are subject to change at any time.</p>
-
-    </div><!-- end services section -->
-
-    <!-- ── PATIENT TESTIMONIALS ───────────────────────────────────────– -->
-    <div class="section">
-      <div class="section-title">Patient Testimonials</div>
-      <div class="section-content">
-        <div class="testimonial">
-          <div class="testimonial-title">A Calm and Gentle Experience</div>
-          <div class="testimonial-quote">"I've always been a nervous patient, but Dr Nasir completely changed my perspective on dental visits. She is incredibly patient, explains every step of the process, and has a very gentle touch. The clinic on Billing Road is professional and welcoming. I couldn't recommend her more highly for anyone looking for quality NHS or private care."</div>
-          <div class="testimonial-attribution">— Sarah J.</div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial-title">Exceptional Care and Results</div>
-          <div class="testimonial-quote">"I recently visited Dr Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none, and she truly cares about her patients' comfort. It's great to have such a high-calibre dentist right here in Northampton."</div>
-          <div class="testimonial-attribution">— David R.</div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial-title">The Best Dentist in Northampton</div>
-          <div class="testimonial-quote">"Dr Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan."</div>
-          <div class="testimonial-attribution">— Michael L.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── CV / QUALIFICATIONS ANCHOR ────────────────────────────────– -->
-    <div id="cv" class="section">
-      <div class="section-title">Qualifications &amp; Professional Registration</div>
-      <div class="section-content">
-        <p>BDS</p>
-        <p>Diploma in Clinical Dentistry (Eastman Dental Institute, London)</p>
-        <p>MFDS RCS London</p>
-        <p>MSc Fixed and Removable Prosthodontics (King's College London)</p>
-        <p>Postgraduate Certificate in Implant Dentistry</p>
-        <p><strong>GDC Registration Number:</strong> 169400</p>
-      </div>
-    </div>
-
-    <!-- ── OUR TEAM ANCHOR ────────────────────────────────────────────– -->
-    <div id="team" class="section">
-      <div class="section-title">Our Team</div>
-      <div class="section-content">
-        <div class="team-member">
-          <div class="team-member-image">
-            <img src="https://teckel-io.github.io/drsn/assets/benedict.png" alt="Benedict Williams, COO">
-          </div>
-          <div class="team-member-info">
-            <div class="team-member-name">Benedict Williams</div>
-            <div class="team-member-title">Chief Operating Officer</div>
-            <div class="team-member-bio">Benedict brings extensive operational expertise and strategic leadership to Delapre Dental Care, ensuring the practice operates to the highest standards of professional excellence and patient care.</div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="team-member-image">
-            <img src="https://teckel-io.github.io/drsn/assets/dr-nassir-webmaster.jpg" alt="Patricia Peterson, Dental Hygienist">
-          </div>
-          <div class="team-member-info">
-            <div class="team-member-name">Patricia Peterson</div>
-            <div class="team-member-title">Dental Hygienist</div>
-            <div class="team-member-bio">Patricia is a skilled and compassionate dental hygienist dedicated to supporting optimal oral health for all our patients. With extensive experience in preventive care and patient education, Patricia works closely with Dr Nasir to ensure every patient receives exceptional hygiene support.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── TERMS & CONDITIONS ANCHOR ─────────────────────────────────– -->
-    <div id="terms" class="section">
-      <div class="section-title">Terms &amp; Conditions</div>
-      <div class="section-content">
-<div class="legal-notice">⚠️ <strong>Placeholder document.</strong> This Terms &amp; Conditions statement is a working draft prepared for review purposes only. It has not been reviewed or approved by a qualified solicitor and must not be treated as a final legal document. It will be replaced with copy provided by Dr Nasir's own legal adviser before final publication.</div>
-
-        <p class="legal-heading">TERMS &amp; CONDITIONS</p>
-        <p class="legal-meta">Delapre Dental Care · 5 Billing Road, Northampton, NN1 5AN<br>Principal Dentist: Dr Sabina Nasir BDS MFDS RCS MSc · GDC No. 169400<br>Last updated: March 2026</p>
-
-        <p class="legal-section">1. ABOUT THIS PRACTICE</p>
-        <p>1.1 Delapre Dental Care ("the Practice") is operated by Dr Sabina Nasir, a dentist registered with the General Dental Council (GDC) under registration number 169400.</p>
-        <p>1.2 The Practice provides both NHS dental treatment and private dental treatment from its premises at 5 Billing Road, Northampton, NN1 5AN.</p>
-        <p>1.3 The Practice is regulated by the Care Quality Commission (CQC) and operates in accordance with the GDC's Standards for the Dental Team.</p>
-
-        <p class="legal-section">2. NHS TREATMENT</p>
-        <p>2.1 NHS treatment is provided in accordance with the National Health Service (Dental Charges) Regulations 2005, as amended, and the NHS Standard Contract for Dental Services.</p>
-        <p>2.2 NHS dental charges are set by the Department of Health and Social Care. Patients will be advised of the applicable charge band (Band 1, 2, or 3) before treatment commences. Charges are subject to change in accordance with government policy.</p>
-        <p>2.3 Certain patients are entitled to free NHS dental treatment, including children under 18, pregnant women, and those who have given birth in the preceding 12 months, and patients receiving qualifying benefits. It is the patient's responsibility to confirm their exemption status and to sign the relevant declaration (FP17DC). Making a false declaration is a criminal offence.</p>
-        <p>2.4 NHS treatment covers only clinically necessary care as assessed by the treating dentist. The Practice does not guarantee the provision of any specific NHS treatment; clinical decisions rest with the treating dentist in accordance with their professional obligations.</p>
-
-        <p class="legal-section">3. PRIVATE TREATMENT</p>
-        <p>3.1 Private treatment is offered at fees agreed in writing prior to commencement. A written treatment plan and cost estimate will be provided before any chargeable private treatment begins.</p>
-        <p>3.2 Payment terms for private treatment will be confirmed at the time of consultation. The Practice reserves the right to require a deposit for laboratory work or specialist appointments.</p>
-        <p>3.3 Estimates given for private treatment are provided in good faith. Final costs may vary if clinical circumstances change during treatment; any such variation will be discussed with the patient before proceeding.</p>
-
-        <p class="legal-section">4. APPOINTMENTS</p>
-        <p>4.1 Appointments may be made by telephone during normal practice hours. Patients are asked to arrive on time. The Practice reserves the right to reschedule appointments where a patient arrives more than ten minutes late, where to do otherwise would cause unreasonable delay to other patients.</p>
-        <p>4.2 Patients who need to cancel or rearrange an appointment are asked to give at least 24 hours' notice. Repeated failure to attend or to give adequate notice may result in the patient being discharged from the Practice's NHS or private list, in accordance with NHS contractual obligations and GDC guidance on patient management.</p>
-        <p>4.3 A cancellation or failed-appointment charge may be applied for private appointments where insufficient notice is given. The applicable charge will be stated in the patient's private treatment agreement.</p>
-
-        <p class="legal-section">5. CLINICAL DECISIONS AND PROFESSIONAL STANDARDS</p>
-        <p>5.1 All clinical decisions are made by qualified dental professionals registered with the GDC, in accordance with their professional duty of care and the GDC's Standards for the Dental Team.</p>
-        <p>5.2 Treatment recommendations are based on clinical examination and the individual patient's oral health needs. No guarantee of any specific clinical outcome can be given; dentistry, like all healthcare, involves inherent clinical risks which will be discussed with patients as part of the informed consent process.</p>
-        <p>5.3 Patients have the right to accept or decline any recommended treatment. Declining recommended treatment may affect oral health outcomes; the Practice will advise patients of relevant risks where a recommendation is declined.</p>
-
-        <p class="legal-section">6. ARTIFICIAL INTELLIGENCE AND DIGITAL INFORMATION</p>
-        <p>6.1 The Practice's website and associated digital assistant (voice agent) may incorporate artificial intelligence (AI) and large language model (LLM) technology to provide general information about the Practice and dental health.</p>
-        <p>6.2 AI and LLM systems are known to produce outputs that may be inaccurate, incomplete, or out of date — a phenomenon commonly referred to as "hallucination." Any information provided by AI systems on this website or via the voice assistant must be treated as general information only and must not be relied upon as clinical advice, diagnosis, or treatment recommendation.</p>
-        <p>6.3 Nothing communicated via this website, the voice assistant, or any other digital channel constitutes a clinical consultation, a diagnosis, or a recommendation to undertake or to refrain from any course of treatment. Patients must seek advice directly from a qualified dental professional for any clinical concern.</p>
-        <p>6.4 In the event of any discrepancy between information provided digitally and information provided by a clinical professional at the Practice, the advice of the clinical professional shall prevail.</p>
-
-        <p class="legal-section">7. COMPLAINTS</p>
-        <p>7.1 The Practice takes complaints seriously. Any patient who is dissatisfied with their care or treatment is encouraged to raise their concern in the first instance with the Practice directly, either in person, by telephone, or in writing to 5 Billing Road, Northampton, NN1 5AN.</p>
-        <p>7.2 The Practice operates a complaints procedure in line with NHS and CQC requirements. Patients will receive a written acknowledgement within three working days and a substantive response within 10 working days of the complaint being received.</p>
-        <p>7.3 If a complaint cannot be resolved to the patient's satisfaction, patients may refer the matter to:</p>
-        <ul class="legal-list">
-          <li>The Dental Complaints Service (private treatment): 08456 120 540</li>
-          <li>NHS England (NHS treatment): 0300 311 2233</li>
-          <li>The General Dental Council (fitness to practise concerns): 020 7167 6000</li>
-          <li>The Parliamentary and Health Service Ombudsman (NHS complaints not resolved locally)</li>
-        </ul>
-
-        <p class="legal-section">8. LIMITATION OF LIABILITY</p>
-        <p>8.1 Nothing in these Terms &amp; Conditions limits or excludes liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, or for any other liability that cannot lawfully be excluded or limited.</p>
-        <p>8.2 To the fullest extent permitted by law, the Practice's liability for any claim arising from the use of this website or its digital services (excluding clinical liability) shall be limited to the value of fees paid by the patient in connection with the matter giving rise to the claim.</p>
-
-        <p class="legal-section">9. GOVERNING LAW</p>
-        <p>9.1 These Terms &amp; Conditions are governed by the law of England and Wales. Any dispute arising under these Terms &amp; Conditions shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
-
-        <p class="legal-section">10. CHANGES TO THESE TERMS</p>
-        <p>10.1 The Practice reserves the right to amend these Terms &amp; Conditions at any time. The current version will always be displayed on this website. Continued use of the Practice's services following any amendment constitutes acceptance of the revised Terms &amp; Conditions.</p>
-      </div>
-    </div>
-
-    <!-- ── PRIVACY POLICY ANCHOR ─────────────────────────────────────– -->
-    <div id="privacy" class="section">
-      <div class="section-title">Privacy Policy</div>
-      <div class="section-content">
-<div class="legal-notice">⚠️ <strong>Placeholder document.</strong> This Privacy Policy is a working draft prepared for review purposes only. It has not been reviewed or approved by a qualified solicitor and must not be treated as a final legal document. It will be replaced with copy provided by Dr Nasir's own legal adviser before final publication.</div>
-
-        <p class="legal-heading">PRIVACY POLICY &amp; GDPR STATEMENT</p>
-        <p class="legal-meta">Delapre Dental Care · 5 Billing Road, Northampton, NN1 5AN<br>Data Controller: Dr Sabina Nasir · GDC No. 169400<br>Last updated: March 2026</p>
-
-        <p class="legal-section">1. WHO WE ARE AND HOW TO CONTACT US</p>
-        <p>1.1 Delapre Dental Care, operated by Dr Sabina Nasir, is the data controller responsible for the personal information we hold about you.</p>
-        <p>1.2 If you have any questions about how we use your personal information, or wish to exercise any of your rights (see Section 9), please contact us at: Delapre Dental Care, 5 Billing Road, Northampton, NN1 5AN. Telephone: 01604 636836.</p>
-        <p>1.3 Where required by law, we may be obliged to appoint a Data Protection Officer (DPO). Details of any DPO appointed will be added to this policy and displayed at the Practice premises.</p>
-
-        <p class="legal-section">2. WHAT PERSONAL INFORMATION WE COLLECT</p>
-        <p>2.1 We collect and process the following categories of personal information:</p>
-        <ul class="legal-list">
-          <li><strong>Identity and contact information</strong> — full name, date of birth, address, telephone number, email address, and NHS number (where applicable).</li>
-          <li><strong>Special category health data</strong> — details of your dental and general medical history, medications, allergies, clinical examination findings, treatment records, radiographs (X-rays), and clinical photographs.</li>
-          <li><strong>Financial information</strong> — NHS charge band exemption declarations, payment records, and private treatment financial agreements.</li>
-          <li><strong>Communication records</strong> — correspondence between you and the Practice, including appointment confirmations, recall notices, and complaint correspondence.</li>
-          <li><strong>Website and digital interaction data</strong> — technical data collected when you visit our website (see Section 7).</li>
-        </ul>
-        <p>2.2 We do not collect or process special category data beyond what is necessary for the provision of dental care and the fulfilment of our legal and regulatory obligations.</p>
-
-        <p class="legal-section">3. HOW WE COLLECT YOUR INFORMATION</p>
-        <p>3.1 We collect personal information directly from you when you register as a patient, complete medical history forms, attend appointments, contact the Practice by telephone, email, or via our website, or interact with our digital voice assistant.</p>
-        <p>3.2 We may also receive information from NHS England, your GP, referring clinicians, dental laboratories, or other healthcare providers involved in your care, where this is necessary for your treatment.</p>
-
-        <p class="legal-section">4. WHY WE USE YOUR INFORMATION AND OUR LAWFUL BASIS</p>
-        <p>4.1 We process your personal information for the following purposes and on the following legal bases under UK GDPR:</p>
-        <ul class="legal-list">
-          <li><strong>Providing dental treatment and care</strong> — Article 6(1)(c) Legal obligation; Article 9(2)(h) Healthcare provision.</li>
-          <li><strong>Managing appointments and recalls</strong> — Article 6(1)(b) Contract performance; Article 6(1)(f) Legitimate interests.</li>
-          <li><strong>NHS reporting and contractual obligations</strong> — Article 6(1)(c) Legal obligation.</li>
-          <li><strong>Processing payments and financial records</strong> — Article 6(1)(b) Contract performance; Article 6(1)(c) Legal obligation.</li>
-          <li><strong>Handling complaints and clinical incidents</strong> — Article 6(1)(c) Legal obligation; Article 9(2)(h) Healthcare provision.</li>
-          <li><strong>Regulatory compliance (GDC, CQC)</strong> — Article 6(1)(c) Legal obligation.</li>
-          <li><strong>Improving our services</strong> — Article 6(1)(f) Legitimate interests.</li>
-        </ul>
-
-        <p class="legal-section">5. WHO WE SHARE YOUR INFORMATION WITH</p>
-        <p>5.1 We share your personal information only where necessary and only with:</p>
-        <ul class="legal-list">
-          <li>NHS England and NHS Business Services Authority — to fulfil our NHS contract and for payment purposes.</li>
-          <li>Dental laboratories and specialist referral providers — where your treatment requires laboratory work or specialist input.</li>
-          <li>Your GP or other treating healthcare professionals — where clinically relevant and in your interests.</li>
-          <li>Regulatory bodies — the GDC, CQC, or NHS England where we are legally required to disclose information.</li>
-          <li>Our software and IT service providers — practice management systems, secure cloud storage, and communication platforms, all bound by appropriate data processing agreements.</li>
-          <li>Our insurers and legal advisers — where necessary in connection with a complaint, claim, or legal matter.</li>
-        </ul>
-        <p>5.2 We do not sell your personal information to any third party. We do not share your information for marketing purposes without your explicit consent.</p>
-        <p>5.3 Where we use digital tools — including this website and the AI-powered voice assistant — these tools may be provided by third-party technology suppliers. Any such suppliers are required to process your data in accordance with UK GDPR and are bound by written data processing agreements.</p>
-
-        <p class="legal-section">6. HOW LONG WE KEEP YOUR INFORMATION</p>
-        <p>6.1 We retain patient records in accordance with NHS and professional guidance. Current retention periods are:</p>
-        <ul class="legal-list">
-          <li>Adult patient records: a minimum of 10 years from the date of last treatment, or until the patient's 25th birthday, whichever is longer.</li>
-          <li>Child patient records: until the patient's 25th birthday, or 26th birthday if the young person was 17 at the conclusion of treatment.</li>
-          <li>NHS claim records: 10 years.</li>
-          <li>Financial records: 7 years for accounting purposes.</li>
-        </ul>
-        <p>6.2 These retention periods reflect our legal obligations under the Limitation Act 1980, NHS guidance, and GDC professional standards. Records will be securely destroyed at the end of the applicable retention period.</p>
-
-        <p class="legal-section">7. THIS WEBSITE AND DIGITAL SERVICES</p>
-        <p>7.1 When you visit this website, standard technical information may be collected automatically, including your IP address, browser type, and pages visited. This information is used solely for the purpose of maintaining the security and performance of the website and is not used to identify you personally.</p>
-        <p>7.2 This website uses a digital AI voice assistant. Any information you share during an interaction with the voice assistant (such as your name or a question about your appointment) may be processed by the AI system. Please do not share sensitive clinical or financial details via the voice assistant.</p>
-        <p>7.3 <strong>Important:</strong> The AI voice assistant is provided for general information purposes only. AI and large language model (LLM) technology can produce information that is inaccurate or out of date — a phenomenon known as "hallucination." Nothing communicated via the voice assistant constitutes a clinical consultation, diagnosis, or treatment recommendation. For any clinical concern, please contact the Practice directly and speak with a qualified dental professional.</p>
-        <p>7.4 We do not use cookies beyond those strictly necessary for the operation of this website. We do not use tracking, profiling, or advertising cookies.</p>
-
-        <p class="legal-section">8. TRANSFERRING YOUR DATA OUTSIDE THE UK</p>
-        <p>8.1 We do not routinely transfer your personal data outside the United Kingdom. Where any third-party service provider processes data outside the UK, we ensure that appropriate safeguards are in place in accordance with UK GDPR Article 46, and we will inform you of any such transfer upon request.</p>
-
-        <p class="legal-section">9. YOUR RIGHTS</p>
-        <p>9.1 Under UK GDPR, you have the following rights in relation to your personal data:</p>
-        <ul class="legal-list">
-          <li><strong>Right of access</strong> — to request a copy of the personal data we hold about you (Subject Access Request). We will respond within one calendar month.</li>
-          <li><strong>Right to rectification</strong> — to request correction of inaccurate or incomplete data.</li>
-          <li><strong>Right to erasure</strong> — to request deletion of your data in certain circumstances. Please note that this right is limited where we are required to retain data by law (e.g. clinical records during the mandatory retention period).</li>
-          <li><strong>Right to restrict processing</strong> — to request that we limit the way we use your data in certain circumstances.</li>
-          <li><strong>Right to data portability</strong> — to receive your data in a structured, machine-readable format in certain circumstances.</li>
-          <li><strong>Right to object</strong> — to object to processing based on legitimate interests.</li>
-          <li><strong>Right not to be subject to automated decision-making</strong> — we do not make decisions about your care solely by automated means.</li>
-        </ul>
-        <p>9.2 To exercise any of these rights, please contact us in writing at the address in Section 1. We will not charge a fee for a Subject Access Request unless it is manifestly unfounded or excessive.</p>
-        <p>9.3 If you are dissatisfied with how we have handled your personal data, you have the right to lodge a complaint with the Information Commissioner's Office (ICO): Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF. Telephone: 0303 123 1113. Website: ico.org.uk.</p>
-
-        <p class="legal-section">10. CHANGES TO THIS PRIVACY POLICY</p>
-        <p>10.1 We review this Privacy Policy regularly. Any material changes will be notified to patients and updated on this website. The date at the top of this document reflects the most recent revision.</p>
-      </div>
-    </div>
-
-    <!-- ── PDF VIEWER — DHR 2024 DOCUMENT ─────────────────────────────– -->
-    <!-- This section embeds the Dental Health Report 2024 PDF file inline so
-         visitors can read and review the document directly on the page. A
-         download link is also provided for users who wish to save the PDF to
-         their device. The styling matches the existing site design language,
-         with a subtle card background and steel-blue accent bar. -->
-    <div class="section">
-      <div class="section-title">Dental Health Report 2024</div>
-      <div class="pdf-viewer-container">
-        <!-- Embedded PDF iframe — displays the PDF document inline at 100% width
-             and 600px height, allowing visitors to scroll through multiple pages
-             without leaving the page. The iframe includes a subtle border for
-             visual definition. -->
-        <iframe
-          src="https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf"
-          class="pdf-iframe"
-          title="Dental Health Report 2024">
-        </iframe>
-        <!-- Download link for the PDF file — allows visitors to save the
-             document to their device for offline access or printing. The link
-             is styled as a subtle button matching the site design. -->
-        <a href="https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf" class="pdf-download-link" download>
-          Download PDF
-        </a>
-      </div>
-    </div>
-
-    <!-- ── YOUTUBE VIDEO SECTION ────────────────────────────────────────– -->
-    <!-- This section embeds a YouTube video in a professional card container
-         that matches the site design language. An announcement above the video
-         informs visitors that Dr Nasir will be attending the featured event.
-         The video uses a responsive aspect-ratio wrapper to maintain proper
-         16:9 proportions across all screen sizes. -->
-    <div class="section">
-      <div class="section-title">Event</div>
-      <div class="youtube-container">
-        <!-- Announcement text informing visitors that Dr Nasir will be attending
-             the event featured in the embedded YouTube video below. -->
-        <div class="youtube-announcement">
-          Dr Sabina Nasir will be attending this event. Watch the video to learn more.
-        </div>
-        <!-- YouTube iframe wrapper — maintains 16:9 aspect ratio responsively
-             across all screen sizes using the padding-bottom trick. The iframe
-             itself is positioned absolutely inside this wrapper. -->
-        <div class="youtube-iframe-wrapper">
-          <!-- Embedded YouTube video iframe — displays the video inline at full
-               responsive width and proper aspect ratio. The allow attribute
-               enables fullscreen playback capability. -->
-          <iframe
-            class="youtube-iframe"
-            src="https://www.youtube.com/embed/QZGKyDTufTU"
-            title="Event featuring Dr Sabina Nasir"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
+    <!-- ── FOOTER ─────────────────────────────────────────────────────── -->
     <div class="footer">
       © 2026 Delapre Dental Care | All Rights Reserved
     </div>
@@ -2025,20 +671,9 @@
 
   <!-- =====================================================================
   ELEVENLABS VOICE WIDGET
-  Renders the Sabina voice agent widget. Placement (fixed left, bottom left,
-  etc.) is controlled entirely in the ElevenLabs dashboard under
-  Widget → Placement — not via CSS in this file.
-
-  agent-id         → Sabina agent ID. Do not change unless migrating agents.
-                     Current: agent_4701kjh47cjafxvv0m4xv8e9jgfd
-  avatar-image-url → Default avatar on page load (Dr Nasir portrait). The
-                     JavaScript block below can swap this at runtime when the
-                     conversation transfers between agents.
-
-  IMPORTANT: Do not move this element or apply CSS positioning to it in
-  this file. The widget manages its own fixed overlay positioning internally.
-  The only CSS applied externally is margin-top: 50px via the FIX #1 rule
-  above, which nudges the widget clear of the navbar.
+  Identical to index.html. Renders the Sabina voice agent widget.
+  Placement is controlled in the ElevenLabs dashboard — not via CSS here.
+  agent-id → Sabina agent ID: agent_4701kjh47cjafxvv0m4xv8e9jgfd
   ===================================================================== -->
   <elevenlabs-convai
     agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
@@ -2050,55 +685,22 @@
 
   <!-- =====================================================================
   AVATAR SWAP SCRIPT
-  Enables runtime swapping of the widget's avatar image via the ElevenLabs
-  Client Tool "update_avatar". When an agent triggers update_avatar during
-  a call, this script updates the widget's avatar-image-url attribute to
-  the matching URL from the AVATARS object, giving each agent its own face.
-
-  AVATARS object — key must match the avatar_name parameter sent by the agent:
-  — "sabina"   → Dr Nasir portrait (default, set in the widget tag above)
-  — "benedict" → Benedict avatar (shown when call transfers to Benedict)
-
-  TO ADD A NEW AVATAR:
-  1. Add a new key/URL pair to the AVATARS object below.
-  2. Add a matching "update_avatar" call instruction in the relevant agent's
-     ElevenLabs system prompt.
-
-  DO NOT restructure the event listener pattern. The clientTools object must
-  be registered inside the "elevenlabs-convai:call" event handler because the
-  ElevenLabs widget only accepts client tool registration at call-initiation
-  time. Registering outside this event (e.g. directly on DOMContentLoaded)
-  does not work reliably across widget versions.
+  Identical to index.html. Enables runtime avatar swapping via the
+  ElevenLabs Client Tool "update_avatar" during agent transfers.
   ===================================================================== -->
   <script>
-    // Define avatar URLs for each agent. The key must match the avatar_name
-    // parameter sent by the agent during a call transfer.
     var AVATARS = {
       sabina:   "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg",
       benedict: "https://teckel-io.github.io/drsn/assets/benedict.png"
     };
-    // Wait for the page DOM to fully load before accessing the widget element.
     document.addEventListener("DOMContentLoaded", function () {
-      // Get a reference to the ElevenLabs widget custom element.
       var widget = document.querySelector("elevenlabs-convai");
       if (widget) {
-        // Listen for the "elevenlabs-convai:call" event, which fires when a
-        // user initiates a conversation with the voice agent.
         widget.addEventListener("elevenlabs-convai:call", function (event) {
-          // Register the update_avatar client tool, which allows the agent's
-          // system prompt to request an avatar change at runtime.
           event.detail.config.clientTools = {
-            // The update_avatar function receives a params object with
-            // avatar_name and updates the widget's avatar-image-url attribute.
             update_avatar: function (params) {
-              // Look up the avatar URL for the requested avatar_name.
               var url = AVATARS[params.avatar_name];
-              if (url) {
-                // Update the widget's avatar-image-url attribute to display
-                // the new avatar image.
-                widget.setAttribute("avatar-image-url", url);
-              }
-              // Return a confirmation message to the agent (optional).
+              if (url) { widget.setAttribute("avatar-image-url", url); }
               return "Avatar updated";
             }
           };
