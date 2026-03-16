@@ -1181,6 +1181,52 @@
       margin-top: 8px;
       margin-bottom: 16px;
     }
+
+    /*
+    =====================================================================
+    FREE CONSULTATION CALLOUT
+    Emphasises the availability of free consultations to patients. Uses a
+    distinctive gold/amber colour scheme to make the callout stand out from
+    other informational notes on the page. The gold accent differentiates
+    this promotional message from standard supplementary text (which uses
+    steel blue).
+
+    WHAT THIS DOES: Displays a prominent note ("Free consultation available")
+    that encourages new and existing patients to book an appointment without
+    financial concern, helping remove barriers to initial contact.
+
+    WHY color: #f0d060: Gold/amber colour creates visual distinction from
+    standard steel-blue notes, signalling this is special/promotional content.
+    The warm tone also conveys approachability and value.
+
+    WHY font-size: 13px: Matches the sizing of other supplementary notes
+    on the page (.note), creating consistency while keeping the callout
+    compact and unobtrusive.
+
+    WHY font-style: italic: Signals supplementary rather than critical
+    information, while still drawing attention through the gold colour.
+
+    WHY margin-top: 8px: Provides a small gap between this callout and the
+    heading above it, ensuring visual separation without feeling disconnected.
+
+    WHY margin-bottom: 16px: Creates breathing room between this callout and
+    service section content below, grouping the callout with the services
+    while maintaining visual separation.
+
+    TUNING: If the callout feels too subtle, change colour to #ffd700
+    (brighter gold) or increase font-weight to bold. If it feels too
+    prominent, reduce opacity or decrease font-size to 12px. Adjust
+    margins in 2px increments if spacing relative to surrounding content
+    feels off.
+    =====================================================================
+    */
+    .consultation-callout {
+      color: #f0d060;
+      font-size: 13px;
+      font-style: italic;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
   </style>
 </head>
 <body>
@@ -1272,10 +1318,17 @@
     <!-- This section displays available dental services. A pricing note at the
          top informs visitors that the service information and any associated
          pricing details were last updated in March 2026, ensuring customers
-         have current information and know when to check back for updates. -->
+         have current information and know when to check back for updates.
+         A free consultation callout emphasises the availability of free
+         consultations to help encourage new patients to book. -->
     <div class="section">
       <div class="section-title">Services</div>
       <p class="pricing-note">Prices correct as of March 2026</p>
+      <!-- Callout highlighting free consultation availability to encourage
+           patient engagement and reduce booking hesitation. Uses a distinctive
+           gold colour (#f0d060) to differentiate from standard supplementary
+           notes. -->
+      <p class="consultation-callout">Free consultation available</p>
       <div class="section-content">
         <!-- Services content will be added here by Dr Nasir or practice admin
              when service descriptions and pricing are finalised. This is a
