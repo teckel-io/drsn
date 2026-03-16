@@ -4,7 +4,8 @@
     "repo": "teckel-io/drsn",
     "pages": [
       "index",
-      "services"
+      "services",
+      "about"
     ],
     "backup_schedule": {
       "enabled": false,
@@ -14,23 +15,23 @@
       "notif_chat_ids": [
         397674161
       ]
-    }
+    },
+    "nav_items": [
+      {
+        "label": "Home",
+        "href": "index.html"
+      },
+      {
+        "label": "Services",
+        "href": "services.html"
+      },
+      {
+        "label": "About Us",
+        "href": "about.html"
+      }
+    ]
   },
   "versions": [
-    {
-      "version": 33,
-      "timestamp": "2026-03-15T06:28:06.957Z",
-      "tag": null,
-      "change_description": "Rolled back to version 31 — change the footer copyright year to 2027",
-      "is_rollback": true,
-      "rolled_back_to_version": 31,
-      "pages": {
-        "index": "0166ade94f3d9a97f614fdfb24846c4ef3d25886"
-      },
-      "pre_edit_pages": {
-        "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
-      }
-    },
     {
       "version": 34,
       "timestamp": "2026-03-15T06:29:19.916Z",
@@ -715,6 +716,25 @@
       },
       "pre_edit_pages": {
         "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
+      }
+    },
+    {
+      "version": 83,
+      "timestamp": "2026-03-16T22:11:28.854Z",
+      "tag": null,
+      "change_description": "Created page: About Us (about.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "about": "11f46d6f7adc7f48b65bc4e6a8e52272300a81a8",
+        "index": "e6f33c9d2891c1288feb9b0db21ed2753775caff",
+        "services": "9a3893f66dc5225f27f0b468fc0281fa817cac44"
+      },
+      "pre_edit_pages": {
+        "about": null,
+        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638",
+        "services": "61c88badfb4eb2a34263338781c3658a20c36b30"
       }
     }
   ]
