@@ -9,20 +9,6 @@
   },
   "versions": [
     {
-      "version": 24,
-      "timestamp": "2026-03-14T04:25:09.890Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 23 (\"A PDF document has been uploaded to the site assets folder. File URL: https://teckel-io.github.io/drsn/assets/dhr-2024-final.pdf. User instruction: In a professional manner seamlessly integrate, in accordance with the look and feel of the site, this PDF file below the Privacy Policy. Embed the  file into the site so it is easily seen, and also provide a download link.. Please update the website based on the instruction. Embed the PDF inline using an <iframe> tag (width 100%, height 600px) so visitors can read it on the page. Also add a clearly labelled download link below the iframe. Use the exact URL provided for both.\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 23,
-      "pages": {
-        "index": "d0f5b995b5a96e40033965a9706f50468f29ef49"
-      },
-      "pre_edit_pages": {
-        "index": "4ba8d3a3761acf17ef20687aecf3aa48a70aed2b"
-      }
-    },
-    {
       "version": 25,
       "timestamp": "2026-03-14T04:42:50.597Z",
       "tag": null,
@@ -706,6 +692,20 @@
       },
       "pre_edit_pages": {
         "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
+      }
+    },
+    {
+      "version": 74,
+      "timestamp": "2026-03-16T03:38:50.111Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 73 (\"Rolled back to version 56 — In a way that smoothly and seamlessly integrates with the Services page adhering to the  look, feel, style  and overall professionalism of the site, please add the following data in the area of the services.html page concerning pricing:\n\nConsultation & Diagnostics\nNew Patient Assessment: £80 – £135 (Includes full examination, oral cancer screening, and basic X-rays)\n\nRoutine Check-up (Existing Patient): £55 – £75\n\nSpecialist/Implant Consultation: Free (as noted by Delapre Dental Care) or up to £135 for complex planning.\n\nLarge X-ray (OPG) or 3D Bone Scan (CT): £60 – £150\n\nPreventative & Hygiene\nHygienist Appointment (30–40 mins): £75 – £110\n\nAdvanced Periodontal (Gum) Treatment: £150 – £300 per session\n\nAdvanced Prosthodontics (MSc Level Expertise)\nThese procedures are the core of Dr. Nasir's postgraduate training from King’s College London.\n\nPorcelain/Zirconia Crown: £850 – £1,200 (Precision-crafted to match natural teeth)\n\nPorcelain Veneer: £900 – £1,200 per tooth\n\nBridges (per unit): £700 – £1,000 (e.g., a 3-unit bridge would be £2,100+)\n\nFull Acrylic Dentures (Upper or Lower): £800 – £1,700\n\nCobalt Chrome Dentures: £1,150 – £1,950 (High-strength metal-base dentures)\n\nDental Implants\nSpecialized services provided by a dentist with a Postgraduate Certificate in the field.\n\nSingle Implant (Placement only): £1,250 – £1,800\n\nSingle Implant (Fully Restored with Crown): £2,800 – £3,600\n\nImplant-Retained Bridge (3+ teeth): £5,000 – £8,000\n\nAll-on-4 / Full Arch Reconstruction: £14,000 – £18,000 per arch\n\nGeneral Restorative & Oral Surgery\nWhite Composite Fillings: £150 – £325 (Depending on size and complexity)\n\nRoot Canal Treatment (Molar): £600 – £950 (Advanced equipment like microscopes often used)\n\nSimple Extraction: £150 – £200\n\nSurgical/Complex Extraction: £300 – £500\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 73,
+      "pages": {
+        "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
+      },
+      "pre_edit_pages": {
+        "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
       }
     }
   ]
