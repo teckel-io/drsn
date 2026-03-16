@@ -5,7 +5,8 @@
     "pages": [
       "index",
       "services",
-      "about"
+      "about",
+      "about-us"
     ],
     "backup_schedule": {
       "enabled": false,
@@ -28,24 +29,14 @@
       {
         "label": "About Us",
         "href": "about.html"
+      },
+      {
+        "label": "About Us",
+        "href": "about-us.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 34,
-      "timestamp": "2026-03-15T06:29:19.916Z",
-      "tag": null,
-      "change_description": "Rolled back to version 32 — Rolled back to the state before version 31 (\"change the footer copyright year to 2027\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 32,
-      "pages": {
-        "index": "86f24ec48f5146fa227c02efb4400dda083fadf2"
-      },
-      "pre_edit_pages": {
-        "index": "0166ade94f3d9a97f614fdfb24846c4ef3d25886"
-      }
-    },
     {
       "version": 35,
       "timestamp": "2026-03-15T06:34:55.224Z",
@@ -735,6 +726,25 @@
         "about": null,
         "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638",
         "services": "61c88badfb4eb2a34263338781c3658a20c36b30"
+      }
+    },
+    {
+      "version": 84,
+      "timestamp": "2026-03-16T23:24:23.772Z",
+      "tag": null,
+      "change_description": "Created page: About Us (about-us.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "about-us": "e65d997269b8c8b352ae1acf26b4bccff5b21b0d",
+        "index": "1ad77b0a1dbb9bad6ace2e31b21d619acc7491f5",
+        "services": "f63825c1dafb26fbdca2ff4e0ee414dfc27ced88"
+      },
+      "pre_edit_pages": {
+        "about-us": null,
+        "index": "52470b46e14873426f8a07b7dc596cbe135a0a52",
+        "services": "82779fa5ca10e60ddb29af215781446db9ab05fd"
       }
     }
   ]
