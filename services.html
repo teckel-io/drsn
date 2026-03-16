@@ -1227,6 +1227,209 @@
       margin-top: 8px;
       margin-bottom: 16px;
     }
+
+    /*
+    =====================================================================
+    PRICING TABLE CONTAINER
+    Wraps the services pricing data in a card-like container that matches
+    the site's existing visual design language. Uses the same background tint
+    and border-left accent as testimonials, team member bios, and other
+    content cards to maintain visual consistency across the page.
+
+    WHAT THIS DOES: Creates a professional, cohesive presentation for the
+    pricing information so it appears as an intentional, well-designed part
+    of the page rather than a plain list of text.
+
+    WHY THESE COLOURS: The background tint uses rgba(176, 196, 222, 0.05)
+    matching .testimonial and .team-member cards. The border-left uses the
+    same steel-blue (#b0c4de) accent bar as other content cards. This
+    maintains visual consistency across all card-like sections.
+
+    TUNING: Adjust padding in 4px increments if content feels cramped or
+    too loose. Adjust margin-bottom in 4px increments for spacing between
+    this card and the next section. Modify border opacity (0.05 to 0.1)
+    if the background tint is too subtle or too prominent.
+    =====================================================================
+    */
+    .pricing-card {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    /*
+    =====================================================================
+    PRICING CATEGORY HEADING
+    Styles category-level headings within the pricing section (e.g.
+    "Consultation & Diagnostics", "Preventative & Hygiene"). Uses steel-blue
+    colour and uppercase styling to create clear visual hierarchy between
+    main service categories and individual service items.
+
+    WHAT THIS DOES: Organises pricing data into logical sections, making it
+    easy for patients to find the service they are interested in.
+
+    WHY color: #b0c4de: Steel blue matches other section headings on the page,
+    creating visual consistency and signalling that this is organisational
+    content (a category header).
+
+    WHY font-weight: bold: Emphasises this text as a heading rather than
+    regular body content.
+
+    WHY font-size: 14px: Slightly larger than body text (15px) but not as
+    large as main page headings. This creates a clear visual hierarchy:
+    main page sections are largest, pricing categories are medium, individual
+    services are smallest.
+
+    WHY text-transform: uppercase: Makes the category heading stand out and
+    creates a consistent visual pattern with other uppercase section headings
+    on the page (see .section-title).
+
+    WHY letter-spacing: 0.5px: Adds visual breathing room to uppercase text,
+    making it easier to scan and more professional in appearance.
+
+    WHY margin-top: 16px: Provides vertical spacing above this heading so it
+    does not feel cramped immediately after the previous service item.
+
+    WHY margin-bottom: 12px: Creates a gap between this heading and the first
+    service item in this category, grouping them visually.
+
+    TUNING: Adjust font-size in 1px increments if the heading appears too
+    large or too small relative to the category content. Increase letter-spacing
+    to 1px if the uppercase text feels cramped. Adjust margins in 2px or 4px
+    increments if spacing feels off.
+    =====================================================================
+    */
+    .pricing-category {
+      color: #b0c4de;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    /*
+    =====================================================================
+    PRICING CATEGORY FIRST CHILD
+    Removes the top margin from the first pricing category heading in a card,
+    preventing excessive space between the card top edge and the first heading.
+    This keeps the design compact and maintains proper visual balance.
+
+    WHAT THIS DOES: Eliminates the margin-top: 16px that would normally apply
+    to the first .pricing-category in a card, so the first heading sits close
+    to the card top edge.
+
+    WHY THIS MATTERS: Without this rule, the first category heading would have
+    16px of space above it, creating an awkward gap between the card border
+    and the text inside. This would visually separate the heading from the
+    card container and disrupt the cohesive design.
+
+    TUNING: Generally no adjustment needed. If the first heading feels too
+    close to the top edge of the card, increase margin-top on .pricing-category
+    and adjust this rule accordingly (e.g. margin-top: 8px instead of 0).
+    =====================================================================
+    */
+    .pricing-category:first-child {
+      margin-top: 0;
+    }
+
+    /*
+    =====================================================================
+    PRICING ITEM (INDIVIDUAL SERVICE)
+    Styles individual pricing line items — a service name and its price range.
+    Uses white text on the dark background with moderate line-height for
+    comfortable reading.
+
+    WHAT THIS DOES: Displays each service offering with its corresponding
+    price range in a consistent, readable format.
+
+    WHY color: #ffffff: White text matches other body content on the page,
+    providing maximum contrast against the dark navy background.
+
+    WHY font-size: 15px: Standard body text size, ensuring the pricing
+    information is easily readable without appearing too large or too small.
+
+    WHY line-height: 1.6: Provides comfortable vertical spacing for line
+    items and multi-line service descriptions, making the list easy to scan.
+
+    WHY margin-bottom: 8px: Provides a small gap between each service item,
+    creating visual separation without cramping the list. This spacing allows
+    patients to scan the list quickly.
+
+    TUNING: Decrease margin-bottom to 6px if the list feels too spread out.
+    Increase to 10px or 12px if items feel too cramped. Adjust line-height
+    to 1.5 for a more compact list or 1.7 for more spacious reading.
+    =====================================================================
+    */
+    .pricing-item {
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    /*
+    =====================================================================
+    PRICING ITEM NAME (SERVICE NAME ONLY)
+    Styles just the service name portion of a pricing item, making it bold
+    to create visual separation between the service name and its price.
+
+    WHAT THIS DOES: Emphasises the service name so patients can quickly scan
+    what services are available without getting distracted by the price ranges.
+
+    WHY font-weight: bold: Makes the service name stand out from the price
+    range that follows it on the same line or the next line.
+
+    TUNING: Can be removed if you prefer all pricing text (name and price)
+    to have equal visual weight. Alternatively, increase font-size by 1px
+    if the bold weight alone is insufficient to make the name stand out.
+    =====================================================================
+    */
+    .pricing-item-name {
+      font-weight: bold;
+    }
+
+    /*
+    =====================================================================
+    PRICING ITEM DESCRIPTION (SUPPORTING DETAILS)
+    Styles optional supporting text that appears below or alongside a pricing
+    item (e.g. "Includes full examination, oral cancer screening, and basic
+    X-rays"). Uses steel blue to differentiate it from the main service name
+    and price while maintaining readability.
+
+    WHAT THIS DOES: Provides context about what is included in a service or
+    any special notes about the offering, helping patients make informed
+    decisions without needing to call the practice.
+
+    WHY color: #b0c4de: Steel blue indicates this is supplementary information
+    (similar to .note and other secondary text on the page), creating
+    consistency in visual hierarchy.
+
+    WHY font-size: 14px: Slightly smaller than the main service text (15px)
+    to indicate it is supporting information rather than primary content.
+
+    WHY margin-left: 0: Keeps supporting text aligned flush-left with the
+    service name, rather than indenting it. This maintains a clean, organised
+    appearance when multiple services are listed.
+
+    WHY margin-top: 3px: Provides a tiny gap between a bold service name
+    and its supporting description, creating visual separation without
+    creating excessive space.
+
+    TUNING: Increase margin-top to 4px or 6px if supporting text feels too
+    close to the service name above it. Change colour to #e0d5c7 for a warmer
+    tone or back to #b0c4de for cooler consistency. Decrease font-size to
+    13px if supporting text appears too prominent.
+    =====================================================================
+    */
+    .pricing-item-description {
+      color: #b0c4de;
+      font-size: 14px;
+      margin-left: 0;
+      margin-top: 3px;
+    }
   </style>
 </head>
 <body>
@@ -1320,7 +1523,9 @@
          pricing details were last updated in March 2026, ensuring customers
          have current information and know when to check back for updates.
          A free consultation callout emphasises the availability of free
-         consultations to help encourage new patients to book. -->
+         consultations to help encourage new patients to book. Service pricing
+         is displayed in a card-like container with category headings and
+         individual pricing items, matching the site's visual design language. -->
     <div class="section">
       <div class="section-title">Services</div>
       <p class="pricing-note">Prices correct as of March 2026</p>
@@ -1329,12 +1534,154 @@
            gold colour (#f0d060) to differentiate from standard supplementary
            notes. -->
       <p class="consultation-callout">Free consultation available</p>
-      <div class="section-content">
-        <!-- Services content will be added here by Dr Nasir or practice admin
-             when service descriptions and pricing are finalised. This is a
-             placeholder container ready to receive service listings. -->
-      </div>
-    </div>
+
+      <!-- Pricing card container — wraps all service pricing data in a cohesive,
+           card-like design that matches the visual style of testimonials and
+           team member sections. Uses a subtle background tint and steel-blue
+           border-left accent for consistency with other content cards. -->
+      <div class="pricing-card">
+
+        <!-- CONSULTATION & DIAGNOSTICS CATEGORY -->
+        <!-- Uppercase category heading to organise pricing by service type.
+             Helps patients quickly find the specific service they need. -->
+        <div class="pricing-category">Consultation &amp; Diagnostics</div>
+
+        <!-- New Patient Assessment pricing item with supporting description
+             explaining what is included in the service. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">New Patient Assessment:</span> £80 – £135
+          <div class="pricing-item-description">Includes full examination, oral cancer screening, and basic X-rays</div>
+        </div>
+
+        <!-- Routine Check-up pricing for existing patients. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Routine Check-up (Existing Patient):</span> £55 – £75
+        </div>
+
+        <!-- Specialist/Implant consultation pricing with note about free option. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Specialist/Implant Consultation:</span> Free or up to £135
+          <div class="pricing-item-description">Free for routine implant assessments; complex planning up to £135</div>
+        </div>
+
+        <!-- Large X-ray and 3D scanning pricing. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Large X-ray (OPG) or 3D Bone Scan (CT):</span> £60 – £150
+        </div>
+
+        <!-- PREVENTATIVE & HYGIENE CATEGORY -->
+        <!-- Uppercase category heading for preventative and hygiene services. -->
+        <div class="pricing-category">Preventative &amp; Hygiene</div>
+
+        <!-- Hygienist appointment pricing with time estimate. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Hygienist Appointment (30–40 mins):</span> £75 – £110
+        </div>
+
+        <!-- Advanced periodontal treatment pricing. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Advanced Periodontal (Gum) Treatment:</span> £150 – £300 per session
+        </div>
+
+        <!-- ADVANCED PROSTHODONTICS CATEGORY -->
+        <!-- Uppercase category heading for prosthetic services. Includes a
+             supporting description highlighting Dr Nasir's specialisation
+             from her MSc at King's College London. -->
+        <div class="pricing-category">Advanced Prosthodontics (MSc Level Expertise)</div>
+
+        <!-- Supporting description for the prosthodontics category, explaining
+             that these procedures are Dr Nasir's area of specialisation. -->
+        <div class="pricing-item-description" style="margin-top: 6px; margin-bottom: 12px;">
+          These procedures are the core of Dr Nasir's postgraduate training from King's College London.
+        </div>
+
+        <!-- Porcelain/Zirconia crown pricing with description. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Porcelain/Zirconia Crown:</span> £850 – £1,200
+          <div class="pricing-item-description">Precision-crafted to match natural teeth</div>
+        </div>
+
+        <!-- Porcelain veneer pricing per tooth. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Porcelain Veneer:</span> £900 – £1,200 per tooth
+        </div>
+
+        <!-- Bridge pricing per unit with example. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Bridges (per unit):</span> £700 – £1,000
+          <div class="pricing-item-description">Example: a 3-unit bridge would be £2,100+</div>
+        </div>
+
+        <!-- Full acrylic denture pricing for upper or lower arch. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Full Acrylic Dentures (Upper or Lower):</span> £800 – £1,700
+        </div>
+
+        <!-- Cobalt chrome denture pricing with description of material benefits. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Cobalt Chrome Dentures:</span> £1,150 – £1,950
+          <div class="pricing-item-description">High-strength metal-base dentures</div>
+        </div>
+
+        <!-- DENTAL IMPLANTS CATEGORY -->
+        <!-- Uppercase category heading for implant services. Includes a supporting
+             description highlighting Dr Nasir's postgraduate qualification. -->
+        <div class="pricing-category">Dental Implants</div>
+
+        <!-- Supporting description for the implants category, explaining Dr Nasir's
+             specialisation and qualification in implant dentistry. -->
+        <div class="pricing-item-description" style="margin-top: 6px; margin-bottom: 12px;">
+          Specialised services provided by a dentist with a Postgraduate Certificate in the field.
+        </div>
+
+        <!-- Single implant placement only (without crown/restoration). -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Single Implant (Placement only):</span> £1,250 – £1,800
+        </div>
+
+        <!-- Single implant fully restored with crown (complete restoration). -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Single Implant (Fully Restored with Crown):</span> £2,800 – £3,600
+        </div>
+
+        <!-- Implant-retained bridge for multiple missing teeth. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Implant-Retained Bridge (3+ teeth):</span> £5,000 – £8,000
+        </div>
+
+        <!-- All-on-4 or full arch implant reconstruction pricing. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">All-on-4 / Full Arch Reconstruction:</span> £14,000 – £18,000 per arch
+        </div>
+
+        <!-- GENERAL RESTORATIVE & ORAL SURGERY CATEGORY -->
+        <!-- Uppercase category heading for general restorative and surgical services. -->
+        <div class="pricing-category">General Restorative &amp; Oral Surgery</div>
+
+        <!-- White composite filling pricing with note about size/complexity variation. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">White Composite Fillings:</span> £150 – £325
+          <div class="pricing-item-description">Depending on size and complexity</div>
+        </div>
+
+        <!-- Molar root canal treatment pricing. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Root Canal Treatment (Molar):</span> £600 – £950
+          <div class="pricing-item-description">Advanced equipment like microscopes often used</div>
+        </div>
+
+        <!-- Simple tooth extraction pricing. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Simple Extraction:</span> £150 – £200
+        </div>
+
+        <!-- Surgical or complex tooth extraction pricing. -->
+        <div class="pricing-item">
+          <span class="pricing-item-name">Surgical/Complex Extraction:</span> £300 – £500
+        </div>
+
+      </div><!-- end .pricing-card -->
+    </div><!-- end services section -->
 
     <!-- ── PATIENT TESTIMONIALS ───────────────────────────────────────– -->
     <div class="section">
