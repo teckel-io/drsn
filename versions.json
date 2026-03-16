@@ -9,20 +9,6 @@
   },
   "versions": [
     {
-      "version": 17,
-      "timestamp": "2026-03-13T05:25:35.677Z",
-      "tag": null,
-      "change_description": "Update Dr. Sabina Nasir's CV with the following information (keeping with the current look, feel, style and professionalism of the site):\n\nBDS, Dip Clinical Dentisty( Eastman Dental.Institute, London)\nMFDS RCS London,\nMSc Fixed and Removable Prosthodontics( King's College London)\nPostgraduate Certificate in  Implant Dentisty\nGDC number- 169400",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "1fc87d7ed29ff6a1d672c2935e93977916877934"
-      },
-      "pre_edit_pages": {
-        "index": "d9dcf24b9b5ac980c4763b48e256fa88fd47ebc5"
-      }
-    },
-    {
       "version": 18,
       "timestamp": "2026-03-14T00:43:15.043Z",
       "tag": null,
@@ -706,6 +692,20 @@
       },
       "pre_edit_pages": {
         "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
+      }
+    },
+    {
+      "version": 67,
+      "timestamp": "2026-03-16T02:28:04.352Z",
+      "tag": null,
+      "change_description": "Rolled back to version 53 — Add \"Free consultation available\" to the treatments page",
+      "is_rollback": true,
+      "rolled_back_to_version": 53,
+      "pages": {
+        "services": "58ba9ab679249d7733a622319521453c02a67210"
+      },
+      "pre_edit_pages": {
+        "services": "e3e7bb97c3ee486f05cddeb63c9a73f66f944df3"
       }
     }
   ]
