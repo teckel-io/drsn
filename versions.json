@@ -9,20 +9,6 @@
   },
   "versions": [
     {
-      "version": 13,
-      "timestamp": "2026-03-13T04:23:29.556Z",
-      "tag": null,
-      "change_description": "Add flex-wrap: wrap to the .navbar CSS rule so the navigation links can wrap onto a second line on very narrow screens instead of overflowing. Do not change anything else.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "b6b1911dce3a7b4a78970a03b4208e4f2ccf76fe"
-      },
-      "pre_edit_pages": {
-        "index": "550632bc107896fb2c4f7117222e1e30980299c4"
-      }
-    },
-    {
       "version": 14,
       "timestamp": "2026-03-13T04:25:20.930Z",
       "tag": null,
@@ -706,6 +692,20 @@
       },
       "pre_edit_pages": {
         "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
+      }
+    },
+    {
+      "version": 63,
+      "timestamp": "2026-03-16T02:04:37.808Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 62 (\"+44 0729 0172 8876\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 62,
+      "pages": {
+        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
+      },
+      "pre_edit_pages": {
+        "index": "feda434e494807d31324ad2b182d4235030796a9"
       }
     }
   ]
