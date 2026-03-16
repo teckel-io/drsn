@@ -9,20 +9,6 @@
   },
   "versions": [
     {
-      "version": 6,
-      "timestamp": "2026-03-12T23:05:56.121Z",
-      "tag": null,
-      "change_description": "Rolled back to \"Current Base Website Build\" (v2)",
-      "is_rollback": true,
-      "rolled_back_to_version": 2,
-      "pages": {
-        "index": "166977104d2e690ae861394fbffd035faf83e628"
-      },
-      "pre_edit_pages": {
-        "index": "eca36ef1c48b3f92a56f243e50c377ba91f78ad1"
-      }
-    },
-    {
       "version": 7,
       "timestamp": "2026-03-13T01:03:02.894Z",
       "tag": null,
@@ -706,6 +692,20 @@
       },
       "pre_edit_pages": {
         "index": "2ec2bc5f42e6bbe4fed36f3bde6a11d746f0012d"
+      }
+    },
+    {
+      "version": 56,
+      "timestamp": "2026-03-16T00:47:43.546Z",
+      "tag": null,
+      "change_description": "In a way that smoothly and seamlessly integrates with the Services page adhering to the  look, feel, style  and overall professionalism of the site, please add the following data in the area of the services.html page concerning pricing:\n\nConsultation & Diagnostics\nNew Patient Assessment: £80 – £135 (Includes full examination, oral cancer screening, and basic X-rays)\n\nRoutine Check-up (Existing Patient): £55 – £75\n\nSpecialist/Implant Consultation: Free (as noted by Delapre Dental Care) or up to £135 for complex planning.\n\nLarge X-ray (OPG) or 3D Bone Scan (CT): £60 – £150\n\nPreventative & Hygiene\nHygienist Appointment (30–40 mins): £75 – £110\n\nAdvanced Periodontal (Gum) Treatment: £150 – £300 per session\n\nAdvanced Prosthodontics (MSc Level Expertise)\nThese procedures are the core of Dr. Nasir's postgraduate training from King’s College London.\n\nPorcelain/Zirconia Crown: £850 – £1,200 (Precision-crafted to match natural teeth)\n\nPorcelain Veneer: £900 – £1,200 per tooth\n\nBridges (per unit): £700 – £1,000 (e.g., a 3-unit bridge would be £2,100+)\n\nFull Acrylic Dentures (Upper or Lower): £800 – £1,700\n\nCobalt Chrome Dentures: £1,150 – £1,950 (High-strength metal-base dentures)\n\nDental Implants\nSpecialized services provided by a dentist with a Postgraduate Certificate in the field.\n\nSingle Implant (Placement only): £1,250 – £1,800\n\nSingle Implant (Fully Restored with Crown): £2,800 – £3,600\n\nImplant-Retained Bridge (3+ teeth): £5,000 – £8,000\n\nAll-on-4 / Full Arch Reconstruction: £14,000 – £18,000 per arch\n\nGeneral Restorative & Oral Surgery\nWhite Composite Fillings: £150 – £325 (Depending on size and complexity)\n\nRoot Canal Treatment (Molar): £600 – £950 (Advanced equipment like microscopes often used)\n\nSimple Extraction: £150 – £200\n\nSurgical/Complex Extraction: £300 – £500",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
+      },
+      "pre_edit_pages": {
+        "services": "58ba9ab679249d7733a622319521453c02a67210"
       }
     }
   ]
