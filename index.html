@@ -378,8 +378,23 @@
     */
     .page { max-width: 560px; }
 
+    /*
+    WHAT THIS DOES: Changes the colour of the main h1 page title (practice
+    name) from white to dark orange, creating a striking visual accent that
+    draws attention to the practice name on initial page load.
+    WHY DARK ORANGE (#cc5200): Provides warm, professional contrast against
+    the dark navy page background (#002349). Dark orange (not bright orange)
+    maintains visual sophistication and readability whilst creating impact.
+    The hex value #cc5200 is a mid-to-dark orange suitable for business branding.
+    TUNING: To adjust the orange shade, modify the hex value:
+    — #ff6600 for brighter, more vibrant orange
+    — #994400 for deeper, earthier orange
+    — #d97706 for amber-orange hybrid
+    Test on actual devices to ensure the colour appears as intended on
+    different monitor calibrations and lighting conditions.
+    */
     h1 {
-      color: #ffffff;          /* ← Practice name text colour (white) */
+      color: #cc5200;          /* ← Practice name text colour (dark orange) */
       margin-bottom: 8px;      /* ← Gap between h1 and the subtitle line */
       font-size: 32px;         /* ← Practice name display size */
     }
