@@ -8,7 +8,7 @@
       "about"
     ],
     "backup_schedule": {
-      "enabled": false,
+      "enabled": true,
       "frequency": "weekly",
       "day_of_week": 1,
       "day_of_month": 1,
