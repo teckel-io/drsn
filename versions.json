@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 65,
-      "timestamp": "2026-03-16T02:09:49.907Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 64 (\"change the  title of the  home page to read, \"Welcome to Delapre Dental Care\"\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 64,
-      "pages": {
-        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
-      },
-      "pre_edit_pages": {
-        "index": "628126a8dc8c92f03694f603ce14c3fe3be3602f"
-      }
-    },
-    {
       "version": 66,
       "timestamp": "2026-03-16T02:26:02.567Z",
       "tag": null,
@@ -778,6 +764,20 @@
         "services": null,
         "about": null,
         "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 115,
+      "timestamp": "2026-03-18T10:28:54.182Z",
+      "tag": null,
+      "change_description": "On the services page, remove the Privacy Policy link from the navigation bar",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "965581e671b1565101115002b13dc0728f70c696"
+      },
+      "pre_edit_pages": {
+        "services": "93115c147fb49ac314dd7a6a4d6e933e5c48e090"
       }
     }
   ]
