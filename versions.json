@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 67,
-      "timestamp": "2026-03-16T02:28:04.352Z",
-      "tag": null,
-      "change_description": "Rolled back to version 53 — Add \"Free consultation available\" to the treatments page",
-      "is_rollback": true,
-      "rolled_back_to_version": 53,
-      "pages": {
-        "services": "58ba9ab679249d7733a622319521453c02a67210"
-      },
-      "pre_edit_pages": {
-        "services": "e3e7bb97c3ee486f05cddeb63c9a73f66f944df3"
-      }
-    },
-    {
       "version": 68,
       "timestamp": "2026-03-16T02:30:35.470Z",
       "tag": null,
@@ -778,6 +764,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "1c12fa1142a336c2c6ab3f8d2c1d9935b385cb03"
+      }
+    },
+    {
+      "version": 117,
+      "timestamp": "2026-03-18T10:30:51.163Z",
+      "tag": null,
+      "change_description": "On the home page, remove the Privacy Policy link from the navigation bar",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "2669834e4c575270b7169bd9356a4c4c6f986bec"
+      },
+      "pre_edit_pages": {
+        "index": "737e989084fd3a2cf7ac6eb88df36ae991fae8ad"
       }
     }
   ]
