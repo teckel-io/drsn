@@ -6,8 +6,7 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions",
-      "test"
+      "terms-and-conditions"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -34,28 +33,10 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
-      },
-      {
-        "label": "Test",
-        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 70,
-      "timestamp": "2026-03-16T02:47:00.198Z",
-      "tag": null,
-      "change_description": "Please add a note to the services page in the pricing area that states uh prices are subject subject to change at any time. Thanks.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "75f63d2aefed7d295f9eab2458ed82a235463c6c"
-      },
-      "pre_edit_pages": {
-        "services": "e21be234a5b347eac24c9a4aacbae6a436810fa6"
-      }
-    },
     {
       "version": 71,
       "timestamp": "2026-03-16T02:52:44.260Z",
@@ -792,6 +773,28 @@
         "services": "965581e671b1565101115002b13dc0728f70c696",
         "about": "138619ec0e26e9eae5b0f54fc1a29bcebd913288",
         "terms-and-conditions": "e3b995155d30ead7273e9e741bd607aed21825bd"
+      }
+    },
+    {
+      "version": 120,
+      "timestamp": "2026-03-18T10:39:59.391Z",
+      "tag": null,
+      "change_description": "Deleted page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "test": "1d3ca18c48876c88ee438520044defec9020baa6",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
       }
     }
   ]
