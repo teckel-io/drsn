@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 69,
-      "timestamp": "2026-03-16T02:39:30.241Z",
-      "tag": null,
-      "change_description": "on the  services page, change \"Prices correct as of March 2026\" to \"Prices updated as of March 2026\"",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "e21be234a5b347eac24c9a4aacbae6a436810fa6"
-      },
-      "pre_edit_pages": {
-        "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
-      }
-    },
     {
       "version": 70,
       "timestamp": "2026-03-16T02:47:00.198Z",
@@ -778,6 +769,29 @@
       },
       "pre_edit_pages": {
         "about": "b9749c1c5593d2c96d088b06a3c6f375297869e3"
+      }
+    },
+    {
+      "version": 119,
+      "timestamp": "2026-03-18T10:36:57.009Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "1d3ca18c48876c88ee438520044defec9020baa6",
+        "index": "a7cb6692c0f15af0388e1fe10cb7de507c1f8eae",
+        "services": "1ed11284ce013e911c414553777498552c2d6f03",
+        "about": "3b5a5a3d11cb91c627e0b4199021718fa9d10197",
+        "terms-and-conditions": "a1174ab334f3a84fe5eabb19415fde1c028f1b32"
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": "2669834e4c575270b7169bd9356a4c4c6f986bec",
+        "services": "965581e671b1565101115002b13dc0728f70c696",
+        "about": "138619ec0e26e9eae5b0f54fc1a29bcebd913288",
+        "terms-and-conditions": "e3b995155d30ead7273e9e741bd607aed21825bd"
       }
     }
   ]
