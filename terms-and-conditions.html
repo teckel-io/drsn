@@ -482,6 +482,19 @@
       border: 1px solid rgba(176, 196, 222, 0.15);
       border-radius: 2px;
     }
+
+    /*
+    WHAT THIS DOES: Makes phone links and email links inherit the same colour as other links and display with underline on hover.
+    WHY THESE STYLES: Phone links (tel:) and email links (mailto:) are styled to match the existing link colour scheme (#b0c4de).
+    TUNING: Adjust the colour values if the link colours need to change. The hover effect (text-decoration: underline) is consistent with other links on the page.
+    */
+    .legal-notice a {
+      color: #f0d060;
+    }
+
+    .legal-notice a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -511,7 +524,8 @@
     <div id="terms" class="section">
       <div class="section-title">Terms &amp; Conditions</div>
       <div class="section-content">
-        <div class="legal-notice">⚠️ <strong>Important Notice.</strong> These Terms &amp; Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on 01604 636836 or email info@delapredental.com.</div>
+        <!-- Important Notice section with clickable phone and email links for immediate contact -->
+        <div class="legal-notice">⚠️ <strong>Important Notice.</strong> These Terms &amp; Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on <a href="tel:+441604636836">01604 636836</a> or email <a href="mailto:info@delapredental.com">info@delapredental.com</a>.</div>
 
         <p class="legal-heading">TERMS &amp; CONDITIONS</p>
         <p class="legal-meta">Delapre Dental Care · 5 Billing Road, Northampton, NN1 5AN<br>Principal Dentist: Dr Sabina Nasir BDS MFDS RCS MSc · GDC No. 169400<br>Last updated: 18 March 2026</p>
