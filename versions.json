@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 60,
-      "timestamp": "2026-03-16T01:07:54.544Z",
-      "tag": null,
-      "change_description": "please change  the  title on the  home page to a dark orange",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "698e330a6a6813beddf131aef2da3cc12d3a04c8"
-      },
-      "pre_edit_pages": {
-        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
-      }
-    },
-    {
       "version": 61,
       "timestamp": "2026-03-16T01:09:30.697Z",
       "tag": null,
@@ -775,6 +761,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "a2e62106930c9928b9dc99850db91324fad3acbc"
+      }
+    },
+    {
+      "version": 110,
+      "timestamp": "2026-03-18T09:14:54.261Z",
+      "tag": null,
+      "change_description": "In a logical, cohesive and concise manner, synthesize the existing Terms & Conditions on the Home page with those on the Terms & Conditions page, being sure to retain all the points of both sets in the final synthesized version. Then update the Terms & Conditions on the Terms & Conditions page with the final synthesized version, being sure to leave the version on the home page untouched and intact.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "494aec3845aad6a1c007193f780520924fe99087"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "1c12fa1142a336c2c6ab3f8d2c1d9935b385cb03"
       }
     }
   ]
