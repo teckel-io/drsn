@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "temp"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Temp",
+        "href": "temp.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 51,
-      "timestamp": "2026-03-15T23:29:16.437Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 50 (\"Change the opening hours on Monday to 9am–6pm\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 50,
-      "pages": {
-        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
-      },
-      "pre_edit_pages": {
-        "index": "6d6bd30c5cc47cac9a3eb0e431f0b106f62fee89"
-      }
-    },
     {
       "version": 52,
       "timestamp": "2026-03-15T23:33:56.121Z",
@@ -752,6 +743,29 @@
       },
       "pre_edit_pages": {
         "about": "55fc69b32879a137f3faa824d5b1b6da0d5b678d"
+      }
+    },
+    {
+      "version": 101,
+      "timestamp": "2026-03-18T07:36:45.660Z",
+      "tag": null,
+      "change_description": "Created page: Temp (temp.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "temp": "80035a528f184fc0e4c6ac67680de67c5b4be856",
+        "index": "79e5841d3a6c729b87dc9966ac37b9dbb2748af3",
+        "services": "04da086f8d7f373ab0a6b0a4686185ba01b86a3f",
+        "about": "28e8f0390efc016c2ac7909bdab4b4666f2dbf29",
+        "terms-and-conditions": "3b20e70dfc04020919c982cc9a0ff20541e6f3e5"
+      },
+      "pre_edit_pages": {
+        "temp": null,
+        "index": "5d311aed214ec716afe7e362cdca80801afa881e",
+        "services": "965581e671b1565101115002b13dc0728f70c696",
+        "about": "2ed6e53ee9573d54856006471706ed701417cf6e",
+        "terms-and-conditions": "7059adc729014c311affc376aaf05e924995bbe9"
       }
     }
   ]
