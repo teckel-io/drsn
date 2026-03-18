@@ -6,8 +6,7 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions",
-      "privacy-policy"
+      "terms-and-conditions"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -34,28 +33,10 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
-      },
-      {
-        "label": "Privacy Policy",
-        "href": "privacy-policy.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 64,
-      "timestamp": "2026-03-16T02:08:37.606Z",
-      "tag": null,
-      "change_description": "change the  title of the  home page to read, \"Welcome to Delapre Dental Care\"",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "628126a8dc8c92f03694f603ce14c3fe3be3602f"
-      },
-      "pre_edit_pages": {
-        "index": "5ef88e6aefceb3564daa05b62055c523bc3b5638"
-      }
-    },
     {
       "version": 65,
       "timestamp": "2026-03-16T02:09:49.907Z",
@@ -775,6 +756,28 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "494aec3845aad6a1c007193f780520924fe99087"
+      }
+    },
+    {
+      "version": 114,
+      "timestamp": "2026-03-18T10:10:33.875Z",
+      "tag": null,
+      "change_description": "Deleted page: Privacy Policy (privacy-policy.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "95c9dec321d43580021d1c48b66a17571615c4b3",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
       }
     }
   ]
