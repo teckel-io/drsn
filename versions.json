@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 66,
-      "timestamp": "2026-03-16T02:26:02.567Z",
-      "tag": null,
-      "change_description": "Rolled back to version 52 — Add a note at the top of the services page saying \"Prices correct as of March 2026\"",
-      "is_rollback": true,
-      "rolled_back_to_version": 52,
-      "pages": {
-        "services": "e3e7bb97c3ee486f05cddeb63c9a73f66f944df3"
-      },
-      "pre_edit_pages": {
-        "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
-      }
-    },
-    {
       "version": 67,
       "timestamp": "2026-03-16T02:28:04.352Z",
       "tag": null,
@@ -778,6 +764,20 @@
       },
       "pre_edit_pages": {
         "services": "93115c147fb49ac314dd7a6a4d6e933e5c48e090"
+      }
+    },
+    {
+      "version": 116,
+      "timestamp": "2026-03-18T10:29:49.491Z",
+      "tag": null,
+      "change_description": "On the terms and conditions page, remove the Privacy Policy link from the navigation bar",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "e3b995155d30ead7273e9e741bd607aed21825bd"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "1c12fa1142a336c2c6ab3f8d2c1d9935b385cb03"
       }
     }
   ]
