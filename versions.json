@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "privacy-policy.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 56,
-      "timestamp": "2026-03-16T00:47:43.546Z",
-      "tag": null,
-      "change_description": "In a way that smoothly and seamlessly integrates with the Services page adhering to the  look, feel, style  and overall professionalism of the site, please add the following data in the area of the services.html page concerning pricing:\n\nConsultation & Diagnostics\nNew Patient Assessment: £80 – £135 (Includes full examination, oral cancer screening, and basic X-rays)\n\nRoutine Check-up (Existing Patient): £55 – £75\n\nSpecialist/Implant Consultation: Free (as noted by Delapre Dental Care) or up to £135 for complex planning.\n\nLarge X-ray (OPG) or 3D Bone Scan (CT): £60 – £150\n\nPreventative & Hygiene\nHygienist Appointment (30–40 mins): £75 – £110\n\nAdvanced Periodontal (Gum) Treatment: £150 – £300 per session\n\nAdvanced Prosthodontics (MSc Level Expertise)\nThese procedures are the core of Dr. Nasir's postgraduate training from King’s College London.\n\nPorcelain/Zirconia Crown: £850 – £1,200 (Precision-crafted to match natural teeth)\n\nPorcelain Veneer: £900 – £1,200 per tooth\n\nBridges (per unit): £700 – £1,000 (e.g., a 3-unit bridge would be £2,100+)\n\nFull Acrylic Dentures (Upper or Lower): £800 – £1,700\n\nCobalt Chrome Dentures: £1,150 – £1,950 (High-strength metal-base dentures)\n\nDental Implants\nSpecialized services provided by a dentist with a Postgraduate Certificate in the field.\n\nSingle Implant (Placement only): £1,250 – £1,800\n\nSingle Implant (Fully Restored with Crown): £2,800 – £3,600\n\nImplant-Retained Bridge (3+ teeth): £5,000 – £8,000\n\nAll-on-4 / Full Arch Reconstruction: £14,000 – £18,000 per arch\n\nGeneral Restorative & Oral Surgery\nWhite Composite Fillings: £150 – £325 (Depending on size and complexity)\n\nRoot Canal Treatment (Molar): £600 – £950 (Advanced equipment like microscopes often used)\n\nSimple Extraction: £150 – £200\n\nSurgical/Complex Extraction: £300 – £500",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "f52201edfb0c85eae2ec7ff45ba062f1fbe03553"
-      },
-      "pre_edit_pages": {
-        "services": "58ba9ab679249d7733a622319521453c02a67210"
-      }
-    },
     {
       "version": 57,
       "timestamp": "2026-03-16T00:50:37.960Z",
@@ -761,6 +752,29 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "3b20e70dfc04020919c982cc9a0ff20541e6f3e5"
+      }
+    },
+    {
+      "version": 106,
+      "timestamp": "2026-03-18T08:33:59.200Z",
+      "tag": null,
+      "change_description": "Created page: Privacy Policy (privacy-policy.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "privacy-policy": "95c9dec321d43580021d1c48b66a17571615c4b3",
+        "index": "737e989084fd3a2cf7ac6eb88df36ae991fae8ad",
+        "services": "93115c147fb49ac314dd7a6a4d6e933e5c48e090",
+        "about": "d118dabeeccc423e761fc0db8941f08284c616e7",
+        "terms-and-conditions": "e249f51e1b92dec614beda15c51203c59edd084a"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": null,
+        "index": "5d311aed214ec716afe7e362cdca80801afa881e",
+        "services": "965581e671b1565101115002b13dc0728f70c696",
+        "about": "4e54c0b0cdccd9942a4786d7291d32f07c621392",
+        "terms-and-conditions": "7059adc729014c311affc376aaf05e924995bbe9"
       }
     }
   ]
