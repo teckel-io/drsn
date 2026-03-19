@@ -38,25 +38,6 @@
   },
   "versions": [
     {
-      "version": 90,
-      "timestamp": "2026-03-17T04:28:52.358Z",
-      "tag": null,
-      "change_description": "Created page: Terms & Conditions (terms-and-conditions.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "terms-and-conditions": "2e4391115f6e5f24bdb2db0c567d1dac60cb1780",
-        "index": "5d311aed214ec716afe7e362cdca80801afa881e",
-        "services": "7eb22baa9fc0365dbed2dceee443b9f11661a98d"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": null,
-        "index": "15767fac98eca43f0225d0d65e2524f32230fec1",
-        "services": "82779fa5ca10e60ddb29af215781446db9ab05fd"
-      }
-    },
-    {
       "version": 91,
       "timestamp": "2026-03-18T05:17:04.927Z",
       "tag": null,
@@ -861,6 +842,20 @@
       },
       "pre_edit_pages": {
         "services": "0b84bb001bcd902a000fc20aafae091c0dac35d2"
+      }
+    },
+    {
+      "version": 140,
+      "timestamp": "2026-03-19T19:42:49.223Z",
+      "tag": null,
+      "change_description": "remove the \"Hello\" link in the navbar on the Terms & Conditions page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "e3b995155d30ead7273e9e741bd607aed21825bd"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "b26189520a0f6e6a363849e39855b33ab4978d3b"
       }
     }
   ]
