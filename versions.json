@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "test-page"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Test Page",
+        "href": "test-page.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 79,
-      "timestamp": "2026-03-16T05:48:53.044Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 78 (\"Rolled back to the state before version 77 (\"Rolled back to the state before version 76 (\"Rolled back to the state before version 75 (\"Rolled back to \"latest services page\" (v71)\")\")\")\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 78,
-      "pages": {
-        "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
-      },
-      "pre_edit_pages": {
-        "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
-      }
-    },
     {
       "version": 80,
       "timestamp": "2026-03-16T05:52:07.920Z",
@@ -83,7 +74,7 @@
       "version": 82,
       "timestamp": "2026-03-16T06:04:29.385Z",
       "tag": null,
-      "change_description": "Rolled back to version 80 \u2014 Rolled back to the state before version 79 (\"Rolled back to the state before version 78 (\"Rolled back to the state before version 77 (\"Rolled back to the state before version 76 (\"Rolled back to the state before version 75 (\"Rolled back to \"latest services page\" (v71)\")\")\")\")\")",
+      "change_description": "Rolled back to version 80 — Rolled back to the state before version 79 (\"Rolled back to the state before version 78 (\"Rolled back to the state before version 77 (\"Rolled back to the state before version 76 (\"Rolled back to the state before version 75 (\"Rolled back to \"latest services page\" (v71)\")\")\")\")\")",
       "is_rollback": true,
       "rolled_back_to_version": 80,
       "pages": {
@@ -116,7 +107,7 @@
       "version": 84,
       "timestamp": "2026-03-17T03:30:06.615Z",
       "tag": null,
-      "change_description": "on the services page, change Band 1 to \u00a327.00",
+      "change_description": "on the services page, change Band 1 to £27.00",
       "is_rollback": false,
       "rolled_back_to_version": null,
       "pages": {
@@ -130,7 +121,7 @@
       "version": 85,
       "timestamp": "2026-03-17T03:32:31.655Z",
       "tag": null,
-      "change_description": "Rolled back to the state before version 84 (\"on the services page, change Band 1 to \u00a327.00\")",
+      "change_description": "Rolled back to the state before version 84 (\"on the services page, change Band 1 to £27.00\")",
       "is_rollback": true,
       "rolled_back_to_version": 84,
       "pages": {
@@ -144,7 +135,7 @@
       "version": 86,
       "timestamp": "2026-03-17T03:38:31.263Z",
       "tag": null,
-      "change_description": "Rolled back to version 84 \u2014 on the services page, change Band 1 to \u00a327.00",
+      "change_description": "Rolled back to version 84 — on the services page, change Band 1 to £27.00",
       "is_rollback": true,
       "rolled_back_to_version": 84,
       "pages": {
@@ -158,7 +149,7 @@
       "version": 87,
       "timestamp": "2026-03-17T03:39:24.833Z",
       "tag": null,
-      "change_description": "Rolled back to the state before version 86 (\"Rolled back to version 84 \u2014 on the services page, change Band 1 to \u00a327.00\")",
+      "change_description": "Rolled back to the state before version 86 (\"Rolled back to version 84 — on the services page, change Band 1 to £27.00\")",
       "is_rollback": true,
       "rolled_back_to_version": 86,
       "pages": {
@@ -172,7 +163,7 @@
       "version": 88,
       "timestamp": "2026-03-17T04:24:00.701Z",
       "tag": null,
-      "change_description": "Rolled back to the state before version 87 (\"Rolled back to the state before version 86 (\"Rolled back to version 84 \u2014 on the services page, change Band 1 to \u00a327.00\")\")",
+      "change_description": "Rolled back to the state before version 87 (\"Rolled back to the state before version 86 (\"Rolled back to version 84 — on the services page, change Band 1 to £27.00\")\")",
       "is_rollback": true,
       "rolled_back_to_version": 87,
       "pages": {
@@ -186,7 +177,7 @@
       "version": 89,
       "timestamp": "2026-03-17T04:25:29.113Z",
       "tag": null,
-      "change_description": "Rolled back to the state before version 88 (\"Rolled back to the state before version 87 (\"Rolled back to the state before version 86 (\"Rolled back to version 84 \u2014 on the services page, change Band 1 to \u00a327.00\")\")\")",
+      "change_description": "Rolled back to the state before version 88 (\"Rolled back to the state before version 87 (\"Rolled back to the state before version 86 (\"Rolled back to version 84 — on the services page, change Band 1 to £27.00\")\")\")",
       "is_rollback": true,
       "rolled_back_to_version": 88,
       "pages": {
@@ -496,7 +487,7 @@
       "version": 109,
       "timestamp": "2026-03-18T08:47:37.594Z",
       "tag": null,
-      "change_description": "on the Terms & Conditions page, regarding this section:\n\n\u26a0\ufe0f Important Notice. These Terms & Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on 01604 636836 or email info@delapredental.com.\n\nPlease make the phone number tap-able (opening up a phone app) and the  email address a link (opening up the default email client)",
+      "change_description": "on the Terms & Conditions page, regarding this section:\n\n⚠️ Important Notice. These Terms & Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on 01604 636836 or email info@delapredental.com.\n\nPlease make the phone number tap-able (opening up a phone app) and the  email address a link (opening up the default email client)",
       "is_rollback": false,
       "rolled_back_to_version": null,
       "pages": {
@@ -809,6 +800,29 @@
       },
       "pre_edit_pages": {
         "hello-world": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 129,
+      "timestamp": "2026-03-19T07:46:05.880Z",
+      "tag": null,
+      "change_description": "Created page: Test Page (test-page.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test-page": "3d4dfa054b8b4636d02c98bd5dfc3e4f10119c88",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "test-page": null,
         "index": null,
         "services": null,
         "about": null,
