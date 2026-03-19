@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "social"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Social",
+        "href": "social.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 112,
-      "timestamp": "2026-03-18T10:07:41.696Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 111 (\"Rolled back to the state before version 110 (\"In a logical, cohesive and concise manner, synthesize the existing Terms & Conditions on the Home page with those on the Terms & Conditions page, being sure to retain all the points of both sets in the final synthesized version. Then update the Terms & Conditions on the Terms & Conditions page with the final synthesized version, being sure to leave the version on the home page untouched and intact.\")\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 111,
-      "pages": {
-        "terms-and-conditions": "494aec3845aad6a1c007193f780520924fe99087"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "1c12fa1142a336c2c6ab3f8d2c1d9935b385cb03"
-      }
-    },
     {
       "version": 113,
       "timestamp": "2026-03-18T10:08:52.623Z",
@@ -888,6 +879,29 @@
       },
       "pre_edit_pages": {
         "news": "9810cedf223a76a9ff000111fc436307134923e8",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 162,
+      "timestamp": "2026-03-19T21:53:47.806Z",
+      "tag": null,
+      "change_description": "Created page: Social (social.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "social": "9b3f317e74a94f4523de9f007836b4b2aefdba9a",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "social": null,
         "index": null,
         "services": null,
         "about": null,
