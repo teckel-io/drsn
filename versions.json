@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 115,
-      "timestamp": "2026-03-18T10:28:54.182Z",
-      "tag": null,
-      "change_description": "On the services page, remove the Privacy Policy link from the navigation bar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "965581e671b1565101115002b13dc0728f70c696"
-      },
-      "pre_edit_pages": {
-        "services": "93115c147fb49ac314dd7a6a4d6e933e5c48e090"
-      }
-    },
-    {
       "version": 116,
       "timestamp": "2026-03-18T10:29:49.491Z",
       "tag": null,
@@ -901,6 +887,20 @@
         "services": null,
         "about": null,
         "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 165,
+      "timestamp": "2026-03-19T22:33:45.112Z",
+      "tag": null,
+      "change_description": "On the Services page I need to replace the current pricing with the following updated pricing:\n\nRAW PRICING DATA:\n\nPlease discuss finance options available with the dentist \n\nPrivate Fees\nDentist\nExamination     \nAdult                                                £ 65\nChild                                                £45\n\nX-rays\nSmall                                              £19 each\nPanoral                                          £ 85\n\nWhite fillings\nSmall                                              from £ 275\nMedium                                         from £ 300\nLarge                                               from £ 325        \n  \nSilver fillings                                       \nSmall                                               from £ 125\nMedium                                          from £ 150\nLarge                                                from £ 175\n   \nHygiene\nRegular                                                                               from £150\nStain removal with hygiene                                       from  £325\n\nPeriodontal Treatment per session                               from £325\n\n Custom made sports mouth Guard                                 from £150\n\nNight Guard                                                                                  from £170\n\nEssex Retainers                                                                       from £250\n                                                                                                                                            \n\n\n\n\nWhitening Consultation with investigations              £300\n\nWhitening trays and whitening gel                                 £500\n\nAdditional whitening syringes                                          £35\n\n      10.Surgical Extraction                                                                    £375\n      \n      11.Wisdom tooth extraction                                                       £450\n\n      12. Root Canal Treatment                        \n             a. Single root canal                                                           from £600\n              b. Two roots                                                                         from £700\n              c. Multiple roots                                                                 from £800\n\n      13. Acrylic Denture\n             a. Partial Denture    1-3 teeth single arch                    from £750\n             b. Partial Denture   more than 4 teeth single arch   from £ 950\n             c. Full denture single arch                                                  from £1500\n\n     14. Flexible Dentures   and metal dentures                from £1250                                                    \n      \n    \n 15. Hall crowns for children                                                     £85 each\n    \n 16. SDF application                                                                       \n        a. Children                                                                                      £35 per tooth\n        b. Adults                                                                                           £55 per tooth \n\n    17. Veneers                                                                            from £750 \n\n    18. Composite bonding and white spot corrections                                                                                   from   £350\n     \n    18. Crowns and inlays (inlays for back teeth)\n           a. front teeth                                                                       from   £750\n           b. back teeth                                                                       from £ 950\n           c. same day service                                                         from £1250\n\n  19. Bridges\n      a. two unit bridge                                                                      from £750 per unit",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "a2d464c3339d69887268b7b778c7cbec150282f9"
+      },
+      "pre_edit_pages": {
+        "services": "c59ce7d3b48b901e4ddf95db295ddc1fff6726c4"
       }
     }
   ]
