@@ -6,8 +6,7 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions",
-      "social"
+      "terms-and-conditions"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -34,36 +33,10 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
-      },
-      {
-        "label": "Social",
-        "href": "social.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 114,
-      "timestamp": "2026-03-18T10:10:33.875Z",
-      "tag": null,
-      "change_description": "Deleted page: Privacy Policy (privacy-policy.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "95c9dec321d43580021d1c48b66a17571615c4b3",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
     {
       "version": 115,
       "timestamp": "2026-03-18T10:28:54.182Z",
@@ -906,6 +879,28 @@
       },
       "pre_edit_pages": {
         "social": "9b3f317e74a94f4523de9f007836b4b2aefdba9a"
+      }
+    },
+    {
+      "version": 164,
+      "timestamp": "2026-03-19T22:14:33.041Z",
+      "tag": null,
+      "change_description": "Deleted page: Social (social.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "social": "e3d31651cffec89ba108ff1ee34f6012397815bf",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
       }
     }
   ]
