@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 81,
-      "timestamp": "2026-03-16T05:55:27.285Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 80 (\"Rolled back to the state before version 79 (\"Rolled back to the state before version 78 (\"Rolled back to the state before version 77 (\"Rolled back to the state before version 76 (\"Rolled back to the state before version 75 (\"Rolled back to \"latest services page\" (v71)\")\")\")\")\")\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 80,
-      "pages": {
-        "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
-      },
-      "pre_edit_pages": {
-        "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
-      }
-    },
     {
       "version": 82,
       "timestamp": "2026-03-16T06:04:29.385Z",
@@ -820,6 +811,29 @@
       "operation_type": "create_page",
       "pages": {
         "test": "852d91d9cf3190284430c13f928445a4bca32506",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 131,
+      "timestamp": "2026-03-19T10:39:59.953Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "d97429b50055a93db201c901103ba3519d5c2a9f",
         "index": null,
         "services": null,
         "about": null,
