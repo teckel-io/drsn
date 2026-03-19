@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 108,
-      "timestamp": "2026-03-18T08:42:14.269Z",
-      "tag": null,
-      "change_description": "on the terms and conditions page, update the contact email to info@delapredental.com",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "a2e62106930c9928b9dc99850db91324fad3acbc"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "e249f51e1b92dec614beda15c51203c59edd084a"
-      }
-    },
     {
       "version": 109,
       "timestamp": "2026-03-18T08:47:37.594Z",
@@ -858,6 +849,29 @@
       },
       "pre_edit_pages": {
         "index": "c41b5d1b499b47a171ef238d918d4a562e4859e1"
+      }
+    },
+    {
+      "version": 158,
+      "timestamp": "2026-03-19T21:05:47.380Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "fd6fa90c1386afbb525561e9279177fb7b0d6d66",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
       }
     }
   ]
