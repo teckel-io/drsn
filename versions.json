@@ -6,8 +6,7 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions",
-      "test"
+      "terms-and-conditions"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -34,28 +33,10 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
-      },
-      {
-        "label": "Test",
-        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 109,
-      "timestamp": "2026-03-18T08:47:37.594Z",
-      "tag": null,
-      "change_description": "on the Terms & Conditions page, regarding this section:\n\n⚠️ Important Notice. These Terms & Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on 01604 636836 or email info@delapredental.com.\n\nPlease make the phone number tap-able (opening up a phone app) and the  email address a link (opening up the default email client)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "1c12fa1142a336c2c6ab3f8d2c1d9935b385cb03"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "a2e62106930c9928b9dc99850db91324fad3acbc"
-      }
-    },
     {
       "version": 110,
       "timestamp": "2026-03-18T09:14:54.261Z",
@@ -868,6 +849,28 @@
       },
       "pre_edit_pages": {
         "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 159,
+      "timestamp": "2026-03-19T21:32:15.564Z",
+      "tag": null,
+      "change_description": "Deleted page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "test": "fd6fa90c1386afbb525561e9279177fb7b0d6d66",
         "index": null,
         "services": null,
         "about": null,
