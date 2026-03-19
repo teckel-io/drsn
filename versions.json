@@ -38,29 +38,6 @@
   },
   "versions": [
     {
-      "version": 106,
-      "timestamp": "2026-03-18T08:33:59.200Z",
-      "tag": null,
-      "change_description": "Created page: Privacy Policy (privacy-policy.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "privacy-policy": "95c9dec321d43580021d1c48b66a17571615c4b3",
-        "index": "737e989084fd3a2cf7ac6eb88df36ae991fae8ad",
-        "services": "93115c147fb49ac314dd7a6a4d6e933e5c48e090",
-        "about": "d118dabeeccc423e761fc0db8941f08284c616e7",
-        "terms-and-conditions": "e249f51e1b92dec614beda15c51203c59edd084a"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": null,
-        "index": "5d311aed214ec716afe7e362cdca80801afa881e",
-        "services": "965581e671b1565101115002b13dc0728f70c696",
-        "about": "4e54c0b0cdccd9942a4786d7291d32f07c621392",
-        "terms-and-conditions": "7059adc729014c311affc376aaf05e924995bbe9"
-      }
-    },
-    {
       "version": 107,
       "timestamp": "2026-03-18T08:41:03.059Z",
       "tag": null,
@@ -867,6 +844,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "2f580b7f0cf0e42a4aea487b784d7a196740b039"
+      }
+    },
+    {
+      "version": 156,
+      "timestamp": "2026-03-19T20:57:52.636Z",
+      "tag": null,
+      "change_description": "remove the \"Hello World\" link  from the About  Us page navbar",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "6af34283e6e26639376292db532e22d7dd7f7ac7"
+      },
+      "pre_edit_pages": {
+        "about": "8437372810d84bf1461066e02da221bcbf9e4692"
       }
     }
   ]
