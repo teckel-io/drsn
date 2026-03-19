@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "hello-world"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Hello World",
+        "href": "hello-world.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 78,
-      "timestamp": "2026-03-16T04:26:24.606Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 77 (\"Rolled back to the state before version 76 (\"Rolled back to the state before version 75 (\"Rolled back to \"latest services page\" (v71)\")\")\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 77,
-      "pages": {
-        "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
-      },
-      "pre_edit_pages": {
-        "services": "bdf2e7a7a411c6ac9e4985149f6910f3a964f3de"
-      }
-    },
     {
       "version": 79,
       "timestamp": "2026-03-16T05:48:53.044Z",
@@ -793,6 +784,29 @@
       "operation_type": "create_page",
       "pages": {
         "hello-world": "e27998fc8f5bd1aa32acc604cd9e33ee980d39e1",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "hello-world": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 128,
+      "timestamp": "2026-03-19T06:35:27.280Z",
+      "tag": null,
+      "change_description": "Created page: Hello World (hello-world.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "hello-world": "044d87007c022a7890d01c31ba960e17e80d7a84",
         "index": null,
         "services": null,
         "about": null,
