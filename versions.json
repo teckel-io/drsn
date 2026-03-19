@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "news"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "News",
+        "href": "news.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 110,
-      "timestamp": "2026-03-18T09:14:54.261Z",
-      "tag": null,
-      "change_description": "In a logical, cohesive and concise manner, synthesize the existing Terms & Conditions on the Home page with those on the Terms & Conditions page, being sure to retain all the points of both sets in the final synthesized version. Then update the Terms & Conditions on the Terms & Conditions page with the final synthesized version, being sure to leave the version on the home page untouched and intact.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "494aec3845aad6a1c007193f780520924fe99087"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "1c12fa1142a336c2c6ab3f8d2c1d9935b385cb03"
-      }
-    },
     {
       "version": 111,
       "timestamp": "2026-03-18T09:22:11.874Z",
@@ -871,6 +862,29 @@
       },
       "pre_edit_pages": {
         "test": "fd6fa90c1386afbb525561e9279177fb7b0d6d66",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 160,
+      "timestamp": "2026-03-19T21:37:57.799Z",
+      "tag": null,
+      "change_description": "Created page: News (news.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "news": "9810cedf223a76a9ff000111fc436307134923e8",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "news": null,
         "index": null,
         "services": null,
         "about": null,
