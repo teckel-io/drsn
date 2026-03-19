@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 117,
-      "timestamp": "2026-03-18T10:30:51.163Z",
-      "tag": null,
-      "change_description": "On the home page, remove the Privacy Policy link from the navigation bar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "2669834e4c575270b7169bd9356a4c4c6f986bec"
-      },
-      "pre_edit_pages": {
-        "index": "737e989084fd3a2cf7ac6eb88df36ae991fae8ad"
-      }
-    },
-    {
       "version": 118,
       "timestamp": "2026-03-18T10:31:28.901Z",
       "tag": null,
@@ -901,6 +887,20 @@
       },
       "pre_edit_pages": {
         "services": "a2d464c3339d69887268b7b778c7cbec150282f9"
+      }
+    },
+    {
+      "version": 167,
+      "timestamp": "2026-03-19T23:43:29.199Z",
+      "tag": null,
+      "change_description": "On the Services Page, change \"Prices updated March 2026.\" to \"Prices last updated 19 March 2026.\"",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "877666919c84ec3a3f83ed2067dcbb715a34fbf9"
+      },
+      "pre_edit_pages": {
+        "services": "3b17a7ef886463f5966527f24f42d17970acbb65"
       }
     }
   ]
