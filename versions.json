@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 102,
-      "timestamp": "2026-03-18T07:44:16.478Z",
-      "tag": null,
-      "change_description": "on the about us page, remove the Temp link from the navigation bar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "4e54c0b0cdccd9942a4786d7291d32f07c621392"
-      },
-      "pre_edit_pages": {
-        "about": "28e8f0390efc016c2ac7909bdab4b4666f2dbf29"
-      }
-    },
-    {
       "version": 103,
       "timestamp": "2026-03-18T07:47:22.370Z",
       "tag": null,
@@ -858,6 +844,20 @@
       },
       "pre_edit_pages": {
         "about": "82ce943640db5d8b1bdfc672cf8e80c9942441b7"
+      }
+    },
+    {
+      "version": 152,
+      "timestamp": "2026-03-19T20:28:47.613Z",
+      "tag": null,
+      "change_description": "remove the \"Uy78x\" link  from the home page navbar",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "d006c975e103d2520ee533b58f4c564d08d7c3c9"
+      },
+      "pre_edit_pages": {
+        "index": "290ee6d546146f8dd68c3c6c634855038b07d5d1"
       }
     }
   ]
