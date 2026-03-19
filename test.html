@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+  =====================================================================
+  SEO: PRIMARY META TAGS
+  These are the most important tags for Google search ranking.
+
+  title       → The blue clickable headline in Google search results.
+                KEEP UNDER 60 CHARACTERS — Google truncates anything longer.
+                Current: "Dental Tests – Delapre Dental Care, Northampton"
+                Character count: 54 ✓  (safely within the 60-char limit)
+
+  description → The grey summary text shown under the title in Google results.
+                KEEP UNDER 155 CHARACTERS — Google truncates longer values.
+                Current character count: ~133 ✓
+
+  robots      → "index, follow" tells search engines to index this page and
+                follow all outgoing links from it. This is the correct default
+                for a public business website.
+
+  canonical   → Declares the "official" URL for this page. Prevents duplicate-
+                content penalties if the page is ever accessible via multiple URLs.
+                Currently pointing to the GitHub Pages dev URL.
+                UPDATE THIS once DNS is pointed to delapredental.com.
+  =====================================================================
+  -->
+  <title>Dental Tests – Delapre Dental Care, Northampton</title>
+  <meta name="description" content="Learn about diagnostic dental tests at Delapre Dental Care in Northampton. Dr Sabina Nasir offers X-rays, scans, and oral health assessments. Call 01604 636836.">
+  <meta name="keywords" content="dental tests Northampton, dental X-rays, dental scans, oral health assessment, diagnostic dentistry, Delapre Dental Care">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://teckel-io.github.io/drsn/test.html">
+
+  <!--
+  =====================================================================
+  SEO: OPEN GRAPH TAGS
+  Controls how this page looks when shared on Facebook, LinkedIn,
+  WhatsApp, iMessage, and any other platform that reads Open Graph tags.
+  =====================================================================
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dental Tests — Delapre Dental Care in Northampton">
+  <meta property="og:description" content="Professional diagnostic dental tests and assessments at Delapre Dental Care. Dr Sabina Nasir uses advanced imaging to assess your oral health. Call 01604 636836.">
+  <meta property="og:url" content="https://teckel-io.github.io/drsn/test.html">
+  <meta property="og:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Delapre Dental Care">
+
+  <!--
+  =====================================================================
+  SEO: TWITTER / X CARD TAGS
+  Controls how this page appears when shared on Twitter / X.
+  =====================================================================
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dental Tests — Delapre Dental Care in Northampton">
+  <meta name="twitter:description" content="Professional diagnostic dental tests and assessments at Delapre Dental Care. Dr Sabina Nasir uses advanced imaging to assess your oral health. Call 01604 636836.">
+  <meta name="twitter:image" content="https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg">
+
+  <!--
+  =====================================================================
+  GEO / AEO: JSON-LD STRUCTURED DATA
+  This block is the most important element for AEO (Answer Engine
+  Optimisation) and GEO (Generative Engine Optimisation).
+  =====================================================================
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Delapre Dental Care",
+    "description": "Delapre Dental Care provides professional dental diagnostic tests and assessments in Northampton. Led by Dr Sabina Nasir, the practice offers X-rays, digital scans, and comprehensive oral health evaluation.",
+    "url": "https://teckel-io.github.io/drsn/test.html",
+    "telephone": "+441604636836",
+    "email": "office@delepredental.com",
+    "image": "https://teckel.io/wp-content/uploads/2026/03/Nasir-Glasses.jpeg",
+    "priceRange": "NHS & Private",
+    "currenciesAccepted": "GBP",
+    "paymentAccepted": "NHS, Private",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Billing Road",
+      "addressLocality": "Northampton",
+      "postalCode": "NN1 5AN",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "52.2405",
+      "longitude": "-0.8876"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:15",
+        "closes": "17:00"
+      }
+    ],
+    "employee": {
+      "@type": "Person",
+      "name": "Dr Sabina Nasir",
+      "jobTitle": "Principal Dentist",
+      "image": "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg"
+    },
+    "hasMap": "https://maps.google.com/?q=5+Billing+Road,+Northampton,+NN1+5AN",
+    "areaServed": {
+      "@type": "City",
+      "name": "Northampton"
+    },
+    "medicalSpecialty": "Dentistry",
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "Dental X-rays and Imaging" },
+      { "@type": "MedicalProcedure", "name": "Oral Health Assessment" },
+      { "@type": "MedicalProcedure", "name": "Diagnostic Dental Tests" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    }
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #002349;
+      font-family: sans-serif;
+      min-height: 100vh;
+      padding: 235px 24px 60px 32px;
+    }
+
+    @media (min-width: 900px) {
+      body {
+        padding: 60px 40px 60px 480px;
+      }
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #001a35;
+      border-bottom: 1px solid rgba(176, 196, 222, 0.2);
+      padding: 16px 32px;
+      z-index: 1000;
+      display: flex;
+      justify-content: flex-start;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: #b0c4de;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar a.active {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+      .navbar {
+        gap: 20px;
+        padding: 14px 24px;
+      }
+
+      .navbar a {
+        font-size: 13px;
+      }
+    }
+
+    elevenlabs-convai {
+      margin-top: 50px !important;
+    }
+
+    .page { max-width: 560px; }
+
+    h1 {
+      color: #ffffff;
+      margin-bottom: 8px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      color: #b0c4de;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .dentist-name {
+      color: #b0c4de;
+      margin-bottom: 40px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      color: #b0c4de;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .section-content {
+      color: #ffffff;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .section-content p { margin: 4px 0; }
+
+    a { color: #b0c4de; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .note {
+      color: #b0c4de;
+      font-size: 13px;
+      font-style: italic;
+      margin-top: 8px;
+    }
+
+    .testimonial {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-title {
+      color: #b0c4de;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .testimonial-quote {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-attribution {
+      color: #b0c4de;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .team-member {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .team-member-image {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .team-member-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .team-member-info {
+      flex: 1;
+    }
+
+    .team-member-name {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .team-member-title {
+      color: #b0c4de;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .team-member-bio {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .team-member {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .team-member-image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .footer {
+      color: #b0c4de;
+      font-size: 12px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(176, 196, 222, 0.2);
+      text-align: center;
+    }
+
+    #home, #cv, #team, #terms, #privacy {
+      scroll-margin-top: 65px;
+    }
+
+    @media (max-width: 900px) {
+      #home, #cv, #team, #terms, #privacy {
+        scroll-margin-top: 235px;
+      }
+
+      body {
+        padding-top: 235px;
+      }
+    }
+
+    @media (max-width: 467px) {
+      elevenlabs-convai {
+        margin-top: 70px !important;
+      }
+
+      body {
+        padding-top: 255px;
+      }
+
+      #home, #cv, #team, #terms, #privacy {
+        scroll-margin-top: 255px;
+      }
+    }
+
+    .legal-notice {
+      background-color: rgba(255, 200, 0, 0.08);
+      border-left: 3px solid #e6b800;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      color: #f0d060;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .legal-heading {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    .legal-meta {
+      color: #b0c4de;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .legal-section {
+      color: #b0c4de;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    #terms .section-content p,
+    #privacy .section-content p {
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 6px;
+    }
+    .legal-list {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.65;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+    .legal-list li {
+      margin-bottom: 5px;
+    }
+
+    .pdf-viewer-container {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .pdf-iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid rgba(176, 196, 222, 0.15);
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+
+    .pdf-download-link {
+      display: inline-block;
+      background-color: rgba(176, 196, 222, 0.08);
+      border: 1px solid rgba(176, 196, 222, 0.2);
+      padding: 10px 14px;
+      border-radius: 2px;
+      color: #b0c4de;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      max-width: 100%;
+    }
+
+    .pdf-download-link:hover {
+      background-color: rgba(176, 196, 222, 0.15);
+      color: #ffffff;
+      border-color: rgba(176, 196, 222, 0.3);
+    }
+
+    .youtube-container {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .youtube-announcement {
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .youtube-iframe-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .youtube-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(176, 196, 222, 0.15);
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =====================================================================
+  NAVIGATION BAR
+  Inter-page navigation links. Managed by teckel AI — do not edit manually.
+  ===================================================================== -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="terms-and-conditions.html">Terms & Conditions</a>
+    <a href="test.html" class="active">Test</a>
+  </nav>
+
+  <div class="page">
+
+    <!-- ── HOME ANCHOR ────────────────────────────────────────────────── -->
+    <div id="home">
+      <h1>Dental Tests &amp; Diagnostics</h1>
+      <p class="subtitle">Comprehensive Oral Health Assessment</p>
+      <p class="dentist-name">Delapre Dental Care</p>
+    </div>
+
+    <!-- ── INTRODUCTION ───────────────────────────────────────────────– -->
+    <div class="section">
+      <div class="section-title">Why Diagnostic Tests Matter</div>
+      <div class="section-content">
+        <p>Advanced diagnostic testing is essential to accurately assess your oral health and identify potential problems early. At Delapre Dental Care, Dr Sabina Nasir uses the latest diagnostic tools to evaluate your teeth, gums, and overall dental condition.</p>
+        <p>Early detection of issues like tooth decay, gum disease, and oral infections allows us to provide prompt, targeted treatment, often preserving your natural teeth and preventing more serious complications.</p>
+      </div>
+    </div>
+
+    <!-- ── DIAGNOSTIC TESTS OFFERED ──────────────────────────────────– -->
+    <div class="section">
+      <div class="section-title">Our Diagnostic Services</div>
+      <div class="section-content">
+        <p><strong>Digital Intraoral X-rays</strong> — High-resolution images of individual teeth and surrounding bone, taken with minimal radiation exposure. These images help identify decay between teeth, assess bone health, and evaluate the roots of teeth before treatment.</p>
+        <p><strong>Orthopantomograms (OPGs)</strong> — Full-mouth panoramic X-ray images showing all teeth and both jawbones in a single image. OPGs are valuable for assessing tooth development, identifying missing teeth, and evaluating jaw structure.</p>
+        <p><strong>Visual Oral Examination</strong> — A thorough clinical assessment by Dr Nasir, examining all tooth surfaces, gums, soft tissues, and the oral cavity for signs of decay, disease, or abnormality.</p>
+        <p><strong>Gum Pocket Probing</strong> — Measurement of the space between teeth and gums to assess gum health and identify early signs of gum disease or periodontal disease.</p>
+        <p><strong>Intraoral Camera Imaging</strong> — High-magnification digital photographs of specific areas of your mouth, allowing detailed visualisation of your dental condition and helping us explain findings clearly.</p>
+        <p class="note">Some advanced diagnostic tests such as 3D CBCT (cone beam computed tomography) scans may be referred to a specialist radiography centre if clinically necessary.</p>
+      </div>
+    </div>
+
+    <!-- ── WHEN TESTS ARE RECOMMENDED ─────────────────────────────────– -->
+    <div class="section">
+      <div class="section-title">When Tests Are Recommended</div>
+      <div class="section-content">
+        <p>Diagnostic tests are typically recommended in the following situations:</p>
+        <p><strong>Initial Dental Assessment</strong> — At your first visit, diagnostic testing establishes a baseline record of your oral health and helps Dr Nasir develop a personalised treatment plan.</p>
+        <p><strong>Regular Check-ups</strong> — Periodic X-rays (usually annually for most patients, or as advised by Dr Nasir) monitor your teeth and gums over time and detect new problems at an early stage.</p>
+        <p><strong>Suspected Problems</strong> — If you experience tooth pain, discomfort, or sensitivity, diagnostic tests help identify the underlying cause and guide appropriate treatment.</p>
+        <p><strong>Pre-Treatment Planning</strong> — Before procedures such as fillings, root canal treatment, extractions, or implant placement, diagnostic imaging helps Dr Nasir plan treatment precisely and discuss options with you.</p>
+        <p><strong>Monitoring Existing Conditions</strong> — If you have a history of gum disease, decay-prone areas, or previous dental treatment, periodic testing ensures any recurrence is identified promptly.</p>
+      </div>
+    </div>
+
+    <!-- ── RADIATION SAFETY ───────────────────────────────────────────– -->
+    <div class="section">
+      <div class="section-title">Radiation Safety</div>
+      <div class="section-content">
+        <p>Modern digital X-ray systems use significantly less radiation than older film-based equipment. We follow strict ALARA principles (As Low As Reasonably Achievable) to minimise your radiation exposure whilst obtaining diagnostic-quality images.</p>
+        <p>Your safety is a priority. Protective lead aprons are provided during X-ray procedures, and tests are only recommended when clinically justified and likely to influence your treatment plan. If you are pregnant or suspect you may be pregnant, please inform Dr Nasir before any X-rays are taken.</p>
+        <p class="note">We do not routinely X-ray all patients; X-rays are prescribed on an individual basis according to clinical need and your personal risk profile.</p>
+      </div>
+    </div>
+
+    <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
+    <div class="footer">
+      © 2026 Delapre Dental Care | All Rights Reserved
+    </div>
+
+  </div><!-- end .page -->
+
+  <!-- =====================================================================
+  ELEVENLABS VOICE WIDGET
+  Renders the Sabina voice agent widget.
+  ===================================================================== -->
+  <elevenlabs-convai
+    agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
+    avatar-image-url="https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg"
+  ></elevenlabs-convai>
+
+  <!-- ElevenLabs embed script — async attribute prevents blocking page render -->
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+  <!-- =====================================================================
+  AVATAR SWAP SCRIPT
+  Enables runtime swapping of the widget's avatar image via the ElevenLabs
+  Client Tool "update_avatar".
+  ===================================================================== -->
+  <script>
+    var AVATARS = {
+      sabina:   "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg",
+      benedict: "https://teckel-io.github.io/drsn/assets/benedict.png"
+    };
+    document.addEventListener("DOMContentLoaded", function () {
+      var widget = document.querySelector("elevenlabs-convai");
+      if (widget) {
+        widget.addEventListener("elevenlabs-convai:call", function (event) {
+          event.detail.config.clientTools = {
+            update_avatar: function (params) {
+              var url = AVATARS[params.avatar_name];
+              if (url) { widget.setAttribute("avatar-image-url", url); }
+              return "Avatar updated";
+            }
+          };
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
