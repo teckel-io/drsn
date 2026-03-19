@@ -6,8 +6,7 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions",
-      "hello-world"
+      "terms-and-conditions"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -34,10 +33,6 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
-      },
-      {
-        "label": "Hello World",
-        "href": "hello-world.html"
       }
     ]
   },
