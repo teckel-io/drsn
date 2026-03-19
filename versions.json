@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "hello-world"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Hello World",
+        "href": "hello-world.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 103,
-      "timestamp": "2026-03-18T07:47:22.370Z",
-      "tag": null,
-      "change_description": "on the home page, remove the Temp link from the navigation bar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "5d311aed214ec716afe7e362cdca80801afa881e"
-      },
-      "pre_edit_pages": {
-        "index": "79e5841d3a6c729b87dc9966ac37b9dbb2748af3"
-      }
-    },
     {
       "version": 104,
       "timestamp": "2026-03-18T07:48:30.706Z",
@@ -858,6 +849,29 @@
       },
       "pre_edit_pages": {
         "index": "290ee6d546146f8dd68c3c6c634855038b07d5d1"
+      }
+    },
+    {
+      "version": 153,
+      "timestamp": "2026-03-19T20:45:20.194Z",
+      "tag": null,
+      "change_description": "Created page: Hello World (hello-world.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "hello-world": "21bf487a8eb64ac1121965fab510e9082cf083c8",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "hello-world": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
       }
     }
   ]
