@@ -6,7 +6,8 @@
       "index",
       "services",
       "about",
-      "terms-and-conditions"
+      "terms-and-conditions",
+      "uy78x"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -33,24 +34,14 @@
       {
         "label": "Terms & Conditions",
         "href": "terms-and-conditions.html"
+      },
+      {
+        "label": "Uy78x",
+        "href": "uy78x.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 98,
-      "timestamp": "2026-03-18T06:24:12.506Z",
-      "tag": null,
-      "change_description": "on the home page, remove the Temp link from the navigation bar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "5d311aed214ec716afe7e362cdca80801afa881e"
-      },
-      "pre_edit_pages": {
-        "index": "79e5841d3a6c729b87dc9966ac37b9dbb2748af3"
-      }
-    },
     {
       "version": 99,
       "timestamp": "2026-03-18T06:25:59.378Z",
@@ -858,6 +849,29 @@
       },
       "pre_edit_pages": {
         "index": "ce79d51ca45322c0b3f23279933843d015ca2cdc"
+      }
+    },
+    {
+      "version": 148,
+      "timestamp": "2026-03-19T20:12:53.146Z",
+      "tag": null,
+      "change_description": "Created page: Uy78x (uy78x.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "uy78x": "f1a9df3c9936761da80ecebd5f66115b6eaa2a62",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
+      },
+      "pre_edit_pages": {
+        "uy78x": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null
       }
     }
   ]
