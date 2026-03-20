@@ -510,6 +510,45 @@
       line-height: 1.6;
     }
 
+    /*
+    =====================================================================
+    TEAM MEMBER WITHOUT IMAGE
+    Adjusts layout for team members who do not have a photograph. Removes
+    flex layout and image-related spacing, allowing the text to expand full
+    width. The background tint and border remain for visual consistency with
+    other team member cards on the page.
+
+    WHAT THIS DOES: When a team member div does not contain a
+    .team-member-image element (i.e. the image div is absent from the HTML),
+    this class removes the side-by-side flex layout and associated gaps,
+    allowing the .team-member-info section to occupy the full width of the
+    card.
+
+    WHY flex-direction: column: Stacks any elements vertically rather than
+    side-by-side. In practice, this means the name, title, and bio text
+    stack naturally on top of each other.
+
+    WHY gap: 0: Removes the 20px horizontal gap that was designed for
+    multi-element flex layouts. Since there is no image alongside the text,
+    no horizontal gap is needed.
+
+    TUNING: If you wish to add extra vertical spacing between the name and
+    title (or between any elements), adjust gap to 4px or 8px. If the card
+    feels too tight, increase padding on the .team-member base class (from
+    20px to 24px or 28px).
+
+    INTERACTION WITH BASE .team-member RULE:
+    This class overrides only the display and gap properties of the base
+    .team-member rule. All other properties (background colour, border,
+    padding, margin-bottom) remain unchanged and are inherited from the
+    base rule.
+    =====================================================================
+    */
+    .team-member.no-image {
+      flex-direction: column;
+      gap: 0;
+    }
+
     @media (max-width: 900px) {
       .team-member {
         flex-direction: column;
@@ -1232,6 +1271,14 @@
             <div class="team-member-name">Patricia Peterson</div>
             <div class="team-member-title">Dental Hygienist</div>
             <div class="team-member-bio">Patricia is a skilled and compassionate dental hygienist dedicated to supporting optimal oral health through preventive care and patient education. She works closely with Dr Nasir to ensure every patient receives comprehensive hygiene support tailored to their individual needs.</div>
+          </div>
+        </div>
+        <!-- Malyha Khondkar team member card without image, using the no-image class -->
+        <div class="team-member no-image">
+          <div class="team-member-info">
+            <div class="team-member-name">Malyha Khondkar</div>
+            <div class="team-member-title">Head Dental Nurse</div>
+            <div class="team-member-bio">GDC Registration No. 312992. Malyha provides essential support to Dr Nasir and the wider team, ensuring the smooth running of the practice and the highest standards of patient care and sterilisation protocols.</div>
           </div>
         </div>
       </div>
