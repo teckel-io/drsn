@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 154,
-      "timestamp": "2026-03-19T20:56:11.586Z",
-      "tag": null,
-      "change_description": "remove the \"Hello World\" link  from the services page navbar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "c59ce7d3b48b901e4ddf95db295ddc1fff6726c4"
-      },
-      "pre_edit_pages": {
-        "services": "78512fe20f76d0226dde85c73e69a76fc4687652"
-      }
-    },
     {
       "version": 155,
       "timestamp": "2026-03-19T20:56:37.251Z",
@@ -800,6 +791,31 @@
       },
       "pre_edit_pages": {
         "index": "5c3aadfa67fe53e135900df658e3afa00a544fb9"
+      }
+    },
+    {
+      "version": 204,
+      "timestamp": "2026-03-20T05:39:09.949Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "a76f6ebd96c52f79c739f548f18969b2bb5c74b3",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
