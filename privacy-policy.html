@@ -332,6 +332,37 @@
 
     .section-content p { margin: 4px 0; }
 
+    /*
+    WHAT THIS DOES: Indents all numbered sub-paragraphs (e.g. 1.1, 1.2, 2.1, etc.)
+    uniformly from the left edge of the section, while keeping the text within
+    each sub-paragraph left-justified against the indented margin.
+    WHY 24px: Provides clear visual separation and improved readability for
+    dense legal content. The indentation draws the eye and makes section
+    structure immediately apparent.
+    TUNING: Increase in 4px increments if more indentation is desired for
+    better visual hierarchy. Decrease if space is constrained on mobile.
+    */
+    .section-content p {
+      padding-left: 24px;
+    }
+
+    /*
+    WHAT THIS DOES: Indents bullet points within numbered sub-paragraphs so
+    they appear nested and visually subordinate to their parent paragraph.
+    WHY margin-left 24px: Aligns nested list items 24px from the left edge
+    of the section, creating a clear two-level hierarchy. The parent
+    sub-paragraph is indented 24px, and the bullets are indented an additional
+    16px relative to that, for a total of 40px from the section left edge.
+    WHY padding-left 16px: Provides space between the bullet marker and the
+    list item text.
+    TUNING: Increase margin-left or padding-left in 4px increments if more
+    indentation separation is needed. Decrease if constrained on narrow screens.
+    */
+    .legal-list {
+      margin-left: 40px;
+      padding-left: 16px;
+    }
+
     a { color: #b0c4de; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
@@ -790,7 +821,6 @@
       color: #ffffff;
       font-size: 14px;
       line-height: 1.65;
-      padding-left: 20px;
       margin-bottom: 8px;
     }
 
@@ -801,10 +831,7 @@
 </head>
 <body>
 
-  <!-- =====================================================================
-  NAVIGATION BAR
-  Inter-page navigation links. Managed by teckel AI — do not edit manually.
-  ===================================================================== -->
+  <!-- Navigation bar containing inter-page links -->
   <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -990,66 +1017,36 @@
 
   </div><!-- end .page -->
 
-  <!-- =====================================================================
-  ELEVENLABS VOICE WIDGET
-  Renders the Sabina voice agent widget. Placement (fixed left, bottom left,
-  etc.) is controlled entirely in the ElevenLabs dashboard under
-  Widget → Placement — not via CSS in this file.
-
-  agent-id         → Sabina agent ID. Do not change unless migrating agents.
-                     Current: agent_4701kjh47cjafxvv0m4xv8e9jgfd
-  avatar-image-url → Default avatar on page load (Dr Nasir portrait). The
-                     JavaScript block below can swap this at runtime when the
-                     conversation transfers between agents.
-
-  IMPORTANT: Do not move this element or apply CSS positioning to it in
-  this file. The widget manages its own fixed overlay positioning internally.
-  The only CSS applied externally is margin-top: 50px via the FIX #1 rule
-  above, which nudges the widget clear of the navbar.
-  ===================================================================== -->
+  <!-- ElevenLabs voice widget element for the Sabina agent -->
   <elevenlabs-convai
     agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
     avatar-image-url="https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg"
   ></elevenlabs-convai>
 
-  <!-- ElevenLabs embed script — async attribute prevents blocking page render -->
+  <!-- ElevenLabs embed script for widget functionality -->
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 
-  <!-- =====================================================================
-  AVATAR SWAP SCRIPT
-  Enables runtime swapping of the widget's avatar image via the ElevenLabs
-  Client Tool "update_avatar". When an agent triggers update_avatar during
-  a call, this script updates the widget's avatar-image-url attribute to
-  the matching URL from the AVATARS object, giving each agent its own face.
-
-  AVATARS object — key must match the avatar_name parameter sent by the agent:
-  — "sabina"   → Dr Nasir portrait (default, set in the widget tag above)
-  — "benedict" → Benedict avatar (shown when call transfers to Benedict)
-
-  TO ADD A NEW AVATAR:
-  1. Add a new key/URL pair to the AVATARS object below.
-  2. Add a matching "update_avatar" call instruction in the relevant agent's
-     ElevenLabs system prompt.
-
-  DO NOT restructure the event listener pattern. The clientTools object must
-  be registered inside the "elevenlabs-convai:call" event handler because the
-  ElevenLabs widget only accepts client tool registration at call-initiation
-  time. Registering outside this event (e.g. directly on DOMContentLoaded)
-  does not work reliably across widget versions.
-  ===================================================================== -->
+  <!-- Avatar swap functionality: allows runtime updates to widget avatar image -->
   <script>
+    // Avatar lookup table mapping agent names to their image URLs
     var AVATARS = {
       sabina:   "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg",
       benedict: "https://teckel-io.github.io/drsn/assets/benedict.png"
     };
+    // Wait for page load, then register the avatar update tool
     document.addEventListener("DOMContentLoaded", function () {
       var widget = document.querySelector("elevenlabs-convai");
       if (widget) {
+        // Listen for when the widget call is initiated
         widget.addEventListener("elevenlabs-convai:call", function (event) {
+          // Register the update_avatar client tool so agents can call it
           event.detail.config.clientTools = {
             update_avatar: function (params) {
+              // Look up the avatar URL for the requested agent name
               var url = AVATARS[params.avatar_name];
+              // If URL exists, update the widget's avatar attribute
               if (url) { widget.setAttribute("avatar-image-url", url); }
+              // Return confirmation message
               return "Avatar updated";
             }
           };
