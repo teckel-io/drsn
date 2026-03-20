@@ -553,6 +553,19 @@
     .treatment-group:last-child {
       margin-bottom: 0;
     }
+
+    /*
+    WHAT THIS DOES: Adds a uniform 20px left padding indentation to all
+    treatment rows within treatment groups, making the pricing list easier to scan.
+    WHY 20px: Provides subtle but consistent visual offset that makes each
+    itemized treatment visually distinct from category headers without excessive indentation.
+    TUNING: Increase in 2px steps to 22px or 24px for more indentation on desktop;
+    decrease to 16px or 18px if space is constrained on mobile devices.
+    */
+    .treatment-group .treatment-row {
+      padding-left: 20px;
+    }
+
   </style>
 </head>
 <body>
