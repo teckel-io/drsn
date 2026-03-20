@@ -1310,6 +1310,190 @@
       border: 1px solid rgba(176, 196, 222, 0.15);
       border-radius: 2px;
     }
+
+    /*
+    =====================================================================
+    SAFE ENVIRONMENT POLICY NOTICE CONTAINER
+    Wraps the practice's professional conduct and patient safety policy in
+    a visually distinct card that maintains consistency with the page's
+    design language. This section communicates important expectations
+    regarding patient and staff behaviour.
+
+    WHAT THIS DOES: Creates a cohesive presentation for the safety policy
+    so it appears as a significant, intentional part of the page rather than
+    generic body text. The background tint and border-left accent match the
+    design system used for testimonials, team member cards, and other
+    structured information sections.
+
+    WHY THESE COLOURS: Uses the same rgba(176, 196, 222, 0.05) background
+    tint and #b0c4de border-left as other card sections on the page
+    (testimonials, team members, PDF viewer, video container). This ensures
+    visual consistency and helps the section feel integrated into the overall
+    page design.
+
+    WHY padding: 20px: Provides comfortable internal spacing around the policy
+    text, preventing the content from feeling cramped against the borders.
+    This matches the padding of other card-style sections on the page.
+
+    WHY margin-bottom: 32px: Creates clear vertical separation between this
+    section and the footer that follows it, giving the policy section
+    appropriate visual weight and preventing the footer from appearing
+    too closely attached.
+
+    TUNING: Adjust padding in 4px increments if content feels too loose or
+    cramped. Adjust margin-bottom in 4px increments if the spacing between
+    this section and the footer feels off. Modify the background opacity
+    from 0.05 to 0.08 or 0.1 if more visual prominence is desired.
+    =====================================================================
+    */
+    .safe-environment-container {
+      background-color: rgba(176, 196, 222, 0.05);
+      border-left: 3px solid #b0c4de;
+      padding: 20px;
+      margin-bottom: 32px;
+    }
+
+    /*
+    =====================================================================
+    SAFE ENVIRONMENT POLICY UNORDERED LIST
+    Displays the list of prohibited behaviours in a structured, scannable
+    format that matches the professional tone of the policy section.
+
+    WHAT THIS DOES: Renders each prohibited behaviour as a distinct list item
+    with proper spacing and custom bullet point formatting, making the policy
+    requirements easy to understand and remember.
+
+    WHY color: #ffffff: Uses white text (matching body content throughout the
+    page) rather than the steel-blue metadata colour, indicating these are
+    important policy statements rather than supplementary information.
+
+    WHY font-size: 14px: Matches the standard body text size used in other
+    content sections, maintaining visual consistency across the page.
+
+    WHY line-height: 1.6: Provides comfortable vertical spacing between lines,
+    ensuring each item remains readable without appearing cramped.
+
+    WHY list-style: none: Removes the default bullet styling so items can be
+    displayed with custom formatting via CSS ::before pseudo-elements,
+    matching the professional design language of the website.
+
+    WHY padding-left: 0: Resets the browser default left indent for ul
+    elements. Custom indentation is controlled on individual li elements via
+    padding-left and the ::before pseudo-element, allowing precise layout
+    control.
+
+    WHY margin-top: 12px: Creates clear visual separation between the policy
+    introductory text above and the bulleted list below, grouping related
+    content while maintaining visual hierarchy.
+
+    TUNING: Adjust margin-top to 16px or 20px if the list feels visually
+    attached to the text above. Decrease to 8px if space is constrained.
+    Increase line-height to 1.8 if items feel cramped on narrow screens.
+    =====================================================================
+    */
+    .safe-environment-list {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.6;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 12px;
+    }
+
+    /*
+    =====================================================================
+    SAFE ENVIRONMENT POLICY LIST ITEMS
+    Individual list items representing prohibited behaviours in the practice.
+
+    WHAT THIS DOES: Styles each policy item with proper spacing and custom
+    bullet point formatting, ensuring they appear as distinct, professionally
+    formatted policy requirements rather than running together.
+
+    WHY margin-bottom: 8px: Provides clear separation between items, making
+    the list scannable and easy to read. The 8px value balances compactness
+    with visual clarity.
+
+    WHY padding-left: 20px: Creates space for the custom bullet point added
+    via the ::before pseudo-element. The 20px indent is slightly larger than
+    qualifications list items (16px) to give policy items more visual weight
+    appropriate to their importance.
+
+    WHY position: relative: Anchors the absolute positioning of the ::before
+    bullet point pseudo-element.
+
+    TUNING: Adjust padding-left to 16px or 24px depending on how much indent
+    feels appropriate. Increase margin-bottom to 10px or 12px if the list
+    feels too compact. Decrease to 6px if space is constrained.
+    =====================================================================
+    */
+    .safe-environment-list li {
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    /*
+    =====================================================================
+    SAFE ENVIRONMENT POLICY LIST ITEM BULLET POINT
+    Custom bullet point displayed before each policy list item.
+
+    WHAT THIS DOES: Adds a professional bullet character (•) in the steel-blue
+    colour (#b0c4de) before each policy item. The ::before pseudo-element
+    allows precise control over the bullet's appearance and positioning
+    without changing the HTML structure.
+
+    WHY content: "• ": Displays a bullet point (•) followed by a space. The
+    space provides clear separation between the bullet and the policy text.
+
+    WHY color: #b0c4de: Uses the steel-blue accent colour (matching section
+    titles, metadata, and other UI elements) to distinguish the bullet from
+    the body text whilst maintaining the cohesive design language.
+
+    WHY position: absolute with left: 0: Positions the bullet in the left
+    margin created by the li's padding-left: 20px. Absolute positioning
+    prevents the bullet from consuming horizontal space in the text flow,
+    so the policy text always aligns cleanly without extra indentation.
+
+    TUNING: Change content to "— " for a dash bullet, "▸ " for a triangle,
+    or "→ " for an arrow if a different visual style is preferred. Adjust
+    left value (e.g. -4px, 2px) if the bullet needs to move left or right
+    relative to the text.
+    =====================================================================
+    */
+    .safe-environment-list li::before {
+      content: "• ";
+      color: #b0c4de;
+      position: absolute;
+      left: 0;
+    }
+
+    /*
+    =====================================================================
+    SAFE ENVIRONMENT POLICY FINAL PARAGRAPH
+    Styles the closing paragraph of the policy section, which describes the
+    practice's enforcement actions and record-keeping procedures.
+
+    WHAT THIS DOES: Provides clear visual separation between the list of
+    prohibited behaviours and the final policy enforcement paragraph,
+    allowing readers to understand the consequences and documentation
+    procedures.
+
+    WHY margin-top: 12px: Creates clear visual separation from the list
+    above. The 12px value is the same as used between introductory text and
+    the list, maintaining consistent spacing throughout the section.
+
+    WHY line-height: 1.6: Matches the line-height of other body content on
+    the page (.section-content), ensuring this paragraph has the same
+    comfortable vertical spacing and readability as the rest of the site.
+
+    TUNING: Adjust margin-top to 16px or 20px if the paragraph feels visually
+    attached to the list. Decrease to 8px if space is constrained.
+    =====================================================================
+    */
+    .safe-environment-container p:last-child {
+      margin-top: 12px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -1421,6 +1605,25 @@
         <p><strong>Preventive Focus</strong> — We believe that prevention is better than cure. Our team emphasises education and early intervention to keep your teeth and gums healthy for life.</p>
         <p><strong>Modern Facilities</strong> — Our welcoming practice on Billing Road is equipped with contemporary dental technology to ensure accurate diagnosis and effective treatment.</p>
         <p><strong>Patient-Centred Care</strong> — Your goals, preferences, and concerns guide our treatment recommendations. You are always in control of your dental care journey.</p>
+      </div>
+    </div>
+
+    <!-- ── SAFE ENVIRONMENT FOR ALL ────────────────────────────────────────── -->
+    <!-- New section communicating the practice's commitment to professional conduct and patient safety -->
+    <div class="section">
+      <div class="section-title">A Safe Environment for All</div>
+      <div class="safe-environment-container">
+        <div class="section-content">
+          <p>We pride ourselves on the quality of care we provide and ask that our patients treat our team with the same respect they receive. Following NHS national policy, we do not tolerate aggression or abuse.</p>
+          <p>We kindly ask that you refrain from:</p>
+          <ul class="safe-environment-list">
+            <li>Aggressive, threatening, or violent behaviour</li>
+            <li>Verbal abuse, including shouting or swearing</li>
+            <li>Any form of discrimination or harassment</li>
+            <li>Damage to our facilities or the use of illegal substances on-site</li>
+          </ul>
+          <p><strong>Our Policy:</strong> To protect our staff and patients, we reserve the right to terminate the patient-provider relationship and remove individuals from our list if these standards are not met. Formal reports of all incidents are reviewed by Dr Sabina Nasir and recorded in our clinical safety logs.</p>
+        </div>
       </div>
     </div>
 
