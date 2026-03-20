@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 144,
-      "timestamp": "2026-03-19T20:07:49.630Z",
-      "tag": null,
-      "change_description": "remove the \"Testt\" link  from the services page navbar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "c59ce7d3b48b901e4ddf95db295ddc1fff6726c4"
-      },
-      "pre_edit_pages": {
-        "services": "09bcecd7f6d740ba029f79435ad0e359ce836ab6"
-      }
-    },
-    {
       "version": 145,
       "timestamp": "2026-03-19T20:08:49.683Z",
       "tag": null,
@@ -818,6 +804,20 @@
       },
       "pre_edit_pages": {
         "index": "0dcaf045c2a0c330c5a53107e8cdb1d0e9bae123"
+      }
+    },
+    {
+      "version": 194,
+      "timestamp": "2026-03-20T02:38:55.954Z",
+      "tag": null,
+      "change_description": "on the Home page, remove the  section titled \"Privacy Policy\"",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "997205845c4c7fc2266065bc33936cb0158d685b"
+      },
+      "pre_edit_pages": {
+        "index": "ca83b992208948ea6ff958784c3d660ca1530c58"
       }
     }
   ]
