@@ -9,7 +9,8 @@
       "terms-and-conditions",
       "privacy-policy",
       "hello",
-      "test"
+      "test",
+      "goodbye"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -48,33 +49,14 @@
       {
         "label": "Test",
         "href": "test.html"
+      },
+      {
+        "label": "Goodbye",
+        "href": "goodbye.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 158,
-      "timestamp": "2026-03-19T21:05:47.380Z",
-      "tag": null,
-      "change_description": "Created page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "test": "fd6fa90c1386afbb525561e9279177fb7b0d6d66",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "test": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
     {
       "version": 159,
       "timestamp": "2026-03-19T21:32:15.564Z",
@@ -855,6 +837,35 @@
         "terms-and-conditions": null,
         "privacy-policy": null,
         "hello": null
+      }
+    },
+    {
+      "version": 208,
+      "timestamp": "2026-03-20T06:36:01.602Z",
+      "tag": null,
+      "change_description": "Created page: Goodbye (goodbye.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "goodbye": "edae444db5e86895da8edd5da0546f2b8a4f10a6",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null,
+        "hello": null,
+        "test": null
+      },
+      "pre_edit_pages": {
+        "goodbye": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null,
+        "hello": null,
+        "test": null
       }
     }
   ]
