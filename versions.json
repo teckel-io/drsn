@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 174,
-      "timestamp": "2026-03-20T00:49:59.553Z",
-      "tag": null,
-      "change_description": "remove the \"Our Team\" section from the  home page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "d69dc3e4b3a89ea1837dc1d8d0c1208f95286a78"
-      },
-      "pre_edit_pages": {
-        "index": "f02d4cc0b2cd78041c978c555f3863ce9d0f6522"
-      }
-    },
-    {
       "version": 175,
       "timestamp": "2026-03-20T00:53:52.085Z",
       "tag": null,
@@ -845,6 +831,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "1a8b096b2f2ddd9ca111e6a29e314bfca1925416"
+      }
+    },
+    {
+      "version": 224,
+      "timestamp": "2026-03-20T20:18:07.512Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 223 (\"On the Terms & Conditions page, change the font style of ONLY the sub-paragraph NUMBERS (e.g. \"1.1, 1.2, 1.3, ...\" etc.) to bold.\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 223,
+      "pages": {
+        "terms-and-conditions": "1a8b096b2f2ddd9ca111e6a29e314bfca1925416"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "846ab57d10d2c3ec68400dec59755f67a9faf886"
       }
     }
   ]
