@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 163,
-      "timestamp": "2026-03-19T22:00:01.837Z",
-      "tag": null,
-      "change_description": "Please remove  the  youtube section",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "social": "e3d31651cffec89ba108ff1ee34f6012397815bf"
-      },
-      "pre_edit_pages": {
-        "social": "9b3f317e74a94f4523de9f007836b4b2aefdba9a"
-      }
-    },
-    {
       "version": 164,
       "timestamp": "2026-03-19T22:14:33.041Z",
       "tag": null,
@@ -853,6 +839,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "cab68299274bf6e7044a15c292b9c17e1a5b69c7"
+      }
+    },
+    {
+      "version": 213,
+      "timestamp": "2026-03-20T07:15:23.661Z",
+      "tag": null,
+      "change_description": "on the Terms & Conditions page, please place this warning statement at the top in a professional manner in accordance with the current look, feel, style  and professionalism of the site:\n\n⚠️ Important Notice. These Terms & Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on 01604 636836 or email info@delapredental.com.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "1efb8edeb0f774365bbf023e74465fac23e310eb"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "cd299bc632c8e3faecb3f5ee8a0d2ebacfc1a01e"
       }
     }
   ]
