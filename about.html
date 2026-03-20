@@ -539,6 +539,15 @@
     member biography and the qualifications section. 12px is large enough to
     be obvious but not so large as to create excessive whitespace.
 
+    WHY list-style: none: Removes the default bullet point styling so
+    qualifications can be displayed with custom formatting that matches the
+    professional tone of the website. The "•" character is added via CSS
+    ::before pseudo-element on list items.
+
+    WHY padding-left: 0: Resets the default left indent that browsers apply
+    to ul elements. Custom indentation is controlled via the li::before
+    pseudo-element instead, allowing precise control over the visual layout.
+
     TUNING: Increase margin-top to 16px or 20px if the qualifications section
     feels visually attached to the biography. Decrease to 8px if space is
     constrained. Increase line-height to 1.6 if the list feels cramped on
@@ -551,6 +560,8 @@
       font-size: 13px;
       line-height: 1.5;
       margin-top: 12px;
+      list-style: none;
+      padding-left: 0;
     }
 
     /*
@@ -559,21 +570,75 @@
     Individual qualification list items. Each item (li) represents one
     qualification, registration, or credential.
 
-    WHAT THIS DOES: Styles each qualification with proper spacing so they
-    appear as distinct items rather than running into each other.
+    WHAT THIS DOES: Styles each qualification with proper spacing and custom
+    bullet point formatting so they appear as distinct, professionally
+    formatted items rather than running into each other.
 
-    WHY margin-bottom: 3px: Provides minimal vertical gap between items,
+    WHY margin-bottom: 4px: Provides minimal vertical gap between items,
     keeping the qualifications list compact and scannable while maintaining
-    clear visual separation between each item.
+    clear visual separation between each item. The 4px value balances
+    compactness with readability.
 
-    TUNING: Increase to 5px or 6px if items feel too crowded. Decrease to
-    2px or 1px if space is very constrained. Use consistent increments of
-    1px or 2px to maintain visual balance with other spacing values in the
-    design system.
+    WHY padding-left: 16px: Creates space for the custom bullet point (•)
+    character added via the ::before pseudo-element. The 16px indent matches
+    the visual spacing of indented paragraphs throughout the site.
+
+    WHY ::before with content "• ": Displays a steel-blue bullet point
+    followed by a non-breaking space. This custom bullet is more elegant
+    and professional than the browser default (typically a circle or disc).
+    The colour #b0c4de matches the section title and metadata colours.
+
+    WHY position: absolute with left: 0: Positions the bullet point in the
+    left margin created by padding-left, so the text aligns cleanly without
+    extra indent. The position: relative on the parent .team-member-qualifications
+    (not shown here but implied) anchors this absolute positioning.
+
+    TUNING: Increase padding-left to 20px or 24px if bullets feel too close
+    to the text. Decrease to 12px if space is constrained. Adjust
+    margin-bottom to 3px or 5px to tighten or loosen the list spacing.
+    Change the bullet character from "• " to "— " or "▸ " for a different
+    visual style if desired.
     =====================================================================
     */
     .team-member-qualifications li {
-      margin-bottom: 3px;
+      margin-bottom: 4px;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    /*
+    =====================================================================
+    TEAM MEMBER QUALIFICATIONS LIST ITEM BULLET POINT
+    Displays a custom steel-blue bullet point before each qualification item.
+
+    WHAT THIS DOES: Adds a professional bullet character (•) in the steel-blue
+    colour (#b0c4de) before each qualification line. The ::before pseudo-element
+    allows precise control over the bullet's appearance and positioning without
+    changing the HTML structure.
+
+    WHY content: "• ": Displays a bullet point (•) followed by a regular space.
+    The space provides separation between the bullet and the qualification text.
+
+    WHY color: #b0c4de: Uses the steel-blue colour (matching section titles,
+    metadata, and other structured data on the page) rather than white, which
+    helps distinguish the bullet from body text and reinforces the visual
+    hierarchy.
+
+    WHY position: absolute with left: 0: Positions the bullet in the left
+    margin created by the li's padding-left: 16px. The absolute positioning
+    prevents the bullet from consuming horizontal space in the text flow,
+    so the qualification text always aligns cleanly.
+
+    TUNING: Change content to "— " for a dash bullet, "▸ " for a triangle,
+    or "→ " for an arrow if a different visual style is desired. Adjust
+    left value (e.g. -4px, 2px) if the bullet needs to move left or right.
+    =====================================================================
+    */
+    .team-member-qualifications li::before {
+      content: "• ";
+      color: #b0c4de;
+      position: absolute;
+      left: 0;
     }
 
     /*
@@ -1316,7 +1381,7 @@
             <div class="team-member-name">Dr Sabina Nasir</div>
             <div class="team-member-title">Principal Dentist</div>
             <div class="team-member-bio">Experienced dentist specialising in general dentistry and advanced restorative procedures, dedicated to providing gentle and compassionate patient care.</div>
-            <!-- Qualifications list section for Dr Nasir -->
+            <!-- Qualifications list section for Dr Nasir with professionally formatted bullet points -->
             <ul class="team-member-qualifications">
               <li>BDS</li>
               <li>Diploma in Clinical Dentistry (Eastman Dental Institute, London)</li>
