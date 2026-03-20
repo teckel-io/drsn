@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 149,
-      "timestamp": "2026-03-19T20:26:20.178Z",
-      "tag": null,
-      "change_description": "remove the \"Uy78x\" link  from the Terms & conditions page navbar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "e3b995155d30ead7273e9e741bd607aed21825bd"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "c382004ac56931ad4bf9c910c8cb80581beaa70c"
-      }
-    },
-    {
       "version": 150,
       "timestamp": "2026-03-19T20:27:03.608Z",
       "tag": null,
@@ -809,6 +795,20 @@
       },
       "pre_edit_pages": {
         "index": "248254d783350f75afa2c24e4731a146784ac42e"
+      }
+    },
+    {
+      "version": 199,
+      "timestamp": "2026-03-20T03:58:54.847Z",
+      "tag": null,
+      "change_description": "remove these testimonials from the home page:\n\nA Calm and Gentle Experience\n\"I've always been a nervous patient, but Dr Nasir completely changed my perspective on dental visits. She is incredibly patient, explains every step of the process, and has a very gentle touch. The clinic on Billing Road is professional and welcoming. I couldn't recommend her more highly for anyone looking for quality NHS or private care.\"\n— Sarah J.\nExceptional Care and Results\n\"I recently visited Dr Sabina Nasir for some restorative work, and I am thrilled with the results. Her attention to detail is second to none, and she truly cares about her patients' comfort. It's great to have such a high-calibre dentist right here in Northampton.\"\n— David R.\nThe Best Dentist in Northampton\n\"Dr Nasir and her team at Delapre Dental Care provide world-class service. From the moment you walk in, you feel like you're in good hands. Dr Nasir is knowledgeable, professional, and took the time to answer all my questions about my treatment plan.\"\n— Michael L.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "e780268b166d5cae95a5568a8990d8e304ecdc36"
+      },
+      "pre_edit_pages": {
+        "index": "c527e4d00ae34b7598ed34d27945b4ce46e7378f"
       }
     }
   ]
