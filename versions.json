@@ -38,28 +38,6 @@
   },
   "versions": [
     {
-      "version": 120,
-      "timestamp": "2026-03-18T10:39:59.391Z",
-      "tag": null,
-      "change_description": "Deleted page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "test": "1d3ca18c48876c88ee438520044defec9020baa6",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
-    {
       "version": 121,
       "timestamp": "2026-03-18T17:55:05.377Z",
       "tag": null,
@@ -892,6 +870,20 @@
       },
       "pre_edit_pages": {
         "index": "c5bd8f6275292988c675d9b24096983225e12bbd"
+      }
+    },
+    {
+      "version": 170,
+      "timestamp": "2026-03-20T00:01:45.553Z",
+      "tag": null,
+      "change_description": "on the home page change \"Closed on holidays\" to \"Closed on weekends and holidays\"",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "85ce5f3231f5a5f8374d258e773de0eb34a9d3a4"
+      },
+      "pre_edit_pages": {
+        "index": "8e84f814a121261d917999075c43d540e981ec9b"
       }
     }
   ]
