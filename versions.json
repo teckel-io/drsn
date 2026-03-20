@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 122,
-      "timestamp": "2026-03-18T18:06:52.517Z",
-      "tag": null,
-      "change_description": "change the  background  color of the home page to hex color 002349",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "0fe388ca32aacca722e9ad0f96f8c829e3030cb4"
-      },
-      "pre_edit_pages": {
-        "index": "9944927d815d1eec410e095fa23fb5d3e7c91c7e"
-      }
-    },
-    {
       "version": 123,
       "timestamp": "2026-03-19T05:06:37.454Z",
       "tag": null,
@@ -884,6 +870,20 @@
       },
       "pre_edit_pages": {
         "index": "85ce5f3231f5a5f8374d258e773de0eb34a9d3a4"
+      }
+    },
+    {
+      "version": 172,
+      "timestamp": "2026-03-20T00:05:54.107Z",
+      "tag": null,
+      "change_description": "on the terms and conditions page, please change the phone and email links from yellow to this hex color:  #B0C4DE",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "25cad757e3f58c45c2c33573cdaa2341ce6878c5"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "e3b995155d30ead7273e9e741bd607aed21825bd"
       }
     }
   ]
