@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 170,
-      "timestamp": "2026-03-20T00:01:45.553Z",
-      "tag": null,
-      "change_description": "on the home page change \"Closed on holidays\" to \"Closed on weekends and holidays\"",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "85ce5f3231f5a5f8374d258e773de0eb34a9d3a4"
-      },
-      "pre_edit_pages": {
-        "index": "8e84f814a121261d917999075c43d540e981ec9b"
-      }
-    },
-    {
       "version": 171,
       "timestamp": "2026-03-20T00:04:51.449Z",
       "tag": null,
@@ -845,6 +831,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "492d480650dc49d88e949dbbba561482414d2b94"
+      }
+    },
+    {
+      "version": 220,
+      "timestamp": "2026-03-20T18:41:13.923Z",
+      "tag": null,
+      "change_description": "On the  Privacy Policy page, please uniformly indent the sub-paragraphs (e.g. paragraphs labelled \"1.1, 1.2,...\" etc.) ensuring that the sub-paragraphs themselves remain left-justified against the indented left sub-margin. And, indent the bullet points within the sub-paragraphs.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "privacy-policy": "b0f367c56d9a246e72cddfc979baef8bd6a593f4"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "1957b5cf4d099fb488a7d89a500a67c7b5247585"
       }
     }
   ]
