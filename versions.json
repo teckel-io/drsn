@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 133,
-      "timestamp": "2026-03-19T19:02:42.173Z",
-      "tag": null,
-      "change_description": "please remove the link called \"Test\" on the navbar of the Services page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "965581e671b1565101115002b13dc0728f70c696"
-      },
-      "pre_edit_pages": {
-        "services": "1ed11284ce013e911c414553777498552c2d6f03"
-      }
-    },
-    {
       "version": 134,
       "timestamp": "2026-03-19T19:03:09.322Z",
       "tag": null,
@@ -844,6 +830,20 @@
         "services": null,
         "about": null,
         "terms-and-conditions": null
+      }
+    },
+    {
+      "version": 183,
+      "timestamp": "2026-03-20T01:18:53.815Z",
+      "tag": null,
+      "change_description": "on the Services page in the How to Book section, update the opening hours with the following information:  Monday–Friday: 8:15am to 5pm\n\nLunch: 12:30pm to 1:30pm (closed)\n\nClosed on weekends and holidays",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "c553b5189809fda45c74ede541e2df253de9cf86"
+      },
+      "pre_edit_pages": {
+        "services": "f656029cdc69e6bab0102ff58d03cd972efea418"
       }
     }
   ]
