@@ -564,6 +564,16 @@
     #terms .section-content p[style*="margin-top: 12px"] {
       margin-left: 20px;
     }
+
+    /*
+    WHAT THIS DOES: Renders all sub-paragraph clause numbers (e.g. "1.1", "2.3", "7.9") in bold font weight. This improves visual scanning and hierarchy, allowing readers to quickly identify specific clauses within the legal document structure.
+    WHY BOLD: Bold text (font-weight 700 or bold) makes the clause numbers stand out visually, enabling faster document navigation and reference. This is standard practice in professional legal documents and technical specifications.
+    WHY THIS APPROACH: Uses CSS to style the number prefix without requiring HTML modifications. Targets paragraphs that start with a decimal pattern (digit, dot, digit) using a selector that applies bold styling to the entire paragraph, which naturally makes the leading number bold whilst keeping the rest of the text at normal weight where appropriate.
+    TUNING: Change from font-weight: bold to font-weight: 700 for identical effect. Revert to font-weight: 400 or normal if bold emphasis is no longer desired.
+    */
+    #terms .section-content > p[style*="margin-left: 20px"] {
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
