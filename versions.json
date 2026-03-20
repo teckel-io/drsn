@@ -43,29 +43,6 @@
   },
   "versions": [
     {
-      "version": 143,
-      "timestamp": "2026-03-19T19:48:37.762Z",
-      "tag": null,
-      "change_description": "Created page: Testt (testt.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "testt": "4500ea6c96070980a6a1f5c7c477717da15101d2",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "testt": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
-    {
       "version": 144,
       "timestamp": "2026-03-19T20:07:49.630Z",
       "tag": null,
@@ -827,6 +804,20 @@
       },
       "pre_edit_pages": {
         "services": "8132dab122cd271b609f1e989f9a99c9c09a5fda"
+      }
+    },
+    {
+      "version": 193,
+      "timestamp": "2026-03-20T02:34:23.254Z",
+      "tag": null,
+      "change_description": "on the Home page, remove the  section titled \"Terms & Conditions\"",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "ca83b992208948ea6ff958784c3d660ca1530c58"
+      },
+      "pre_edit_pages": {
+        "index": "0dcaf045c2a0c330c5a53107e8cdb1d0e9bae123"
       }
     }
   ]
