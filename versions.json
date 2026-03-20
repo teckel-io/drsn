@@ -43,29 +43,6 @@
   },
   "versions": [
     {
-      "version": 153,
-      "timestamp": "2026-03-19T20:45:20.194Z",
-      "tag": null,
-      "change_description": "Created page: Hello World (hello-world.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "hello-world": "21bf487a8eb64ac1121965fab510e9082cf083c8",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "hello-world": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
-    {
       "version": 154,
       "timestamp": "2026-03-19T20:56:11.586Z",
       "tag": null,
@@ -809,6 +786,20 @@
       },
       "pre_edit_pages": {
         "index": "9ba6618ef0875f4c3b134f0013e44c1572e8bb1f"
+      }
+    },
+    {
+      "version": 203,
+      "timestamp": "2026-03-20T05:33:58.465Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 202 (\"change the  background color of  the home page to green\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 202,
+      "pages": {
+        "index": "9ba6618ef0875f4c3b134f0013e44c1572e8bb1f"
+      },
+      "pre_edit_pages": {
+        "index": "5c3aadfa67fe53e135900df658e3afa00a544fb9"
       }
     }
   ]
