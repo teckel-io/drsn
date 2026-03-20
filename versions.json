@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 126,
-      "timestamp": "2026-03-19T05:10:37.503Z",
-      "tag": null,
-      "change_description": "remove the link to \"Test\" in the Home page's navbar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "c5bd8f6275292988c675d9b24096983225e12bbd"
-      },
-      "pre_edit_pages": {
-        "index": "0fe388ca32aacca722e9ad0f96f8c829e3030cb4"
-      }
-    },
-    {
       "version": 127,
       "timestamp": "2026-03-19T06:16:36.606Z",
       "tag": null,
@@ -884,6 +870,20 @@
       },
       "pre_edit_pages": {
         "about": "6af34283e6e26639376292db532e22d7dd7f7ac7"
+      }
+    },
+    {
+      "version": 176,
+      "timestamp": "2026-03-20T00:57:52.815Z",
+      "tag": null,
+      "change_description": "remove both the  Benedict Williams  and Patricia Peterson sections from the  Our Team Section on the About Us Page.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "3da7243eca3453eeea61308305b143b423c7dc96"
+      },
+      "pre_edit_pages": {
+        "about": "943d46a42d07a31beabf562519615c54ff522685"
       }
     }
   ]
