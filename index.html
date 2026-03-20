@@ -217,12 +217,12 @@
 
     /*
     WHAT THIS DOES: Changes the page background colour from navy blue to
-    dark green per the user request.
-    WHY #1a4d2e: User-specified dark green colour for the home page background.
-    TUNING: Adjust the hex value if a different shade of dark green is preferred.
+    hex colour 002349 per the user request.
+    WHY #002349: User-specified colour for the page background.
+    TUNING: Adjust the hex value if a different shade is preferred.
     */
     body {
-      background-color: #1a4d2e;
+      background-color: #002349;
       font-family: sans-serif;
       min-height: 100vh;
 
@@ -280,9 +280,10 @@
     /*
     =====================================================================
     NAVIGATION BAR
-    Fixed to the top of the viewport on all screen sizes. Uses orange as
-    the background colour per the user request, with a subtle darker bottom
-    border to separate it visually from the page background.
+    Fixed to the top of the viewport on all screen sizes. Uses a slightly
+    darker shade of the page navy (#001a35 vs page #002349) with a subtle
+    steel-blue bottom border (rgba of #b0c4de at 20% opacity) to separate
+    it visually from the page background.
 
     z-index: 1000 ensures the navbar always sits above all page content
     including the ElevenLabs widget and any absolutely-positioned elements.
@@ -298,8 +299,8 @@
       top: 0;
       left: 0;
       right: 0;
-      background-color: #ff9500;   /* ← Orange background colour per user request */
-      border-bottom: 1px solid rgba(139, 69, 19, 0.3); /* ← Subtle darker divider */
+      background-color: #001a35;   /* ← Slightly darker than page background */
+      border-bottom: 1px solid rgba(176, 196, 222, 0.2); /* ← Subtle divider */
       padding: 16px 32px;
       z-index: 1000;
       display: flex;
@@ -309,7 +310,7 @@
     }
 
     .navbar a {
-      color: #ffffff;              /* ← White link colour for contrast on orange */
+      color: #b0c4de;              /* ← Steel blue link colour */
       text-decoration: none;
       font-size: 14px;
       font-weight: 500;
@@ -318,12 +319,12 @@
     }
 
     .navbar a:hover {
-      color: #333333;              /* ← Dark grey on hover */
+      color: #ffffff;              /* ← White on hover */
       text-decoration: none;
     }
 
     .navbar a.active {
-      color: #333333;        /* Dark text: marks the current active page in the navbar */
+      color: #ffffff;        /* White text: marks the current active page in the navbar */
       font-weight: 600;      /* Slightly bolder weight to further distinguish the active page */
     }
 
@@ -395,13 +396,13 @@
     }
 
     .subtitle {
-      color: #c8e6c9;          /* ← "Dental Practice — Northampton" colour adjusted for green background */
+      color: #b0c4de;          /* ← "Dental Practice — Northampton" colour */
       margin-bottom: 8px;      /* ← Gap between subtitle and dentist name */
       font-size: 16px;
     }
 
     .dentist-name {
-      color: #c8e6c9;
+      color: #b0c4de;
       margin-bottom: 40px;     /* ← Gap between dentist name and first section */
       font-size: 16px;
       font-weight: 500;
@@ -412,7 +413,7 @@
     }
 
     .section-title {
-      color: #c8e6c9;          /* ← Section heading colour adjusted for green background */
+      color: #b0c4de;          /* ← Section heading colour (steel blue) */
       font-weight: bold;
       font-size: 13px;
       text-transform: uppercase;
@@ -428,25 +429,25 @@
 
     .section-content p { margin: 4px 0; }
 
-    a { color: #c8e6c9; text-decoration: none; }
+    a { color: #b0c4de; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     .note {
-      color: #c8e6c9;          /* ← Italic supplementary note colour adjusted for green background */
+      color: #b0c4de;          /* ← Italic supplementary note colour */
       font-size: 13px;
       font-style: italic;
       margin-top: 8px;
     }
 
     .testimonial {
-      background-color: rgba(200, 230, 201, 0.08); /* ← Very subtle tinted card bg adjusted for green */
-      border-left: 3px solid #c8e6c9;              /* ← Light green accent bar */
+      background-color: rgba(176, 196, 222, 0.05); /* ← Very subtle tinted card bg */
+      border-left: 3px solid #b0c4de;              /* ← Steel blue accent bar */
       padding: 16px;
       margin-bottom: 20px;     /* ← Gap between testimonial cards */
     }
 
     .testimonial-title {
-      color: #c8e6c9;
+      color: #b0c4de;
       font-size: 13px;
       font-weight: bold;
       margin-bottom: 8px;
@@ -461,14 +462,14 @@
     }
 
     .testimonial-attribution {
-      color: #c8e6c9;
+      color: #b0c4de;
       font-size: 13px;
       font-weight: bold;
     }
 
     .team-member {
-      background-color: rgba(200, 230, 201, 0.08); /* ← Subtle tinted card bg adjusted for green */
-      border-left: 3px solid #c8e6c9;              /* ← Light green accent bar */
+      background-color: rgba(176, 196, 222, 0.05); /* ← Subtle tinted card bg */
+      border-left: 3px solid #b0c4de;              /* ← Steel blue accent bar */
       padding: 20px;
       margin-bottom: 24px;
       display: flex;
@@ -503,7 +504,7 @@
     }
 
     .team-member-title {
-      color: #c8e6c9;
+      color: #b0c4de;
       font-size: 13px;
       font-weight: 500;
       margin-bottom: 8px;
@@ -528,11 +529,11 @@
     }
 
     .footer {
-      color: #c8e6c9;
+      color: #b0c4de;
       font-size: 12px;
       margin-top: 48px;
       padding-top: 32px;
-      border-top: 1px solid rgba(200, 230, 201, 0.2); /* ← Subtle footer divider adjusted for green */
+      border-top: 1px solid rgba(176, 196, 222, 0.2); /* ← Subtle footer divider */
       text-align: center;
     }
 
@@ -863,13 +864,13 @@
       margin-bottom: 4px;
     }
     .legal-meta {
-      color: #c8e6c9;
+      color: #b0c4de;
       font-size: 13px;
       line-height: 1.6;
       margin-bottom: 20px;
     }
     .legal-section {
-      color: #c8e6c9;
+      color: #b0c4de;
       font-weight: bold;
       font-size: 13px;
       text-transform: uppercase;
