@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 139,
-      "timestamp": "2026-03-19T19:42:38.637Z",
-      "tag": null,
-      "change_description": "remove the \"Hello\" link in the navbar on the Services page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "4c6e952986134f22577f7ee72851187c97e0d1ca"
-      },
-      "pre_edit_pages": {
-        "services": "0b84bb001bcd902a000fc20aafae091c0dac35d2"
-      }
-    },
-    {
       "version": 140,
       "timestamp": "2026-03-19T19:42:49.223Z",
       "tag": null,
@@ -827,6 +813,20 @@
       },
       "pre_edit_pages": {
         "about": "b438f77b60911ec7bb92d807d85cf061dea4a020"
+      }
+    },
+    {
+      "version": 189,
+      "timestamp": "2026-03-20T01:47:46.051Z",
+      "tag": null,
+      "change_description": "properly format and indent the bullet points under Dr. Sabina Nasir in the Our Team section of the About Us page in accordance with the look, feel, style and  professionalism of the website",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "f4aea001f47c42ef299621d95208d164a92c4a09"
+      },
+      "pre_edit_pages": {
+        "about": "60199c32e5828b356bf71c2c931f4c00860c15c6"
       }
     }
   ]
