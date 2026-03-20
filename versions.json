@@ -809,7 +809,7 @@
     {
       "version": 195,
       "timestamp": "2026-03-20T02:42:13.602Z",
-      "tag": null,
+      "tag": "GETTING CLOSE",
       "change_description": "on the Home page, remove the  section titled \"Qualifications & Professional Registration\"",
       "is_rollback": false,
       "rolled_back_to_version": null,
