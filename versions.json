@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 168,
-      "timestamp": "2026-03-19T23:45:10.867Z",
-      "tag": null,
-      "change_description": "on the services page  change office@delapredental.com to  info@delapredental.com",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "9e71ee332e501563e91237fb93a9f63cb90b503a"
-      },
-      "pre_edit_pages": {
-        "services": "877666919c84ec3a3f83ed2067dcbb715a34fbf9"
-      }
-    },
-    {
       "version": 169,
       "timestamp": "2026-03-19T23:48:44.279Z",
       "tag": null,
@@ -845,6 +831,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "1957b5cf4d099fb488a7d89a500a67c7b5247585"
+      }
+    },
+    {
+      "version": 218,
+      "timestamp": "2026-03-20T18:33:04.980Z",
+      "tag": null,
+      "change_description": "On the  Privacy Policy page, please left justify the sub-paragraphs (e.g. paragraphs labelled \"1.1, 1.2,...\" etc.) in a professional manner in accordance with the  current look, feel, style and professionalism of the website.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "privacy-policy": "492d480650dc49d88e949dbbba561482414d2b94"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "ba939fb71cc2a10a9e5cfcea484c581b5c8b0d20"
       }
     }
   ]
