@@ -10,8 +10,8 @@
       "privacy-policy"
     ],
     "backup_schedule": {
-      "enabled": false,
-      "frequency": "weekly",
+      "enabled": true,
+      "frequency": "daily",
       "day_of_week": 1,
       "day_of_month": 1,
       "notif_chat_ids": [
