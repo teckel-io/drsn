@@ -495,6 +495,47 @@
     .legal-notice a:hover {
       text-decoration: underline;
     }
+
+    /*
+    WHAT THIS DOES: Styles the important notice warning box at the top of the Terms & Conditions section. Creates a visually distinct alert with amber/gold colouring to draw attention without being alarmist. Uses a semi-transparent background and left border to match the site's design system.
+    WHY THESE COLOURS: Background uses rgba(255, 200, 0, 0.08) for subtle amber tone (8% opacity). Border uses #e6b800 for a richer gold colour. Text uses #f0d060 for visibility against the dark background. This palette suggests importance without triggering anxiety.
+    WHY THESE DIMENSIONS: 12px vertical + 16px horizontal padding provides comfortable white space. 3px left border matches the testimonial and team member card styling for visual consistency. Margin-bottom of 20px provides separation from the legal heading below.
+    TUNING: Increase border width from 3px to 4px if more emphasis needed. Adjust text colour to #ffffff for higher contrast. Reduce opacity from 0.08 to 0.05 if background feels too prominent.
+    */
+    .terms-warning-notice {
+      background-color: rgba(255, 200, 0, 0.08);
+      border-left: 3px solid #e6b800;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      color: #f0d060;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /*
+    WHAT THIS DOES: Styles the icon and text inside the warning notice. The icon (warning symbol) appears on the left, followed by bold "Important Notice." label and the descriptive text. This creates a scannable, professional alert.
+    WHY BOLD: The "Important Notice." prefix uses font-weight bold to signal priority and help users quickly identify this as a critical message.
+    TUNING: Increase font-size from 13px to 14px for slightly larger text. Change colour to #ffffff for white text. Reduce line-height from 1.5 to 1.4 if text feels too spaced.
+    */
+    .terms-warning-notice strong {
+      font-weight: bold;
+      color: #f0d060;
+    }
+
+    /*
+    WHAT THIS DOES: Styles the contact links (phone and email) inside the warning notice. These links inherit the base link colour and maintain underline on hover for accessibility and consistency.
+    WHY #B0C4DE: Matches the primary link colour used throughout the site for visual consistency.
+    TUNING: If links need higher contrast, change to #ffffff or #e6b800. The hover underline provides clear visual feedback.
+    */
+    .terms-warning-notice a {
+      color: #b0c4de;
+      text-decoration: none;
+    }
+
+    .terms-warning-notice a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
   </style>
 </head>
 <body>
@@ -524,6 +565,11 @@
     <div id="terms" class="section">
       <div class="section-title">Terms &amp; Conditions</div>
       <div class="section-content">
+        <!-- Professional warning notice positioned at the top of the Terms & Conditions section. Uses amber/gold colouring and left border to align with the site's visual design system whilst drawing attention to important information. -->
+        <div class="terms-warning-notice">
+          <strong>⚠️ Important Notice.</strong> These Terms &amp; Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on <a href="tel:01604636836">01604 636836</a> or email <a href="mailto:info@delapredental.com">info@delapredental.com</a>.
+        </div>
+
         <!-- Terms and Conditions content with full legal text structure -->
         <p class="legal-heading">TERMS &amp; CONDITIONS</p>
         <p class="legal-meta">Delapre Dental Care · 5 Billing Road, Northampton, NN1 5AN<br>Principal Dentist: Dr Sabina Nasir BDS MFDS RCS MSc · GDC No. 169400<br>Last updated: March 2026</p>
