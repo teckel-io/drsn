@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 179,
-      "timestamp": "2026-03-20T01:06:17.281Z",
-      "tag": null,
-      "change_description": "remove \"since 2005\" from the About Us page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "5c90216a77ee6a66a66da18d0def7029ed8a9928"
-      },
-      "pre_edit_pages": {
-        "about": "902259aa704134fffc5226bea490cfcd12869273"
-      }
-    },
-    {
       "version": 180,
       "timestamp": "2026-03-20T01:11:21.184Z",
       "tag": null,
@@ -845,6 +831,20 @@
       },
       "pre_edit_pages": {
         "index": "9d995f859b8b0b2002d3e5d30eeb6b6704b929aa"
+      }
+    },
+    {
+      "version": 229,
+      "timestamp": "2026-03-20T23:34:42.393Z",
+      "tag": null,
+      "change_description": "edit the home page, add the word test to the footer",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "0763735c50bf89c9743b67296e087db3ea75c8dd"
+      },
+      "pre_edit_pages": {
+        "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
       }
     }
   ]
