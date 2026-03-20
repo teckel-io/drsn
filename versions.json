@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 142,
-      "timestamp": "2026-03-19T19:44:20.608Z",
-      "tag": null,
-      "change_description": "remove the \"Hello\" link in the navbar on the Home page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "7963bc65a3096785ba156ea70d216a7f6c3193e9"
-      },
-      "pre_edit_pages": {
-        "index": "3ed205677412d20fad36440165b3a25ff1d489d8"
-      }
-    },
-    {
       "version": 143,
       "timestamp": "2026-03-19T19:48:37.762Z",
       "tag": null,
@@ -827,6 +813,20 @@
       },
       "pre_edit_pages": {
         "services": "1766d13c3f4c9ee8772d03a826460e2ef2529919"
+      }
+    },
+    {
+      "version": 192,
+      "timestamp": "2026-03-20T01:57:25.882Z",
+      "tag": null,
+      "change_description": "Slightly and uniformly indent  the  itemized  pricing in the pricing list on the Services page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "31ed9c6c4175a6bf9449143864f51061699d393a"
+      },
+      "pre_edit_pages": {
+        "services": "8132dab122cd271b609f1e989f9a99c9c09a5fda"
       }
     }
   ]
