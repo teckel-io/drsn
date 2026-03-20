@@ -43,28 +43,6 @@
   },
   "versions": [
     {
-      "version": 138,
-      "timestamp": "2026-03-19T19:11:55.664Z",
-      "tag": null,
-      "change_description": "Deleted page: Hello (hello.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "hello": "39a5c9d92db78006575d5658e9b250103574fb5b",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
-    {
       "version": 139,
       "timestamp": "2026-03-19T19:42:38.637Z",
       "tag": null,
@@ -835,6 +813,20 @@
       },
       "pre_edit_pages": {
         "about": "b0a4595f13feac7d4dad55c4ed66f2bace4c6c82"
+      }
+    },
+    {
+      "version": 188,
+      "timestamp": "2026-03-20T01:41:56.963Z",
+      "tag": null,
+      "change_description": "remove the image of Dr. Sabina Nasir in the Our Team section of the About Us page.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "60199c32e5828b356bf71c2c931f4c00860c15c6"
+      },
+      "pre_edit_pages": {
+        "about": "b438f77b60911ec7bb92d807d85cf061dea4a020"
       }
     }
   ]
