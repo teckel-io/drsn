@@ -536,6 +536,34 @@
       text-decoration: underline;
       color: #ffffff;
     }
+
+    /*
+    WHAT THIS DOES: Indents sub-paragraphs within the Terms & Conditions section to improve readability and visual hierarchy. Creates a professional, document-like appearance consistent with the site's refined aesthetic.
+    WHY 20px LEFT MARGIN: Provides subtle indentation (approximately 1.4 character widths at the current font size) to distinguish sub-clauses without creating excessive whitespace. This aligns with professional legal document formatting standards.
+    WHY THIS CLASS: Applied only to sub-paragraphs (those with decimal clause numbers like 1.1, 2.2, 7.6) to avoid indenting primary clause headings or the main legal heading.
+    TUNING: Increase left-margin to 28px for deeper indentation. Decrease to 12px for lighter, more subtle indent. Adjust margin-bottom if additional spacing between sub-paragraphs is needed.
+    */
+    #terms .section-content > p[class*="legal"]:not(.legal-heading):not(.legal-section):not(.legal-meta) {
+      margin-left: 20px;
+    }
+
+    /*
+    WHAT THIS DOES: Indents sub-list items (bullet points under clauses like 6.2 and 7.9) to align with the indentation of their parent sub-paragraphs. Improves visual hierarchy and readability of complex legal lists.
+    WHY 20px ADDITIONAL PADDING: The legal-list already has 20px padding-left for the bullets. This adds an additional 20px margin-left to align with the parent sub-paragraph indent for visual consistency.
+    TUNING: Adjust margin-left to match the sub-paragraph indent value if the indent is changed. Decrease to 12px for lighter indentation.
+    */
+    #terms .section-content .legal-list {
+      margin-left: 20px;
+    }
+
+    /*
+    WHAT THIS DOES: Indents styled sub-headings (like "Appointment Booking via the Voice Agent" and "Prohibition on Sharing Personal Information") to align with their parent sub-paragraphs. Creates a consistent, professional multi-level outline structure.
+    WHY 20px LEFT MARGIN: Matches the sub-paragraph indent to create visual cohesion and establish a clear hierarchical relationship between clauses.
+    TUNING: Adjust to 28px for deeper indent or 12px for subtler effect. Increase font-size if additional visual emphasis is desired.
+    */
+    #terms .section-content p[style*="margin-top: 12px"] {
+      margin-left: 20px;
+    }
   </style>
 </head>
 <body>
