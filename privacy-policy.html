@@ -332,33 +332,6 @@
 
     .section-content p { margin: 4px 0; }
 
-    /*
-    WHAT THIS DOES: Applies left padding to numbered sub-paragraphs (e.g.
-    1.1, 1.2, 2.1, etc.) to create a professional, indented visual hierarchy
-    that matches the website's style and design language. The strong element
-    wrapping the numbering is now displayed as an inline block with the
-    full content of the paragraph, then left-justified as a hanging indent
-    so the paragraph number aligns to the left edge while subsequent lines
-    wrap cleanly beneath the opening text.
-    WHY hanging indent with display block: Creates a professional,
-    immediately-recognisable left-justified structure similar to legal
-    documents and formal business communications. The hanging indent style
-    (number on the left, wrapped text indented right) is the standard
-    convention for numbered paragraphs and sub-clauses in legal and
-    professional documents. This approach preserves readability and
-    visual hierarchy across all screen sizes.
-    TUNING: If the indent needs to be deeper or shallower, adjust the
-    margin-left value in 5px or 10px increments. If paragraph numbers
-    should be bolder or use a different colour, modify the strong element
-    styling (currently inherits from section-content). If you prefer the
-    old style (number + text all together, padded left), remove
-    display: block; margin-left: -20px; from the strong rule below.
-    */
-    .section-content p strong {
-      display: block;
-      margin-left: -20px;
-    }
-
     a { color: #b0c4de; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
@@ -828,7 +801,10 @@
 </head>
 <body>
 
-  <!-- Navigation bar inter-page navigation links. Managed by teckel AI — do not edit manually. -->
+  <!-- =====================================================================
+  NAVIGATION BAR
+  Inter-page navigation links. Managed by teckel AI — do not edit manually.
+  ===================================================================== -->
   <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -1012,40 +988,68 @@
       © 2026 Delapre Dental Care | All Rights Reserved
     </div>
 
-  </div>
+  </div><!-- end .page -->
 
-  <!-- ElevenLabs voice widget renders the Sabina voice agent. Placement is controlled in the ElevenLabs dashboard. Do not reposition via CSS. -->
+  <!-- =====================================================================
+  ELEVENLABS VOICE WIDGET
+  Renders the Sabina voice agent widget. Placement (fixed left, bottom left,
+  etc.) is controlled entirely in the ElevenLabs dashboard under
+  Widget → Placement — not via CSS in this file.
+
+  agent-id         → Sabina agent ID. Do not change unless migrating agents.
+                     Current: agent_4701kjh47cjafxvv0m4xv8e9jgfd
+  avatar-image-url → Default avatar on page load (Dr Nasir portrait). The
+                     JavaScript block below can swap this at runtime when the
+                     conversation transfers between agents.
+
+  IMPORTANT: Do not move this element or apply CSS positioning to it in
+  this file. The widget manages its own fixed overlay positioning internally.
+  The only CSS applied externally is margin-top: 50px via the FIX #1 rule
+  above, which nudges the widget clear of the navbar.
+  ===================================================================== -->
   <elevenlabs-convai
     agent-id="agent_4701kjh47cjafxvv0m4xv8e9jgfd"
     avatar-image-url="https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg"
   ></elevenlabs-convai>
 
-  <!-- ElevenLabs embed script async attribute prevents blocking page render -->
+  <!-- ElevenLabs embed script — async attribute prevents blocking page render -->
   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 
-  <!-- Avatar swap script enables runtime swapping of the widget avatar image when an agent triggers update_avatar during a call -->
+  <!-- =====================================================================
+  AVATAR SWAP SCRIPT
+  Enables runtime swapping of the widget's avatar image via the ElevenLabs
+  Client Tool "update_avatar". When an agent triggers update_avatar during
+  a call, this script updates the widget's avatar-image-url attribute to
+  the matching URL from the AVATARS object, giving each agent its own face.
+
+  AVATARS object — key must match the avatar_name parameter sent by the agent:
+  — "sabina"   → Dr Nasir portrait (default, set in the widget tag above)
+  — "benedict" → Benedict avatar (shown when call transfers to Benedict)
+
+  TO ADD A NEW AVATAR:
+  1. Add a new key/URL pair to the AVATARS object below.
+  2. Add a matching "update_avatar" call instruction in the relevant agent's
+     ElevenLabs system prompt.
+
+  DO NOT restructure the event listener pattern. The clientTools object must
+  be registered inside the "elevenlabs-convai:call" event handler because the
+  ElevenLabs widget only accepts client tool registration at call-initiation
+  time. Registering outside this event (e.g. directly on DOMContentLoaded)
+  does not work reliably across widget versions.
+  ===================================================================== -->
   <script>
-    // Declare an object containing all available avatar URLs keyed by agent name
     var AVATARS = {
       sabina:   "https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg",
       benedict: "https://teckel-io.github.io/drsn/assets/benedict.png"
     };
-    // Wait for the page to load, then register the avatar-swapping client tool
     document.addEventListener("DOMContentLoaded", function () {
-      // Select the ElevenLabs widget element from the DOM
       var widget = document.querySelector("elevenlabs-convai");
       if (widget) {
-        // Listen for the event that fires when a voice call begins
         widget.addEventListener("elevenlabs-convai:call", function (event) {
-          // Register the update_avatar client tool inside the call event handler
           event.detail.config.clientTools = {
-            // update_avatar is invoked by the agent's system prompt
             update_avatar: function (params) {
-              // Look up the avatar URL from the AVATARS object using the agent's avatar_name parameter
               var url = AVATARS[params.avatar_name];
-              // If a matching URL is found, update the widget's avatar-image-url attribute
               if (url) { widget.setAttribute("avatar-image-url", url); }
-              // Return a string to confirm the tool executed successfully
               return "Avatar updated";
             }
           };
