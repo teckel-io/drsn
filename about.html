@@ -512,6 +512,72 @@
 
     /*
     =====================================================================
+    TEAM MEMBER QUALIFICATIONS LIST
+    Displays professional qualifications and registrations in a structured,
+    easy-to-read format below the team member's job title and biography.
+    This list appears visually distinct from body text using a slightly
+    smaller font and a structured layout that makes credentials scannable.
+
+    WHAT THIS DOES: Renders each qualification on its own line with proper
+    spacing and consistent formatting. The list format is more accessible
+    than prose paragraphs for credential information.
+
+    WHY color: #b0c4de: Uses the steel-blue colour (matching section titles
+    and other metadata) rather than white body text, providing visual
+    hierarchy that distinguishes qualifications as structured reference data.
+
+    WHY font-size: 13px: One size smaller than body text (14px) to indicate
+    that qualifications are supplementary metadata rather than main content.
+    At 13px they remain readable on all devices without feeling cramped.
+
+    WHY line-height: 1.5: Slightly tighter than body line-height (1.6) to
+    keep the qualification list compact. Single-line items are more scannable
+    when vertically compressed. Multi-line items (e.g. "Diploma in...") still
+    have comfortable spacing between the lines of the same item.
+
+    WHY margin-top: 12px: Creates clear visual separation between the team
+    member biography and the qualifications section. 12px is large enough to
+    be obvious but not so large as to create excessive whitespace.
+
+    TUNING: Increase margin-top to 16px or 20px if the qualifications section
+    feels visually attached to the biography. Decrease to 8px if space is
+    constrained. Increase line-height to 1.6 if the list feels cramped on
+    narrow screens. Adjust font-size to 12px if space is very limited, or to
+    14px if the qualifications should have equal visual weight to body text.
+    =====================================================================
+    */
+    .team-member-qualifications {
+      color: #b0c4de;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-top: 12px;
+    }
+
+    /*
+    =====================================================================
+    TEAM MEMBER QUALIFICATIONS LIST ITEMS
+    Individual qualification list items. Each item (li) represents one
+    qualification, registration, or credential.
+
+    WHAT THIS DOES: Styles each qualification with proper spacing so they
+    appear as distinct items rather than running into each other.
+
+    WHY margin-bottom: 3px: Provides minimal vertical gap between items,
+    keeping the qualifications list compact and scannable while maintaining
+    clear visual separation between each item.
+
+    TUNING: Increase to 5px or 6px if items feel too crowded. Decrease to
+    2px or 1px if space is very constrained. Use consistent increments of
+    1px or 2px to maintain visual balance with other spacing values in the
+    design system.
+    =====================================================================
+    */
+    .team-member-qualifications li {
+      margin-bottom: 3px;
+    }
+
+    /*
+    =====================================================================
     TEAM MEMBER WITHOUT IMAGE
     Adjusts layout for team members who do not have a photograph. Removes
     flex layout and image-related spacing, allowing the text to expand full
@@ -1244,7 +1310,7 @@
       <div class="section-title">Our Team</div>
       <div class="section-content">
         <p>Our small, dedicated team works together to ensure that every patient receives first-class care in a welcoming and professional environment.</p>
-        <!-- Dr Sabina Nasir team member card -->
+        <!-- Dr Sabina Nasir team member card with updated qualifications list -->
         <div class="team-member">
           <div class="team-member-image">
             <img src="https://teckel-io.github.io/drsn/assets/dr-nasir-with-glasses.jpeg" alt="Dr Sabina Nasir, Principal Dentist">
@@ -1252,7 +1318,16 @@
           <div class="team-member-info">
             <div class="team-member-name">Dr Sabina Nasir</div>
             <div class="team-member-title">Principal Dentist</div>
-            <div class="team-member-bio">BDS, Diploma in Clinical Dentistry (Eastman), MSc Prosthodontics (King's College London), Postgraduate Certificate in Implant Dentistry. GDC Registration No. 169400.</div>
+            <div class="team-member-bio">Experienced dentist specialising in general dentistry and advanced restorative procedures, dedicated to providing gentle and compassionate patient care.</div>
+            <!-- Qualifications list section for Dr Nasir -->
+            <ul class="team-member-qualifications">
+              <li>BDS</li>
+              <li>Diploma in Clinical Dentistry (Eastman Dental Institute, London)</li>
+              <li>MFDS RCS England</li>
+              <li>MSc Fixed and Removable Prosthodontics (King's College London)</li>
+              <li>Postgraduate Certificate in Implant Dentistry</li>
+              <li>GDC Registration Number: 169400</li>
+            </ul>
           </div>
         </div>
         <!-- Malyha Khondkar team member card without image, using the no-image class -->
