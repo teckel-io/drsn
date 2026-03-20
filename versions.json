@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "hello"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,36 +38,10 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "Hello",
-        "href": "hello.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 161,
-      "timestamp": "2026-03-19T21:40:19.640Z",
-      "tag": null,
-      "change_description": "Deleted page: News (news.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "news": "9810cedf223a76a9ff000111fc436307134923e8",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
     {
       "version": 162,
       "timestamp": "2026-03-19T21:53:47.806Z",
@@ -865,6 +838,30 @@
         "terms-and-conditions": null,
         "privacy-policy": null,
         "hello": null
+      }
+    },
+    {
+      "version": 211,
+      "timestamp": "2026-03-20T06:54:21.711Z",
+      "tag": null,
+      "change_description": "Deleted page: Hello (hello.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "hello": "bab417f1b4cf9d2a9683df7498171a1c2324ed49",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
