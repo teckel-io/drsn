@@ -38,20 +38,6 @@
   },
   "versions": [
     {
-      "version": 124,
-      "timestamp": "2026-03-19T05:09:07.154Z",
-      "tag": null,
-      "change_description": "remove the link to \"Test\" in the Services page's navbar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "83f00144d23cca3f641a8756bde4506eed33c5de"
-      },
-      "pre_edit_pages": {
-        "services": "1ed11284ce013e911c414553777498552c2d6f03"
-      }
-    },
-    {
       "version": 125,
       "timestamp": "2026-03-19T05:09:19.729Z",
       "tag": null,
@@ -884,6 +870,20 @@
       },
       "pre_edit_pages": {
         "index": "c32c2c0d8559d7c84172f9e9dac48fe1ee517dd1"
+      }
+    },
+    {
+      "version": 174,
+      "timestamp": "2026-03-20T00:49:59.553Z",
+      "tag": null,
+      "change_description": "remove the \"Our Team\" section from the  home page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "d69dc3e4b3a89ea1837dc1d8d0c1208f95286a78"
+      },
+      "pre_edit_pages": {
+        "index": "f02d4cc0b2cd78041c978c555f3863ce9d0f6522"
       }
     }
   ]
