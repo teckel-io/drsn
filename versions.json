@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 145,
-      "timestamp": "2026-03-19T20:08:49.683Z",
-      "tag": null,
-      "change_description": "remove the \"Testt\" link  from the Terms & conditions page navbar",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "e3b995155d30ead7273e9e741bd607aed21825bd"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "87c5512479283872cd5b3fdcc52fec5f4b4f4de5"
-      }
-    },
-    {
       "version": 146,
       "timestamp": "2026-03-19T20:09:32.409Z",
       "tag": null,
@@ -818,6 +804,20 @@
       },
       "pre_edit_pages": {
         "index": "ca83b992208948ea6ff958784c3d660ca1530c58"
+      }
+    },
+    {
+      "version": 195,
+      "timestamp": "2026-03-20T02:42:13.602Z",
+      "tag": null,
+      "change_description": "on the Home page, remove the  section titled \"Qualifications & Professional Registration\"",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "248254d783350f75afa2c24e4731a146784ac42e"
+      },
+      "pre_edit_pages": {
+        "index": "997205845c4c7fc2266065bc33936cb0158d685b"
       }
     }
   ]
