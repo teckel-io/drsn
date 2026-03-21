@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "test"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,37 +38,10 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "Test",
-        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 182,
-      "timestamp": "2026-03-20T01:16:40.238Z",
-      "tag": null,
-      "change_description": "Created page: Privacy Policy (privacy-policy.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "privacy-policy": "a6f5f48b3947dacde6330f35f8b66307bbb7b03d",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      },
-      "pre_edit_pages": {
-        "privacy-policy": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null
-      }
-    },
     {
       "version": 183,
       "timestamp": "2026-03-20T01:18:53.815Z",
@@ -856,6 +828,30 @@
       },
       "pre_edit_pages": {
         "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 232,
+      "timestamp": "2026-03-21T01:00:41.216Z",
+      "tag": null,
+      "change_description": "Deleted page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test": "374f8d500811da37eecfa0f0e3381b9449843733",
         "index": null,
         "services": null,
         "about": null,
