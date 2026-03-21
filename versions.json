@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 183,
-      "timestamp": "2026-03-20T01:18:53.815Z",
-      "tag": null,
-      "change_description": "on the Services page in the How to Book section, update the opening hours with the following information:  Monday–Friday: 8:15am to 5pm\n\nLunch: 12:30pm to 1:30pm (closed)\n\nClosed on weekends and holidays",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "c553b5189809fda45c74ede541e2df253de9cf86"
-      },
-      "pre_edit_pages": {
-        "services": "f656029cdc69e6bab0102ff58d03cd972efea418"
-      }
-    },
-    {
       "version": 184,
       "timestamp": "2026-03-20T01:21:57.583Z",
       "tag": null,
@@ -857,6 +843,20 @@
         "about": null,
         "terms-and-conditions": null,
         "privacy-policy": null
+      }
+    },
+    {
+      "version": 233,
+      "timestamp": "2026-03-21T01:27:09.748Z",
+      "tag": null,
+      "change_description": "edit the about page, add a sentence saying we accept NHS patients",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "843ac06392b6c7bd8d56fa6cd9e9f01b38a86bc8"
+      },
+      "pre_edit_pages": {
+        "about": "000f8e7521107afc4a82564d3230ed3e0f0636de"
       }
     }
   ]
