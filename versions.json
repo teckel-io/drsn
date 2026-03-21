@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 181,
-      "timestamp": "2026-03-20T01:14:28.125Z",
-      "tag": null,
-      "change_description": "Add Kinsgley Boayke Peprah- trainee dental nurse to the Our Team section of the  About Us page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "a4a27c299fb5f61eb3aa99306ab06717bc607777"
-      },
-      "pre_edit_pages": {
-        "about": "750e067904ac7489aa2f5a5db7ca9db178a60cac"
-      }
-    },
     {
       "version": 182,
       "timestamp": "2026-03-20T01:16:40.238Z",
@@ -845,6 +836,31 @@
       },
       "pre_edit_pages": {
         "index": "0763735c50bf89c9743b67296e087db3ea75c8dd"
+      }
+    },
+    {
+      "version": 231,
+      "timestamp": "2026-03-21T00:57:43.728Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "374f8d500811da37eecfa0f0e3381b9449843733",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
