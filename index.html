@@ -217,12 +217,16 @@
 
     /*
     WHAT THIS DOES: Changes the page background colour from navy blue to
-    hex colour 002349 per the user request.
-    WHY #002349: User-specified colour for the page background.
-    TUNING: Adjust the hex value if a different shade is preferred.
+    dark green per the user request.
+    WHY #1a4d2e: A professional dark green shade that maintains good contrast
+    with light text and provides a calming, trustworthy aesthetic suitable for
+    a dental practice website.
+    TUNING: Adjust the hex value if a different shade of dark green is preferred.
+    Lighter greens use higher hex values (e.g. #2d6a4f), darker greens use lower
+    values (e.g. #0d3b1f).
     */
     body {
-      background-color: #002349;
+      background-color: #1a4d2e;
       font-family: sans-serif;
       min-height: 100vh;
 
@@ -281,7 +285,7 @@
     =====================================================================
     NAVIGATION BAR
     Fixed to the top of the viewport on all screen sizes. Uses a slightly
-    darker shade of the page navy (#001a35 vs page #002349) with a subtle
+    darker shade of the page green (#0d3b1f vs page #1a4d2e) with a subtle
     steel-blue bottom border (rgba of #b0c4de at 20% opacity) to separate
     it visually from the page background.
 
@@ -299,7 +303,7 @@
       top: 0;
       left: 0;
       right: 0;
-      background-color: #001a35;   /* ← Slightly darker than page background */
+      background-color: #0d3b1f;   /* ← Slightly darker than page background */
       border-bottom: 1px solid rgba(176, 196, 222, 0.2); /* ← Subtle divider */
       padding: 16px 32px;
       z-index: 1000;
