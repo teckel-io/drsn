@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 197,
-      "timestamp": "2026-03-20T03:04:35.965Z",
-      "tag": "GETTING CLOSE",
-      "change_description": "Rolled back to the state before version 196 (\"change the  backup  color of the  home page  to dark green and the home page navbar background color to orange\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 196,
-      "pages": {
-        "index": "248254d783350f75afa2c24e4731a146784ac42e"
-      },
-      "pre_edit_pages": {
-        "index": "fd9d48ea82e3ad1471f2feaee8ac0e59142a31a7"
-      }
-    },
-    {
       "version": 198,
       "timestamp": "2026-03-20T03:51:58.985Z",
       "tag": null,
@@ -899,6 +885,20 @@
       },
       "pre_edit_pages": {
         "index": "a28ec22507d5b36116768c4661b193bb2d8fd2d6"
+      }
+    },
+    {
+      "version": 247,
+      "timestamp": "2026-03-22T17:32:40.085Z",
+      "tag": null,
+      "change_description": "On the About Us page  change the words 'She supports' to ' He supports'.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "40348268a8b7cd3d79230ffa5f839512eac34388"
+      },
+      "pre_edit_pages": {
+        "about": "000f8e7521107afc4a82564d3230ed3e0f0636de"
       }
     }
   ]
