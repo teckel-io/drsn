@@ -43,30 +43,6 @@
   },
   "versions": [
     {
-      "version": 205,
-      "timestamp": "2026-03-20T05:45:59.044Z",
-      "tag": null,
-      "change_description": "Deleted page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "test": "a76f6ebd96c52f79c739f548f18969b2bb5c74b3",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 206,
       "timestamp": "2026-03-20T05:51:33.073Z",
       "tag": null,
@@ -888,6 +864,20 @@
       },
       "pre_edit_pages": {
         "services": "e743b8a67701fe2d235467cd8b4900ea7942a5bb"
+      }
+    },
+    {
+      "version": 255,
+      "timestamp": "2026-03-22T19:39:44.168Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 254 (\"On the service page replace ' we specialise in helping patients' to  'We help nervous patients feel at ease'.\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 254,
+      "pages": {
+        "services": "e743b8a67701fe2d235467cd8b4900ea7942a5bb"
+      },
+      "pre_edit_pages": {
+        "services": "21cdb17d4fd68235b498be6e5432e9368bcfd10c"
       }
     }
   ]
