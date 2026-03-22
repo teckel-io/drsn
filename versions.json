@@ -43,32 +43,6 @@
   },
   "versions": [
     {
-      "version": 210,
-      "timestamp": "2026-03-20T06:48:05.364Z",
-      "tag": null,
-      "change_description": "Deleted page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null,
-        "hello": null
-      },
-      "pre_edit_pages": {
-        "test": "72f4de75622d6f644456f6090e82ff405dacc06f",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null,
-        "hello": null
-      }
-    },
-    {
       "version": 211,
       "timestamp": "2026-03-20T06:54:21.711Z",
       "tag": null,
@@ -825,6 +799,20 @@
       },
       "pre_edit_pages": {
         "services": "a0b3d985e5d0f64211a30018f2449dcb81ca6be7"
+      }
+    },
+    {
+      "version": 260,
+      "timestamp": "2026-03-22T20:06:01.609Z",
+      "tag": null,
+      "change_description": "on the services page please remove only' free consultation available'",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "11179bf0941b3e130114701008bcd46ade3c603e"
+      },
+      "pre_edit_pages": {
+        "services": "f02121cf11e0a2fb33173b86640c0f137011bd87"
       }
     }
   ]
