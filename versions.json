@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 193,
-      "timestamp": "2026-03-20T02:34:23.254Z",
-      "tag": null,
-      "change_description": "on the Home page, remove the  section titled \"Terms & Conditions\"",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "ca83b992208948ea6ff958784c3d660ca1530c58"
-      },
-      "pre_edit_pages": {
-        "index": "0dcaf045c2a0c330c5a53107e8cdb1d0e9bae123"
-      }
-    },
     {
       "version": 194,
       "timestamp": "2026-03-20T02:38:55.954Z",
@@ -878,6 +869,31 @@
       },
       "pre_edit_pages": {
         "index": "a53ac169899645d5159975797275fdc7cb90951f"
+      }
+    },
+    {
+      "version": 243,
+      "timestamp": "2026-03-22T16:40:35.655Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "06474f27c3d6784baf7c8348d539d3a1b98a7971",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
