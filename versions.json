@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 213,
-      "timestamp": "2026-03-20T07:15:23.661Z",
-      "tag": null,
-      "change_description": "on the Terms & Conditions page, please place this warning statement at the top in a professional manner in accordance with the current look, feel, style  and professionalism of the site:\n\n⚠️ Important Notice. These Terms & Conditions apply to all patients receiving treatment at Delapre Dental Care. Please read them carefully. If you have any questions, please contact us on 01604 636836 or email info@delapredental.com.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "1efb8edeb0f774365bbf023e74465fac23e310eb"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "cd299bc632c8e3faecb3f5ee8a0d2ebacfc1a01e"
-      }
-    },
-    {
       "version": 214,
       "timestamp": "2026-03-20T07:20:09.072Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "services": "f5d2f5105fbca233ebbb145ec69cb30630220d6a"
+      }
+    },
+    {
+      "version": 263,
+      "timestamp": "2026-03-22T20:17:25.428Z",
+      "tag": null,
+      "change_description": "On the services page replace  'scale and polish to 'PMPR'",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "52a24a34e06932a08404fec6322cf7081b172449"
+      },
+      "pre_edit_pages": {
+        "services": "600070aa42a5ea53216a641b746f1a6f77ab8b4c"
       }
     }
   ]
