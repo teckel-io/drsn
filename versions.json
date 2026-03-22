@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 195,
-      "timestamp": "2026-03-20T02:42:13.602Z",
-      "tag": "GETTING CLOSE",
-      "change_description": "on the Home page, remove the  section titled \"Qualifications & Professional Registration\"",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "248254d783350f75afa2c24e4731a146784ac42e"
-      },
-      "pre_edit_pages": {
-        "index": "997205845c4c7fc2266065bc33936cb0158d685b"
-      }
-    },
-    {
       "version": 196,
       "timestamp": "2026-03-20T03:03:34.221Z",
       "tag": null,
@@ -899,6 +885,20 @@
         "about": null,
         "terms-and-conditions": null,
         "privacy-policy": null
+      }
+    },
+    {
+      "version": 245,
+      "timestamp": "2026-03-22T16:56:40.441Z",
+      "tag": null,
+      "change_description": "change the copyright year to 2030 in the  footer on the home page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "a28ec22507d5b36116768c4661b193bb2d8fd2d6"
+      },
+      "pre_edit_pages": {
+        "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
       }
     }
   ]
