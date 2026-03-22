@@ -43,34 +43,6 @@
   },
   "versions": [
     {
-      "version": 209,
-      "timestamp": "2026-03-20T06:41:50.589Z",
-      "tag": null,
-      "change_description": "Deleted page: Goodbye (goodbye.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null,
-        "hello": null,
-        "test": null
-      },
-      "pre_edit_pages": {
-        "goodbye": "edae444db5e86895da8edd5da0546f2b8a4f10a6",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null,
-        "hello": null,
-        "test": null
-      }
-    },
-    {
       "version": 210,
       "timestamp": "2026-03-20T06:48:05.364Z",
       "tag": null,
@@ -839,6 +811,20 @@
       },
       "pre_edit_pages": {
         "services": "f02121cf11e0a2fb33173b86640c0f137011bd87"
+      }
+    },
+    {
+      "version": 259,
+      "timestamp": "2026-03-22T20:02:49.500Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 258 (\"On the services pages remove free consultation  available\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 258,
+      "pages": {
+        "services": "f02121cf11e0a2fb33173b86640c0f137011bd87"
+      },
+      "pre_edit_pages": {
+        "services": "a0b3d985e5d0f64211a30018f2449dcb81ca6be7"
       }
     }
   ]
