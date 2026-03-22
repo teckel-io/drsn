@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 198,
-      "timestamp": "2026-03-20T03:51:58.985Z",
-      "tag": null,
-      "change_description": "In the exact same format, look, feel, style  and professionalism of the current testimonials on the  home page, please add this list of testimonials below the the ones  currently on the site:\n\nAnonymous\n2 years ago\nDr. Sabina Nasir is a highly skilled dentist. I have been with this practice for years. The staff are friendly. My teeth are in good order thanks to everyone here. I highly recommend this dentist and dental practice.\n\nGary Smith\n2 years ago\nFollowing my recent treatments, I felt compelled to write to say thank you. I have been an NHS patient with the practice since I was a young boy, and at 65 I’ve seen many dentists in my time.\n\nI am extremely impressed with how the dental profession has advanced in both treatment and professionalism. The care I am receiving now is the best I’ve ever experienced—not only in the quality of dentistry, but also in the clarity of communication and the kindness shown when I am clearly concerned and in pain.\n\nI no longer fear going to the dentist—in fact, it’s almost a pleasure. I look forward to my six-month check-ups and hygiene visits. Thank you all once again, and I hope you have a fantastic Christmas (apologies if that’s a bit early). See you in the New Year.\n\nKeith Langford\n2 years ago\nVery happy with the dental surgery. If you have an issue with your teeth, they try to find an appointment as soon as possible. At a check-up, Sabina will address problems immediately if she is able to do so. I have been with the practice for years and have seen the effects of limited NHS funding, but Sabina works hard to maintain this side of the service.\n\nH\n2 years ago\nHappy with this practice. Sabina is doing her best in difficult circumstances. I’m not a fan of going to the dentist and see it as a necessary evil, but she is understanding and helps ease my anxiety. I’ve been to quite a few dentists over the years, and this is as good as—or better than—any of them.\n\nAmanda Penner\n2 years ago\nExcellent dental surgery with such kind and friendly staff. Their genuine attention to ensuring you are comfortable and at ease during your appointment is outstanding.\n\nI especially appreciate their focus on oral care awareness and maintaining healthy hygiene. They are true champions of healthy teeth. I would highly recommend this surgery.\n\nAndrea Edlin\n2 years ago\nDelapre Dental Care is really, really good. Sabina is an excellent dentist—so patient, highly skilled, and she explains everything clearly. I am a terrible coward when it comes to dentists, but she puts me completely at ease. I’m so glad she is my dentist, and the NHS is lucky to have her.\n\nMarta\n7 months ago\nI have nothing but praise for Sabina and her team. I have always been anxious about the dentist, but Sabina and Malyha always put me at ease. The dental care I have received over the years has been excellent.\n\nI am truly grateful for everything she has done for me. Her dedication and commitment to her patients are second to none. Thank you, Sabina and team.\n\nHelen Badcock\n6 months ago\nIt’s always nice to see the same friendly dentist who explains things clearly. I’ve never had any problems with my treatment.\n\nSodapop Peters (on behalf of Jenny Clifford)\n6 months ago\nI would like to express my sincere gratitude to Delapre Dental Care for restoring my confidence and easing my fears about dentists. I had not attended a dental surgery for over 30 years, but in the caring and capable hands of Sabina—the wonderful dentist who owns the practice—and her friendly dental nurse, I no longer have any fear.\n\nI can’t thank them enough. An excellent dental practice.\n\nJosephine Masters (on behalf of Mrs. Bazeley and Mrs. McFarlane)\n1 month ago\nMy mother needed an emergency appointment, and Sabina saw her immediately. She required a tooth extraction, and Sabina was brilliant. She made my mother, who suffers from Alzheimer’s, feel comfortable and at ease. She remained calm, kind, and patient without ever being patronizing.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "c527e4d00ae34b7598ed34d27945b4ce46e7378f"
-      },
-      "pre_edit_pages": {
-        "index": "248254d783350f75afa2c24e4731a146784ac42e"
-      }
-    },
-    {
       "version": 199,
       "timestamp": "2026-03-20T03:58:54.847Z",
       "tag": null,
@@ -899,6 +885,20 @@
       },
       "pre_edit_pages": {
         "about": "000f8e7521107afc4a82564d3230ed3e0f0636de"
+      }
+    },
+    {
+      "version": 248,
+      "timestamp": "2026-03-22T17:38:03.137Z",
+      "tag": null,
+      "change_description": "On the services page change '26.80' to '27.40'",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "19a7e883b4a2ea3c59dd52255f917c74c2f6b79d"
+      },
+      "pre_edit_pages": {
+        "services": "31ed9c6c4175a6bf9449143864f51061699d393a"
       }
     }
   ]
