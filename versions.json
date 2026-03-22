@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 189,
-      "timestamp": "2026-03-20T01:47:46.051Z",
-      "tag": null,
-      "change_description": "properly format and indent the bullet points under Dr. Sabina Nasir in the Our Team section of the About Us page in accordance with the look, feel, style and  professionalism of the website",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "f4aea001f47c42ef299621d95208d164a92c4a09"
-      },
-      "pre_edit_pages": {
-        "about": "60199c32e5828b356bf71c2c931f4c00860c15c6"
-      }
-    },
     {
       "version": 190,
       "timestamp": "2026-03-20T01:51:26.654Z",
@@ -857,6 +848,31 @@
       },
       "pre_edit_pages": {
         "index": "9bfa7866ecad93964ff6869cf4e5a9c71480feff"
+      }
+    },
+    {
+      "version": 239,
+      "timestamp": "2026-03-22T06:04:31.105Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "737a4f6391dc2d3d2f6dd4f873e1ab341c9ef564",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
