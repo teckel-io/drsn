@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 186,
-      "timestamp": "2026-03-20T01:28:47.577Z",
-      "tag": null,
-      "change_description": "On the About  Us page replace (King's College England) with (King's College London)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "b0a4595f13feac7d4dad55c4ed66f2bace4c6c82"
-      },
-      "pre_edit_pages": {
-        "about": "b0a4595f13feac7d4dad55c4ed66f2bace4c6c82"
-      }
-    },
-    {
       "version": 187,
       "timestamp": "2026-03-20T01:36:22.816Z",
       "tag": null,
@@ -857,6 +843,20 @@
       },
       "pre_edit_pages": {
         "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
+      }
+    },
+    {
+      "version": 236,
+      "timestamp": "2026-03-22T04:57:54.056Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 235 (\"Change the year of the copyright to 2027 in the footer of the home page\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 235,
+      "pages": {
+        "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
+      },
+      "pre_edit_pages": {
+        "index": "a53ac169899645d5159975797275fdc7cb90951f"
       }
     }
   ]
