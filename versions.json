@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 216,
-      "timestamp": "2026-03-20T07:34:22.463Z",
-      "tag": null,
-      "change_description": "Being sure to maintain the current look, feel, style and professionalism of the website, replace all the text on the Privacy Policy page with the text in this file.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "1957b5cf4d099fb488a7d89a500a67c7b5247585"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "a6f5f48b3947dacde6330f35f8b66307bbb7b03d"
-      }
-    },
-    {
       "version": 217,
       "timestamp": "2026-03-20T18:27:47.982Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
+      }
+    },
+    {
+      "version": 266,
+      "timestamp": "2026-03-23T18:21:24.305Z",
+      "tag": null,
+      "change_description": "On the page, privacy and policy, remove ' 6.1'",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "privacy-policy": "a05dfcf44b712d4c3bf6f55a4bc3f9df0bd393f7"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "b357c65d1e78ec8020b80cd063aa9128a38d3e0c"
       }
     }
   ]
