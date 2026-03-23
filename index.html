@@ -439,6 +439,26 @@
       margin-top: 8px;
     }
 
+    /*
+    WHAT THIS DOES: Styles the zero tolerance policy notice box with a
+    distinctive visual treatment to draw attention to this important policy.
+    WHY these values: A light amber/gold background with matching left border
+    creates visual hierarchy and signals importance without being jarring.
+    The padding and margin ensure the box has breathing room and stands out
+    from regular section content.
+    TUNING: Adjust background-color opacity (currently 0.08) to make the box
+    more or less prominent. Increase border-left width if more emphasis needed.
+    */
+    .zero-tolerance-notice {
+      background-color: rgba(255, 200, 0, 0.08);
+      border-left: 3px solid #e6b800;
+      padding: 16px;
+      margin-bottom: 32px;
+      color: #f0d060;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
     .testimonial {
       background-color: rgba(176, 196, 222, 0.05); /* ← Very subtle tinted card bg */
       border-left: 3px solid #b0c4de;              /* ← Steel blue accent bar */
@@ -923,6 +943,16 @@
       <h1>Delapre Dental Care</h1>
       <p class="subtitle">Dental Practice — Northampton</p>
       <p class="dentist-name">Dr Sabina Nasir</p>
+    </div>
+
+    <!-- ── ZERO TOLERANCE POLICY NOTICE ──────────────────────────────── -->
+    <!-- This section displays the practice's zero tolerance policy towards
+         abuse, violence, and aggression. It is styled with a distinctive
+         amber/gold background and left border to draw attention to this
+         important policy statement. The notice is positioned prominently
+         on the home page below the practice name and before contact details. -->
+    <div class="zero-tolerance-notice">
+      <p>The Practice operates a zero tolerance policy towards abuse, violence, and aggression, in accordance with NHS national policy. All staff treating patients have the right to work in an environment free from any threat or fear of abuse, violence, or any form of aggression.</p>
     </div>
 
     <!-- ── ADDRESS ────────────────────────────────────────────────────– -->
