@@ -805,7 +805,7 @@
     {
       "version": 271,
       "timestamp": "2026-03-23T23:08:26.312Z",
-      "tag": null,
+      "tag": "Latest",
       "change_description": "Deleted page: Test (test.html)",
       "is_rollback": false,
       "rolled_back_to_version": null,
