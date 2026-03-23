@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 214,
-      "timestamp": "2026-03-20T07:20:09.072Z",
-      "tag": null,
-      "change_description": "To  improve readability, on the  Terms & Conditions page, please uniformly slightly indent the sub-paragraphs in a professional manner in accordance with the  current look, feel, style and professionalism of the website.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "6aec2209ec9a8f9df1111b4736547f8a3e8468c3"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "1efb8edeb0f774365bbf023e74465fac23e310eb"
-      }
-    },
-    {
       "version": 215,
       "timestamp": "2026-03-20T07:26:47.180Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "services": "600070aa42a5ea53216a641b746f1a6f77ab8b4c"
+      }
+    },
+    {
+      "version": 264,
+      "timestamp": "2026-03-23T06:13:09.683Z",
+      "tag": null,
+      "change_description": "Terms and conditions under private treatment, please add a 50% deposit is required at the time of booking for all private treatments.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "1a8b096b2f2ddd9ca111e6a29e314bfca1925416"
       }
     }
   ]
