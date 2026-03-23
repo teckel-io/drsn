@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 220,
-      "timestamp": "2026-03-20T18:41:13.923Z",
-      "tag": null,
-      "change_description": "On the  Privacy Policy page, please uniformly indent the sub-paragraphs (e.g. paragraphs labelled \"1.1, 1.2,...\" etc.) ensuring that the sub-paragraphs themselves remain left-justified against the indented left sub-margin. And, indent the bullet points within the sub-paragraphs.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "b0f367c56d9a246e72cddfc979baef8bd6a593f4"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "1957b5cf4d099fb488a7d89a500a67c7b5247585"
-      }
-    },
     {
       "version": 221,
       "timestamp": "2026-03-20T18:50:00.977Z",
@@ -803,6 +794,31 @@
       },
       "pre_edit_pages": {
         "index": "8e34a059a239165acb701c541af4761c44313965"
+      }
+    },
+    {
+      "version": 270,
+      "timestamp": "2026-03-23T23:06:03.810Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "7c5c34cacfe1c21390b44fddd3b291fff3e3afd0",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
