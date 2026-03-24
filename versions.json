@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 235,
-      "timestamp": "2026-03-22T04:56:04.022Z",
-      "tag": null,
-      "change_description": "Change the year of the copyright to 2027 in the footer of the home page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "a53ac169899645d5159975797275fdc7cb90951f"
-      },
-      "pre_edit_pages": {
-        "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
-      }
-    },
-    {
       "version": 236,
       "timestamp": "2026-03-22T04:57:54.056Z",
       "tag": null,
@@ -845,6 +831,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "aabcf567446cb9cbd86133cfad0ef21969eb9ed5"
+      }
+    },
+    {
+      "version": 285,
+      "timestamp": "2026-03-24T07:03:41.963Z",
+      "tag": null,
+      "change_description": "change the color of the year in the footer on the home page to red. thank you.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "3d2ab431af8437a39ab31017b58377ac7f91b826"
+      },
+      "pre_edit_pages": {
+        "index": "f44f6a93d0786c0bc8eb595bbea0e8540ad9c9e8"
       }
     }
   ]
