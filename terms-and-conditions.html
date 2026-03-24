@@ -335,6 +335,15 @@
       text-align: center;
     }
 
+    /*
+    WHAT THIS DOES: Styles the year (2026) in the footer to display in green colour, making it visually distinct from the rest of the footer text.
+    WHY #00AA00: This is a bright, standard green colour that provides good contrast against the dark background (#002349) and stands out clearly from the light steel blue footer text (#b0c4de).
+    TUNING: Change to #00DD00 for brighter green, #008800 for darker green, or #00FF00 for maximum brightness. Adjust if the green does not provide sufficient contrast or visual emphasis.
+    */
+    .footer .year {
+      color: #00aa00;
+    }
+
     #home, #cv, #team, #terms, #privacy {
       scroll-margin-top: 65px;
     }
@@ -709,7 +718,7 @@
 
     <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
     <div class="footer">
-      © 2026 Delapre Dental Care | All Rights Reserved
+      © <span class="year">2026</span> Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
