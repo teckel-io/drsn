@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 222,
-      "timestamp": "2026-03-20T20:05:36.558Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 221 (\"On the Terms & Conditions page, change all the sub-paragraph numbers (e.g. \"1.1, 1.2, 1.3, ...\" etc.) to bold type-face style.\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 221,
-      "pages": {
-        "terms-and-conditions": "1a8b096b2f2ddd9ca111e6a29e314bfca1925416"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "833941254a79b86ffabfc333741edf48be49678d"
-      }
-    },
-    {
       "version": 223,
       "timestamp": "2026-03-20T20:15:40.837Z",
       "tag": null,
@@ -824,6 +810,20 @@
         "about": null,
         "terms-and-conditions": null,
         "privacy-policy": null
+      }
+    },
+    {
+      "version": 272,
+      "timestamp": "2026-03-24T01:07:18.631Z",
+      "tag": null,
+      "change_description": "Change the color of the year in the footer on the privacy policy page to red",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "privacy-policy": "2117cb6332047e81e998cd2e55f91323b717a2be"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "aabcf567446cb9cbd86133cfad0ef21969eb9ed5"
       }
     }
   ]
