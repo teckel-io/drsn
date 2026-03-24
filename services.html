@@ -359,6 +359,17 @@
     }
 
     /*
+    WHAT THIS DOES: Highlights the year in the footer with bright green colour.
+    WHY bright green (#00ff00): Creates visual contrast and draws attention to
+    the copyright year, making it stand out from the rest of the footer text.
+    TUNING: Change hex value to #00dd00 for slightly darker green, or #00ff66
+    for a more lime-tinted green. Adjust if the colour clashes with background.
+    */
+    .footer-year {
+      color: #00ff00;
+    }
+
+    /*
     =====================================================================
     FIX #2 — SCROLL ANCHOR OFFSET — DESKTOP
     Prevents page sections from disappearing behind the fixed navbar when
@@ -1031,8 +1042,9 @@
     </div>
 
     <!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+    <!-- Footer with copyright year highlighted in bright green. -->
     <div class="footer">
-      © 2026 Delapre Dental Care | All Rights Reserved
+      © <span class="footer-year">2026</span> Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
