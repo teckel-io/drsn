@@ -43,31 +43,6 @@
   },
   "versions": [
     {
-      "version": 243,
-      "timestamp": "2026-03-22T16:40:35.655Z",
-      "tag": null,
-      "change_description": "Created page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "test": "06474f27c3d6784baf7c8348d539d3a1b98a7971",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "test": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 244,
       "timestamp": "2026-03-22T16:42:02.892Z",
       "tag": null,
@@ -824,6 +799,20 @@
       },
       "pre_edit_pages": {
         "services": "52a24a34e06932a08404fec6322cf7081b172449"
+      }
+    },
+    {
+      "version": 293,
+      "timestamp": "2026-03-24T23:26:12.253Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 292 (\"Please change the date um on the bottom of the services page um the year specifically 2026. Change 2026 to 2027 in the footer of the services page. Thank you.\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 292,
+      "pages": {
+        "services": "52a24a34e06932a08404fec6322cf7081b172449"
+      },
+      "pre_edit_pages": {
+        "services": "a901947b4da82e9286d40cf9b8af91603f07ae6d"
       }
     }
   ]
