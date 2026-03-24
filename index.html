@@ -564,6 +564,15 @@
     }
 
     /*
+    WHAT THIS DOES: Styles the year in the footer text to display in red colour.
+    WHY red: User-requested colour change to make the year stand out visually.
+    TUNING: Adjust the hex value #ff0000 if a different shade of red is preferred.
+    */
+    .footer-year {
+      color: #ff0000;
+    }
+
+    /*
     =====================================================================
     FIX #2 — SCROLL ANCHOR OFFSET — DESKTOP (screens 900px and wider)
     Prevents page sections from disappearing behind the fixed navbar when
@@ -1124,9 +1133,9 @@
     </div>
 
     <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
-    <!-- Footer copyright year updated to 2026 per user request -->
+    <!-- Footer copyright section with year styled in red per user request -->
     <div class="footer">
-      © 2026 Delapre Dental Care | All Rights Reserved
+      © <span class="footer-year">2026</span> Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
