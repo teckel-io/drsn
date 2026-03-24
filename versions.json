@@ -43,31 +43,6 @@
   },
   "versions": [
     {
-      "version": 231,
-      "timestamp": "2026-03-21T00:57:43.728Z",
-      "tag": null,
-      "change_description": "Created page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "test": "374f8d500811da37eecfa0f0e3381b9449843733",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "test": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 232,
       "timestamp": "2026-03-21T01:00:41.216Z",
       "tag": null,
@@ -866,6 +841,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "aabcf567446cb9cbd86133cfad0ef21969eb9ed5"
+      }
+    },
+    {
+      "version": 281,
+      "timestamp": "2026-03-24T05:57:00.587Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 280 (\"on the privacy policy page, please change the um year in the footer, which is 2026. um change the font color of that to green. Thank you.\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 280,
+      "pages": {
+        "privacy-policy": "aabcf567446cb9cbd86133cfad0ef21969eb9ed5"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "09422f77f3c8bd40c70dafa812fd0e26bd27a402"
       }
     }
   ]
