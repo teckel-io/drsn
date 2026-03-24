@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 238,
-      "timestamp": "2026-03-22T05:58:58.511Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 237 (\"change the background color of the home page to dark green\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 237,
-      "pages": {
-        "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
-      },
-      "pre_edit_pages": {
-        "index": "9bfa7866ecad93964ff6869cf4e5a9c71480feff"
-      }
-    },
-    {
       "version": 239,
       "timestamp": "2026-03-22T06:04:31.105Z",
       "tag": null,
@@ -845,6 +831,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "26c328e925967d22867d98592fb921d23c28601b"
+      }
+    },
+    {
+      "version": 288,
+      "timestamp": "2026-03-24T22:50:27.405Z",
+      "tag": null,
+      "change_description": "Rolled back to version 286 — Rolled back to the state before version 285 (\"change the color of the year in the footer on the home page to red. thank you.\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 286,
+      "pages": {
+        "index": "f44f6a93d0786c0bc8eb595bbea0e8540ad9c9e8"
+      },
+      "pre_edit_pages": {
+        "index": "d770bb7d682f6d01f846b7d96dc5fce5533d499b"
       }
     }
   ]
