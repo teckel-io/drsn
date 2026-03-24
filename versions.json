@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 225,
-      "timestamp": "2026-03-20T20:52:40.711Z",
-      "tag": null,
-      "change_description": "On the privacy  policy page, change  \"Last updated: March 2026\" to \"Last updated: February 2026\"",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "230c5bbe2039613c74b7b4c05ec50ffb4a17ce41"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "b0f367c56d9a246e72cddfc979baef8bd6a593f4"
-      }
-    },
-    {
       "version": 226,
       "timestamp": "2026-03-20T20:59:09.771Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "services": "52a24a34e06932a08404fec6322cf7081b172449"
+      }
+    },
+    {
+      "version": 275,
+      "timestamp": "2026-03-24T03:55:06.161Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 274 (\"in the footer on the services page please change the font color of the year (2026) to bright green\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 274,
+      "pages": {
+        "services": "52a24a34e06932a08404fec6322cf7081b172449"
+      },
+      "pre_edit_pages": {
+        "services": "a35422f42feb46546958faf48e112f65281392e7"
       }
     }
   ]
