@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "test"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Test",
+        "href": "test.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 226,
-      "timestamp": "2026-03-20T20:59:09.771Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 225 (\"On the privacy  policy page, change  \"Last updated: March 2026\" to \"Last updated: February 2026\"\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 225,
-      "pages": {
-        "privacy-policy": "b0f367c56d9a246e72cddfc979baef8bd6a593f4"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "230c5bbe2039613c74b7b4c05ec50ffb4a17ce41"
-      }
-    },
     {
       "version": 227,
       "timestamp": "2026-03-20T23:05:23.252Z",
@@ -824,6 +815,31 @@
       },
       "pre_edit_pages": {
         "services": "a35422f42feb46546958faf48e112f65281392e7"
+      }
+    },
+    {
+      "version": 276,
+      "timestamp": "2026-03-24T03:58:15.863Z",
+      "tag": null,
+      "change_description": "Created page: Test (test.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test": "75a8cebbb0df96d4afc181f424cdf78dae06ddb1",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
