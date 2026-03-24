@@ -43,30 +43,6 @@
   },
   "versions": [
     {
-      "version": 232,
-      "timestamp": "2026-03-21T01:00:41.216Z",
-      "tag": null,
-      "change_description": "Deleted page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "test": "374f8d500811da37eecfa0f0e3381b9449843733",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 233,
       "timestamp": "2026-03-21T01:27:09.748Z",
       "tag": null,
@@ -855,6 +831,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "09422f77f3c8bd40c70dafa812fd0e26bd27a402"
+      }
+    },
+    {
+      "version": 282,
+      "timestamp": "2026-03-24T06:00:07.909Z",
+      "tag": null,
+      "change_description": "On the terms and conditions page, please change the color of the year in the footer of the page to green. Thank you.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "c1ac3943cccf853e2bd8a19665e391ca64e984a2"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
       }
     }
   ]
