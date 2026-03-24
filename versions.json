@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 224,
-      "timestamp": "2026-03-20T20:18:07.512Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 223 (\"On the Terms & Conditions page, change the font style of ONLY the sub-paragraph NUMBERS (e.g. \"1.1, 1.2, 1.3, ...\" etc.) to bold.\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 223,
-      "pages": {
-        "terms-and-conditions": "1a8b096b2f2ddd9ca111e6a29e314bfca1925416"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "846ab57d10d2c3ec68400dec59755f67a9faf886"
-      }
-    },
-    {
       "version": 225,
       "timestamp": "2026-03-20T20:52:40.711Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "2117cb6332047e81e998cd2e55f91323b717a2be"
+      }
+    },
+    {
+      "version": 274,
+      "timestamp": "2026-03-24T03:53:48.422Z",
+      "tag": null,
+      "change_description": "in the footer on the services page please change the font color of the year (2026) to bright green",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "a35422f42feb46546958faf48e112f65281392e7"
+      },
+      "pre_edit_pages": {
+        "services": "52a24a34e06932a08404fec6322cf7081b172449"
       }
     }
   ]
