@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 233,
-      "timestamp": "2026-03-21T01:27:09.748Z",
-      "tag": null,
-      "change_description": "edit the about page, add a sentence saying we accept NHS patients",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "843ac06392b6c7bd8d56fa6cd9e9f01b38a86bc8"
-      },
-      "pre_edit_pages": {
-        "about": "000f8e7521107afc4a82564d3230ed3e0f0636de"
-      }
-    },
-    {
       "version": 234,
       "timestamp": "2026-03-21T01:30:55.832Z",
       "tag": null,
@@ -845,6 +831,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
+      }
+    },
+    {
+      "version": 283,
+      "timestamp": "2026-03-24T06:01:56.364Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 282 (\"On the terms and conditions page, please change the color of the year in the footer of the page to green. Thank you.\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 282,
+      "pages": {
+        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "c1ac3943cccf853e2bd8a19665e391ca64e984a2"
       }
     }
   ]
