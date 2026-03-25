@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 247,
-      "timestamp": "2026-03-22T17:32:40.085Z",
-      "tag": null,
-      "change_description": "On the About Us page  change the words 'She supports' to ' He supports'.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "40348268a8b7cd3d79230ffa5f839512eac34388"
-      },
-      "pre_edit_pages": {
-        "about": "000f8e7521107afc4a82564d3230ed3e0f0636de"
-      }
-    },
-    {
       "version": 248,
       "timestamp": "2026-03-22T17:38:03.137Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
+      }
+    },
+    {
+      "version": 297,
+      "timestamp": "2026-03-25T05:52:01.829Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 296 (\"in the footer of the terms & conditions page, change the year to 2027 and change the font color of 2027 to red\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 296,
+      "pages": {
+        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "7706f65eeeb43ac22421004a4aae5b6268d735a3"
       }
     }
   ]
