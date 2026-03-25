@@ -564,6 +564,15 @@
     #terms .section-content p[style*="margin-top: 12px"] {
       margin-left: 20px;
     }
+
+    /*
+    WHAT THIS DOES: Styles the year "2027" in the footer to display in red colour, drawing visual attention to the copyright year update.
+    WHY RED (#FF0000): Red is a high-contrast colour that stands out against the light steel blue footer text, making the year visually distinct and emphasising the copyright date change.
+    TUNING: Change the hex colour value to adjust the shade of red. For example, use #CC0000 for a darker red or #FF6666 for a lighter red. Adjust if the colour needs to match other design elements.
+    */
+    .footer-year {
+      color: #ff0000;
+    }
   </style>
 </head>
 <body>
@@ -709,7 +718,7 @@
 
     <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
     <div class="footer">
-      © 2026 Delapre Dental Care | All Rights Reserved
+      © <span class="footer-year">2027</span> Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
