@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 246,
-      "timestamp": "2026-03-22T16:58:22.770Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 245 (\"change the copyright year to 2030 in the  footer on the home page\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 245,
-      "pages": {
-        "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
-      },
-      "pre_edit_pages": {
-        "index": "a28ec22507d5b36116768c4661b193bb2d8fd2d6"
-      }
-    },
-    {
       "version": 247,
       "timestamp": "2026-03-22T17:32:40.085Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "about": "ce493e037b780789de20d80cd67b9d31a4836b69"
+      }
+    },
+    {
+      "version": 296,
+      "timestamp": "2026-03-25T05:50:44.236Z",
+      "tag": null,
+      "change_description": "in the footer of the terms & conditions page, change the year to 2027 and change the font color of 2027 to red",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "7706f65eeeb43ac22421004a4aae5b6268d735a3"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
       }
     }
   ]
