@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 248,
-      "timestamp": "2026-03-22T17:38:03.137Z",
-      "tag": null,
-      "change_description": "On the services page change '26.80' to '27.40'",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "19a7e883b4a2ea3c59dd52255f917c74c2f6b79d"
-      },
-      "pre_edit_pages": {
-        "services": "31ed9c6c4175a6bf9449143864f51061699d393a"
-      }
-    },
-    {
       "version": 249,
       "timestamp": "2026-03-22T18:57:08.029Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "7706f65eeeb43ac22421004a4aae5b6268d735a3"
+      }
+    },
+    {
+      "version": 298,
+      "timestamp": "2026-03-25T05:55:07.137Z",
+      "tag": null,
+      "change_description": "On the services page, please change the year in the footer to 2027.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "services": "7408e4b44726fb1106139846abd92bbd16feb1c5"
+      },
+      "pre_edit_pages": {
+        "services": "52a24a34e06932a08404fec6322cf7081b172449"
       }
     }
   ]
