@@ -43,30 +43,6 @@
   },
   "versions": [
     {
-      "version": 244,
-      "timestamp": "2026-03-22T16:42:02.892Z",
-      "tag": null,
-      "change_description": "Deleted page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "test": "06474f27c3d6784baf7c8348d539d3a1b98a7971",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 245,
       "timestamp": "2026-03-22T16:56:40.441Z",
       "tag": null,
@@ -813,6 +789,20 @@
       },
       "pre_edit_pages": {
         "services": "a901947b4da82e9286d40cf9b8af91603f07ae6d"
+      }
+    },
+    {
+      "version": 294,
+      "timestamp": "2026-03-25T00:25:55.041Z",
+      "tag": null,
+      "change_description": "On the about us page, please change the font color of the year in the footer to green.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "ce493e037b780789de20d80cd67b9d31a4836b69"
+      },
+      "pre_edit_pages": {
+        "about": "2546ef29a5c7a5aaa47d55a41af4d83e9cb0c5cd"
       }
     }
   ]
