@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "test-page"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Test Page",
+        "href": "test-page.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 250,
-      "timestamp": "2026-03-22T19:10:44.170Z",
-      "tag": null,
-      "change_description": "On the services page change'73.50' to '75.30'",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "efab401c7486617ddbe8adab760a2457df4ca099"
-      },
-      "pre_edit_pages": {
-        "services": "19a7e883b4a2ea3c59dd52255f917c74c2f6b79d"
-      }
-    },
     {
       "version": 251,
       "timestamp": "2026-03-22T19:13:16.811Z",
@@ -803,6 +794,31 @@
       },
       "pre_edit_pages": {
         "services": "7408e4b44726fb1106139846abd92bbd16feb1c5"
+      }
+    },
+    {
+      "version": 300,
+      "timestamp": "2026-03-25T06:09:06.291Z",
+      "tag": null,
+      "change_description": "Created page: Test Page (test-page.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "test-page": "6f093d03d45120a2fcc831cdc5d8ce18a81b023d",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "test-page": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
