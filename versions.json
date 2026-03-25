@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 249,
-      "timestamp": "2026-03-22T18:57:08.029Z",
-      "tag": null,
-      "change_description": "On the about us page change 'two decades' to 'seven decades'.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "9d402e410aee4feb1c78b0330daf63247a95b974"
-      },
-      "pre_edit_pages": {
-        "about": "40348268a8b7cd3d79230ffa5f839512eac34388"
-      }
-    },
-    {
       "version": 250,
       "timestamp": "2026-03-22T19:10:44.170Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "services": "52a24a34e06932a08404fec6322cf7081b172449"
+      }
+    },
+    {
+      "version": 299,
+      "timestamp": "2026-03-25T05:57:55.372Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 298 (\"On the services page, please change the year in the footer to 2027.\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 298,
+      "pages": {
+        "services": "52a24a34e06932a08404fec6322cf7081b172449"
+      },
+      "pre_edit_pages": {
+        "services": "7408e4b44726fb1106139846abd92bbd16feb1c5"
       }
     }
   ]
