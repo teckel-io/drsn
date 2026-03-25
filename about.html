@@ -703,6 +703,29 @@
 
     /*
     =====================================================================
+    FOOTER YEAR COLOUR
+    Changes the colour of the year (2026) in the footer to green.
+
+    WHAT THIS DOES: Applies a green colour to the year text whilst keeping
+    the rest of the footer text in the standard steel-blue colour. This
+    provides visual distinction for the copyright year.
+
+    WHY color: #00cc00: A bright, readable green that stands out clearly
+    against the dark navy background whilst remaining professional and
+    accessible.
+
+    TUNING: Adjust the hex colour value to a different shade of green if
+    desired. For example, #00ff00 for a brighter green, or #00aa00 for a
+    darker green. Ensure the colour maintains sufficient contrast against
+    the #002349 background for accessibility.
+    =====================================================================
+    */
+    .footer-year {
+      color: #00cc00;
+    }
+
+    /*
+    =====================================================================
     FIX #2 — SCROLL ANCHOR OFFSET — DESKTOP (screens 900px and wider)
     Prevents page sections from disappearing behind the fixed navbar when
     a user clicks one of the four navigation links (Home, CV, Terms, Privacy).
@@ -1629,7 +1652,7 @@
 
     <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
     <div class="footer">
-      © 2026 Delapre Dental Care | All Rights Reserved
+      © <span class="footer-year">2026</span> Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
