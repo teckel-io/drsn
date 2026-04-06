@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 257,
-      "timestamp": "2026-03-22T19:55:28.891Z",
-      "tag": null,
-      "change_description": "On the services page please delete this information:  Calm, Anxiety-Friendly Environment\nWe specialise in helping nervous patients feel at ease. Take your time, ask questions, and receive care at a pace that suits you. We do have IV sedation available.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "f02121cf11e0a2fb33173b86640c0f137011bd87"
-      },
-      "pre_edit_pages": {
-        "services": "e743b8a67701fe2d235467cd8b4900ea7942a5bb"
-      }
-    },
-    {
       "version": 258,
       "timestamp": "2026-03-22T20:01:05.747Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "c185c10d9f4cb3e6be48286fe444cd880467ce40"
+      }
+    },
+    {
+      "version": 307,
+      "timestamp": "2026-04-06T03:06:25.497Z",
+      "tag": null,
+      "change_description": "On the privacy policy page change \"2026\" to \"2025\" in the footer",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "privacy-policy": "1f38b5e2d33e3f51b8b001daae56440013ca27bd"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "b4792594e7119aff82dfb1f495222b686788ad91"
       }
     }
   ]
