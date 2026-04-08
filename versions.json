@@ -815,7 +815,7 @@
     {
       "version": 310,
       "timestamp": "2026-04-08T16:48:11.529Z",
-      "tag": null,
+      "tag": "LATEST",
       "change_description": "On the about page, in the SEO: OPEN GRAPH TAGS comment block in the head section, replace the phrase \"the <title> tag\" with \"the page title element\". This phrase appears inside an HTML comment, on the line that begins with og:title. Do not change anything else on the page. The actual <title> tag higher up in the head must not be touched — only the text inside the comment block.",
       "is_rollback": false,
       "rolled_back_to_version": null,
