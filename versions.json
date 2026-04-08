@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 263,
-      "timestamp": "2026-03-22T20:17:25.428Z",
-      "tag": null,
-      "change_description": "On the services page replace  'scale and polish to 'PMPR'",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "52a24a34e06932a08404fec6322cf7081b172449"
-      },
-      "pre_edit_pages": {
-        "services": "600070aa42a5ea53216a641b746f1a6f77ab8b4c"
-      }
-    },
-    {
       "version": 264,
       "timestamp": "2026-03-23T06:13:09.683Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "1f38b5e2d33e3f51b8b001daae56440013ca27bd"
+      }
+    },
+    {
+      "version": 313,
+      "timestamp": "2026-04-08T22:17:57.298Z",
+      "tag": null,
+      "change_description": "Change the year from 2026 to 2025 in the footer of the privacy and policy page.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "privacy-policy": "1662585e256c116bbfe78814a530df6b997e0444"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "b4792594e7119aff82dfb1f495222b686788ad91"
       }
     }
   ]
