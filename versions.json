@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 259,
-      "timestamp": "2026-03-22T20:02:49.500Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 258 (\"On the services pages remove free consultation  available\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 258,
-      "pages": {
-        "services": "f02121cf11e0a2fb33173b86640c0f137011bd87"
-      },
-      "pre_edit_pages": {
-        "services": "a0b3d985e5d0f64211a30018f2449dcb81ca6be7"
-      }
-    },
-    {
       "version": 260,
       "timestamp": "2026-03-22T20:06:01.609Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "1f38b5e2d33e3f51b8b001daae56440013ca27bd"
+      }
+    },
+    {
+      "version": 309,
+      "timestamp": "2026-04-08T16:10:54.248Z",
+      "tag": null,
+      "change_description": "On the home page, in the SEO: OPEN GRAPH TAGS comment block in the head section, replace the phrase \"the <title> tag\" with \"the page title element\". This phrase appears inside an HTML comment, on the line that begins with og:title. Do not change anything else on the page. The actual <title> tag higher up in the head must not be touched — only the text inside the comment block.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "385c20a78760ca14c17e20b9b3157e228c39da54"
+      },
+      "pre_edit_pages": {
+        "index": "dfa4941105a04fcee0313eab3dfe039f97c8df47"
       }
     }
   ]
