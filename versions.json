@@ -43,30 +43,6 @@
   },
   "versions": [
     {
-      "version": 271,
-      "timestamp": "2026-03-23T23:08:26.312Z",
-      "tag": "Latest",
-      "change_description": "Deleted page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "test": "7c5c34cacfe1c21390b44fddd3b291fff3e3afd0",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 272,
       "timestamp": "2026-03-24T01:07:18.631Z",
       "tag": null,
@@ -813,6 +789,20 @@
       },
       "pre_edit_pages": {
         "index": "385c20a78760ca14c17e20b9b3157e228c39da54"
+      }
+    },
+    {
+      "version": 321,
+      "timestamp": "2026-04-10T06:38:31.781Z",
+      "tag": null,
+      "change_description": "On the home page, in the head section, change the canonical URL to \"https://delapredental.com/\" and change the og:url content to \"https://delapredental.com/\". Also, in the JSON-LD structured data block, change the \"url\" field to \"https://delapredental.com/\". Do not change anything else on the page.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "71a24207c599cf43ac65edae3a4859564060c5f0"
+      },
+      "pre_edit_pages": {
+        "index": "1f646eed8726803244ece65ff3abcdd8460135f8"
       }
     }
   ]
