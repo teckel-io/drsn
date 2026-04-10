@@ -43,31 +43,6 @@
   },
   "versions": [
     {
-      "version": 270,
-      "timestamp": "2026-03-23T23:06:03.810Z",
-      "tag": null,
-      "change_description": "Created page: Test (test.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "test": "7c5c34cacfe1c21390b44fddd3b291fff3e3afd0",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "test": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 271,
       "timestamp": "2026-03-23T23:08:26.312Z",
       "tag": "Latest",
@@ -824,6 +799,20 @@
       },
       "pre_edit_pages": {
         "services": "7b8f008cfccdafadc80aefda873d9cf6d3495368"
+      }
+    },
+    {
+      "version": 320,
+      "timestamp": "2026-04-10T06:21:08.754Z",
+      "tag": null,
+      "change_description": "On the home page, add verbose plain-English HTML comments throughout the body section explaining what each section, div, and major element does. The comments should be written for a non-technical reader who needs to understand the page structure. Do not change any visible content, styling, or functionality. Do not alter or remove existing comments — only add new ones where they are missing.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "index": "1f646eed8726803244ece65ff3abcdd8460135f8"
+      },
+      "pre_edit_pages": {
+        "index": "385c20a78760ca14c17e20b9b3157e228c39da54"
       }
     }
   ]
