@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 274,
-      "timestamp": "2026-03-24T03:53:48.422Z",
-      "tag": null,
-      "change_description": "in the footer on the services page please change the font color of the year (2026) to bright green",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "a35422f42feb46546958faf48e112f65281392e7"
-      },
-      "pre_edit_pages": {
-        "services": "52a24a34e06932a08404fec6322cf7081b172449"
-      }
-    },
-    {
       "version": 275,
       "timestamp": "2026-03-24T03:55:06.161Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "about": "a6ea41eea4d556c7c18dca655ad3351dd0c76c75"
+      }
+    },
+    {
+      "version": 324,
+      "timestamp": "2026-04-10T06:47:48.134Z",
+      "tag": null,
+      "change_description": "On the terms and conditions page, in the head section, change the canonical URL to \"https://delapredental.com/terms-and-conditions.html\" and change the og:url content to \"https://delapredental.com/terms-and-conditions.html\". Do not change anything else on the page.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "6c512c106232bb7114d2acd89ff94d65ee5591a4"
       }
     }
   ]
