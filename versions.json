@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 265,
-      "timestamp": "2026-03-23T06:18:29.115Z",
-      "tag": null,
-      "change_description": "Add this on Home page:The Practice operates a zero tolerance policy towards abuse, violence, and aggression, in accordance with NHS national policy. All staff treating patients have the right to work in an environment free from any threat or fear of abuse, violence, or any form of aggression.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "f44f6a93d0786c0bc8eb595bbea0e8540ad9c9e8"
-      },
-      "pre_edit_pages": {
-        "index": "1c3696e75b2b0a7746578fa15ee4874a7008382e"
-      }
-    },
-    {
       "version": 266,
       "timestamp": "2026-03-23T18:21:24.305Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "1662585e256c116bbfe78814a530df6b997e0444"
+      }
+    },
+    {
+      "version": 315,
+      "timestamp": "2026-04-10T05:07:37.296Z",
+      "tag": null,
+      "change_description": "On the about page, change the canonical URL from \"https://teckel-io.github.io/drsnabout.html\" to \"https://teckel-io.github.io/drsn/about.html\" and change the og:url from \"https://teckel-io.github.io/drsnabout.html\" to \"https://teckel-io.github.io/drsn/about.html\". Do not change anything else.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "5ddf1ffd9c85f47380dec8c61d1540077b733d9b"
+      },
+      "pre_edit_pages": {
+        "about": "093147dd9e6c1dd48759b9fa12b04303498e572d"
       }
     }
   ]
