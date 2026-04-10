@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 267,
-      "timestamp": "2026-03-23T18:33:23.100Z",
-      "tag": null,
-      "change_description": "on privacy policy page remove adult patient records",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "aabcf567446cb9cbd86133cfad0ef21969eb9ed5"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "a05dfcf44b712d4c3bf6f55a4bc3f9df0bd393f7"
-      }
-    },
-    {
       "version": 268,
       "timestamp": "2026-03-23T22:57:13.906Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "b4792594e7119aff82dfb1f495222b686788ad91"
+      }
+    },
+    {
+      "version": 317,
+      "timestamp": "2026-04-10T05:58:19.995Z",
+      "tag": null,
+      "change_description": "On the terms & conditions page, add verbose plain-English HTML comments throughout the body section explaining what each section, div, and major element does. The comments should be written for a non-technical reader who needs to understand the page structure. Do not change any visible content, styling, or functionality. Do not alter or remove existing comments — only add new ones where they are missing.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "terms-and-conditions": "6c512c106232bb7114d2acd89ff94d65ee5591a4"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
       }
     }
   ]
