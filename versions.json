@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 266,
-      "timestamp": "2026-03-23T18:21:24.305Z",
-      "tag": null,
-      "change_description": "On the page, privacy and policy, remove ' 6.1'",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "a05dfcf44b712d4c3bf6f55a4bc3f9df0bd393f7"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "b357c65d1e78ec8020b80cd063aa9128a38d3e0c"
-      }
-    },
-    {
       "version": 267,
       "timestamp": "2026-03-23T18:33:23.100Z",
       "tag": null,
@@ -824,6 +810,20 @@
       },
       "pre_edit_pages": {
         "about": "093147dd9e6c1dd48759b9fa12b04303498e572d"
+      }
+    },
+    {
+      "version": 316,
+      "timestamp": "2026-04-10T05:43:02.226Z",
+      "tag": null,
+      "change_description": "On the privacy policy page, add verbose plain-English HTML comments throughout the body section explaining what each section, div, and major element does. The comments should be written for a non-technical reader who needs to understand the page structure. Do not change any visible content, styling, or functionality. Do not alter or remove existing comments — only add new ones where they are missing.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "privacy-policy": "0e4e0663c5b4513c3dbbfb4374cd94b0badbaea1"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "b4792594e7119aff82dfb1f495222b686788ad91"
       }
     }
   ]
