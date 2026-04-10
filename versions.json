@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 273,
-      "timestamp": "2026-03-24T01:08:10.629Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 272 (\"Change the color of the year in the footer on the privacy policy page to red\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 272,
-      "pages": {
-        "privacy-policy": "aabcf567446cb9cbd86133cfad0ef21969eb9ed5"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "2117cb6332047e81e998cd2e55f91323b717a2be"
-      }
-    },
-    {
       "version": 274,
       "timestamp": "2026-03-24T03:53:48.422Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "services": "8d4eea3ba178868755f9ba8765179dce9539dffd"
+      }
+    },
+    {
+      "version": 323,
+      "timestamp": "2026-04-10T06:45:12.099Z",
+      "tag": null,
+      "change_description": "On the about page, in the head section, change the canonical URL to \"https://delapredental.com/about.html\" and change the og:url content to \"https://delapredental.com/about.html\". Do not change anything else on the page.",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "ef2ad2bc4d3eb495c9f3efdd5faf98ae98a57952"
+      },
+      "pre_edit_pages": {
+        "about": "a6ea41eea4d556c7c18dca655ad3351dd0c76c75"
       }
     }
   ]
