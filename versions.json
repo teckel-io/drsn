@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 282,
-      "timestamp": "2026-03-24T06:00:07.909Z",
-      "tag": null,
-      "change_description": "On the terms and conditions page, please change the color of the year in the footer of the page to green. Thank you.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "c1ac3943cccf853e2bd8a19665e391ca64e984a2"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
-      }
-    },
-    {
       "version": 283,
       "timestamp": "2026-03-24T06:01:56.364Z",
       "tag": null,
@@ -761,6 +747,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
+      }
+    },
+    {
+      "version": 332,
+      "timestamp": "2026-04-15T03:41:19.105Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 331 (\"on the privacy  policy page please change the year from 2026 to 2025 in the footer\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 331,
+      "pages": {
+        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "c8979284d4dd13b4d2936a904f354506ecac772f"
       }
     }
   ]
