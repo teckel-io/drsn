@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "sitemap"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,28 +38,10 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "Sitemap",
-        "href": "sitemap.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 284,
-      "timestamp": "2026-03-24T06:16:22.222Z",
-      "tag": null,
-      "change_description": "on privacy policy page remove'child records'.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "26c328e925967d22867d98592fb921d23c28601b"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "aabcf567446cb9cbd86133cfad0ef21969eb9ed5"
-      }
-    },
     {
       "version": 285,
       "timestamp": "2026-03-24T07:03:41.963Z",
@@ -772,6 +753,30 @@
       },
       "pre_edit_pages": {
         "sitemap": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 334,
+      "timestamp": "2026-04-15T05:56:32.983Z",
+      "tag": null,
+      "change_description": "Deleted page: Sitemap (sitemap.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "sitemap": "be1bff9726258bb565306b40bae178161f55fc80",
         "index": null,
         "services": null,
         "about": null,
