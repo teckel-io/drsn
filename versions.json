@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "sitemap"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Sitemap",
+        "href": "sitemap.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 283,
-      "timestamp": "2026-03-24T06:01:56.364Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 282 (\"On the terms and conditions page, please change the color of the year in the footer of the page to green. Thank you.\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 282,
-      "pages": {
-        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "c1ac3943cccf853e2bd8a19665e391ca64e984a2"
-      }
-    },
     {
       "version": 284,
       "timestamp": "2026-03-24T06:16:22.222Z",
@@ -761,6 +752,31 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "c8979284d4dd13b4d2936a904f354506ecac772f"
+      }
+    },
+    {
+      "version": 333,
+      "timestamp": "2026-04-15T05:53:27.380Z",
+      "tag": null,
+      "change_description": "Created page: Sitemap (sitemap.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "sitemap": "be1bff9726258bb565306b40bae178161f55fc80",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "sitemap": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
