@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 291,
-      "timestamp": "2026-03-24T23:16:01.760Z",
-      "tag": null,
-      "change_description": "change the year 2027 back to 2026 in the footer on the privacy policy page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "b4792594e7119aff82dfb1f495222b686788ad91"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "c185c10d9f4cb3e6be48286fe444cd880467ce40"
-      }
-    },
-    {
       "version": 292,
       "timestamp": "2026-03-24T23:25:04.511Z",
       "tag": null,
@@ -782,6 +768,20 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "c8979284d4dd13b4d2936a904f354506ecac772f"
+      }
+    },
+    {
+      "version": 341,
+      "timestamp": "2026-04-17T23:52:32.986Z",
+      "tag": null,
+      "change_description": "please change the year from 2026 to 2025 in the footer on the  about page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "12e0ad278b8f72e4b619b256f8004e66f1b506df"
+      },
+      "pre_edit_pages": {
+        "about": "ef2ad2bc4d3eb495c9f3efdd5faf98ae98a57952"
       }
     }
   ]
