@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 296,
-      "timestamp": "2026-03-25T05:50:44.236Z",
-      "tag": null,
-      "change_description": "in the footer of the terms & conditions page, change the year to 2027 and change the font color of 2027 to red",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "7706f65eeeb43ac22421004a4aae5b6268d735a3"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
-      }
-    },
-    {
       "version": 297,
       "timestamp": "2026-03-25T05:52:01.829Z",
       "tag": null,
@@ -803,6 +789,20 @@
       },
       "pre_edit_pages": {
         "services": "e49592cdbed0788227d2a29dd868a1755eac11d8"
+      }
+    },
+    {
+      "version": 346,
+      "timestamp": "2026-04-18T00:58:34.391Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 345 (\"change the year in the footer of the  services page from 2026 to  2027\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 345,
+      "pages": {
+        "services": "e49592cdbed0788227d2a29dd868a1755eac11d8"
+      },
+      "pre_edit_pages": {
+        "services": "13393c7b41fc93762652144e5305a624feb18110"
       }
     }
   ]
