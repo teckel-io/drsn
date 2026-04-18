@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 299,
-      "timestamp": "2026-03-25T05:57:55.372Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 298 (\"On the services page, please change the year in the footer to 2027.\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 298,
-      "pages": {
-        "services": "52a24a34e06932a08404fec6322cf7081b172449"
-      },
-      "pre_edit_pages": {
-        "services": "7408e4b44726fb1106139846abd92bbd16feb1c5"
-      }
-    },
-    {
       "version": 300,
       "timestamp": "2026-03-25T06:09:06.291Z",
       "tag": null,
@@ -824,6 +810,20 @@
         "about": null,
         "terms-and-conditions": null,
         "privacy-policy": null
+      }
+    },
+    {
+      "version": 349,
+      "timestamp": "2026-04-18T04:57:24.562Z",
+      "tag": null,
+      "change_description": "On the page About us replace 'Diploma in Fixed' to 'Masters in Fixed'",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "pages": {
+        "about": "1eea4e3a9554d33e12ac49d09bb6348961109488"
+      },
+      "pre_edit_pages": {
+        "about": "ef2ad2bc4d3eb495c9f3efdd5faf98ae98a57952"
       }
     }
   ]
