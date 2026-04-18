@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "oral-surgery"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Oral Surgery",
+        "href": "oral-surgery.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 293,
-      "timestamp": "2026-03-24T23:26:12.253Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 292 (\"Please change the date um on the bottom of the services page um the year specifically 2026. Change 2026 to 2027 in the footer of the services page. Thank you.\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 292,
-      "pages": {
-        "services": "52a24a34e06932a08404fec6322cf7081b172449"
-      },
-      "pre_edit_pages": {
-        "services": "a901947b4da82e9286d40cf9b8af91603f07ae6d"
-      }
-    },
     {
       "version": 294,
       "timestamp": "2026-03-25T00:25:55.041Z",
@@ -782,6 +773,31 @@
       },
       "pre_edit_pages": {
         "about": "12e0ad278b8f72e4b619b256f8004e66f1b506df"
+      }
+    },
+    {
+      "version": 343,
+      "timestamp": "2026-04-18T00:10:49.750Z",
+      "tag": null,
+      "change_description": "Created page: Oral Surgery (oral-surgery.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "oral-surgery": "8b791aa720d9aefb0f5c86722c3b9d7f266f1d87",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "oral-surgery": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
