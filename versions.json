@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "oral-surgery"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,28 +38,10 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "Oral Surgery",
-        "href": "oral-surgery.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 294,
-      "timestamp": "2026-03-25T00:25:55.041Z",
-      "tag": null,
-      "change_description": "On the about us page, please change the font color of the year in the footer to green.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "ce493e037b780789de20d80cd67b9d31a4836b69"
-      },
-      "pre_edit_pages": {
-        "about": "2546ef29a5c7a5aaa47d55a41af4d83e9cb0c5cd"
-      }
-    },
     {
       "version": 295,
       "timestamp": "2026-03-25T01:16:34.060Z",
@@ -793,6 +774,30 @@
       },
       "pre_edit_pages": {
         "oral-surgery": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 344,
+      "timestamp": "2026-04-18T00:15:39.443Z",
+      "tag": null,
+      "change_description": "Deleted page: Oral Surgery (oral-surgery.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "oral-surgery": "8b791aa720d9aefb0f5c86722c3b9d7f266f1d87",
         "index": null,
         "services": null,
         "about": null,
