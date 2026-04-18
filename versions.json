@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "dental-implants"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Dental Implants",
+        "href": "dental-implants.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 297,
-      "timestamp": "2026-03-25T05:52:01.829Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 296 (\"in the footer of the terms & conditions page, change the year to 2027 and change the font color of 2027 to red\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 296,
-      "pages": {
-        "terms-and-conditions": "803644537593ed89a15079e86dfd708829879375"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "7706f65eeeb43ac22421004a4aae5b6268d735a3"
-      }
-    },
     {
       "version": 298,
       "timestamp": "2026-03-25T05:55:07.137Z",
@@ -803,6 +794,31 @@
       },
       "pre_edit_pages": {
         "services": "13393c7b41fc93762652144e5305a624feb18110"
+      }
+    },
+    {
+      "version": 347,
+      "timestamp": "2026-04-18T01:06:43.887Z",
+      "tag": null,
+      "change_description": "Created page: Dental Implants (dental-implants.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "dental-implants": "ed470112f86970dd0f0f001856a8bb55d607bb95",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "dental-implants": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
