@@ -38,24 +38,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Sitemap",
+        "href": "sitemap.xml"
       }
     ]
   },
   "versions": [
-    {
-      "version": 302,
-      "timestamp": "2026-04-01T04:45:46.840Z",
-      "tag": null,
-      "change_description": "On services page repalce 27.40 to 27.90",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "e5dcf9dfc465c8ad75c5314aa324d759e075d8c2"
-      },
-      "pre_edit_pages": {
-        "services": "52a24a34e06932a08404fec6322cf7081b172449"
-      }
-    },
     {
       "version": 303,
       "timestamp": "2026-04-01T04:51:44.125Z",
@@ -803,6 +793,34 @@
       },
       "pre_edit_pages": {
         "services": "e49592cdbed0788227d2a29dd868a1755eac11d8"
+      }
+    },
+    {
+      "version": 352,
+      "timestamp": "2026-04-19T05:18:14.621Z",
+      "tag": null,
+      "change_description": "Added nav item: \"Sitemap\" → sitemap.xml",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "add_nav_item",
+      "nav_item": {
+        "label": "Sitemap",
+        "href": "sitemap.xml",
+        "insertion_index": 5
+      },
+      "pages": {
+        "index": "49804ab24167ef04637253a74519c4752a6bf57f",
+        "services": "462669d25d84ceddf427ca66af7ab16fb35740fa",
+        "about": "bd8f0e52cbeda060c4d8edd4a1373fb0eb8a674b",
+        "terms-and-conditions": "9fc752a4c4952488fbca0a3177ca6d613100c34f",
+        "privacy-policy": "2977e0bf2c79f11ae149f9ae7a8f22ed26b82d9c"
+      },
+      "pre_edit_pages": {
+        "index": "ced153104ffe36edcee4606f02ddd9755d94f06c",
+        "services": "307c78c6dae159aade88009fbcb1810aa37aa5f9",
+        "about": "4de8678abe7157575c607e2aa810f8601f6ae786",
+        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb",
+        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
       }
     }
   ]
