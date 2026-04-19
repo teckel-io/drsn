@@ -38,28 +38,10 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "Sitemap",
-        "href": "sitemap.xml"
       }
     ]
   },
   "versions": [
-    {
-      "version": 303,
-      "timestamp": "2026-04-01T04:51:44.125Z",
-      "tag": null,
-      "change_description": "On services page replace 75.30 to 76.70 and 326.70 to332.10",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "7b8f008cfccdafadc80aefda873d9cf6d3495368"
-      },
-      "pre_edit_pages": {
-        "services": "e5dcf9dfc465c8ad75c5314aa324d759e075d8c2"
-      }
-    },
     {
       "version": 304,
       "timestamp": "2026-04-01T04:59:32.590Z",
@@ -821,6 +803,34 @@
         "about": "4de8678abe7157575c607e2aa810f8601f6ae786",
         "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb",
         "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
+      }
+    },
+    {
+      "version": 353,
+      "timestamp": "2026-04-19T05:20:37.692Z",
+      "tag": null,
+      "change_description": "Undo v352: removed nav item \"Sitemap\" → sitemap.xml",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "remove_nav_item",
+      "nav_item": {
+        "label": "Sitemap",
+        "href": "sitemap.xml",
+        "insertion_index": 5
+      },
+      "pages": {
+        "index": "ced153104ffe36edcee4606f02ddd9755d94f06c",
+        "services": "307c78c6dae159aade88009fbcb1810aa37aa5f9",
+        "about": "4de8678abe7157575c607e2aa810f8601f6ae786",
+        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb",
+        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
+      },
+      "pre_edit_pages": {
+        "index": "49804ab24167ef04637253a74519c4752a6bf57f",
+        "services": "462669d25d84ceddf427ca66af7ab16fb35740fa",
+        "about": "bd8f0e52cbeda060c4d8edd4a1373fb0eb8a674b",
+        "terms-and-conditions": "9fc752a4c4952488fbca0a3177ca6d613100c34f",
+        "privacy-policy": "2977e0bf2c79f11ae149f9ae7a8f22ed26b82d9c"
       }
     }
   ]
