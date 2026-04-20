@@ -703,28 +703,360 @@
 
     /*
     =====================================================================
-    FOOTER YEAR COLOUR
-    Changes the colour of the year (2026) in the footer to red.
+    FIX #2 — SCROLL ANCHOR OFFSET — DESKTOP (screens 900px and wider)
+    Prevents page sections from disappearing behind the fixed navbar when
+    a user clicks one of the four navigation links (Home, CV, Terms, Privacy).
 
-    WHAT THIS DOES: Applies a red colour to the year text whilst keeping
-    the rest of the footer text in the standard steel-blue colour. This
-    provides visual emphasis to the copyright year.
+    Without this rule, clicking "CV" scrolls the #cv element to the very
+    top of the viewport — directly underneath the fixed navbar — making the
+    section heading invisible until the user manually scrolls down slightly.
 
-    WHY color: #ff0000: Pure red colour provides high contrast and visual
-    prominence for the year. This makes the copyright year stand out from
-    the rest of the footer text.
+    scroll-margin-top: 65px instructs the browser to stop scrolling 65px
+    SHORT of each anchor element, so the section heading lands visibly
+    below the bottom edge of the navbar.
 
-    WHY display: inline: Ensures the span element does not create a line
-    break and flows naturally within the footer text.
+    WHY 65px ON DESKTOP?
+    — Desktop navbar height: approximately 55px
+      (16px top padding + ~23px link line height + 16px bottom padding)
+    — Extra visual buffer: 10px
+    — Total: ~65px ✓
 
-    TUNING: Adjust the colour value to a different shade of red if desired
-    (e.g. #cc0000 for a darker red, #ff3333 for a lighter red). The colour
-    can be changed to any hex value or CSS colour name.
+    This rule applies to all four anchor sections on desktop only.
+    The mobile media query below overrides this value with 235px.
+
+    TUNING GUIDE (desktop):
+    — If section headings still disappear behind the navbar after clicking
+      a nav link: increase to 70px or 75px (in 5px increments).
+    — If there is too much gap above section headings on scroll arrival:
+      decrease to 60px or 55px.
     =====================================================================
     */
-    .footer-year {
-      color: #ff0000;
-      display: inline;
+    #home, #cv, #team, #terms, #privacy {
+      scroll-margin-top: 65px;
+    }
+
+    /*
+    =====================================================================
+    FIX #3 — SCROLL ANCHOR OFFSET — MOBILE & TABLET (screens narrower than 900px)
+    Overrides the 65px desktop scroll anchor offset above, increasing it
+    to 235px for mobile and tablet screens.
+
+    WHY 235px ON MOBILE?
+    On mobile (max-width: 900px), the ElevenLabs widget is positioned above
+    the page content (not to the left as on desktop), and remains anchored
+    to the top-left corner of the viewport even in its collapsed state. When
+    a user clicks a navigation link on mobile, the scroll target must clear
+    BOTH the fixed navbar AND the collapsed widget.
+
+    Breakdown of the 235px value (measured on Samsung Galaxy S21 Ultra):
+    — Collapsed navbar height on mobile:  ~50px
+      (14px top padding + ~22px link height at 13px font + 14px bottom padding)
+    — Collapsed ElevenLabs widget height: ~185px
+    — Total blocked vertical space:       ~50px + ~185px = ~235px ✓
+
+    This ensures section headings land cleanly below both obstructions
+    when navigating via nav links on mobile.
+
+    BREAKPOINT NOTE — WHY 900px (not 700px):
+    The 900px breakpoint was chosen deliberately because it is the same
+    breakpoint at which all three of the following transitions occur:
+    — The navbar switches to compact form (smaller font, tighter gaps)
+    — The body padding changes from desktop (480px left) to mobile (32px left)
+    — The ElevenLabs widget transitions from side-docked to top-anchored layout
+    Aligning this scroll-margin breakpoint to 900px keeps all responsive
+    behaviour consistent across the same single transition point.
+
+    BREAKPOINT HISTORY:
+    — OLD: max-width: 700px — was too narrow; missed tablets and large phones
+    — NEW: max-width: 900px — matches all three layout transition points above
+
+    TUNING GUIDE (mobile):
+    — Samsung Galaxy S21 Ultra (412px) → should show 235px offset ✓
+    — iPhone 12 / 15 (390px)           → should show 235px offset
+    — iPad (768px)                     → should show 235px offset
+    — iPad Pro (1024px)                → should show 65px offset (desktop rules)
+    — If headings still hide behind widget after tapping a nav link:
+      increase 235px to 245px or 255px (in 5px increments).
+    — If there is excessive blank space above headings on scroll arrival:
+      decrease 235px to 225px or 215px.
+    =====================================================================
+    */
+    @media (max-width: 900px) {
+      #home, #cv, #team, #terms, #privacy {
+        scroll-margin-top: 235px;
+      }
+
+      /*
+      =====================================================================
+      FIX #4 — MOBILE BODY PADDING-TOP OVERRIDE
+      Explicitly re-asserts padding-top: 235px for mobile and tablet screens
+      (max-width: 900px), matching the value set in the base body rule above.
+
+      WHY IS THIS RULE PRESENT IF THE VALUE IS THE SAME AS THE BASE RULE?
+      Intentional redundancy. The base body rule sets padding-top: 235px
+      for all screen sizes as its default. This media query independently
+      preserves that same 235px for mobile screens, so that if the base
+      body padding is ever revised for desktop purposes in future, the mobile
+      top clearance remains protected and does not need to be re-discovered.
+
+      WHY 235px?
+      On mobile and tablet screens, the fixed navbar and the collapsed
+      ElevenLabs widget both occupy the top portion of the viewport and
+      physically block access to content behind them. 235px of top padding
+      ensures the page heading ("Delapre Dental Care") and all subsequent
+      content loads visibly below both obstructions on initial page open.
+
+      Breakdown (measured on Samsung Galaxy S21 Ultra):
+      — Collapsed navbar height:          ~50px
+        (14px top padding + ~22px link line height + 14px bottom padding)
+      — Collapsed ElevenLabs widget height: ~185px
+      — Total blocked vertical space:     ~50px + ~185px = ~235px ✓
+
+      WHAT THIS FIXES:
+      1. Main heading is not hidden behind the collapsed widget on page load.
+      2. Content layout correctly accounts for both the navbar and widget.
+      3. Page does not open with a wall of blank space above the first heading.
+      4. First-visit experience on mobile is clean and immediately useful.
+
+      INTERACTION WITH BASE RULE:
+      The base body rule sets all four padding values: 235px (top) 24px (right)
+      60px (bottom) 32px (left). This media query override only changes
+      padding-top. The other three values remain exactly as set in the base
+      rule and are unaffected.
+
+      TECHNICAL NOTES:
+      — padding-top is used (not margin-top) because it correctly expands the
+        body element's internal content area without disrupting document flow.
+      — No !important flag is needed here. A media query rule naturally takes
+        precedence over a base rule of equal specificity when both match.
+      — This override ONLY applies to screens narrower than 900px.
+      — Desktop screens (900px+) use the separate desktop padding block:
+        60px 40px 60px 480px, defined in @media (min-width: 900px) above.
+
+      TUNING GUIDE:
+      — Test on a real mobile device (hardware, not just browser devtools).
+      — Verify "Delapre Dental Care" heading is fully visible below the widget.
+      — If the heading is still partially obscured by the widget: increase
+        235px to 245px or 255px (in 5px increments) and retest.
+      — If there is excessive blank space above the heading: decrease 235px
+        to 225px or 215px (in 5px increments) and retest.
+      =====================================================================
+      */
+      body {
+        padding-top: 235px;
+      }
+    }
+
+    /*
+    =====================================================================
+    FIX #5 — ULTRA-NARROW SCREENS (max-width: 467px)
+    Widget and content offset for screens narrower than 467 pixels.
+
+    WHAT THIS FIXES:
+    On screens narrower than 467px (e.g. iPhone 15 in portrait, Samsung
+    Galaxy S21 Ultra in portrait), the navbar navigation links wrap onto a
+    second line because there is insufficient horizontal space to fit all
+    five links (Home, CV, Our Team, Terms & Conditions, Privacy Policy)
+    side-by-side at 13px font size with 20px gaps between them.
+
+    When the navbar wraps to two lines, its total height increases from ~50px
+    (single line) to approximately ~70px (two lines), because:
+    — First line of links:  14px top padding + 22px link height = 36px
+    — Second line of links: 22px link height + 14px bottom padding = 36px
+    — Total: 36px + 36px = ~72px (rounded to 70px here)
+
+    This extra 20px of navbar height (70px minus the previous ~50px) means
+    the ElevenLabs widget below it must also be pushed down by 20px, and
+    the page content below the widget must be pushed down by 20px as well.
+    Without this adjustment, the widget and page content would overlap with
+    the two-line navbar.
+
+    THREE CHANGES IN THIS MEDIA QUERY:
+    1. elevenlabs-convai margin-top: increased from 50px to 70px
+       — Pushes the widget down by 20px to clear the taller navbar
+       — WHY 70px: 50px (original navbar clearance) + 20px (extra navbar
+         height from wrapping) = 70px ✓
+
+    2. body padding-top: increased from 235px to 255px
+       — Pushes all page content down by 20px to clear the widget and navbar
+       — WHY 255px: 235px (original mobile clearance) + 20px (extra navbar
+         height from wrapping) = 255px ✓
+       — Breakdown of 255px:
+         ~70px navbar (now two lines) + ~185px widget = ~255px ✓
+
+    3. scroll-margin-top on anchors: increased from 235px to 255px
+       — When a user clicks a nav link on ultra-narrow screens, the page
+         scrolls so the target section lands 255px down from the top,
+         clearing both the taller two-line navbar and the lower widget
+       — WHY 255px: same calculation as body padding-top above
+
+    DEVICES AFFECTED:
+    — iPhone 15 / 14 / 13 in portrait: 390px (narrower than 467px) ✓
+    — Samsung Galaxy S21 Ultra in portrait: 412px (narrower than 467px) ✓
+    — Most modern smartphones in portrait orientation
+    — Very small tablets or devices in narrow mode
+
+    DEVICES NOT AFFECTED:
+    — iPad (768px) and larger tablets: use 235px offset (max-width 900px)
+    — Desktop screens (900px+): use 65px offset (no media query)
+    — Landscape mode on most phones (typically 700px+): use 235px offset
+
+    WHY 467px AS THE BREAKPOINT?
+    At 467px width, the navbar still fits all five links on a single line at
+    13px font with 20px gaps. Below 467px, the fifth link (Privacy Policy)
+    wraps to a second line, causing the navbar to grow taller.
+
+    Breakpoint calculation:
+    — 5 links × 50px average width per link (varies by text length) = 250px
+    — 4 gaps × 20px = 80px
+    — Left/right navbar padding: 24px + 24px = 48px
+    — Minimum horizontal space needed: 250px + 80px + 48px = ~378px
+    — Real-world measurement (Samsung Galaxy S21 Ultra): wrapping starts around
+      467px, where longer link text ("Terms & Conditions" and "Privacy Policy")
+      begin to push the navbar to two lines ✓
+
+    TUNING GUIDE:
+    — Test on a real iPhone 15 or Samsung Galaxy S21 Ultra in portrait.
+    — If the navbar, widget, or page content still overlap at 390px width:
+      increase 70px to 75px or 80px (in 5px increments for navbar).
+      increase 255px to 260px or 265px (in 5px increments for body/anchors).
+    — If there is excessive blank space above the page heading at 390px:
+      decrease 70px to 65px or 60px.
+      decrease 255px to 250px or 245px.
+    — Retest after each change on actual hardware (not browser devtools).
+    — Breakpoint can be adjusted up (e.g. 500px) or down (e.g. 430px) if
+      testing reveals wrapping occurs at a different screen width.
+    — If the navbar link text length changes or font size is adjusted,
+      re-measure the wrapping point and update this breakpoint accordingly.
+
+    INTERACTION WITH OTHER MEDIA QUERIES:
+    — This rule applies ONLY to screens narrower than 467px.
+    — It does NOT affect screens 467px–900px (use 235px rules).
+    — It does NOT affect screens 900px and wider (use desktop rules).
+    — The specificity of "elevenlabs-convai { margin-top: 70px !important; }"
+      inside this narrower breakpoint is higher (due to being more specific)
+      and naturally overrides the base "margin-top: 50px !important" rule above.
+    =====================================================================
+    */
+    @media (max-width: 467px) {
+      /*
+      WHAT THIS DOES: Increases the top margin of the ElevenLabs widget to
+      70px so it clears the now-taller two-line navbar on ultra-narrow screens
+      (narrower than 467px).
+      WHY 70px: On screens narrower than 467px, the navbar wraps onto two
+      lines, increasing from ~50px to ~70px in height. This margin-top value
+      must match that new navbar height to prevent the widget from overlapping
+      the wrapped navigation links.
+      Calculation: 50px (base navbar clearance) + 20px (extra height from
+      wrapping to two lines) = 70px ✓
+      TUNING: If the widget still overlaps the navbar text on narrow screens:
+      increase to 75px or 80px (in 5px increments). If there is excessive
+      blank space between the navbar and widget: decrease to 65px or 60px.
+      Always test on real hardware (iPhone 15 / Samsung Galaxy S21 Ultra in
+      portrait), as browser devtools may not accurately show text wrapping
+      at exact pixel boundaries.
+      */
+      elevenlabs-convai {
+        margin-top: 70px !important;
+      }
+
+      /*
+      WHAT THIS DOES: Increases the top padding of the page body from 235px
+      to 255px on ultra-narrow screens so all page content appears below both
+      the taller two-line navbar and the lower-positioned widget.
+      WHY 255px: On screens narrower than 467px, the navbar is now ~70px
+      (two lines) and the widget is ~185px, totalling ~255px of blocked
+      vertical space at the top of the viewport. This padding ensures the
+      "Delapre Dental Care" heading and all subsequent content load visibly
+      below both obstructions on page open.
+      Calculation: 235px (original mobile clearance) + 20px (extra navbar
+      height from wrapping) = 255px ✓
+      TUNING: If page content is still hidden behind the widget or navbar:
+      increase to 260px or 265px (in 5px increments). If there is excessive
+      blank space above the first heading: decrease to 250px or 245px. Test
+      on actual narrow devices, not browser devtools, which may not render
+      text wrapping accurately.
+      */
+      body {
+        padding-top: 255px;
+      }
+
+      /*
+      WHAT THIS DOES: Increases the scroll anchor offset for all navigation
+      link targets (#home, #cv, #team, #terms, #privacy) from 235px to 255px,
+      so section headings land clearly visible below the taller navbar and
+      widget when a user clicks a navigation link on ultra-narrow screens.
+      WHY 255px: When the navbar wraps to two lines on screens narrower than
+      467px, the total vertical space blocked by the navbar and widget
+      increases to ~255px. This scroll-margin-top value must match that
+      blocked space to ensure section headings don't scroll behind the navbar
+      or widget.
+      Calculation: 235px (original mobile scroll offset) + 20px (extra
+      navbar height from wrapping) = 255px ✓
+      TUNING: If section headings still disappear behind the navbar or widget
+      after tapping a navigation link on narrow screens: increase to 260px
+      or 265px (in 5px increments). If there is excessive blank space above
+      section headings when they scroll into view: decrease to 250px or
+      245px. Test on actual narrow hardware (iPhone 15 / Samsung Galaxy S21
+      Ultra in portrait) by tapping each nav link and verifying the target
+      heading appears fully visible and readable.
+      */
+      #home, #cv, #team, #terms, #privacy {
+        scroll-margin-top: 255px;
+      }
+    }
+
+    /* =====================================================================
+    LEGAL SECTIONS — Terms & Conditions and Privacy Policy
+    Consistent typography for dense legal text. Slightly smaller line-height
+    than body content sections to keep long documents compact without
+    sacrificing readability.
+    ===================================================================== */
+    .legal-notice {
+      background-color: rgba(255, 200, 0, 0.08);
+      border-left: 3px solid #e6b800;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      color: #f0d060;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .legal-heading {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    .legal-meta {
+      color: #b0c4de;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .legal-section {
+      color: #b0c4de;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    #terms .section-content p,
+    #privacy .section-content p {
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 6px;
+    }
+    .legal-list {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.65;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+    .legal-list li {
+      margin-bottom: 5px;
     }
 
     /*
@@ -1316,9 +1648,9 @@
     </div>
 
     <!-- ── FOOTER ─────────────────────────────────────────────────────– -->
-    <!-- This footer section displays the copyright notice and confirms that all content on the page is the property of Delapre Dental Care. It appears at the bottom of the page and is styled with a subtle top border to visually separate it from the main content. The year is wrapped in a span with the footer-year class to apply red colour to it. -->
+    <!-- This footer section displays the copyright notice and confirms that all content on the page is the property of Delapre Dental Care. It appears at the bottom of the page and is styled with a subtle top border to visually separate it from the main content. -->
     <div class="footer">
-      © <span class="footer-year">2026</span> Delapre Dental Care | All Rights Reserved
+      © 2026 Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
