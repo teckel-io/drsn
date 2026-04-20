@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 313,
-      "timestamp": "2026-04-08T22:17:57.298Z",
-      "tag": null,
-      "change_description": "Change the year from 2026 to 2025 in the footer of the privacy and policy page.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "1662585e256c116bbfe78814a530df6b997e0444"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "b4792594e7119aff82dfb1f495222b686788ad91"
-      }
-    },
-    {
       "version": 314,
       "timestamp": "2026-04-08T22:19:25.701Z",
       "tag": null,
@@ -915,6 +901,20 @@
       },
       "pre_edit_pages": {
         "about": "4de8678abe7157575c607e2aa810f8601f6ae786"
+      }
+    },
+    {
+      "version": 363,
+      "timestamp": "2026-04-20T18:43:39.896Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 362 (\"change the font color of the year in the footer of the about us page to red\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 362,
+      "pages": {
+        "about": "4de8678abe7157575c607e2aa810f8601f6ae786"
+      },
+      "pre_edit_pages": {
+        "about": "927db11e796988ffc4e612b80e46c5173a7efc81"
       }
     }
   ]
