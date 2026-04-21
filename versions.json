@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "oral-surgery"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,28 +38,10 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "Oral Surgery",
-        "href": "oral-surgery.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 325,
-      "timestamp": "2026-04-10T06:52:01.883Z",
-      "tag": null,
-      "change_description": "On the privacy policy page, in the head section, change the canonical URL to \"https://delapredental.com/privacy-policy.html\" and change the og:url content to \"https://delapredental.com/privacy-policy.html\". Do not change anything else on the page.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "0e4e0663c5b4513c3dbbfb4374cd94b0badbaea1"
-      }
-    },
     {
       "version": 326,
       "timestamp": "2026-04-13T04:45:55.963Z",
@@ -936,6 +917,30 @@
       },
       "pre_edit_pages": {
         "oral-surgery": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 375,
+      "timestamp": "2026-04-21T02:36:30.852Z",
+      "tag": null,
+      "change_description": "Deleted page: Oral Surgery (oral-surgery.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "oral-surgery": "6ef7bbbd4dc0368ebed18a6fa41816972762529f",
         "index": null,
         "services": null,
         "about": null,
