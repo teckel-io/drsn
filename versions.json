@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 316,
-      "timestamp": "2026-04-10T05:43:02.226Z",
-      "tag": null,
-      "change_description": "On the privacy policy page, add verbose plain-English HTML comments throughout the body section explaining what each section, div, and major element does. The comments should be written for a non-technical reader who needs to understand the page structure. Do not change any visible content, styling, or functionality. Do not alter or remove existing comments — only add new ones where they are missing.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "0e4e0663c5b4513c3dbbfb4374cd94b0badbaea1"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "b4792594e7119aff82dfb1f495222b686788ad91"
-      }
-    },
-    {
       "version": 317,
       "timestamp": "2026-04-10T05:58:19.995Z",
       "tag": null,
@@ -917,6 +903,21 @@
       },
       "pre_edit_pages": {
         "services": "5cf2df3baf5457c33a733de69168add2e7039274"
+      }
+    },
+    {
+      "version": 366,
+      "timestamp": "2026-04-21T01:26:24.724Z",
+      "tag": null,
+      "change_description": "change the font color of the year in the footer on the terms and conditions page to red",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "edit_type": "presentation",
+      "pages": {
+        "terms-and-conditions": "a530efc2358766268bac93638ea09802ef7820a7"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
       }
     }
   ]
