@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "oral-surgery"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,24 +39,14 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "Oral Surgery",
+        "href": "oral-surgery.html"
       }
     ]
   },
   "versions": [
-    {
-      "version": 324,
-      "timestamp": "2026-04-10T06:47:48.134Z",
-      "tag": null,
-      "change_description": "On the terms and conditions page, in the head section, change the canonical URL to \"https://delapredental.com/terms-and-conditions.html\" and change the og:url content to \"https://delapredental.com/terms-and-conditions.html\". Do not change anything else on the page.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "6c512c106232bb7114d2acd89ff94d65ee5591a4"
-      }
-    },
     {
       "version": 325,
       "timestamp": "2026-04-10T06:52:01.883Z",
@@ -925,6 +916,31 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "9e9cea2b85f61b2233982b2d4719450220aed236"
+      }
+    },
+    {
+      "version": 374,
+      "timestamp": "2026-04-21T02:34:29.314Z",
+      "tag": null,
+      "change_description": "Created page: Oral Surgery (oral-surgery.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "oral-surgery": "6ef7bbbd4dc0368ebed18a6fa41816972762529f",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "oral-surgery": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
       }
     }
   ]
