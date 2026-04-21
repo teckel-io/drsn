@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 315,
-      "timestamp": "2026-04-10T05:07:37.296Z",
-      "tag": null,
-      "change_description": "On the about page, change the canonical URL from \"https://teckel-io.github.io/drsnabout.html\" to \"https://teckel-io.github.io/drsn/about.html\" and change the og:url from \"https://teckel-io.github.io/drsnabout.html\" to \"https://teckel-io.github.io/drsn/about.html\". Do not change anything else.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "5ddf1ffd9c85f47380dec8c61d1540077b733d9b"
-      },
-      "pre_edit_pages": {
-        "about": "093147dd9e6c1dd48759b9fa12b04303498e572d"
-      }
-    },
-    {
       "version": 316,
       "timestamp": "2026-04-10T05:43:02.226Z",
       "tag": null,
@@ -916,6 +902,21 @@
       },
       "pre_edit_pages": {
         "services": "307c78c6dae159aade88009fbcb1810aa37aa5f9"
+      }
+    },
+    {
+      "version": 365,
+      "timestamp": "2026-04-21T01:21:31.627Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 364 (\"change the year in the footer of the services page to 2025\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 364,
+      "edit_type": "content",
+      "pages": {
+        "services": "307c78c6dae159aade88009fbcb1810aa37aa5f9"
+      },
+      "pre_edit_pages": {
+        "services": "5cf2df3baf5457c33a733de69168add2e7039274"
       }
     }
   ]
