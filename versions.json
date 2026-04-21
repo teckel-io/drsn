@@ -40,35 +40,10 @@
         "href": "privacy-policy.html"
       }
     ],
-    "favicon_version": "v382",
+    "favicon_version": "v383",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 333,
-      "timestamp": "2026-04-15T05:53:27.380Z",
-      "tag": null,
-      "change_description": "Created page: Sitemap (sitemap.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "sitemap": "be1bff9726258bb565306b40bae178161f55fc80",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "sitemap": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
     {
       "version": 334,
       "timestamp": "2026-04-15T05:56:32.983Z",
@@ -1026,6 +1001,36 @@
         "about": "f059e2ca441a732a8c10b68086108f7c53f96a7a",
         "terms-and-conditions": "67d74ca2ddec6de0fd3e5aa505eb9dfa1fce634b",
         "privacy-policy": "e3b83cd471d98ad5c1cb3998c171966189a74e15"
+      }
+    },
+    {
+      "version": 383,
+      "timestamp": "2026-04-21T21:16:42.412Z",
+      "tag": null,
+      "change_description": "Installed favicon set (v383) for Delapre Dental",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_favicons",
+      "edit_type": "content",
+      "favicon": {
+        "version_string": "v383",
+        "brand_name": "Delapre Dental",
+        "file_count": 7,
+        "source_filename": "delapre-dental-favicon.zip"
+      },
+      "pages": {
+        "index": "49cfbd9646d740048252fb56e69be1db6c1d619a",
+        "services": "8fe47bf95941b573156cd982781679dbe5e9c5dc",
+        "about": "0f9aade8b693b1b0f1a496d599ace7f804ed7397",
+        "terms-and-conditions": "a419317aa34846fd0a44d2d1b992edd7909e1d47",
+        "privacy-policy": "cc10d02ef38427a65b71ee02423fb81728be01f5"
+      },
+      "pre_edit_pages": {
+        "index": "cbd22ddcb12bcc9c3e2f87e5b29ad6388c0f5a01",
+        "services": "47c271c7b4fa5f3ca1f8d75636a6d1c25913192b",
+        "about": "ae8f5a00fe0d5bc3a995b9f7f81b087d0fb9d41c",
+        "terms-and-conditions": "2be23e3027b1c2ee0868eb503d5ffbbc1712223a",
+        "privacy-policy": "48dc839783077e003976fb1ba31c143150c9c7da"
       }
     }
   ]
