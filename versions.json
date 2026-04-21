@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 318,
-      "timestamp": "2026-04-10T06:09:42.313Z",
-      "tag": null,
-      "change_description": "On the About  page, add verbose plain-English HTML comments throughout the body section explaining what each section, div, and major element does. The comments should be written for a non-technical reader who needs to understand the page structure. Do not change any visible content, styling, or functionality. Do not alter or remove existing comments — only add new ones where they are missing.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "a6ea41eea4d556c7c18dca655ad3351dd0c76c75"
-      },
-      "pre_edit_pages": {
-        "about": "5ddf1ffd9c85f47380dec8c61d1540077b733d9b"
-      }
-    },
-    {
       "version": 319,
       "timestamp": "2026-04-10T06:13:32.536Z",
       "tag": null,
@@ -919,6 +905,21 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "a530efc2358766268bac93638ea09802ef7820a7"
+      }
+    },
+    {
+      "version": 368,
+      "timestamp": "2026-04-21T01:30:28.275Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 367 (\"Rolled back to the state before version 366 (\"change the font color of the year in the footer on the terms and conditions page to red\")\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 367,
+      "edit_type": "presentation",
+      "pages": {
+        "terms-and-conditions": "a530efc2358766268bac93638ea09802ef7820a7"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
       }
     }
   ]
