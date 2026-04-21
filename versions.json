@@ -45,20 +45,6 @@
   },
   "versions": [
     {
-      "version": 330,
-      "timestamp": "2026-04-13T05:08:40.993Z",
-      "tag": null,
-      "change_description": "On the home page under testimonials replace' invloves ' with ' involves",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "index": "ced153104ffe36edcee4606f02ddd9755d94f06c"
-      },
-      "pre_edit_pages": {
-        "index": "ced153104ffe36edcee4606f02ddd9755d94f06c"
-      }
-    },
-    {
       "version": 331,
       "timestamp": "2026-04-15T03:38:32.641Z",
       "tag": null,
@@ -1008,6 +994,21 @@
         "about": "6d096fa9ffb461428702c17d5f9fa4ca60d31e68",
         "terms-and-conditions": "bca10ea098cd20562f82b4dc1d88d890643815ea",
         "privacy-policy": "c3fb0b33beb409f5e2eec06f1bbc45241bc13c13"
+      }
+    },
+    {
+      "version": 380,
+      "timestamp": "2026-04-21T05:14:33.022Z",
+      "tag": null,
+      "change_description": "change the year to 2027 in the footer of the privacy policy page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "edit_type": "content",
+      "pages": {
+        "privacy-policy": "d54c85cdae0f8aa8d4daa8c7a58bec47da000713"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "e3b83cd471d98ad5c1cb3998c171966189a74e15"
       }
     }
   ]
