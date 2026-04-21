@@ -45,30 +45,6 @@
   },
   "versions": [
     {
-      "version": 334,
-      "timestamp": "2026-04-15T05:56:32.983Z",
-      "tag": null,
-      "change_description": "Deleted page: Sitemap (sitemap.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "sitemap": "be1bff9726258bb565306b40bae178161f55fc80",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
-    {
       "version": 335,
       "timestamp": "2026-04-15T17:00:18.367Z",
       "tag": null,
@@ -1031,6 +1007,21 @@
         "about": "ae8f5a00fe0d5bc3a995b9f7f81b087d0fb9d41c",
         "terms-and-conditions": "2be23e3027b1c2ee0868eb503d5ffbbc1712223a",
         "privacy-policy": "48dc839783077e003976fb1ba31c143150c9c7da"
+      }
+    },
+    {
+      "version": 384,
+      "timestamp": "2026-04-21T22:21:42.162Z",
+      "tag": null,
+      "change_description": "please change the year to 2027 in the footer of the privacy policy page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "edit_type": "content",
+      "pages": {
+        "privacy-policy": "4ec47d8283a3e60bc29da5428889cfb940cf2acd"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "cc10d02ef38427a65b71ee02423fb81728be01f5"
       }
     }
   ]
