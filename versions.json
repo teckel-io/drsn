@@ -43,20 +43,6 @@
   },
   "versions": [
     {
-      "version": 323,
-      "timestamp": "2026-04-10T06:45:12.099Z",
-      "tag": null,
-      "change_description": "On the about page, in the head section, change the canonical URL to \"https://delapredental.com/about.html\" and change the og:url content to \"https://delapredental.com/about.html\". Do not change anything else on the page.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "about": "ef2ad2bc4d3eb495c9f3efdd5faf98ae98a57952"
-      },
-      "pre_edit_pages": {
-        "about": "a6ea41eea4d556c7c18dca655ad3351dd0c76c75"
-      }
-    },
-    {
       "version": 324,
       "timestamp": "2026-04-10T06:47:48.134Z",
       "tag": null,
@@ -924,6 +910,21 @@
       },
       "pre_edit_pages": {
         "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
+      }
+    },
+    {
+      "version": 373,
+      "timestamp": "2026-04-21T02:28:14.049Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 372 (\"Rolled back to the state before version 371 (\"Rolled back to the state before version 370 (\"change the year in the footer of the  terms andd conditions page to 2027\")\")\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 372,
+      "edit_type": "content",
+      "pages": {
+        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "9e9cea2b85f61b2233982b2d4719450220aed236"
       }
     }
   ]
