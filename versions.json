@@ -39,23 +39,11 @@
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
       }
-    ]
+    ],
+    "favicon_version": "v378",
+    "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 328,
-      "timestamp": "2026-04-13T04:57:21.846Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 327 (\"On the home page under testimonials add ' I have neen a patient for a number of years and the treatment I have recieved has always been very professional, well informed and Sabina taes time to fully explained what she is going to do and why. She invlves you in decsion making and makes sure you are OK throughout the process.\nSue Griffiths\nrecent\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 327,
-      "pages": {
-        "index": "c41374549023e5e762c628b884ebe8b7f4d56fbf"
-      },
-      "pre_edit_pages": {
-        "index": "0d46865ffb77f32411c59e6ec18698ee634f85fe"
-      }
-    },
     {
       "version": 329,
       "timestamp": "2026-04-13T05:02:53.597Z",
@@ -974,6 +962,36 @@
         "about": "23a2762072bc9c91197eef09cec53f782c14ddd4",
         "terms-and-conditions": "370da414c86f120aa50432e3bd1d0ff0f5d8c2a1",
         "privacy-policy": "f1659084eae6db2746e31bf578cd7725e441d48f"
+      }
+    },
+    {
+      "version": 378,
+      "timestamp": "2026-04-21T04:51:57.006Z",
+      "tag": null,
+      "change_description": "Installed favicon set (v378) for Delapre Dental",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_favicons",
+      "edit_type": "content",
+      "favicon": {
+        "version_string": "v378",
+        "brand_name": "Delapre Dental",
+        "file_count": 7,
+        "source_filename": "delapre-dental-favicon.zip"
+      },
+      "pages": {
+        "index": "1a5864ded6a225ea01584b25c8a2c9ea3f801bc6",
+        "services": "e66f9d2d9b9e5cd2bcd9c66b56c18e4f84f6ada7",
+        "about": "6d096fa9ffb461428702c17d5f9fa4ca60d31e68",
+        "terms-and-conditions": "bca10ea098cd20562f82b4dc1d88d890643815ea",
+        "privacy-policy": "c3fb0b33beb409f5e2eec06f1bbc45241bc13c13"
+      },
+      "pre_edit_pages": {
+        "index": "ced153104ffe36edcee4606f02ddd9755d94f06c",
+        "services": "307c78c6dae159aade88009fbcb1810aa37aa5f9",
+        "about": "4de8678abe7157575c607e2aa810f8601f6ae786",
+        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb",
+        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
       }
     }
   ]
