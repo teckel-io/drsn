@@ -45,20 +45,6 @@
   },
   "versions": [
     {
-      "version": 337,
-      "timestamp": "2026-04-16T07:39:48.965Z",
-      "tag": null,
-      "change_description": "On the privacy policy page in the footer area change the year from 2026 to 2025.",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "privacy-policy": "c8979284d4dd13b4d2936a904f354506ecac772f"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
-      }
-    },
-    {
       "version": 338,
       "timestamp": "2026-04-16T07:44:27.365Z",
       "tag": null,
@@ -1039,6 +1025,21 @@
         "about": "0f9aade8b693b1b0f1a496d599ace7f804ed7397",
         "terms-and-conditions": "a419317aa34846fd0a44d2d1b992edd7909e1d47",
         "privacy-policy": "cc10d02ef38427a65b71ee02423fb81728be01f5"
+      }
+    },
+    {
+      "version": 387,
+      "timestamp": "2026-04-22T00:46:40.786Z",
+      "tag": null,
+      "change_description": "image uploaded: delapredental-favicon-base-image.png — place this image at the bottom of the terms & conditions page",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "edit_type": "content",
+      "pages": {
+        "terms-and-conditions": "3954f4b6a1ec9a6b5d32b0e20c6dc0798d2e9597"
+      },
+      "pre_edit_pages": {
+        "terms-and-conditions": "0690b2b9f87d493588055b0f62635c3eb6bd0340"
       }
     }
   ]
