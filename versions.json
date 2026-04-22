@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "faq"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,40 +38,12 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "FAQ",
-        "href": "faq.html"
       }
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 344,
-      "timestamp": "2026-04-18T00:15:39.443Z",
-      "tag": null,
-      "change_description": "Deleted page: Oral Surgery (oral-surgery.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "oral-surgery": "8b791aa720d9aefb0f5c86722c3b9d7f266f1d87",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
     {
       "version": 345,
       "timestamp": "2026-04-18T00:29:49.007Z",
@@ -1094,6 +1065,30 @@
       },
       "pre_edit_pages": {
         "faq": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 394,
+      "timestamp": "2026-04-22T04:23:51.642Z",
+      "tag": null,
+      "change_description": "Deleted page: Faq (faq.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "faq": "c22837776a5811e6c2bee9fcfd2d6d72414b2181",
         "index": null,
         "services": null,
         "about": null,
