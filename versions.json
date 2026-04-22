@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "faq"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,26 +39,16 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "FAQ",
+        "href": "faq.html"
       }
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 345,
-      "timestamp": "2026-04-18T00:29:49.007Z",
-      "tag": null,
-      "change_description": "change the year in the footer of the  services page from 2026 to  2027",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "pages": {
-        "services": "13393c7b41fc93762652144e5305a624feb18110"
-      },
-      "pre_edit_pages": {
-        "services": "e49592cdbed0788227d2a29dd868a1755eac11d8"
-      }
-    },
     {
       "version": 346,
       "timestamp": "2026-04-18T00:58:34.391Z",
@@ -1089,6 +1080,31 @@
       },
       "pre_edit_pages": {
         "faq": "c22837776a5811e6c2bee9fcfd2d6d72414b2181",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 395,
+      "timestamp": "2026-04-22T05:17:20.743Z",
+      "tag": null,
+      "change_description": "Created page: FAQ (faq.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "faq": "336f512764f1955db92e29da7f8726cd7624213e",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "faq": null,
         "index": null,
         "services": null,
         "about": null,
