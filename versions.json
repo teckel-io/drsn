@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "faq"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,30 +38,12 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "FAQ",
-        "href": "faq.html"
       }
     ],
     "favicon_version": "v386",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 340,
-      "timestamp": "2026-04-17T21:37:45.765Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 339 (\"on the  privacy policy page in the footer change the year  from 2026 to 2025\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 339,
-      "pages": {
-        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "c8979284d4dd13b4d2936a904f354506ecac772f"
-      }
-    },
     {
       "version": 341,
       "timestamp": "2026-04-17T23:52:32.986Z",
@@ -1052,6 +1033,30 @@
       },
       "pre_edit_pages": {
         "faq": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 390,
+      "timestamp": "2026-04-22T01:00:06.610Z",
+      "tag": null,
+      "change_description": "Deleted page: Faq (faq.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "faq": "49094be6c79bab1ea8cb28ba48352b12c2aa7932",
         "index": null,
         "services": null,
         "about": null,
