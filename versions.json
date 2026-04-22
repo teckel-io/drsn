@@ -40,24 +40,10 @@
         "href": "privacy-policy.html"
       }
     ],
-    "favicon_version": "v391",
+    "favicon_version": "v392",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 342,
-      "timestamp": "2026-04-17T23:54:39.795Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 341 (\"please change the year from 2026 to 2025 in the footer on the  about page\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 341,
-      "pages": {
-        "about": "ef2ad2bc4d3eb495c9f3efdd5faf98ae98a57952"
-      },
-      "pre_edit_pages": {
-        "about": "12e0ad278b8f72e4b619b256f8004e66f1b506df"
-      }
-    },
     {
       "version": 343,
       "timestamp": "2026-04-18T00:10:49.750Z",
@@ -1078,6 +1064,36 @@
         "about": "4cd102b60eff874a5e14879132a31cea8502fa22",
         "terms-and-conditions": "0690b2b9f87d493588055b0f62635c3eb6bd0340",
         "privacy-policy": "abf2ce73d507eb7d40e637495ed636344e2ed42c"
+      }
+    },
+    {
+      "version": 392,
+      "timestamp": "2026-04-22T04:17:24.672Z",
+      "tag": null,
+      "change_description": "Installed favicon set (v392) for Delapre Dental",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_favicons",
+      "edit_type": "content",
+      "favicon": {
+        "version_string": "v392",
+        "brand_name": "Delapre Dental",
+        "file_count": 7,
+        "source_filename": "delapre-dental-favicon.zip"
+      },
+      "pages": {
+        "index": "16290fde22a8d205d6daddfde2d0134cba316c37",
+        "services": "33f17b2d31680aee9a0648ecdf6e4e3ddd6bfd51",
+        "about": "fa0fb72484d98499bc73d184fa5ce8131357588e",
+        "terms-and-conditions": "8b40913e6c322d72980ee3bf132c8e240df2ad7e",
+        "privacy-policy": "abc6e83dc7160869a4219490601a1a921e04fab6"
+      },
+      "pre_edit_pages": {
+        "index": "daf4686817f1cbc2186028178068db46610da4f9",
+        "services": "7ed100fd2564d34aca237f16e04c033360ad46ab",
+        "about": "68291d02f4219974fe2c0d72260a4a7d089de63d",
+        "terms-and-conditions": "a55535689fc7a88cc8f3e59af44402c7b140e816",
+        "privacy-policy": "330b62da6ecaf206bf0d1f51e56e70ab1bd88231"
       }
     }
   ]
