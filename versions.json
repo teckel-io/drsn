@@ -40,24 +40,10 @@
         "href": "privacy-policy.html"
       }
     ],
-    "favicon_version": "v383",
+    "favicon_version": "v386",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 336,
-      "timestamp": "2026-04-15T17:04:18.542Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 335 (\"on the privacy policy page change the year from 2026 to 2025 in the footer\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 335,
-      "pages": {
-        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "c8979284d4dd13b4d2936a904f354506ecac772f"
-      }
-    },
     {
       "version": 337,
       "timestamp": "2026-04-16T07:39:48.965Z",
@@ -1023,6 +1009,36 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "4ec47d8283a3e60bc29da5428889cfb940cf2acd"
+      }
+    },
+    {
+      "version": 386,
+      "timestamp": "2026-04-22T00:39:13.913Z",
+      "tag": null,
+      "change_description": "Installed favicon set (v386) for Delapre Dental",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_favicons",
+      "edit_type": "content",
+      "favicon": {
+        "version_string": "v386",
+        "brand_name": "Delapre Dental",
+        "file_count": 7,
+        "source_filename": "delapre-dental-favicon.zip"
+      },
+      "pages": {
+        "index": "983e718427fd90e25d6de4069d564f0960da2ad4",
+        "services": "fa280ba1e0890e8543140cb7ec417984d17c112c",
+        "about": "4cd102b60eff874a5e14879132a31cea8502fa22",
+        "terms-and-conditions": "0690b2b9f87d493588055b0f62635c3eb6bd0340",
+        "privacy-policy": "abf2ce73d507eb7d40e637495ed636344e2ed42c"
+      },
+      "pre_edit_pages": {
+        "index": "49cfbd9646d740048252fb56e69be1db6c1d619a",
+        "services": "8fe47bf95941b573156cd982781679dbe5e9c5dc",
+        "about": "0f9aade8b693b1b0f1a496d599ace7f804ed7397",
+        "terms-and-conditions": "a419317aa34846fd0a44d2d1b992edd7909e1d47",
+        "privacy-policy": "cc10d02ef38427a65b71ee02423fb81728be01f5"
       }
     }
   ]
