@@ -7,7 +7,8 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy"
+      "privacy-policy",
+      "faq"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -38,37 +39,16 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
+      },
+      {
+        "label": "FAQ",
+        "href": "faq.html"
       }
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 347,
-      "timestamp": "2026-04-18T01:06:43.887Z",
-      "tag": null,
-      "change_description": "Created page: Dental Implants (dental-implants.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "create_page",
-      "pages": {
-        "dental-implants": "ed470112f86970dd0f0f001856a8bb55d607bb95",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "dental-implants": null,
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
     {
       "version": 348,
       "timestamp": "2026-04-18T01:11:51.168Z",
@@ -1110,6 +1090,31 @@
       },
       "pre_edit_pages": {
         "faq": "336f512764f1955db92e29da7f8726cd7624213e",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 397,
+      "timestamp": "2026-04-23T04:11:30.080Z",
+      "tag": null,
+      "change_description": "Created page: FAQ (faq.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "create_page",
+      "pages": {
+        "faq": "b46d7f95714120e3d841e30ebfc02513cbfa5e06",
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "faq": null,
         "index": null,
         "services": null,
         "about": null,
