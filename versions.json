@@ -7,8 +7,7 @@
       "services",
       "about",
       "terms-and-conditions",
-      "privacy-policy",
-      "faq"
+      "privacy-policy"
     ],
     "backup_schedule": {
       "enabled": true,
@@ -39,40 +38,12 @@
       {
         "label": "Privacy Policy",
         "href": "privacy-policy.html"
-      },
-      {
-        "label": "FAQ",
-        "href": "faq.html"
       }
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 348,
-      "timestamp": "2026-04-18T01:11:51.168Z",
-      "tag": null,
-      "change_description": "Deleted page: Dental Implants (dental-implants.html)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "delete_page",
-      "pages": {
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      },
-      "pre_edit_pages": {
-        "dental-implants": "ed470112f86970dd0f0f001856a8bb55d607bb95",
-        "index": null,
-        "services": null,
-        "about": null,
-        "terms-and-conditions": null,
-        "privacy-policy": null
-      }
-    },
     {
       "version": 349,
       "timestamp": "2026-04-18T04:57:24.562Z",
@@ -1115,6 +1086,30 @@
       },
       "pre_edit_pages": {
         "faq": null,
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      }
+    },
+    {
+      "version": 398,
+      "timestamp": "2026-04-23T04:15:27.622Z",
+      "tag": null,
+      "change_description": "Deleted page: Faq (faq.html)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "delete_page",
+      "pages": {
+        "index": null,
+        "services": null,
+        "about": null,
+        "terms-and-conditions": null,
+        "privacy-policy": null
+      },
+      "pre_edit_pages": {
+        "faq": "b46d7f95714120e3d841e30ebfc02513cbfa5e06",
         "index": null,
         "services": null,
         "about": null,
