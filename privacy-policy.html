@@ -462,16 +462,13 @@
       }
     }
 
-    /*
-    WHAT THIS DOES: Hides the footer element on the privacy policy page.
-    WHY display none: The user requested removal of the footer from the
-    privacy policy page. Using display: none removes it from the document
-    flow and hides it completely.
-    TUNING: If the footer needs to be shown again, change display: none to
-    display: block or remove this rule entirely.
-    */
     .footer {
-      display: none;
+      color: #b0c4de;
+      font-size: 12px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(176, 196, 222, 0.2); /* ← Subtle footer divider */
+      text-align: center;
     }
 
     /*
@@ -1021,6 +1018,11 @@
         <p><strong>11.1</strong> We review this Privacy Policy regularly. Any material changes will be notified to patients and updated on this website. The date at the top of this document reflects the most recent revision.</p>
         <p><strong>11.2</strong> Where material changes are made to the provisions relating to the Voice Agent, third-party data processing, or international data transfers, the Practice will use reasonable endeavours to draw such changes to users' attention via a notice on the website.</p>
       </div>
+    </div>
+
+    <!-- Footer section with copyright year and practice name. This appears at the bottom of the page and contains the copyright notice for the practice. -->
+    <div class="footer">
+      © 2026 Delapre Dental Care | All Rights Reserved
     </div>
 
   </div><!-- end .page -->
