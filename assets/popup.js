@@ -78,7 +78,7 @@
     card.className = 'tcl-popup-card';
     card.setAttribute('role', 'dialog');
     card.setAttribute('aria-modal', 'true');
-    card.innerHTML = "<div class=\"tcl-popup-body\">Welcome to Delapre Dental</div><div class=\"tcl-popup-hint\">Tap outside to dismiss</div>";
+    card.innerHTML = "<div class=\"tcl-popup-body\">Want to come along? It&#39;s FREE to register for dental professionals!\n\nDr. Sabina Nasir, will be attending BDCDS in Birmingham on 15-16 May 2026. Book a meeting with her at the event to discuss your dental treatment plan.</div><div class=\"tcl-popup-hint\">Tap outside to dismiss</div>";
 
     // Stop clicks INSIDE the card from triggering dismiss
     card.addEventListener('click', function(e) { e.stopPropagation(); });
