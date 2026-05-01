@@ -41,24 +41,20 @@
       }
     ],
     "favicon_version": "v392",
-    "site_title": "Delapre Dental"
+    "site_title": "Delapre Dental",
+    "popup_version": "v415",
+    "popup": {
+      "title": null,
+      "body": "Dr. Sabina Nasir, will be attending BDCDS in Birmingham on 15-16 May 2026. Book a meeting with her at the event to discuss your dental treatment plan.\n\nWant to come along? It's FREE to register for dental professionals! [FREE](https://forms.reg.buzz/dentistry-show-splash/)",
+      "image_url": null,
+      "image_link_url": null,
+      "cta_label": null,
+      "cta_url": null,
+      "delay_ms": 4000,
+      "dismiss_days": 1
+    }
   },
   "versions": [
-    {
-      "version": 365,
-      "timestamp": "2026-04-21T01:21:31.627Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 364 (\"change the year in the footer of the services page to 2025\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 364,
-      "edit_type": "content",
-      "pages": {
-        "services": "307c78c6dae159aade88009fbcb1810aa37aa5f9"
-      },
-      "pre_edit_pages": {
-        "services": "5cf2df3baf5457c33a733de69168add2e7039274"
-      }
-    },
     {
       "version": 366,
       "timestamp": "2026-04-21T01:26:24.724Z",
@@ -1067,6 +1063,39 @@
         "about": "19dca46c6feab1970e1223a3931da916387723c2",
         "terms-and-conditions": "8861090efcc43c379078431be464b78025d63e66",
         "privacy-policy": "fef0ae14824955c3034fab5117196e90b323bb10"
+      }
+    },
+    {
+      "version": 415,
+      "timestamp": "2026-05-01T06:56:49.633Z",
+      "tag": null,
+      "change_description": "Installed popup (v415)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_popup",
+      "edit_type": "content",
+      "popup": {
+        "version_string": "v415",
+        "title": null,
+        "body_preview": "Dr. Sabina Nasir, will be attending BDCDS in Birmingham on 15-16 May 2026. Book ...",
+        "has_image": false,
+        "has_cta": false,
+        "delay_ms": 4000,
+        "dismiss_days": 1
+      },
+      "pages": {
+        "index": "277059715f4d8fce02868e71131f32005ac4dacb",
+        "services": "013250ab061b552dbd48e20f0cbf3bd962eea7e3",
+        "about": "9f05b5f8ba020b6559f99270caac03a6106893c1",
+        "terms-and-conditions": "f83e137dc81bca32103617789eacc979dbc3b947",
+        "privacy-policy": "df8d808df8c3540598434819d7927e3b04edeeee"
+      },
+      "pre_edit_pages": {
+        "index": "16290fde22a8d205d6daddfde2d0134cba316c37",
+        "services": "33f17b2d31680aee9a0648ecdf6e4e3ddd6bfd51",
+        "about": "fa0fb72484d98499bc73d184fa5ce8131357588e",
+        "terms-and-conditions": "8b40913e6c322d72980ee3bf132c8e240df2ad7e",
+        "privacy-policy": "abc6e83dc7160869a4219490601a1a921e04fab6"
       }
     }
   ]
