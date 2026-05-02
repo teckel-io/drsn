@@ -42,10 +42,10 @@
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental",
-    "popup_version": "v421",
+    "popup_version": "v422",
     "popup": {
       "title": null,
-      "body": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a meeting with her at the event to discuss your dental treatment plan.\n\nWant to come along? It is [FREE](https://forms.reg.buzz/dentistry-show-splash/) to register for dental professionals!",
+      "body": "[MORE INFO](https://birmingham.dentistryshow.co.uk/)",
       "image_url": "https://teckel-io.github.io/drsn/assets/dentistry-show-birmingham.jpg",
       "image_link_url": "https://forms.reg.buzz/dentistry-show-splash/",
       "cta_label": null,
@@ -55,21 +55,6 @@
     }
   },
   "versions": [
-    {
-      "version": 372,
-      "timestamp": "2026-04-21T02:27:17.202Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 371 (\"Rolled back to the state before version 370 (\"change the year in the footer of the  terms andd conditions page to 2027\")\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 371,
-      "edit_type": "content",
-      "pages": {
-        "terms-and-conditions": "9e9cea2b85f61b2233982b2d4719450220aed236"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
-      }
-    },
     {
       "version": 373,
       "timestamp": "2026-04-21T02:28:14.049Z",
@@ -1192,6 +1177,39 @@
         "about": "fa0fb72484d98499bc73d184fa5ce8131357588e",
         "terms-and-conditions": "8b40913e6c322d72980ee3bf132c8e240df2ad7e",
         "privacy-policy": "abc6e83dc7160869a4219490601a1a921e04fab6"
+      }
+    },
+    {
+      "version": 422,
+      "timestamp": "2026-05-02T01:17:35.024Z",
+      "tag": null,
+      "change_description": "Installed popup (v422)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_popup",
+      "edit_type": "content",
+      "popup": {
+        "version_string": "v422",
+        "title": null,
+        "body_preview": "[MORE INFO](https://birmingham.dentistryshow.co.uk/)",
+        "has_image": true,
+        "has_cta": false,
+        "delay_ms": 4000,
+        "dismiss_days": 1
+      },
+      "pages": {
+        "index": "e0a74c3185de0757942fe91c8a521844518c6c77",
+        "services": "2479d45fee635f3e88df0aac4249fd464b4c1111",
+        "about": "5a8222d0e0d7a88f81729af5c6212940a8f93cca",
+        "terms-and-conditions": "af454f71c339fb30fe5ccf1dd9c49c533fe7b5d7",
+        "privacy-policy": "1d7a0473970282fa3727c59d0b70307b049778de"
+      },
+      "pre_edit_pages": {
+        "index": "c13e7ab2dbc76172402fd38f0b4a2859665c7164",
+        "services": "8d15ca9d28ec0f2e3b60988fda8df2936cf90fb3",
+        "about": "1c3cc3c19c1eff0e785dfea01b3f926c830722b9",
+        "terms-and-conditions": "f642f8cbc4ed16cb4465ba9549bb59f5d7e93540",
+        "privacy-policy": "6df5b991142b2762b458850624c0490faf47318e"
       }
     }
   ]
