@@ -42,7 +42,7 @@
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental",
-    "popup_version": "v429",
+    "popup_version": "v430",
     "popup": {
       "title": null,
       "body": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a meeting with her at the event to discuss your dental treatment plan.\n\nWant to come along? It is [FREE](https://forms.reg.buzz/dentistry-show-splash/) to register for dental professionals!\n\n[MORE INFO](https://birmingham.dentistryshow.co.uk/)",
@@ -52,25 +52,11 @@
       "cta_url": null,
       "delay_ms": 4000,
       "dismiss_days": 1,
-      "card_bg_color": "#e8f4fb"
+      "card_bg_color": "#e8f4fb",
+      "link_color": "#1e3a8a"
     }
   },
   "versions": [
-    {
-      "version": 380,
-      "timestamp": "2026-04-21T05:14:33.022Z",
-      "tag": null,
-      "change_description": "change the year to 2027 in the footer of the privacy policy page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "edit_type": "content",
-      "pages": {
-        "privacy-policy": "d54c85cdae0f8aa8d4daa8c7a58bec47da000713"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "e3b83cd471d98ad5c1cb3998c171966189a74e15"
-      }
-    },
     {
       "version": 381,
       "timestamp": "2026-04-21T05:15:26.633Z",
@@ -1250,6 +1236,39 @@
         "about": "4a6b4583e56b9c620422036f3b8ab8187e2aff2b",
         "terms-and-conditions": "6013d7b00df87fc34e2cbea334e0526e11e3b325",
         "privacy-policy": "e95eccf658965aa172c93b8bd60591f23d5515a1"
+      }
+    },
+    {
+      "version": 430,
+      "timestamp": "2026-05-02T02:22:33.165Z",
+      "tag": null,
+      "change_description": "Installed popup (v430)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_popup",
+      "edit_type": "content",
+      "popup": {
+        "version_string": "v430",
+        "title": null,
+        "body_preview": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a...",
+        "has_image": true,
+        "has_cta": false,
+        "delay_ms": 4000,
+        "dismiss_days": 1
+      },
+      "pages": {
+        "index": "7bd3b055e945a6ec50fc973fc71830f6535f1931",
+        "services": "b0001017a584bb54b2b389f1fcc60b0b1cc0e01c",
+        "about": "827874014b892bb6fd89b8cdcda07e79f2db17dc",
+        "terms-and-conditions": "455291c056aa5923150cd53d356f490d42614b20",
+        "privacy-policy": "c7a72ed9cfe086864ae312f871aee15782857c1b"
+      },
+      "pre_edit_pages": {
+        "index": "6d67b0561f4a9416e231d0b4d3826125387642a5",
+        "services": "9b7d17efdefbb02f157ee70893ac27fd93a96bca",
+        "about": "1c7bb389b6eff94da88af0c154d98520881ef9a0",
+        "terms-and-conditions": "fcf833e8fa2bdb4eba6f429e091443e4e219daba",
+        "privacy-policy": "166cfbd3c8626d4a72cb01f71da5c4891a70a644"
       }
     }
   ]
