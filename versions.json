@@ -41,35 +41,9 @@
       }
     ],
     "favicon_version": "v392",
-    "site_title": "Delapre Dental",
-    "popup_version": "v422",
-    "popup": {
-      "title": null,
-      "body": "[MORE INFO](https://birmingham.dentistryshow.co.uk/)",
-      "image_url": "https://teckel-io.github.io/drsn/assets/dentistry-show-birmingham.jpg",
-      "image_link_url": "https://forms.reg.buzz/dentistry-show-splash/",
-      "cta_label": null,
-      "cta_url": null,
-      "delay_ms": 4000,
-      "dismiss_days": 1
-    }
+    "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 373,
-      "timestamp": "2026-04-21T02:28:14.049Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 372 (\"Rolled back to the state before version 371 (\"Rolled back to the state before version 370 (\"change the year in the footer of the  terms andd conditions page to 2027\")\")\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 372,
-      "edit_type": "content",
-      "pages": {
-        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb"
-      },
-      "pre_edit_pages": {
-        "terms-and-conditions": "9e9cea2b85f61b2233982b2d4719450220aed236"
-      }
-    },
     {
       "version": 374,
       "timestamp": "2026-04-21T02:34:29.314Z",
@@ -1210,6 +1184,33 @@
         "about": "1c3cc3c19c1eff0e785dfea01b3f926c830722b9",
         "terms-and-conditions": "f642f8cbc4ed16cb4465ba9549bb59f5d7e93540",
         "privacy-policy": "6df5b991142b2762b458850624c0490faf47318e"
+      }
+    },
+    {
+      "version": 423,
+      "timestamp": "2026-05-02T01:30:27.204Z",
+      "tag": null,
+      "change_description": "Removed popup (was v422)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "unset_popup",
+      "edit_type": "content",
+      "popup_removed": {
+        "previous_version": "v422"
+      },
+      "pages": {
+        "index": "16290fde22a8d205d6daddfde2d0134cba316c37",
+        "services": "33f17b2d31680aee9a0648ecdf6e4e3ddd6bfd51",
+        "about": "fa0fb72484d98499bc73d184fa5ce8131357588e",
+        "terms-and-conditions": "8b40913e6c322d72980ee3bf132c8e240df2ad7e",
+        "privacy-policy": "abc6e83dc7160869a4219490601a1a921e04fab6"
+      },
+      "pre_edit_pages": {
+        "index": "e0a74c3185de0757942fe91c8a521844518c6c77",
+        "services": "2479d45fee635f3e88df0aac4249fd464b4c1111",
+        "about": "5a8222d0e0d7a88f81729af5c6212940a8f93cca",
+        "terms-and-conditions": "af454f71c339fb30fe5ccf1dd9c49c533fe7b5d7",
+        "privacy-policy": "1d7a0473970282fa3727c59d0b70307b049778de"
       }
     }
   ]
