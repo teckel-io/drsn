@@ -41,48 +41,9 @@
       }
     ],
     "favicon_version": "v392",
-    "site_title": "Delapre Dental",
-    "popup_version": "v425",
-    "popup": {
-      "title": null,
-      "body": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a meeting with her at the event to discuss your dental treatment plan.\n\nWant to come along? It is [FREE](https://forms.reg.buzz/dentistry-show-splash/) to register for dental professionals!\n\n[MORE INFO](https://birmingham.dentistryshow.co.uk/)",
-      "image_url": "https://teckel-io.github.io/drsn/assets/dentistry-show-birmingham.jpg",
-      "image_link_url": "https://forms.reg.buzz/dentistry-show-splash/",
-      "cta_label": null,
-      "cta_url": null,
-      "delay_ms": 4000,
-      "dismiss_days": 1
-    }
+    "site_title": "Delapre Dental"
   },
   "versions": [
-    {
-      "version": 376,
-      "timestamp": "2026-04-21T02:38:10.244Z",
-      "tag": null,
-      "change_description": "Added nav item: \"Sitemap\" → sitemap.xml",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "add_nav_item",
-      "nav_item": {
-        "label": "Sitemap",
-        "href": "sitemap.xml",
-        "insertion_index": 3
-      },
-      "pages": {
-        "index": "254b52fd3026593848943df00ed93d14f8c60fc6",
-        "services": "3d2f48708e6cd01e565a817995865b06b6841b85",
-        "about": "23a2762072bc9c91197eef09cec53f782c14ddd4",
-        "terms-and-conditions": "370da414c86f120aa50432e3bd1d0ff0f5d8c2a1",
-        "privacy-policy": "f1659084eae6db2746e31bf578cd7725e441d48f"
-      },
-      "pre_edit_pages": {
-        "index": "ced153104ffe36edcee4606f02ddd9755d94f06c",
-        "services": "307c78c6dae159aade88009fbcb1810aa37aa5f9",
-        "about": "4de8678abe7157575c607e2aa810f8601f6ae786",
-        "terms-and-conditions": "a379904363912c35f7ee3fd515c440358122a3bb",
-        "privacy-policy": "360c19f0d5b605acda598c9b569c5ea4bd1fb0b4"
-      }
-    },
     {
       "version": 377,
       "timestamp": "2026-04-21T02:39:36.179Z",
@@ -1239,6 +1200,33 @@
         "about": "15572d46a6c7c2f8a7d94d873e7e4536cdbb626f",
         "terms-and-conditions": "9ad09a47c03aafdb1838da59fe2f0cdbb0272eec",
         "privacy-policy": "8f1cf07c38ae0fbf44017047703fdc0932861983"
+      }
+    },
+    {
+      "version": 426,
+      "timestamp": "2026-05-02T01:54:25.600Z",
+      "tag": null,
+      "change_description": "Removed popup (was v425)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "unset_popup",
+      "edit_type": "content",
+      "popup_removed": {
+        "previous_version": "v425"
+      },
+      "pages": {
+        "index": "16290fde22a8d205d6daddfde2d0134cba316c37",
+        "services": "33f17b2d31680aee9a0648ecdf6e4e3ddd6bfd51",
+        "about": "fa0fb72484d98499bc73d184fa5ce8131357588e",
+        "terms-and-conditions": "8b40913e6c322d72980ee3bf132c8e240df2ad7e",
+        "privacy-policy": "abc6e83dc7160869a4219490601a1a921e04fab6"
+      },
+      "pre_edit_pages": {
+        "index": "e7d78e3820ba5b74cb7d9ac98ac02a32dcb0221a",
+        "services": "ce2c604ca26e034c21bec5b47c6e8a379f78aac0",
+        "about": "e3ba63f44427b8b5b897cbc2419ed46f51a0884b",
+        "terms-and-conditions": "b08e1aeb0d9e3292349118e350947098a13932f7",
+        "privacy-policy": "e7c40f051750cd7f2034bce873d3306e960c755b"
       }
     }
   ]
