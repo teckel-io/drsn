@@ -42,7 +42,7 @@
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental",
-    "popup_version": "v430",
+    "popup_version": "v431",
     "popup": {
       "title": null,
       "body": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a meeting with her at the event to discuss your dental treatment plan.\n\nWant to come along? It is [FREE](https://forms.reg.buzz/dentistry-show-splash/) to register for dental professionals!\n\n[MORE INFO](https://birmingham.dentistryshow.co.uk/)",
@@ -50,28 +50,60 @@
       "image_link_url": "https://forms.reg.buzz/dentistry-show-splash/",
       "cta_label": null,
       "cta_url": null,
+      "video_url": null,
       "delay_ms": 4000,
       "dismiss_days": 1,
       "card_bg_color": "#e8f4fb",
-      "link_color": "#1e3a8a"
+      "card_opacity": 1,
+      "link_color": "#1e3a8a",
+      "title_color": null,
+      "title_font_size": "1.35em",
+      "title_font_weight": "600",
+      "body_color": "#1a1a1a",
+      "body_font_size": "1em",
+      "font_family": null,
+      "padding": "24px 24px 22px",
+      "border_thickness": "0",
+      "border_style": "solid",
+      "border_color": "transparent",
+      "border_radius": "12px",
+      "shadow_color": "rgba(0,0,0,0.18)",
+      "shadow_blur": "32px",
+      "shadow_spread": "0",
+      "shadow_offset_x": "0",
+      "shadow_offset_y": "8px",
+      "max_width": "440px",
+      "min_width": null,
+      "max_height": "90vh",
+      "min_height": null,
+      "card_position": "bottom-right",
+      "offset_top": null,
+      "offset_right": null,
+      "offset_bottom": null,
+      "offset_left": null,
+      "animation_type": "slide-from-bottom-right",
+      "animation_duration_ms": 1000,
+      "image_max_width": "100%",
+      "image_position": "above",
+      "cta_bg_color": "#2563eb",
+      "cta_text_color": "#ffffff",
+      "cta_hover_bg_color": "#1d4ed8",
+      "cta_radius": "6px",
+      "cta_padding": "10px 22px",
+      "cta_border": "none",
+      "custom_css": null,
+      "close_button": false,
+      "backdrop": "none",
+      "trigger_type": "auto-delay",
+      "scroll_threshold_pct": 50,
+      "click_selector": null,
+      "dismiss_type": "ttl",
+      "window_start": null,
+      "window_end": null,
+      "page_targets": "all"
     }
   },
   "versions": [
-    {
-      "version": 381,
-      "timestamp": "2026-04-21T05:15:26.633Z",
-      "tag": null,
-      "change_description": "Rolled back to the state before version 380 (\"change the year to 2027 in the footer of the privacy policy page\")",
-      "is_rollback": true,
-      "rolled_back_to_version": 380,
-      "edit_type": "content",
-      "pages": {
-        "privacy-policy": "e3b83cd471d98ad5c1cb3998c171966189a74e15"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "d54c85cdae0f8aa8d4daa8c7a58bec47da000713"
-      }
-    },
     {
       "version": 382,
       "timestamp": "2026-04-21T21:12:51.249Z",
@@ -1269,6 +1301,39 @@
         "about": "1c7bb389b6eff94da88af0c154d98520881ef9a0",
         "terms-and-conditions": "fcf833e8fa2bdb4eba6f429e091443e4e219daba",
         "privacy-policy": "166cfbd3c8626d4a72cb01f71da5c4891a70a644"
+      }
+    },
+    {
+      "version": 431,
+      "timestamp": "2026-05-03T07:44:07.721Z",
+      "tag": null,
+      "change_description": "Installed popup (v431)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_popup",
+      "edit_type": "content",
+      "popup": {
+        "version_string": "v431",
+        "title": null,
+        "body_preview": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a...",
+        "has_image": true,
+        "has_cta": false,
+        "delay_ms": 4000,
+        "dismiss_days": 1
+      },
+      "pages": {
+        "index": "2b1eedff056d5e456fca84cfe52215d0a2845236",
+        "services": "749a33458f6686246f5f12976e95c05b80350bf7",
+        "about": "c740f15807d2ec887ca369aa21ad9ed4bacb6c2a",
+        "terms-and-conditions": "b9c59973b40b9e29ecf6274d357301a93e0cfd70",
+        "privacy-policy": "1507e89591e2ced4fb7b2bc60ff867c9ef0b33bc"
+      },
+      "pre_edit_pages": {
+        "index": "7bd3b055e945a6ec50fc973fc71830f6535f1931",
+        "services": "b0001017a584bb54b2b389f1fcc60b0b1cc0e01c",
+        "about": "827874014b892bb6fd89b8cdcda07e79f2db17dc",
+        "terms-and-conditions": "455291c056aa5923150cd53d356f490d42614b20",
+        "privacy-policy": "c7a72ed9cfe086864ae312f871aee15782857c1b"
       }
     }
   ]
