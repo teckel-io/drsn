@@ -111,21 +111,6 @@
   },
   "versions": [
     {
-      "version": 405,
-      "timestamp": "2026-04-23T05:26:29.259Z",
-      "tag": null,
-      "change_description": "remove the footer on the piravcy  policy page",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "edit_type": "content",
-      "pages": {
-        "privacy-policy": "256c82007c47b82114d8defba341ee7ebc627410"
-      },
-      "pre_edit_pages": {
-        "privacy-policy": "abc6e83dc7160869a4219490601a1a921e04fab6"
-      }
-    },
-    {
       "version": 406,
       "timestamp": "2026-04-23T05:27:31.159Z",
       "tag": null,
@@ -1566,6 +1551,21 @@
         "about": "875d71c7e2153e8432c7e342d477b182d20a72e4",
         "terms-and-conditions": "38d9a2fb1271237dfc0f5a3230e48664f1c8639d",
         "privacy-policy": "f93b17302f8dfd1aa7c0d3f1cc55a3b5caf1d0dc"
+      }
+    },
+    {
+      "version": 455,
+      "timestamp": "2026-05-04T14:50:40.998Z",
+      "tag": null,
+      "change_description": "On the home page replace '8.15 am to 5pm' to 8.30am to 5.30pm",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "edit_type": "content",
+      "pages": {
+        "index": "2674ee58104c1e9a85a9c2bea41c54da8927a676"
+      },
+      "pre_edit_pages": {
+        "index": "7170f54db562482f2c3be34ea3b7c982847d8c31"
       }
     }
   ]
