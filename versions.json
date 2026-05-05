@@ -111,39 +111,6 @@
   },
   "versions": [
     {
-      "version": 437,
-      "timestamp": "2026-05-03T08:35:42.422Z",
-      "tag": null,
-      "change_description": "Installed popup (v437)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "set_popup",
-      "edit_type": "content",
-      "popup": {
-        "version_string": "v437",
-        "title": null,
-        "body_preview": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a...",
-        "has_image": true,
-        "has_cta": false,
-        "delay_ms": 4000,
-        "dismiss_days": 1
-      },
-      "pages": {
-        "index": "9008c5fb418dd8c130e67657fcadbb278d6b81dd",
-        "services": "f27fcd4b3e4e4a45d9b364d239f66eadeb21d248",
-        "about": "da76b479cda94bdb835f59f24de5ad6c3024076b",
-        "terms-and-conditions": "46b6de1b4d51e5adbccfd0021b66614c38219aac",
-        "privacy-policy": "5704011d15bf62c88f3592b0bcf3f469d5fcea50"
-      },
-      "pre_edit_pages": {
-        "index": "cc27c823cc21d694aa52573c75143b9d0830f3e4",
-        "services": "f81b6b2cc9161a6766c7828aa15a217d4918ebe8",
-        "about": "275df783155dcefd760aa5475262c1e1c787bddb",
-        "terms-and-conditions": "0fe759aa4c7d22511b4bbc8331e9852e1bd492b7",
-        "privacy-policy": "b8a783ee055596dd151ded8e9af3b262364b6a8f"
-      }
-    },
-    {
       "version": 438,
       "timestamp": "2026-05-03T08:41:16.239Z",
       "tag": null,
@@ -1362,6 +1329,21 @@
       },
       "pre_edit_pages": {
         "privacy-policy": "e5d44bce73cc6481f6bba44e07c36aee9449e877"
+      }
+    },
+    {
+      "version": 487,
+      "timestamp": "2026-05-05T20:18:02.952Z",
+      "tag": null,
+      "change_description": "Rolled back to the state before version 486 (\"change the year in the footer on the privacy page to 2036\")",
+      "is_rollback": true,
+      "rolled_back_to_version": 486,
+      "edit_type": "content",
+      "pages": {
+        "privacy-policy": "e5d44bce73cc6481f6bba44e07c36aee9449e877"
+      },
+      "pre_edit_pages": {
+        "privacy-policy": "e0980dc2838b8572954c93621cb191b994803d8b"
       }
     }
   ]
