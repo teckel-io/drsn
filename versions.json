@@ -42,7 +42,7 @@
     ],
     "favicon_version": "v392",
     "site_title": "Delapre Dental",
-    "popup_version": "v492",
+    "popup_version": "v493",
     "popup": {
       "title": null,
       "body": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a meeting with her at the event to discuss your dental treatment plan.\n\nWant to come along? It is [FREE](https://forms.reg.buzz/dentistry-show-splash/) to register for dental professionals!\n\n[MORE INFO](https://birmingham.dentistryshow.co.uk/)",
@@ -76,7 +76,7 @@
       "shadow_spread": "0",
       "shadow_offset_x": "0",
       "shadow_offset_y": "4px",
-      "max_width": "440px",
+      "max_width": "396px",
       "min_width": null,
       "max_height": "90vh",
       "min_height": null,
@@ -110,39 +110,6 @@
     }
   },
   "versions": [
-    {
-      "version": 443,
-      "timestamp": "2026-05-03T08:56:56.556Z",
-      "tag": null,
-      "change_description": "Installed popup (v443)",
-      "is_rollback": false,
-      "rolled_back_to_version": null,
-      "operation_type": "set_popup",
-      "edit_type": "content",
-      "popup": {
-        "version_string": "v443",
-        "title": null,
-        "body_preview": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a...",
-        "has_image": true,
-        "has_cta": false,
-        "delay_ms": 4000,
-        "dismiss_days": 1
-      },
-      "pages": {
-        "index": "b632b7e043b5cfba49f7d4ef0dc901243738c9e7",
-        "services": "edaca542f9d10a39eae89723874e4d2a5a7cd3ae",
-        "about": "ef0834f11848a0686b06232e4475ec212552bb28",
-        "terms-and-conditions": "4dff0e813d48f786da38c5d58208cea23c5835f1",
-        "privacy-policy": "2dd90b784ccccdd6754877841b3827620ba8c1e4"
-      },
-      "pre_edit_pages": {
-        "index": "f1ffde94e5ca95b9999e5bcb35bab8590fa9e893",
-        "services": "e56422905e92b78121bc07451dd6ae139fd80861",
-        "about": "73cb8ecac5eb459d85694af63a874c055627c5cc",
-        "terms-and-conditions": "a1ab8f66d4e726c6aef931ea87b54acdae11eb45",
-        "privacy-policy": "73c613120694a02eb9cc3c7efddd686ec9f39404"
-      }
-    },
     {
       "version": 444,
       "timestamp": "2026-05-03T09:00:39.544Z",
@@ -1344,6 +1311,39 @@
         "about": "0ad0b91bedd7eabe6fd06bed9f0b0a3dc379b5fd",
         "terms-and-conditions": "ce09e9f587d475135f662eb51feb5fd15e4130d5",
         "privacy-policy": "d367744e575d3d69f2200fdbb231ecb10a1d8237"
+      }
+    },
+    {
+      "version": 493,
+      "timestamp": "2026-05-06T06:46:03.044Z",
+      "tag": null,
+      "change_description": "Installed popup (v493)",
+      "is_rollback": false,
+      "rolled_back_to_version": null,
+      "operation_type": "set_popup",
+      "edit_type": "content",
+      "popup": {
+        "version_string": "v493",
+        "title": null,
+        "body_preview": "Dr. Sabina Nasir will be attending BDCDS in Birmingham on 15-16 May 2026. Book a...",
+        "has_image": true,
+        "has_cta": false,
+        "delay_ms": 3000,
+        "dismiss_days": 0
+      },
+      "pages": {
+        "index": "341edb4e8f97e4378e4bdd9c56dc9828bd723a60",
+        "services": "60f883515909341b6e3113de197929dd44c78846",
+        "about": "862267c7e5e25a5cfab50d52e868252b76fec6ff",
+        "terms-and-conditions": "99236e9ac3744852ea3b524174d6eb1869f468a0",
+        "privacy-policy": "39011972c90cf69fb2c5831baa568a3083838059"
+      },
+      "pre_edit_pages": {
+        "index": "fe2d5033fa985c1017d04ce3b418e399e29cbdc9",
+        "services": "72ce6861e33b144fcf8fcad9c09118375057e00d",
+        "about": "b48ee19d337605645ef24cb23a7fcdd138376b57",
+        "terms-and-conditions": "91540a70dbf94bc6185f673def35e657e0c58526",
+        "privacy-policy": "dca7aff0bb135f3a48836f10a50ddb401a891cca"
       }
     }
   ]
